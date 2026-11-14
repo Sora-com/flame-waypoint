@@ -24,7 +24,7 @@ jobs:
           python-version: "3.12"
       - name: Run tests
         run: python -m unittest discover -s tests -t .
-      - name: Build site data (public: no PSI test tables)
+      - name: Build site data without PSI test tables (public build)
         run: python -m pipeline.build.site_data
       - uses: actions/upload-pages-artifact@v3
         with:
