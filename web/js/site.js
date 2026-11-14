@@ -92,7 +92,8 @@
       sourceUrl: inv.source_url,
       review: inv.review_status,
       model: inv.model,
-      pending: inv.review_status === "not_extracted"
+      pending: inv.review_status === "not_extracted",
+      completeness: inv.completeness
     };
   }
 
@@ -113,7 +114,7 @@
     .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
     .then(site => {
       D.experiments = site.investigations.map(toExperiment);
-      D.site = { generatedAt: site.generated_at, includesTables: site.includes_psi_tables };
+      D.site = { generatedAt: site.generated_at, includesTables: site.includes_psi_tables, ask: site.ask || null };
       start();
     })
     .catch(fail);

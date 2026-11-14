@@ -11,7 +11,7 @@
 
   const PHASE = { solid: "Solid", liquid: "Liquid", gas: "Gas", smoke: "Smoke", dust: "Dust" };
   const PILLAR = { prevention: "Prevention", detection: "Detection", suppression: "Suppression", fundamental: "Fundamental" };
-  const VIEWS = { overview: "Overview", investigations: "Investigations", scenario: "Scenario ranking", coverage: "O₂ · pressure coverage", compare: "Compare", energy: "Onboard energy and mass", models: "Model benchmark", quality: "Completeness and sources", glossary: "Glossary" };
+  const VIEWS = { overview: "Overview", investigations: "Investigations", scenario: "Scenario ranking", coverage: "O₂ · pressure coverage", compare: "Compare", energy: "Onboard energy and mass", models: "Model benchmark", quality: "Completeness and sources", glossary: "Glossary", ask: "Ask the data" };
 
   /* ───────── Persistent state (local convenience only) ───────── */
   const store = {
@@ -46,19 +46,12 @@
   const pill = p => `<span class="pill pil-${p}">${PILLAR[p]}</span>`;
 
   /* ───────── Completeness ───────── */
-  const FIELDS = [
-    ["O₂", e => e.o2 ? "f" : ""],
-    ["Pressure", e => e.psi ? "f" : ""],
-    ["Flow", e => e.flow ? "f" : ""],
-    ["Fuel", e => e.fuel ? "f" : ""],
-    ["Period", e => e.period ? "f" : ""],
-    ["Test table", e => e.tests ? "f" : ""],
-    ["Paper findings", e => e.findings.length ? "f" : ""],
-    ["Linked source", e => e.sources.some(f => f[1]) ? "f" : ""]
-  ];
+  // Computed once in pipeline/build/site_data.py (also used by the assistant); here only labelled.
+  const FIELD_LABELS = { o2: "O₂", pressure: "Pressure", flow: "Flow", fuel: "Fuel", period: "Period", test_table: "Test table", paper_findings: "Paper findings", linked_source: "Linked source" };
+  const FIELDS = Object.keys(EX[0]?.completeness?.fields || FIELD_LABELS).map(k => [FIELD_LABELS[k] || k, k]);
   EX.forEach(e => {
-    e._st = FIELDS.map(([, fn]) => fn(e));
-    e._compl = e._st.reduce((a, s) => a + (s === "f" ? 1 : s === "i" ? 0.5 : 0), 0) / FIELDS.length;
+    e._st = FIELDS.map(([, k]) => e.completeness.fields[k] ? "f" : "");
+    e._compl = e.completeness.share;
   });
   const complBar = e => `<span class="compl"><i style="width:${Math.round(e._compl * 100)}%"></i></span>${Math.round(e._compl * 100)}`;
   const relDots = n => `<span class="rel" title="Evidence ${n}/3">${[1, 2, 3].map(i => `<i class="${i <= n ? "on" : ""}"></i>`).join("")}</span>`;
@@ -405,17 +398,22 @@
 
   /* ───────── Energy ───────── */
   let model = D.models[1];
-  $("#eModel").innerHTML = D.models.map(m => `<button data-v="${m.id}" title="${nf(m.sec, 1)} s per query">${m.name.replace("Mistral ", "")}</button>`).join("");
+  $("#eModel").innerHTML = D.models.map(m => `<button data-v="${m.id}" title="${nf(m.sec, 1)} s per document">${m.name.replace("Mistral ", "")}</button>`).join("");
   $$("#eModel button").forEach(b => b.addEventListener("click", () => { model = D.models.find(m => m.id === b.dataset.v); renderEnergy(); }));
-  ["eActive", "eIdle", "eQueries", "eNight", "eDens", "eMargin", "eSleep"].forEach(id => $("#" + id).addEventListener("input", renderEnergy));
+  // Assistant answers: time measured by pipeline.ask.demo on the team machine (fallback if not published).
+  const ASK = D.site && D.site.ask ? { sec: D.site.ask.median_seconds, model: D.site.ask.model, measured: true } : { sec: 9, model: "mistral-nemo", measured: false };
+  ["eActive", "eIdle", "eAsk", "eQueries", "eNight", "eDens", "eMargin", "eSleep"].forEach(id => $("#" + id).addEventListener("input", renderEnergy));
   const val = id => +$("#" + id).value;
   const fmtWh = wh => wh >= 1000 ? nf(wh / 1000, 2) + " kWh" : wh >= 10 ? nf(wh, 0) + " Wh" : nf(wh, 2) + " Wh";
-  function energy(sleep, q = val("eQueries")) {
-    const perQ = val("eActive") * model.sec / 3600;
-    const busy = Math.min(24, q * model.sec / 3600);
-    const dayQ = perQ * q, dayI = (sleep ? 1 : val("eIdle")) * (24 - busy);
+  // q: assistant questions per day; documents extracted per day come from their own slider.
+  function energy(sleep, q = val("eAsk")) {
+    const perAsk = val("eActive") * ASK.sec / 3600, perDoc = val("eActive") * model.sec / 3600;
+    const docs = val("eQueries");
+    const busy = Math.min(24, (q * ASK.sec + docs * model.sec) / 3600);
+    const dayAsk = perAsk * q, dayDoc = perDoc * docs;
+    const dayQ = dayAsk + dayDoc, dayI = (sleep ? 1 : val("eIdle")) * (24 - busy);
     const night = (dayQ + dayI) * val("eNight");
-    return { perQ, dayQ, dayI, day: dayQ + dayI, night, busy, kg: night / val("eDens") * (1 + val("eMargin") / 100) };
+    return { perAsk, perDoc, dayAsk, dayDoc, dayQ, dayI, day: dayQ + dayI, night, busy, kg: night / val("eDens") * (1 + val("eMargin") / 100) };
   }
   const kgFmt = k => nf(k, k < 10 ? 1 : 0);
   function renderEnergy() {
@@ -423,6 +421,7 @@
     $("#oActive").textContent = val("eActive") + " W";
     $("#oIdle").textContent = val("eIdle") + " W";
     $("#oQueries").textContent = val("eQueries");
+    $("#oAsk").textContent = val("eAsk");
     $("#oNight").textContent = nfa(val("eNight")) + " d";
     $("#oDens").textContent = val("eDens") + " Wh/kg";
     $("#oMargin").textContent = "+" + val("eMargin") + " %";
@@ -433,13 +432,14 @@
       ["Battery mass", kgFmt(r.kg), " kg", `${sleep ? "without" : "with"} sleep: ${kgFmt(alt.kg)} kg`],
       ["Energy / day", fmtWh(r.day), "", `${nf(r.busy, 2)} h of active compute`],
       ["Energy / period", fmtWh(r.night), "", `${nfa(val("eNight"))} days without sun`],
-      ["Energy / query", fmtWh(r.perQ), "", `${model.name} · ${nf(model.sec, 1)} s`]
+      ["Energy / question", fmtWh(r.perAsk), "", `${ASK.model} · ${nf(ASK.sec, 1)} s ${ASK.measured ? "measured" : "est."}`]
     ].map(([k, v, u, d], i) => `<div class="kpi${i === 0 ? " alert" : ""}"><p class="kk">${k}</p><p class="v">${v}<small>${u}</small></p><p class="d">${d}</p></div>`).join("");
     const share = r.day ? r.dayQ / r.day : 0;
     $("#barQ").style.width = share * 100 + "%";
     $("#barI").style.width = (1 - share) * 100 + "%";
-    $("#eNote").innerHTML = `<span style="color:var(--acc-2)">■</span> Inference ${fmtWh(r.dayQ)} (${Math.round(share * 100)} %) · <span style="color:var(--c-pil)">■</span> Idle ${fmtWh(r.dayI)} (${Math.round((1 - share) * 100)} %). ` +
-      (share < 0.3 ? "Idle dominates: the savings are in the duty cycle, not the model size." : "Inference dominates: the model's time per query is the main lever.");
+    $("#eNote").innerHTML = `<span style="color:var(--acc-2)">■</span> Inference ${fmtWh(r.dayQ)} (${Math.round(share * 100)} %: questions ${fmtWh(r.dayAsk)}, extraction ${fmtWh(r.dayDoc)}) · <span style="color:var(--c-pil)">■</span> Idle ${fmtWh(r.dayI)} (${Math.round((1 - share) * 100)} %). ` +
+      (share < 0.3 ? "Idle dominates: the savings are in the duty cycle, not the model size." : "Inference dominates: the model's time per answer is the main lever.") +
+      ` Extraction: ${model.name}, ${nf(model.sec, 1)} s per document (benchmark).`;
     $$('[data-view="energy"] input[type=range]').forEach(paintRange);
     energyChart();
   }
@@ -453,14 +453,14 @@
     const step = niceStep(ymax / 4);
     const X = q => m.l + q / QMAX * pw, Y = k => m.t + ph - k / ymax * ph;
     const path = pts => pts.map(([q, k], i) => (i ? "L" : "M") + X(q).toFixed(1) + " " + Y(k).toFixed(1)).join("");
-    let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Battery mass by queries per day"><g class="grid">`;
+    let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Battery mass by assistant questions per day"><g class="grid">`;
     for (let k = 0; k <= ymax; k += step) s += `<line x1="${m.l}" x2="${m.l + pw}" y1="${Y(k)}" y2="${Y(k)}"/>`;
     s += `</g>`;
     for (let k = 0; k <= ymax; k += step) s += `<text class="ax" x="${m.l - 6}" y="${Y(k) + 3}" text-anchor="end">${nfa(+k.toFixed(1))}</text>`;
     for (let q = 0; q <= QMAX; q += 500) s += `<text class="ax" x="${X(q)}" y="${H - 14}" text-anchor="middle">${q}</text>`;
-    s += `<text class="ttl" x="${m.l + pw}" y="${H - 1}" text-anchor="end">queries / day</text><text class="ttl" x="${m.l - 6}" y="${m.t - 4}" text-anchor="end">kg</text>`;
+    s += `<text class="ttl" x="${m.l + pw}" y="${H - 1}" text-anchor="end">questions / day</text><text class="ttl" x="${m.l - 6}" y="${m.t - 4}" text-anchor="end">kg</text>`;
     s += `<path class="l1" d="${path(a)}"/><path class="l2" d="${path(b)}"/>`;
-    const q = val("eQueries"), cur = energy($("#eSleep").checked).kg;
+    const q = val("eAsk"), cur = energy($("#eSleep").checked).kg;
     s += `<circle class="now" cx="${X(Math.min(q, QMAX))}" cy="${Y(cur)}" r="5"/></svg>`;
     $("#eChart").innerHTML = s;
   }
@@ -572,6 +572,7 @@
     if (e.key === "/") { e.preventDefault(); gs.focus(); }
     else if (e.key === "[") $("#collapse").click();
     else if (/^[1-9]$/.test(e.key)) go(order[+e.key - 1]);
+    else if (e.key === "0") go("ask");
   });
 
   /* ───────── Glossary ───────── */
@@ -591,6 +592,78 @@
   $$("#glCat button").forEach(b => b.addEventListener("click", () => { setGlCat(b.dataset.v); renderGlossary(); }));
   $("#glSearch").addEventListener("input", e => { G.q = e.target.value; renderGlossary(); });
   renderGlossary();
+
+  /* ───────── Ask the data ───────── */
+  // Live when served by pipeline.ask.server (local Ollama); otherwise pre-computed answers from site.json.
+  const README = "https://github.com/Sora-com/flame-waypoint#ask-the-data-locally";
+  const DEMO = D.site && D.site.ask ? D.site.ask : null;
+  const A = { live: false, model: null, busy: false };
+  function citeLink(id, r) {
+    const acc = /^PSI-\d+$/.test(id) && byId[id.toLowerCase()];
+    if (acc) return `<a href="#" class="cite" data-open="${acc.id}">[${id}]</a>`;
+    const c = (r.citations || []).find(x => x.id === id);
+    return c && c.url ? `<a class="cite" href="${c.url}" target="_blank" rel="noopener">[${esc(id)}]</a>` : `<span class="cite">[${esc(id)}]</span>`;
+  }
+  const fmtAnswer = r => esc(r.answer)
+    .replace(/\[([^\]]+)\]/g, (m, ids) => ids.split(/\s*[,;]\s*/).map(id => citeLink(id, r)).join(" "))
+    .replace(/\n/g, "<br>");
+  function renderAnswer(r, note) {
+    const out = $("#askOut");
+    out.hidden = false;
+    out.className = "panel ask-out";
+    const wh = val("eActive") * r.seconds / 3600;
+    const flags = r.unverified || [];
+    out.innerHTML = `<p class="ask-q">${esc(r.question)}</p><p class="ask-a">${fmtAnswer(r)}</p>
+      ${flags.length ? `<div class="ask-warn"><b>Not found in the cited sources</b> (automatic check, treat as unverified):<ul>${flags.map(f => `<li>“${esc(f.sentence)}” <span class="mono">${f.not_in_sources.map(esc).join(", ")}</span></li>`).join("")}</ul></div>` : ""}
+      <p class="ask-meta">${note} · ${esc(r.model)} · ${nf(r.seconds, 1)} s · ${r.prompt_tokens} tokens in / ${r.output_tokens} out · ≈ ${fmtWh(wh)} at ${val("eActive")} W (est., see <a href="#/energy">energy budget</a>)</p>
+      ${r.citations.length ? `<ul class="ask-src">${r.citations.map(c => `<li>${c.url ? `<a href="${c.url}" target="_blank" rel="noopener">${esc(c.id)} ↗</a>` : esc(c.id)} · ${esc(c.title || "")}</li>`).join("")}</ul>` : ""}
+      <details><summary>Context given to the model: computed facts + ${r.passages.length} retrieved passages</summary><ul>${r.passages.map(p => `<li><span class="mono">[${esc(p.source)}]</span> ${esc(p.text)}</li>`).join("")}</ul></details>`;
+  }
+  function renderAskMode() {
+    const mode = $("#askMode"), input = $("#askInput");
+    if (A.live) {
+      mode.className = "ask-mode live"; mode.textContent = `live · ${A.model} on this computer`;
+      input.disabled = $("#askBtn").disabled = false;
+      input.placeholder = "Ask about the experiments, e.g. Which experiments used more than 21 % O₂?";
+      $("#askHelp").innerHTML = "Answered by the local model using only this dashboard's data; every statement cites its source and nothing leaves this computer. Suggested questions:";
+    } else {
+      mode.className = "ask-mode demo"; mode.textContent = "pre-computed answers";
+      input.disabled = $("#askBtn").disabled = true;
+      input.placeholder = "Your own questions need the local assistant (see below)";
+      $("#askHelp").innerHTML = DEMO
+        ? `These answers were generated in advance by the same local assistant (${esc(DEMO.model)} on ${esc(DEMO.machine)}). To ask your own questions, run it on your computer: it needs Ollama and a one-time model download of about 7 GB (<a href="${README}" target="_blank" rel="noopener">instructions</a>).`
+        : `The local assistant is not running. <a href="${README}" target="_blank" rel="noopener">How to run it</a>.`;
+    }
+    const qs = DEMO ? DEMO.answers.map(a => a.question) : [];
+    $("#askChips").innerHTML = qs.map((q, i) => `<button type="button" data-q="${i}">${esc(q)}</button>`).join("");
+  }
+  async function askLive(question) {
+    if (A.busy) return;
+    A.busy = true; $("#askBtn").disabled = true;
+    const out = $("#askOut"); out.hidden = false; out.className = "panel ask-out";
+    out.innerHTML = `<p class="ask-q">${esc(question)}</p><p class="ask-a muted">Thinking on the local model (usually 5–15 s)…</p>`;
+    try {
+      const res = await fetch("api/ask", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ question }) });
+      const r = await res.json();
+      if (!res.ok) throw new Error(r.error || res.status);
+      renderAnswer(r, "live");
+    } catch (err) {
+      out.innerHTML = `<p class="ask-q">${esc(question)}</p><p class="ask-a">Could not get an answer: ${esc(err.message)}</p>`;
+    } finally { A.busy = false; $("#askBtn").disabled = !A.live; }
+  }
+  $("#askForm").addEventListener("submit", e => { e.preventDefault(); const q = $("#askInput").value.trim(); if (q && A.live) askLive(q); });
+  $("#askChips").addEventListener("click", e => {
+    const b = e.target.closest("[data-q]"); if (!b) return;
+    const a = DEMO.answers[+b.dataset.q];
+    $$("#askChips button").forEach(x => x.classList.toggle("on", x === b));
+    if (A.live) { $("#askInput").value = a.question; askLive(a.question); }
+    else renderAnswer(a, `pre-computed ${DEMO.generated_at.slice(0, 10)}`);
+  });
+  fetch("api/health", { cache: "no-store" })
+    .then(r => r.ok ? r.json() : null)
+    .then(h => { A.live = !!(h && h.ok); A.model = h && h.model; })
+    .catch(() => {})
+    .finally(renderAskMode);
 
   /* ───────── Toast ───────── */
   let tt;

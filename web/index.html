@@ -31,6 +31,7 @@
       <a href="#/investigations" data-view="investigations"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span>Investigations</span><kbd>2</kbd></a>
       <a href="#/scenario" data-view="scenario"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span>Scenario ranking</span><kbd>3</kbd></a>
       <a href="#/coverage" data-view="coverage"><svg viewBox="0 0 24 24"><path d="M3 21V3M3 21h18"/><rect x="11" y="11" width="9" height="6" stroke-dasharray="2 2"/><circle cx="7" cy="8" r="1.5"/></svg><span>O₂ · pressure coverage</span><kbd>4</kbd></a>
+      <a href="#/ask" data-view="ask"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M9 9h6M9 12h4"/></svg><span>Ask the data</span><kbd>0</kbd></a>
       <a href="#/compare" data-view="compare"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="7" height="16"/><rect x="14" y="4" width="7" height="16"/></svg><span>Compare</span><b class="badge" id="cmpCount" hidden>0</b><kbd>5</kbd></a>
 
       <p class="side-h">Feasibility</p>
@@ -205,6 +206,20 @@
         </div>
       </section>
 
+      <!-- ASK -->
+      <section class="view" data-view="ask">
+        <div class="panel">
+          <div class="panel-h"><h3>Ask the data</h3><span id="askMode"></span></div>
+          <form class="ask-form" id="askForm">
+            <input class="tsearch" id="askInput" type="text" maxlength="500" autocomplete="off" aria-label="Question">
+            <button class="btn" id="askBtn" type="submit">Ask</button>
+          </form>
+          <p class="foot-note" id="askHelp"></p>
+          <div class="tags ask-chips" id="askChips"></div>
+        </div>
+        <div class="panel" id="askOut" hidden></div>
+      </section>
+
       <!-- COMPARE -->
       <section class="view" data-view="compare">
         <div class="toolbar">
@@ -221,10 +236,11 @@
         <div class="grid-side">
           <div class="panel controls">
             <div class="panel-h"><h3>Assumptions</h3></div>
-            <div class="field"><label>Model <span class="tag m">measured</span></label><div class="seg full" id="eModel"></div></div>
+            <div class="field"><label>Extraction model <span class="tag m">measured</span></label><div class="seg full" id="eModel"></div></div>
             <div class="field"><label for="eActive">Active P <span class="tag e">est.</span> <output id="oActive"></output></label><input type="range" id="eActive" min="5" max="120" step="1" value="30"></div>
             <div class="field"><label for="eIdle">Idle P <span class="tag e">est.</span> <output id="oIdle"></output></label><input type="range" id="eIdle" min="1" max="40" step="1" value="10"></div>
-            <div class="field"><label for="eQueries">Queries / day <output id="oQueries"></output></label><input type="range" id="eQueries" min="0" max="2000" step="10" value="100"></div>
+            <div class="field"><label for="eAsk">Assistant questions / day <output id="oAsk"></output></label><input type="range" id="eAsk" min="0" max="2000" step="10" value="50"></div>
+            <div class="field"><label for="eQueries">Documents extracted / day <output id="oQueries"></output></label><input type="range" id="eQueries" min="0" max="500" step="5" value="20"></div>
             <div class="field"><label for="eNight">Autonomy without sun <output id="oNight"></output></label><input type="range" id="eNight" min="1" max="15" step="0.5" value="14"></div>
             <div class="field"><label for="eDens">Cell density <output id="oDens"></output></label><input type="range" id="eDens" min="100" max="300" step="10" value="200"></div>
             <div class="field"><label for="eMargin">Margin (DoD, aging) <output id="oMargin"></output></label><input type="range" id="eMargin" min="0" max="100" step="5" value="0"></div>
@@ -233,7 +249,7 @@
           <div class="stack">
             <div class="kpis" id="eKpis"></div>
             <div class="panel">
-              <div class="panel-h"><h3>Battery mass versus queries/day</h3><div class="legend"><span><i class="k line1"></i>Always on</span><span><i class="k line2"></i>Sleep</span><span><i class="k dot"></i>Current</span></div></div>
+              <div class="panel-h"><h3>Battery mass versus assistant questions/day</h3><div class="legend"><span><i class="k line1"></i>Always on</span><span><i class="k line2"></i>Sleep</span><span><i class="k dot"></i>Current</span></div></div>
               <div id="eChart" class="chart"></div>
             </div>
             <div class="panel">
@@ -298,7 +314,7 @@
 
 <div class="toast" id="toast" hidden></div>
 
-<script src="js/data.js?v=2"></script>
-<script src="js/site.js?v=2"></script>
+<script src="js/data.js?v=3"></script>
+<script src="js/site.js?v=3"></script>
 </body>
 </html>

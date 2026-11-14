@@ -1,0 +1,876 @@
+{
+  "generated_at": "2026-11-14T16:24:39+00:00",
+  "model": "mistral-nemo",
+  "machine": "Apple M3 Pro, 18 GB",
+  "median_seconds": 12.03,
+  "median_prompt_tokens": 5037,
+  "median_output_tokens": 133,
+  "answers": [
+    {
+      "question": "Has any experiment tested the Moon base atmosphere (30 % oxygen or more at 10.2 psi or less)?",
+      "answer": "No experiment has tested the Moon base atmosphere (30% oxygen or more at 10.2 psi or less).",
+      "citations": [],
+      "passages": [
+        {
+          "source": "PSI-20",
+          "text": "ACME BRE (PSI-20), PSI objectives:   1. Observe burning behavior in long-duration microgravity for CH4/N2 and C2H4/N2mixtures on porous circular burners of 25  and 50 mm diameter. Consider O2/N2 ambients with various pressures and ambient O2 concentrations and pressures. NASA - considered atmosphere for human space missions will be examined: 14.7 psia, 21 % oxygen: 10.2 psia, 26.5 %; and 8.2 psia, 34 % oxygen. Emphasize fuel conditions that can be related to a diverse range of condensed fuels."
+        },
+        {
+          "source": "ntrs:20140011099",
+          "text": "BASS (PSI-26), test condition (flight): PMMA sphere, extinction tests. Evidence: Flame sequence of a burning PMMA sphere (1-cm diameter) at 17% oxygen and less than 1 cm/s."
+        },
+        {
+          "source": "PSI-68",
+          "text": "FLEX-2 (PSI-68), Earth benefits: The combustion of liquid fuels is the overwhelming energy source in the transportation sector. Insights gained from these studies can lead to more efficient and cleaner combustion technologies which are crucial for reducing pollution and greenhouse gas emissions. By improving fuel efficiency and developing better fuels, these experiments can contribute to:\n\n  1) More sustainable energy production.\n  2) Future combustor designs with minimal carbon footprint, maximum fuel efficiency and less pollu"
+        },
+        {
+          "source": "PSI-106",
+          "text": "SLICE (PSI-106), PSI objectives: 1. To investigate the structure of laminar diffusion flames in microgravity to understand the stabilizing mechanisms at the flames base."
+        },
+        {
+          "source": "glossary",
+          "text": "Glossary, Exploration atmosphere: 34 % O₂ at 8.2 psi: atmosphere proposed by NASA for habitats with frequent EVAs."
+        },
+        {
+          "source": "ntrs:20150019858",
+          "text": "BASS-II (PSI-25), finding of the paper \"Results from On-Board CSA-CP and CDM Sensor Readings During the Burning and Suppression of Solids II (BASS-II) Experiment in the Microgravity Science Glovebox (MSG)\": The CO versus CO2 followed a linear trend for some datasets, but not for all the different geometries of fuel and flow tested."
+        },
+        {
+          "source": "ntrs:20150008962",
+          "text": "BASS-II (PSI-25), finding of the paper \"Concurrent Flame Growth, Spread and Extinction over Composite Fabric Samples in Low Speed Purely Forced Flow in Microgravity\": Flames spread more slowly across the narrower samples, at lower flow velocities and at lower oxygen percentages."
+        },
+        {
+          "source": "ntrs:20150008962",
+          "text": "BASS-II (PSI-25), finding of the paper \"Concurrent Flame Growth, Spread and Extinction over Composite Fabric Samples in Low Speed Purely Forced Flow in Microgravity\": The quenching speeds were found to be between 1 and 5 cm/s with higher speed in lower oxygen atmosphere."
+        }
+      ],
+      "model": "mistral-nemo",
+      "seconds": 11.59,
+      "prompt_tokens": 5137,
+      "output_tokens": 26,
+      "load_seconds": 0.0,
+      "unverified": []
+    },
+    {
+      "question": "What is the lowest pressure tested at 30 % oxygen or more, and in which experiment?",
+      "answer": "The lowest pressure tested at 30% oxygen or more was 10.3 psi at 34% oxygen in the [PSI-69] FLEX experiment (Test 37, PSI-69_Experimental table_FLEX.csv#row38).",
+      "citations": [
+        {
+          "id": "PSI-69",
+          "title": "FLEX: Flame Extinguishment Experiment",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-69"
+        }
+      ],
+      "passages": [
+        {
+          "source": "ntrs:20140004923",
+          "text": "BASS (PSI-26), test condition (drop_tower): PMMA sheet, microgravity tests. Evidence: This article also presents results from the SDSU NCA for PMMA at 1 atm pressure, opposed oxidizer velocity ranging from 3 to 35 cm/s, oxygen concentration by volume at 21%, 30 %, and 50% and fuel thicknesses of 50 and 75 µm."
+        },
+        {
+          "source": "ntrs:20150019858",
+          "text": "BASS-II (PSI-25), finding of the paper \"Results from On-Board CSA-CP and CDM Sensor Readings During the Burning and Suppression of Solids II (BASS-II) Experiment in the Microgravity Science Glovebox (MSG)\": The CO versus CO2 followed a linear trend for some datasets, but not for all the different geometries of fuel and flow tested."
+        },
+        {
+          "source": "ntrs:20150008962",
+          "text": "BASS-II (PSI-25), finding of the paper \"Concurrent Flame Growth, Spread and Extinction over Composite Fabric Samples in Low Speed Purely Forced Flow in Microgravity\": Flames spread more slowly across the narrower samples, at lower flow velocities and at lower oxygen percentages."
+        },
+        {
+          "source": "PSI-69",
+          "text": "FLEX (PSI-69), test condition (flight): LOI tests at varying pressures and oxygen concentrations. Evidence: Select the test pressure (0.5 − 1.5 atm) for the LOI tests."
+        },
+        {
+          "source": "ntrs:20140006750",
+          "text": "FLEX (PSI-69), test condition (flight): n-decane droplets, 0.5 atm pressure, 21% O2 and 79% N2. Evidence: Figure 1a (R377) corresponds to a n-decane droplet with an initial diameter of 4.03 mm burning in 21% oxygen and 79% nitrogen mixture at 0.5 atm pressure."
+        },
+        {
+          "source": "ntrs:20140006750",
+          "text": "FLEX (PSI-69), test condition (flight): n-decane droplets, 0.5 atm pressure, 25% O2 and 75% N2. Evidence: Figure 1b (R374) shows the combustion characteristics for a 3.79 mm n-decane droplet burning at a slightly increased oxygen concentration of 25% and the rest being nitrogen at 0.5 atm pressure."
+        },
+        {
+          "source": "ntrs:20070017909",
+          "text": "ACME/Flame Design (PSI-10), finding of the paper \"Radiative Extinction of Gaseous Spherical Diffusion Flames in Microgravity\": The extinction temperature was 1100 K at the lowest flow rates and it dropped less than 50 K to 1055 K at 104 mg/s."
+        },
+        {
+          "source": "PSI-100",
+          "text": "SAFFIRE-III (PSI-100), Earth benefits: The Saffire-I experiment provides a new way to study a realistic fire on an exploration vehicle, which has not been possible in the past because the risks are too high. Instruments on an unmanned cargo vessel measure oxygen, carbon dioxide, heat, pressure and flame growth, and two video cameras provide views of the flame. Results determine microgravity flammability limits for several spacecraft materials, help to validate NASA’s material selection criteria, and how microgravity and limited oxyge"
+        }
+      ],
+      "model": "mistral-nemo",
+      "seconds": 9.14,
+      "prompt_tokens": 5230,
+      "output_tokens": 60,
+      "load_seconds": 0.0,
+      "unverified": []
+    },
+    {
+      "question": "Which experiments burned solid materials, and at what flow speeds?",
+      "answer": "Experiments that burned solid materials include:\n- [PSI-25] BASS-II: Cast PMMA rods burned at flow speeds up to 60.3 cm/s [ntrs:20160012691]\n- [PSI-26] BASS: Burned cotton-fiberglass fabric, Nomex fabric, Ultem, Ultem® 1000, Nomex®, Nomex-III®, PMMA, cellulose at flow speeds ranging from 1 to 40 cm/s [PSI-26]\n- [PSI-98] SAFFIRE-I: Burned PMMA, Nomex, SIBAL, silicone, Composite fabric at flow speeds ranging from 20 to 200 cm/s [PSI-98]\n- [PSI-99] SAFFIRE-II: Burned PMMA, Nomex, SIBAL, silicone at flow speeds ranging from 20 to 30 cm/s [PSI-99]\n- [PSI-100] SAFFIRE-III: Burned SIBAL, SIBAL cloth, Silicone, PMMA, Nomex at a flow velocity of 30 cm/s [PSI-100]",
+      "citations": [
+        {
+          "id": "PSI-25",
+          "title": "BASS-II: Burning and Suppression of Solids - II",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-25"
+        },
+        {
+          "id": "ntrs:20160012691",
+          "title": "Correlation of Normal Gravity Mixed Convection Blowoff Limits with Microgravity Forced Flow Blowoff Limits",
+          "url": "https://ntrs.nasa.gov/citations/20160012691"
+        },
+        {
+          "id": "PSI-26",
+          "title": "BASS: Burning and Suppression of Solids",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-26"
+        },
+        {
+          "id": "PSI-98",
+          "title": "SAFFIRE-I: Spacecraft Fire Safety Experiment-I",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-98"
+        },
+        {
+          "id": "PSI-99",
+          "title": "SAFFIRE-II: Spacecraft Fire Experiment-II",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-99"
+        },
+        {
+          "id": "PSI-100",
+          "title": "SAFFIRE-III: Spacecraft Fire Experiment-III",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-100"
+        }
+      ],
+      "passages": [
+        {
+          "source": "ntrs:20150008961",
+          "text": "BASS-II (PSI-25), finding of the paper \"Microgravity Flammability of PMMA Rods in Concurrent Flow\": The solid conduction ratio falls off as Peclet number is reduced"
+        },
+        {
+          "source": "ntrs:20150022421",
+          "text": "SAFFIRE-I (PSI-98), finding of the paper \"Buoyant Effects on the Flammability of Silicone Samples Planned for the Spacecraft Fire Experiment (Saffire)\": The flame spread rate was independent of flow speed at higher flow speeds for thin-fuel samples."
+        },
+        {
+          "source": "PSI-100",
+          "text": "SAFFIRE-III (PSI-100), test condition (flight): Saffire III experiments on Cygnus. Evidence: Experiments were conducted at a flow velocity of 30 cm/s"
+        },
+        {
+          "source": "PSI-62",
+          "text": "PSI-62 (PSI-62), PSI objectives: To overcome these shortcomings, this PSI grant advanced the use of an unsteady flamelet generated manifold (UFGM) framework that reduced the complexity of reacting systems by mapping them into lower-dimensional manifolds. The research aimed to leverage this methodology to simulate solid fuel combustion processes with high fidelity, using the NASA Burning and Suppression of Solids (BASS and BASS-II) experiments as benchmarks. Ultimately, the long-term goal was to enable accurate prediction of flammability limits for spacecraft materials and to provide a tool that could also serve as a subgrid-scale model in large-eddy simulations of fires, supporting spacecraft safety and hazard mitigation."
+        },
+        {
+          "source": "ntrs:20140006750",
+          "text": "FLEX (PSI-69), finding of the paper \"Cool-flame Extinction During N-Alkane Droplet Combustion in Microgravity\": Smaller droplets burned to completion or disruptively extinguished"
+        },
+        {
+          "source": "ntrs:20160012691",
+          "text": "BASS-II (PSI-25), test condition (ground): Cast PMMA rods, ground tests. Evidence: Cast polymethylmethacrylate (PMMA) rods of diameters ranging from 0.635 cm to 3.81 cm were burned at oxygen concentrations ranging from 14 to 18% by volume. The maximum flow rate was 165 SLPM (60.3 cm/s average tube speed)."
+        },
+        {
+          "source": "ntrs:20150008962",
+          "text": "BASS-II (PSI-25), finding of the paper \"Concurrent Flame Growth, Spread and Extinction over Composite Fabric Samples in Low Speed Purely Forced Flow in Microgravity\": The quenching speeds were found to be between 1 and 5 cm/s with higher speed in lower oxygen atmosphere."
+        },
+        {
+          "source": "PSI-26",
+          "text": "BASS (PSI-26), PSI objectives:     2.) Assess the effectiveness of an inert, gaseous extinguishing agent (similar to that used on ISS) in putting out flames over different materials, geometries, preheating, and flow."
+        }
+      ],
+      "model": "mistral-nemo",
+      "seconds": 21.73,
+      "prompt_tokens": 5108,
+      "output_tokens": 276,
+      "load_seconds": 0.0,
+      "unverified": []
+    },
+    {
+      "question": "What did FLEX find about the limiting oxygen index of methanol droplets?",
+      "answer": "The Limiting Oxygen Index (LOI) for methanol droplets in microgravity was found to be around 12% to 13% oxygen by volume, as reported in the paper \"Methanol Droplet Combustion in Oxygen-Inert Environments in Microgravity\" for the FLEX investigation [ntrs:20130014061].",
+      "citations": [
+        {
+          "id": "ntrs:20130014061",
+          "title": "Methanol Droplet Combustion in Oxygen-Inert Environments in Microgravity",
+          "url": "https://ntrs.nasa.gov/citations/20130014061"
+        }
+      ],
+      "passages": [
+        {
+          "source": "ntrs:20130014061",
+          "text": "FLEX (PSI-69), finding of the paper \"Methanol Droplet Combustion in Oxygen-Inert Environments in Microgravity\": The limiting oxygen index for methanol in these diluent gases is around 12% to 13% oxygen by volume."
+        },
+        {
+          "source": "glossary",
+          "text": "Glossary, LOI: Limiting Oxygen Index: minimum O₂ fraction that sustains combustion of a material under given conditions."
+        },
+        {
+          "source": "PSI-69",
+          "text": "FLEX (PSI-69), PSI test table fuels/samples: Methanol (157 tests); Heptane (117 tests)"
+        },
+        {
+          "source": "ntrs:20140006750",
+          "text": "FLEX (PSI-69), test condition (flight): n-decane droplets, 0.5 atm pressure, 21% O2 and 79% N2. Evidence: Figure 1a (R377) corresponds to a n-decane droplet with an initial diameter of 4.03 mm burning in 21% oxygen and 79% nitrogen mixture at 0.5 atm pressure."
+        },
+        {
+          "source": "ntrs:20130014061",
+          "text": "FLEX (PSI-69), test condition (flight): Methanol droplet combustion in oxygen-nitrogen-helium at 1 atm. Evidence: Spray and Droplet Results Over one hundred methanol droplet tests in varying diluent concentrations and at primarily two different ambient pressures (0.7 and 1 atm) have been performed to date. In these tests the oxygen concentration varied from 30% to 12% by volume while the carbon dioxide and helium diluent concentrations varied in the range of 0% to 70% by volume and the rest of the inert was nitrogen."
+        },
+        {
+          "source": "ntrs:20130014061",
+          "text": "FLEX (PSI-69), test condition (flight): Methanol droplet combustion in oxygen-nitrogen-carbon dioxide at 0.7 atm. Evidence: Spray and Droplet Results Over one hundred methanol droplet tests in varying diluent concentrations and at primarily two different ambient pressures (0.7 and 1 atm) have been performed to date. In these tests the oxygen concentration varied from 30% to 12% by volume while the carbon dioxide and helium diluent concentrations varied in the range of 0% to 70% by volume and the rest of the inert was nitrogen."
+        },
+        {
+          "source": "PSI-69",
+          "text": "FLEX (PSI-69), PSI summary: The primary hypothesis is that microgravity conditions fundamentally alter combustion and extinction characteristics of liquid fuel droplets."
+        },
+        {
+          "source": "ntrs:20140006750",
+          "text": "FLEX (PSI-69), test condition (flight): n-decane droplets, 0.5 atm pressure, 25% O2 and 75% N2. Evidence: Figure 1b (R374) shows the combustion characteristics for a 3.79 mm n-decane droplet burning at a slightly increased oxygen concentration of 25% and the rest being nitrogen at 0.5 atm pressure."
+        }
+      ],
+      "model": "mistral-nemo",
+      "seconds": 9.77,
+      "prompt_tokens": 5135,
+      "output_tokens": 81,
+      "load_seconds": 0.0,
+      "unverified": []
+    },
+    {
+      "question": "Which experiments are relevant to smoke detection, and what particle sizes did they measure?",
+      "answer": "Experiments relevant to smoke detection include:\n- [PSI-101] SAME-R: Measured particle sizes ranging from 100 to 600 nm, increasing substantially with aging and decreasing air flow [ntrs:20140006585].\n- [PSI-102] SAME: Measured smoke particle sizes typically 50% larger in count mean diameter in low-gravity compared to normal gravity, with resultant sizes below 300 nm [ntrs:20080012612, PSI-102].",
+      "citations": [
+        {
+          "id": "PSI-101",
+          "title": "SAME-R: Smoke Aerosol Measurement Experiment-Reflight",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-101"
+        },
+        {
+          "id": "ntrs:20140006585",
+          "title": "Evaluation of Low-Gravity Smoke Particulate for Spacecraft Fire Detection",
+          "url": "https://ntrs.nasa.gov/citations/20140006585"
+        },
+        {
+          "id": "PSI-102",
+          "title": "SAME: Smoke and Aerosol Measurement Experiment",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-102"
+        },
+        {
+          "id": "ntrs:20080012612",
+          "title": "Spacecraft Fire Detection: Smoke Properties and Transport in Low-Gravity",
+          "url": "https://ntrs.nasa.gov/citations/20080012612"
+        }
+      ],
+      "passages": [
+        {
+          "source": "ntrs:20140006585",
+          "text": "SAME-R (PSI-101), finding of the paper \"Evaluation of Low-Gravity Smoke Particulate for Spacecraft Fire Detection\": Particle sizes increase substantially with aging"
+        },
+        {
+          "source": "ntrs:20140006585",
+          "text": "SAME-R (PSI-101), finding of the paper \"Evaluation of Low-Gravity Smoke Particulate for Spacecraft Fire Detection\": Particle sizes ranged from 100 to 600 nm"
+        },
+        {
+          "source": "ntrs:20140006585",
+          "text": "SAME-R (PSI-101), finding of the paper \"Evaluation of Low-Gravity Smoke Particulate for Spacecraft Fire Detection\": Particle dimensions increase substantially as air flow was decreased"
+        },
+        {
+          "source": "ntrs:20080012612",
+          "text": "SAME (PSI-102), finding of the paper \"Spacecraft Fire Detection: Smoke Properties and Transport in Low-Gravity\": The resultant sizes were all below 300 nm suggesting that discriminating smoke from spacecraft dust possibly could be achieved by detecting in the sub-micrometer range."
+        },
+        {
+          "source": "PSI-101",
+          "text": "SAME-R (PSI-101), PSI summary: Liquid smoke particulate sizes were quantified in low gravity."
+        },
+        {
+          "source": "PSI-102",
+          "text": "SAME (PSI-102), PSI summary: In microgravity, smoke particle growth leads to larger particles compared to normal gravity due to reduced velocities and mixing."
+        },
+        {
+          "source": "ntrs:20080012612",
+          "text": "SAME (PSI-102), finding of the paper \"Spacecraft Fire Detection: Smoke Properties and Transport in Low-Gravity\": Smoke particulate produced in low-gravity was typically 50% larger in count mean diameter than similar conditions in normal gravity."
+        },
+        {
+          "source": "PSI-102",
+          "text": "SAME (PSI-102), PSI objectives: One of the major goals of this investigation was to quantify the sizes that the liquid smoke particulate achieves in low gravity and to relate the droplet size distribution to the smoke generation and smoke transport conditions in the experiment. A numerical code was to be developed to predict the smoke droplet growth as a function of the fuel pyrolysis rate, the thermodynamic properties of the pyrolysis vapor, and the flow environment."
+        }
+      ],
+      "model": "mistral-nemo",
+      "seconds": 12.03,
+      "prompt_tokens": 4955,
+      "output_tokens": 133,
+      "load_seconds": 0.0,
+      "unverified": []
+    },
+    {
+      "question": "Which materials were burned in Saffire-II and what was learned?",
+      "answer": "In SAFFIRE-II [PSI-99], the following materials were burned:\n- PMMA (polymethyl methacrylate)\n- Nomex\n- SIBAL\n- Silicone\n- Composite fabric (75% cotton – 25% fiberglass by mass)\n\nThe experiment determined microgravity flammability limits for these materials [PSI-99, ntrs:20170001636]. It also validated NASA's material selection criteria [PSI-99, ntrs:20200000557].",
+      "citations": [
+        {
+          "id": "PSI-99",
+          "title": "SAFFIRE-II: Spacecraft Fire Experiment-II",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-99"
+        },
+        {
+          "id": "ntrs:20170001636",
+          "title": "The Spacecraft Fire Experiment (Saffire) - Objectives, Development and Status",
+          "url": "https://ntrs.nasa.gov/citations/20170001636"
+        },
+        {
+          "id": "ntrs:20200000557",
+          "title": "Buoyancy Effects on Concurrent Flame Spread Over Thick PMMA",
+          "url": "https://ntrs.nasa.gov/citations/20200000557"
+        }
+      ],
+      "passages": [
+        {
+          "source": "PSI-99",
+          "text": "SAFFIRE-II (PSI-99), PSI summary: Determined microgravity flammability limits for several spacecraft materials"
+        },
+        {
+          "source": "ntrs:20170001636",
+          "text": "SAFFIRE-II (PSI-99), finding of the paper \"The Spacecraft Fire Experiment (Saffire) - Objectives, Development and Status\": The selected materials have normal gravity Maximum Oxygen Concentration (MOC) flammability limits that indicate they will burn in normal gravity just above and below 21% O2 by volume."
+        },
+        {
+          "source": "PSI-99",
+          "text": "SAFFIRE-II (PSI-99), Earth benefits: The Saffire-II experiment provides a new way to study a realistic fire on an exploration vehicle, which has not been possible in the past because the risks are too high. Instruments on an unmanned cargo vessel measure oxygen, carbon dioxide, heat, pressure and flame growth, and two video cameras provide views of the flame. Results determine microgravity flammability limits for several spacecraft materials, help to validate NASA’s material selection criteria, and how microgravity and limited oxyg"
+        },
+        {
+          "source": "PSI-99",
+          "text": "SAFFIRE-II (PSI-99), test condition (flight): PMMA samples, low-g combustion tests. Evidence: The Saffire-II was conducted at an air flow velocity of either 20 or 30 cm/s"
+        },
+        {
+          "source": "PSI-99",
+          "text": "SAFFIRE-II (PSI-99), PSI objectives: The objectives of SAFFIRE-II are to determine how rapidly a large scale fire grows in low-gravity and to investigate the low-g flammability limits compared to those obtained in NASA’s normal gravity material flammability screening test."
+        },
+        {
+          "source": "PSI-99",
+          "text": "SAFFIRE-II (PSI-99), PSI summary: Validated NASA’s material selection criteria"
+        },
+        {
+          "source": "ntrs:20200000557",
+          "text": "SAFFIRE-II (PSI-99), finding of the paper \"Buoyancy Effects on Concurrent Flame Spread Over Thick PMMA\": The flame brightness is also reduced with pressure, becoming weaker as pressure is reduced."
+        },
+        {
+          "source": "PSI-99",
+          "text": "SAFFIRE-II (PSI-99): Spacecraft Fire Experiment-II. Microgravity Investigation on Cygnus Spacecraft; hardware: Cygnus Pressurized Cargo Module  SAFFIRE; period 09-30-2016 to 04-01-2017; test type: combustion."
+        }
+      ],
+      "model": "mistral-nemo",
+      "seconds": 12.85,
+      "prompt_tokens": 5007,
+      "output_tokens": 139,
+      "load_seconds": 0.0,
+      "unverified": []
+    },
+    {
+      "question": "Which experiments used oxygen concentrations above 21 %?",
+      "answer": "[PSI-26] BASS up to 50 %; [PSI-68] FLEX-2 up to 40 %; [PSI-20] ACME BRE up to 40 %; [PSI-10] ACME/Flame Design up to 40 %; [PSI-69] FLEX up to 34 %; [PSI-23] ACME s-Flame up to 30 %; [PSI-25] BASS-II up to 22.2 %; [PSI-99] SAFFIRE-II up to 22.1 %; [PSI-98] SAFFIRE-I up to 21.7 %.",
+      "citations": [
+        {
+          "id": "PSI-26",
+          "title": "BASS: Burning and Suppression of Solids",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-26"
+        },
+        {
+          "id": "PSI-68",
+          "title": "FLEX-2: Flame Extinguishment Experiment - 2",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-68"
+        },
+        {
+          "id": "PSI-20",
+          "title": "ACME BRE: Advanced Combustion via Microgravity Experiments - Burning Rate Emulator",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-20"
+        },
+        {
+          "id": "PSI-10",
+          "title": "ACME/Flame Design: Advanced Combustion via Microgravity Experiments / Flame Design",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-10"
+        },
+        {
+          "id": "PSI-69",
+          "title": "FLEX: Flame Extinguishment Experiment",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-69"
+        },
+        {
+          "id": "PSI-23",
+          "title": "ACME s-Flame: Advanced Combustion via Microgravity Experiments-Structure and Response of Spherical Diffusion Flames",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-23"
+        },
+        {
+          "id": "PSI-25",
+          "title": "BASS-II: Burning and Suppression of Solids - II",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-25"
+        },
+        {
+          "id": "PSI-99",
+          "title": "SAFFIRE-II: Spacecraft Fire Experiment-II",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-99"
+        },
+        {
+          "id": "PSI-98",
+          "title": "SAFFIRE-I: Spacecraft Fire Safety Experiment-I",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-98"
+        }
+      ],
+      "passages": [
+        {
+          "source": "ntrs:20150008961",
+          "text": "BASS-II (PSI-25), test condition (flight): PMMA rod, low-oxygen blowoff tests. Evidence: Oxygen concentrations in the MSG working volume were varied during the testing from ambient ISS oxygen levels (~ 21% O2) down to ~14% O2"
+        },
+        {
+          "source": "ntrs:20170001636",
+          "text": "SAFFIRE-II (PSI-99), finding of the paper \"The Spacecraft Fire Experiment (Saffire) - Objectives, Development and Status\": The selected materials have normal gravity Maximum Oxygen Concentration (MOC) flammability limits that indicate they will burn in normal gravity just above and below 21% O2 by volume."
+        },
+        {
+          "source": "PSI-20",
+          "text": "ACME BRE (PSI-20), PSI objectives:   1. Observe burning behavior in long-duration microgravity for CH4/N2 and C2H4/N2mixtures on porous circular burners of 25  and 50 mm diameter. Consider O2/N2 ambients with various pressures and ambient O2 concentrations and pressures. NASA - considered atmosphere for human space missions will be examined: 14.7 psia, 21 % oxygen: 10.2 psia, 26.5 %; and 8.2 psia, 34 % oxygen. Emphasize fuel conditions that can be related to a diverse range of condensed fuels."
+        },
+        {
+          "source": "PSI-69",
+          "text": "FLEX (PSI-69), test condition (flight): LOI tests at varying pressures and oxygen concentrations. Evidence: Select the test pressure (0.5 − 1.5 atm) for the LOI tests."
+        },
+        {
+          "source": "ntrs:20170000230",
+          "text": "SAFFIRE-I (PSI-98), finding of the paper \"Operation and Development Status of the Spacecraft Fire Experiments (Saffire)\": The flame propagates or self-extinguishes in the composite fabric sample in 21% O2 mole fraction."
+        },
+        {
+          "source": "ntrs:20140006750",
+          "text": "FLEX (PSI-69), test condition (flight): n-decane droplets, 0.5 atm pressure, 21% O2 and 79% N2. Evidence: Figure 1a (R377) corresponds to a n-decane droplet with an initial diameter of 4.03 mm burning in 21% oxygen and 79% nitrogen mixture at 0.5 atm pressure."
+        },
+        {
+          "source": "ntrs:20140004923",
+          "text": "BASS (PSI-26), finding of the paper \"Opposed-Flow Flame Spread in a Narrow Channel Apparatus over Thin PMMA Sheets\": Oxygen concentration plays a large role in the flame spread rate, with an optimal relative velocity that maximizes the flame spread rate at 21% oxygen concentration."
+        },
+        {
+          "source": "glossary",
+          "text": "Glossary, Smoke point: Flame length above which soot is emitted from the tip. Measures sooting tendency."
+        }
+      ],
+      "model": "mistral-nemo",
+      "seconds": 15.87,
+      "prompt_tokens": 5121,
+      "output_tokens": 169,
+      "load_seconds": 0.0,
+      "unverified": []
+    },
+    {
+      "question": "How does reduced pressure affect flame spread according to the data?",
+      "answer": "According to the data, reduced pressure slows down flame spread over PMMA surfaces, approaching that in microgravity [ntrs:20200000557].",
+      "citations": [
+        {
+          "id": "ntrs:20200000557",
+          "title": "Buoyancy Effects on Concurrent Flame Spread Over Thick PMMA",
+          "url": "https://ntrs.nasa.gov/citations/20200000557"
+        }
+      ],
+      "passages": [
+        {
+          "source": "ntrs:20200000557",
+          "text": "SAFFIRE-II (PSI-99), finding of the paper \"Buoyancy Effects on Concurrent Flame Spread Over Thick PMMA\": The flame brightness is also reduced with pressure, becoming weaker as pressure is reduced."
+        },
+        {
+          "source": "ntrs:20200000557",
+          "text": "SAFFIRE-II (PSI-99), finding of the paper \"Buoyancy Effects on Concurrent Flame Spread Over Thick PMMA\": Reductions of pressure slow down the flame spread over the PMMA surface approaching that in microgravity."
+        },
+        {
+          "source": "ntrs:20140004923",
+          "text": "BASS (PSI-26), finding of the paper \"Opposed-Flow Flame Spread in a Narrow Channel Apparatus over Thin PMMA Sheets\": Flame spread rates for PMMA in the SDSU NCA agree well with true microgravity data except at very low relative velocities and for a few thick fuel data points."
+        },
+        {
+          "source": "PSI-102",
+          "text": "SAME (PSI-102), PSI summary: The SAME experiment provides quantitative data on the sensitivity of detectors to reduced gravity smokes."
+        },
+        {
+          "source": "ntrs:20140004923",
+          "text": "BASS (PSI-26), finding of the paper \"Opposed-Flow Flame Spread in a Narrow Channel Apparatus over Thin PMMA Sheets\": Flame spread rate for 75 µm PMMA at 1 atm pressure and 21% oxygen concentration in the SDSU NCA is 0.216 cm/s with an R-squared correlation coefficient of 0.9995."
+        },
+        {
+          "source": "ntrs:20150022421",
+          "text": "SAFFIRE-I (PSI-98), finding of the paper \"Buoyant Effects on the Flammability of Silicone Samples Planned for the Spacecraft Fire Experiment (Saffire)\": The flame spread rate was faster in upward flame spread compared to downward flame spread for silicone samples."
+        },
+        {
+          "source": "ntrs:20140004923",
+          "text": "BASS (PSI-26), finding of the paper \"Opposed-Flow Flame Spread in a Narrow Channel Apparatus over Thin PMMA Sheets\": Oxygen concentration plays a large role in the flame spread rate, with an optimal relative velocity that maximizes the flame spread rate at 21% oxygen concentration."
+        },
+        {
+          "source": "ntrs:20150008961",
+          "text": "BASS-II (PSI-25), finding of the paper \"Microgravity Flammability of PMMA Rods in Concurrent Flow\": Flame spread was not observed below 16.4 % O2 in opposed flow flame spread rods tests"
+        }
+      ],
+      "model": "mistral-nemo",
+      "seconds": 6.68,
+      "prompt_tokens": 5037,
+      "output_tokens": 41,
+      "load_seconds": 0.0,
+      "unverified": []
+    },
+    {
+      "question": "Which fuels were burned as droplets in FLEX, FLEX-2 and CFI?",
+      "answer": "Fuels burned as droplets in FLEX, FLEX-2, and CFI were:\n- FLEX (PSI-69): Methanol (157 tests), Heptane (117 tests) [PSI-69]\n- FLEX-2 (PSI-68): Not explicitly stated in the provided data.\n- CFI (PSI-39): [.60]/[.40] C12H26/iso-dodecane (41 tests), [.75]/[.25] C12H26/iso-dodecane (24 tests), C12H26 (22 tests) [PSI-39]",
+      "citations": [
+        {
+          "id": "PSI-69",
+          "title": "FLEX: Flame Extinguishment Experiment",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-69"
+        },
+        {
+          "id": "PSI-39",
+          "title": "CFI: Cool Flames Investigation",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-39"
+        }
+      ],
+      "passages": [
+        {
+          "source": "ntrs:20140006750",
+          "text": "FLEX (PSI-69), finding of the paper \"Cool-flame Extinction During N-Alkane Droplet Combustion in Microgravity\": Smaller droplets burned to completion or disruptively extinguished"
+        },
+        {
+          "source": "PSI-68",
+          "text": "FLEX-2 (PSI-68), PSI objectives:   1. Investigate the role of liquid-phase mixing on the burning characteristics of bi-component fuel droplets."
+        },
+        {
+          "source": "PSI-69",
+          "text": "FLEX (PSI-69), PSI summary: The primary hypothesis is that microgravity conditions fundamentally alter combustion and extinction characteristics of liquid fuel droplets."
+        },
+        {
+          "source": "ntrs:20140006750",
+          "text": "FLEX (PSI-69), test condition (flight): n-decane droplets, 0.5 atm pressure, 17% O2 and 83% N2. Evidence: 17%O2 and 83%N2 mixture at 0.5 atm"
+        },
+        {
+          "source": "ntrs:20140006750",
+          "text": "FLEX (PSI-69), finding of the paper \"Cool-flame Extinction During N-Alkane Droplet Combustion in Microgravity\": Large n-alkane droplets exhibited quasi-steady low-temperature burning and extinction following radiative extinction of the visible flame"
+        },
+        {
+          "source": "PSI-69",
+          "text": "FLEX (PSI-69), PSI test table fuels/samples: Methanol (157 tests); Heptane (117 tests)"
+        },
+        {
+          "source": "PSI-39",
+          "text": "CFI (PSI-39), PSI test table fuels/samples: [.60]/[.40] C12H26/iso-dodecane (41 tests); [.75]/[.25] C12H26/iso-dodecane (24 tests); C12H26 (22 tests)"
+        },
+        {
+          "source": "glossary",
+          "text": "Glossary, MDCA: Multi-user Droplet Combustion Apparatus: CIR insert for isolated droplet combustion (FLEX, FLEX-2, CFI)."
+        }
+      ],
+      "model": "mistral-nemo",
+      "seconds": 13.84,
+      "prompt_tokens": 4926,
+      "output_tokens": 156,
+      "load_seconds": 0.0,
+      "unverified": []
+    },
+    {
+      "question": "What is a cool flame and which experiments observed one?",
+      "answer": "A cool flame is defined as low-temperature oxidation with almost no visible emission, which can persist after the hot flame goes out, posing a re-ignition risk [glossary]. Several experiments observed cool flames:\n\n- [PSI-39] CFI observed cool flames and analyzed their behavior under helium dilution [PSI-39].\n- [PSI-10] ACME/Flame Design experiment also observed cool flames, as part of its combustion tests [PSI-10].",
+      "citations": [
+        {
+          "id": "glossary",
+          "title": "Dashboard glossary",
+          "url": null
+        },
+        {
+          "id": "PSI-39",
+          "title": "CFI: Cool Flames Investigation",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-39"
+        },
+        {
+          "id": "PSI-10",
+          "title": "ACME/Flame Design: Advanced Combustion via Microgravity Experiments / Flame Design",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-10"
+        }
+      ],
+      "passages": [
+        {
+          "source": "PSI-142",
+          "text": "PSI-142 (PSI-142), PSI objectives:     3) Verify the phenomena observed on the ISS flame extinguishment experiments."
+        },
+        {
+          "source": "PSI-142",
+          "text": "PSI-142 (PSI-142), PSI objectives:     5) Extend the cool flame experiments from the original ISS droplet experiments to a more general ground-based combustion system involving radiation, diffusion, convection, and low-temperature chemistry while maintaining a one-dimensional geometry."
+        },
+        {
+          "source": "ntrs:20150008961",
+          "text": "BASS-II (PSI-25), finding of the paper \"Microgravity Flammability of PMMA Rods in Concurrent Flow\": Flame spread was not observed below 16.4 % O2 in opposed flow flame spread rods tests"
+        },
+        {
+          "source": "PSI-20",
+          "text": "ACME BRE (PSI-20), PSI summary: Quasi-steady burning observed in microgravity for various condensed-phase materials"
+        },
+        {
+          "source": "PSI-159",
+          "text": "ACME CFI-G (PSI-159): Advanced Combustion via Microgravity Experiments / Cool Flames Investigation with Gases. Microgravity Investigation on International Space Station (ISS); hardware: ACME  Combustion Integrated Rack (CIR); period not reported; test type: combustion."
+        },
+        {
+          "source": "PSI-39",
+          "text": "CFI (PSI-39), PSI objectives:     2) Analyze the effects of helium dilution on cool flame behavior."
+        },
+        {
+          "source": "glossary",
+          "text": "Glossary, Cool flame: Low-temperature oxidation with almost no visible emission. It can persist after the hot flame goes out (re-ignition risk)."
+        },
+        {
+          "source": "PSI-10",
+          "text": "ACME/Flame Design (PSI-10): Advanced Combustion via Microgravity Experiments / Flame Design. Microgravity Investigation on International Space Station (ISS); hardware: Advanced Combustion via Microgravity Experiments (ACME)  Combustion Integrated Rack (CIR)  Reconfiguration of Combustion Integrated Rack (CIR); period 01-14-1999 to 04-30-2025; test type: combustion."
+        }
+      ],
+      "model": "mistral-nemo",
+      "seconds": 10.28,
+      "prompt_tokens": 4927,
+      "output_tokens": 104,
+      "load_seconds": 0.0,
+      "unverified": [
+        {
+          "sentence": "- [PSI-10] ACME/Flame Design experiment also observed cool flames, as part of its combustion tests [PSI-10].",
+          "not_in_sources": [
+            "cool",
+            "part"
+          ]
+        }
+      ]
+    },
+    {
+      "question": "What results exist on fire suppression or extinguishment?",
+      "answer": "The following investigations studied fire suppression or extinguishment:\n\n- [PSI-25] BASS-II: Results contribute to combustion computational models used in fire detection and suppression systems design [PSI-25].\n- [PSI-69] FLEX: Insights contribute to improved fire safety protocols for future space missions, including fire suppression methods [PSI-69].\n- [PSI-101] SAME-R: Results can lead to technology for an advanced fire detector for future spacecraft, which could aid in fire suppression [PSI-101].\n- [PSI-60] PSI-60: Study enhances understanding of combustion, supporting safer fire detection and suppression technologies critical for long-duration missions [PSI-60].",
+      "citations": [
+        {
+          "id": "PSI-25",
+          "title": "BASS-II: Burning and Suppression of Solids - II",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-25"
+        },
+        {
+          "id": "PSI-69",
+          "title": "FLEX: Flame Extinguishment Experiment",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-69"
+        },
+        {
+          "id": "PSI-101",
+          "title": "SAME-R: Smoke Aerosol Measurement Experiment-Reflight",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-101"
+        },
+        {
+          "id": "PSI-60",
+          "title": "PSI-60: Computational and Experimental Analysis of SPICE Data Sets",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-60"
+        }
+      ],
+      "passages": [
+        {
+          "source": "PSI-25",
+          "text": "BASS-II (PSI-25), PSI objectives: BASS-II results contribute to the combustion computational models used in the design of fire detection and suppression systems in microgravity and on Earth."
+        },
+        {
+          "source": "PSI-101",
+          "text": "SAME-R (PSI-101), Earth benefits: Along with the results from the original SAME investigation, the results from SAME-R can lead to technology for an advanced fire detector for future spacecraft that will be used for long duration missions. SAME will provide quantitative data on the sensitivity of these detectors to reduced gravity smokes that will allow evaluation of the adequacy of these existing technologies using relevant data. The current Fire Prevention, Detection, and Suppression (FPDS) program plan allows for the re-evalu"
+        },
+        {
+          "source": "PSI-101",
+          "text": "SAME-R (PSI-101), PSI summary: The results can lead to technology for an advanced fire detector for future spacecraft."
+        },
+        {
+          "source": "PSI-60",
+          "text": "PSI-60 (PSI-60), Earth benefits: This study sought to enhance understanding of soot formation, flame structure, and radiative transport under microgravity and normal gravity, improving predictive models for combustion in both spacecraft and terrestrial systems. For space applications, the results support safer fire detection, suppression, and cleaner combustion technologies critical for long-duration missions. On Earth, the insights help reduce pollutant emissions, optimize combustion efficiency, and inform the design of cleane"
+        },
+        {
+          "source": "ntrs:20150019858",
+          "text": "BASS-II (PSI-25), finding of the paper \"Results from On-Board CSA-CP and CDM Sensor Readings During the Burning and Suppression of Solids II (BASS-II) Experiment in the Microgravity Science Glovebox (MSG)\": The majority of the tests had heat release rates well below 100 Watts."
+        },
+        {
+          "source": "ntrs:20150019858",
+          "text": "BASS-II (PSI-25), finding of the paper \"Results from On-Board CSA-CP and CDM Sensor Readings During the Burning and Suppression of Solids II (BASS-II) Experiment in the Microgravity Science Glovebox (MSG)\": The global equivalence ratio for the tests is estimated to be fuel rich: 1.3 on average using mass loss and oxygen consumption data."
+        },
+        {
+          "source": "ntrs:20150019858",
+          "text": "BASS-II (PSI-25), finding of the paper \"Results from On-Board CSA-CP and CDM Sensor Readings During the Burning and Suppression of Solids II (BASS-II) Experiment in the Microgravity Science Glovebox (MSG)\": The CO versus CO2 followed a linear trend for some datasets, but not for all the different geometries of fuel and flow tested."
+        },
+        {
+          "source": "PSI-69",
+          "text": "FLEX (PSI-69), Earth benefits: The research impacts and Earth benefits of the FLEX mission are significant and multifaceted. By enhancing our understanding of microgravity combustion, the mission directly contributes to improved fire safety protocols for future space missions, ensuring the safety of crew members in environments where traditional fire suppression methods may be ineffective. On Earth, the insights gained from these experiments have the potential to advance fire safety in confined and reduced-gravity environment"
+        }
+      ],
+      "model": "mistral-nemo",
+      "seconds": 15.28,
+      "prompt_tokens": 5159,
+      "output_tokens": 161,
+      "load_seconds": 0.0,
+      "unverified": [
+        {
+          "sentence": "- [PSI-101] SAME-R: Results can lead to technology for an advanced fire detector for future spacecraft, which could aid in fire suppression [PSI-101].",
+          "not_in_sources": [
+            "aid"
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Which investigations have no oxygen or pressure data?",
+      "answer": "Investigations with no oxygen data: [PSI-21], [PSI-22], [PSI-47], [PSI-60], [PSI-62], [PSI-100], [PSI-101], [PSI-102], [PSI-106], [PSI-107], [PSI-115], [PSI-142], [PSI-159].\nInvestigations with no pressure data: [PSI-20], [PSI-21], [PSI-22], [PSI-23], [PSI-25], [PSI-47], [PSI-60], [PSI-62], [PSI-98], [PSI-100], [PSI-101], [PSI-102], [PSI-106], [PSI-107], [PSI-115], [PSI-142], [PSI-159].",
+      "citations": [
+        {
+          "id": "PSI-21",
+          "title": "ACME CLD Flame: Advanced Combustion via Microgravity Experiments / Coflow Laminar Diffusion Flame",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-21"
+        },
+        {
+          "id": "PSI-22",
+          "title": "ACME E-FIELD Flames: Advanced Combustion via Microgravity Experiments Electric-Field Effects on Laminar Diffusion Flames",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-22"
+        },
+        {
+          "id": "PSI-47",
+          "title": "DAFT / DAFT-2: Dust and Aerosol Measurement Feasibility Test / Dust and Aerosol Measurement Feasibility Test-2",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-47"
+        },
+        {
+          "id": "PSI-60",
+          "title": "PSI-60: Computational and Experimental Analysis of SPICE Data Sets",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-60"
+        },
+        {
+          "id": "PSI-62",
+          "title": "PSI-62: Concurrent Flame Spread Modeling using Flamelet Generated Manifolds in Microgravity with Comparison to BASS Experiments using Two-Color Tomography",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-62"
+        },
+        {
+          "id": "PSI-100",
+          "title": "SAFFIRE-III: Spacecraft Fire Experiment-III",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-100"
+        },
+        {
+          "id": "PSI-101",
+          "title": "SAME-R: Smoke Aerosol Measurement Experiment-Reflight",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-101"
+        },
+        {
+          "id": "PSI-102",
+          "title": "SAME: Smoke and Aerosol Measurement Experiment",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-102"
+        },
+        {
+          "id": "PSI-106",
+          "title": "SLICE: Structure and Liftoff In Combustion Experiment",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-106"
+        },
+        {
+          "id": "PSI-107",
+          "title": "SPICE: Smoke Point In Co-flow Experiment",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-107"
+        },
+        {
+          "id": "PSI-115",
+          "title": "PSI-115: Utilization of the Smoke Aerosol Measurement Experiment Data for Advanced Modeling and Simulation of Smoke Generation in Micro-Gravity",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-115"
+        },
+        {
+          "id": "PSI-142",
+          "title": "PSI-142: Quantitative Studies of Cool Flame Transitions at Radiation / Stretch Extinction Using Counterflow Flames",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-142"
+        },
+        {
+          "id": "PSI-159",
+          "title": "ACME CFI-G: Advanced Combustion via Microgravity Experiments / Cool Flames Investigation with Gases",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-159"
+        },
+        {
+          "id": "PSI-20",
+          "title": "ACME BRE: Advanced Combustion via Microgravity Experiments - Burning Rate Emulator",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-20"
+        },
+        {
+          "id": "PSI-23",
+          "title": "ACME s-Flame: Advanced Combustion via Microgravity Experiments-Structure and Response of Spherical Diffusion Flames",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-23"
+        },
+        {
+          "id": "PSI-25",
+          "title": "BASS-II: Burning and Suppression of Solids - II",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-25"
+        },
+        {
+          "id": "PSI-98",
+          "title": "SAFFIRE-I: Spacecraft Fire Safety Experiment-I",
+          "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-98"
+        }
+      ],
+      "passages": [
+        {
+          "source": "glossary",
+          "text": "Glossary, LUCI / FM2: Planned partial-gravity combustion tests. No data in PSI yet."
+        },
+        {
+          "source": "PSI-21",
+          "text": "ACME CLD Flame (PSI-21), PSI objectives: In order to provide the experimental data needed to allow rigorous testing of computational models at the extremes of the fuel dilution spectrum, we have the following objectives:"
+        },
+        {
+          "source": "PSI-69",
+          "text": "FLEX (PSI-69), test condition (flight): LOI tests at varying pressures and oxygen concentrations. Evidence: Select the test pressure (0.5 − 1.5 atm) for the LOI tests."
+        },
+        {
+          "source": "ntrs:20170001636",
+          "text": "SAFFIRE-II (PSI-99), finding of the paper \"The Spacecraft Fire Experiment (Saffire) - Objectives, Development and Status\": The selected materials have normal gravity Maximum Oxygen Concentration (MOC) flammability limits that indicate they will burn in normal gravity just above and below 21% O2 by volume."
+        },
+        {
+          "source": "ntrs:20140006750",
+          "text": "FLEX (PSI-69), test condition (flight): n-decane droplets, 0.5 atm pressure, 21% O2 and 79% N2. Evidence: Figure 1a (R377) corresponds to a n-decane droplet with an initial diameter of 4.03 mm burning in 21% oxygen and 79% nitrogen mixture at 0.5 atm pressure."
+        },
+        {
+          "source": "ntrs:20140006750",
+          "text": "FLEX (PSI-69), test condition (flight): n-decane droplets, 0.5 atm pressure, 25% O2 and 75% N2. Evidence: Figure 1b (R374) shows the combustion characteristics for a 3.79 mm n-decane droplet burning at a slightly increased oxygen concentration of 25% and the rest being nitrogen at 0.5 atm pressure."
+        },
+        {
+          "source": "glossary",
+          "text": "Glossary, Cygnus: Cargo spacecraft. Saffire ran after it undocked from the ISS, with no risk to the crew."
+        },
+        {
+          "source": "ntrs:20160012691",
+          "text": "BASS-II (PSI-25), finding of the paper \"Correlation of Normal Gravity Mixed Convection Blowoff Limits with Microgravity Forced Flow Blowoff Limits\": Each boundary is approximately linear with flow, with the exception of the 14% oxygen data."
+        }
+      ],
+      "model": "mistral-nemo",
+      "seconds": 19.26,
+      "prompt_tokens": 5004,
+      "output_tokens": 243,
+      "load_seconds": 0.0,
+      "unverified": []
+    },
+    {
+      "question": "What was the ignition temperature of Nomex in Saffire-III?",
+      "answer": "No ignition temperature data for Nomex in SAFFIRE-III was found in the provided facts or passages.",
+      "citations": [],
+      "passages": [
+        {
+          "source": "PSI-100",
+          "text": "SAFFIRE-III (PSI-100), PSI objectives: The objectives of this investigation were to:"
+        },
+        {
+          "source": "PSI-100",
+          "text": "SAFFIRE-III (PSI-100), PSI summary: Determined microgravity flammability limits for SIBAL"
+        },
+        {
+          "source": "PSI-100",
+          "text": "SAFFIRE-III (PSI-100), PSI summary: Validated NASA’s material selection criteria"
+        },
+        {
+          "source": "PSI-100",
+          "text": "SAFFIRE-III (PSI-100), PSI test table fuels/samples: SIBAL Fabric (2 tests)"
+        },
+        {
+          "source": "PSI-100",
+          "text": "SAFFIRE-III (PSI-100), test condition (flight): Saffire III experiments on Cygnus. Evidence: Experiments were conducted at a flow velocity of 30 cm/s"
+        },
+        {
+          "source": "PSI-100",
+          "text": "SAFFIRE-III (PSI-100): Spacecraft Fire Experiment-III. Microgravity Investigation on International Space Station (ISS); hardware: Saffire III enclosure in Cygnus; period 04-18-2017; test type: combustion."
+        },
+        {
+          "source": "ntrs:20170001636",
+          "text": "SAFFIRE-III (PSI-100), finding of the paper \"The Spacecraft Fire Experiment (Saffire) - Objectives, Development and Status\": SIBAL cloth burns like cotton but maintains structural integrity after the cotton is consumed."
+        },
+        {
+          "source": "PSI-100",
+          "text": "SAFFIRE-III (PSI-100), PSI objectives: (1) determine how rapidly a large scale fire grows in low-gravity and (2) investigate the low-g flammability limits compared to those obtained in NASA’s normal gravity material flammability screening test."
+        }
+      ],
+      "model": "mistral-nemo",
+      "seconds": 4.61,
+      "prompt_tokens": 4852,
+      "output_tokens": 23,
+      "load_seconds": 0.0,
+      "unverified": []
+    }
+  ]
+}

@@ -3,6 +3,9 @@
 Joins, per investigation: PSI metadata, LLM extraction (fields + conditions
 with evidence), and, if present locally, parsed PSI test tables.
 
+Pre-computed assistant answers (data/ask/demo.json, from pipeline.ask.demo)
+are included as "ask", so the public dashboard can show them without an LLM.
+
 PSI test tables (parsed from files downloaded from PSI) are included with
 --include-tables, which the GitHub Pages build uses. Every table point keeps
 its source file and row.
@@ -16,6 +19,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -50,6 +54,27 @@ def point(o2: dict | None, p: dict | None, flow: dict | None, **meta) -> dict:
             "flow_range": [flow["min"], flow["max"]] if flow else None, **meta}
 
 
+# Data completeness, shared by the dashboard (Completeness view) and the assistant.
+COMPLETENESS_FIELDS = ["o2", "pressure", "flow", "fuel", "period", "test_table", "paper_findings", "linked_source"]
+
+
+def completeness(points: list[dict], fuels: list, period: list, paper_findings: list, sources: list) -> dict:
+    """Which of the key fields have data. Design envelopes are not tested conditions and do not count."""
+    tested = [p for p in points if p.get("kind") != "design_envelope"]
+    has = lambda k: any(p.get(k) and any(v is not None for v in p[k]) for p in tested)
+    fields = {
+        "o2": has("o2_range"),
+        "pressure": has("p_range"),
+        "flow": has("flow_range"),
+        "fuel": bool(fuels),
+        "period": bool(period[0] and re.search(r"\d{4}", period[0])),
+        "test_table": any(p["origin"] == "table" and p.get("kind") == "test" for p in points),
+        "paper_findings": bool(paper_findings),
+        "linked_source": any(s.get("url") for s in sources),
+    }
+    return {"share": round(sum(fields.values()) / len(fields), 4), "fields": fields}
+
+
 def build(include_tables: bool) -> dict:
     index = load(DATA / "psi" / "index.json", {"investigations": []})
     investigations = []
@@ -70,6 +95,8 @@ def build(include_tables: bool) -> dict:
                              label=f"Test {t.get('test_id')}", source=t.get("source"),
                              kind=t.get("kind", "test"), outcome=t.get("outcome"))
                        for t in table["tests"]]
+        sources = ext.get("sources", [{"id": f"psi:{acc}", "title": rec.get("title"),
+                                       "url": rec.get("source_url")}])
         investigations.append({
             "accession": acc,
             "acronym": rec.get("acronym") or acc,
@@ -87,12 +114,14 @@ def build(include_tables: bool) -> dict:
             "safety_pillars": fields.get("safety_pillars", []),
             "key_findings": fields.get("key_findings", []),
             "paper_findings": fields.get("paper_findings", []),
-            "sources": ext.get("sources", [{"id": f"psi:{acc}", "title": rec.get("title"),
-                                            "url": rec.get("source_url")}]),
+            "sources": sources,
             "conditions": conditions,
             "review_status": ext.get("review_status", "not_extracted"),
             "model": (ext.get("extraction") or {}).get("model"),
             "table_tests": sum(1 for p in points if p["origin"] == "table" and p.get("kind") == "test"),
+            "completeness": completeness(points, fields.get("fuels", []),
+                                         [rec.get("start_date"), rec.get("end_date")],
+                                         fields.get("paper_findings", []), sources),
             "points": points,
         })
     return {
@@ -100,6 +129,7 @@ def build(include_tables: bool) -> dict:
         "includes_psi_tables": include_tables,
         "scenarios": SCENARIOS,
         "investigations": investigations,
+        "ask": load(DATA / "ask" / "demo.json"),
     }
 
 
