@@ -4,6 +4,9 @@ For each investigation:
   1. the PSI metadata record -> descriptive fields + any stated conditions;
   2. each linked NTRS paper (condition-bearing excerpts only) -> more conditions.
 Conditions keep the source they came from, so every number can be cited.
+When PSI links one paper to several investigations, each finding and condition
+from it is kept only for the investigation the paper text attributes it to
+(see pipeline/extract/attribution.py).
 
 Reads  data/psi/investigations/*.json, data/ntrs/links.json, data/raw/ntrs/*.txt
 Writes data/extracted/<accession>.json (review_status = "model_only")
@@ -29,7 +32,7 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
-from pipeline.extract import checks, excerpt, prompt
+from pipeline.extract import attribution, checks, excerpt, prompt
 
 ROOT = Path(__file__).resolve().parents[2]
 PSI = ROOT / "data" / "psi" / "investigations"
@@ -95,6 +98,48 @@ def linked_papers(accession: str) -> list[dict]:
     return papers
 
 
+def paper_owners() -> dict[str, list[tuple[str, str]]]:
+    """ntrs_id -> [(accession, acronym)] of every investigation PSI links the paper to."""
+    path = NTRS / "links.json"
+    if not path.exists():
+        return {}
+    acronyms = {}
+    for p in PSI.glob("PSI-*.json"):
+        rec = json.loads(p.read_text(encoding="utf-8"))
+        acronyms[rec["accession"]] = rec.get("acronym") or rec["accession"]
+    owners: dict[str, list[tuple[str, str]]] = {}
+    for acc, links in json.loads(path.read_text(encoding="utf-8"))["investigations"].items():
+        for link in links:
+            owners.setdefault(link["ntrs_id"], []).append((acc, acronyms.get(acc, acc)))
+    return owners
+
+
+def attribute(acc: str, sid: str, full_text: str, owners: list[tuple[str, str]],
+              findings: list[str], conditions: list[dict], fuels: list[str]
+              ) -> tuple[list[str], list[dict], list[str], list[str]]:
+    """Drop findings, conditions and fuels the shared paper attributes to another investigation."""
+    if len(owners) < 2:
+        return findings, conditions, fuels, []
+    names = dict(owners)
+    warnings = []
+
+    def keep(passage: str, what: str) -> bool:
+        accs = attribution.assign(full_text, passage, owners)
+        if accs is None or acc in accs:
+            return True
+        warnings.append(f"{sid}: {what} attributed to {', '.join(sorted(names[a] for a in accs))} "
+                        f"by the paper text: {passage[:80]!r}")
+        return False
+
+    findings = [f for f in findings if keep(f, "finding")]
+    conditions = [c for c in conditions
+                  if keep(" ".join(c.get("evidence") or []) or c.get("label") or "", "condition")]
+    named = attribution.assign(full_text, "", owners)  # investigations the paper names anywhere
+    if named is not None and acc not in named:
+        fuels = []
+    return findings, conditions, fuels, warnings
+
+
 def fingerprint(rec: dict, papers: list[dict], model: str) -> dict:
     return {"model": model, "prompt_version": prompt.PROMPT_VERSION,
             "source_hash": rec.get("content_hash"),
@@ -112,9 +157,11 @@ def paper_text(paper: dict) -> str:
     return excerpt.select(paper["text_path"].read_text(encoding="utf-8", errors="replace"))
 
 
-def extract_one(rec: dict, papers: list[dict], model: str, stored_runs: list[dict] | None = None) -> dict:
+def extract_one(rec: dict, papers: list[dict], model: str, stored_runs: list[dict] | None = None,
+                owners: dict[str, list[tuple[str, str]]] | None = None) -> dict:
     """Run the LLM on every source, or re-apply the checks to `stored_runs` (no LLM)."""
     acc = rec["accession"]
+    owners = owners or {}
     stored = {r["source"]: r for r in stored_runs or []}
 
     def run_source(instructions, schema, text, sid):
@@ -143,10 +190,14 @@ def extract_one(rec: dict, papers: list[dict], model: str, stored_runs: list[dic
             continue
         pf, pw, pinfo = run_source(prompt.PAPER_INSTRUCTIONS, prompt.PAPER_SCHEMA, text, sid)
         runs.append({**pinfo, "excerpt_chars": len(text)})
-        warnings += pw
-        conditions += pf.get("conditions", [])
-        fuels += pf.get("fuels", [])
-        paper_findings += [{"text": f, "source": sid} for f in pf.get("key_findings", [])]
+        found, conds, pfuels, aw = attribute(
+            acc, sid, paper["text_path"].read_text(encoding="utf-8", errors="replace"),
+            owners.get(paper["ntrs_id"], []),
+            pf.get("key_findings", []), pf.get("conditions", []), pf.get("fuels", []))
+        warnings += pw + aw
+        conditions += conds
+        fuels += pfuels
+        paper_findings += [{"text": f, "source": sid} for f in found]
 
     fields["conditions"] = conditions
     fields["fuels"] = list(dict.fromkeys(fuels))
@@ -190,6 +241,7 @@ def main(argv=None) -> int:
         return 1
 
     OUT.mkdir(parents=True, exist_ok=True)
+    owners = paper_owners()
     done = skipped = 0
     for rec in records:
         papers = [] if args.no_papers else linked_papers(rec["accession"])
@@ -207,7 +259,7 @@ def main(argv=None) -> int:
             skipped += 1
             continue
         try:
-            result = extract_one(rec, papers, model if args.recheck else args.model, stored_runs)
+            result = extract_one(rec, papers, model if args.recheck else args.model, stored_runs, owners)
             if args.recheck:
                 result["extraction"]["extracted_at"] = old["extracted_at"]
                 result["extraction"]["rechecked_at"] = datetime.now(timezone.utc).isoformat(timespec="seconds")

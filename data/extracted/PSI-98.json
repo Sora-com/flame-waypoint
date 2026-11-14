@@ -149,10 +149,6 @@
         "source": "ntrs:20170001636"
       },
       {
-        "text": "The selected materials have normal gravity Maximum Oxygen Concentration (MOC) flammability limits that indicate they will burn in normal gravity just above and below 21% O2 by volume.",
-        "source": "ntrs:20170001636"
-      },
-      {
         "text": "The flame spread rate increased with flow speed for PMMA samples in concurrent flow.",
         "source": "ntrs:20150022421"
       },
@@ -173,6 +169,7 @@
   "warnings": [
     "ntrs:20170001636: [Saffire-I and III, low-speed combustion tests] flow_speed: 53-90 cm/s not in evidence, dropped",
     "ntrs:20170001636: [Saffire-II, low-speed combustion tests] flow_speed: 20-20 cm/s not in evidence, dropped",
+    "ntrs:20170001636: finding attributed to SAFFIRE-II by the paper text: 'The selected materials have normal gravity Maximum Oxygen Concentration (MOC) fl'",
     "ntrs:20150022421: [Saffire I & III, SIBAL fuel, low-oxygen blowoff tests] evidence repaired from source text",
     "ntrs:20150022421: [Saffire II, silicone samples, upward flame spread tests] evidence repaired from source text",
     "ntrs:20170000230: [Saffire-I and -III sample card] oxygen: 0.21-0.21 mole fraction not in evidence, dropped"
@@ -453,6 +450,7 @@
         },
         "excerpt_chars": 2334
       }
-    ]
+    ],
+    "rechecked_at": "2026-11-14T15:35:28+00:00"
   }
 }

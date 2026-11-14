@@ -29,10 +29,7 @@
     "fuels": [
       "n-dodecane",
       "iso-dodecane",
-      "farnesane",
-      "n-heptane",
-      "n-octane",
-      "n-decane"
+      "farnesane"
     ],
     "fuel_phases": [
       "liquid"
@@ -81,77 +78,19 @@
           "Examine the combustion behavior of n-dodecane and mixtures of n-dodecane/iso-dodecane at pressures ranging from 0.25 atm to 5 atm."
         ],
         "source": "psi:PSI-39"
-      },
-      {
-        "label": "n-decane droplets, 0.5 atm pressure, 21% O2 and 79% N2",
-        "context": "flight",
-        "fuel": "n-decane",
-        "oxygen_pct": {
-          "min": 21,
-          "max": 21
-        },
-        "pressure_kpa": {
-          "min": 50.663,
-          "max": 50.663,
-          "original": "0.5-0.5 atm"
-        },
-        "flow_cm_s": null,
-        "evidence": [
-          "Figure 1a (R377) corresponds to a n-decane droplet with an initial diameter of 4.03 mm burning in 21% oxygen and 79% nitrogen mixture at 0.5 atm pressure."
-        ],
-        "source": "ntrs:20140006750"
-      },
-      {
-        "label": "n-decane droplets, 0.5 atm pressure, 25% O2 and 75% N2",
-        "context": "flight",
-        "fuel": "n-decane",
-        "oxygen_pct": {
-          "min": 25,
-          "max": 25
-        },
-        "pressure_kpa": {
-          "min": 50.663,
-          "max": 50.663,
-          "original": "0.5-0.5 atm"
-        },
-        "flow_cm_s": null,
-        "evidence": [
-          "Figure 1b (R374) shows the combustion characteristics for a 3.79 mm n-decane droplet burning at a slightly increased oxygen concentration of 25% and the rest being nitrogen at 0.5 atm pressure."
-        ],
-        "source": "ntrs:20140006750"
-      },
-      {
-        "label": "n-decane droplets, 0.5 atm pressure, 17% O2 and 83% N2",
-        "context": "flight",
-        "fuel": "n-decane",
-        "oxygen_pct": null,
-        "pressure_kpa": {
-          "min": 50.663,
-          "max": 50.663,
-          "original": "0.5-0.5 atm"
-        },
-        "flow_cm_s": null,
-        "evidence": [
-          "17%O2 and 83%N2 mixture at 0.5 atm"
-        ],
-        "source": "ntrs:20140006750"
       }
     ],
-    "paper_findings": [
-      {
-        "text": "Large n-alkane droplets exhibited quasi-steady low-temperature burning and extinction following radiative extinction of the visible flame",
-        "source": "ntrs:20140006750"
-      },
-      {
-        "text": "Smaller droplets burned to completion or disruptively extinguished",
-        "source": "ntrs:20140006750"
-      }
-    ]
+    "paper_findings": []
   },
   "warnings": [
     "ntrs:20140006750: [n-decane droplets, 0.5 atm pressure, 21% O2 and 79% N2] evidence repaired from source text",
     "ntrs:20140006750: [n-decane droplets, 0.5 atm pressure, 25% O2 and 75% N2] evidence repaired from source text",
-    "ntrs:20140006750: [n-decane droplets, 0.5 atm pressure, 17% O2 and 83% N2] oxygen: 17-17 % not in evidence, dropped"
+    "ntrs:20140006750: [n-decane droplets, 0.5 atm pressure, 17% O2 and 83% N2] oxygen: 17-17 % not in evidence, dropped",
+    "ntrs:20140006750: finding attributed to FLEX by the paper text: 'Large n-alkane droplets exhibited quasi-steady low-temperature burning and extin'",
+    "ntrs:20140006750: finding attributed to FLEX by the paper text: 'Smaller droplets burned to completion or disruptively extinguished'",
+    "ntrs:20140006750: condition attributed to FLEX by the paper text: 'Figure 1a (R377) corresponds to a n-decane droplet with an initial diameter of 4'",
+    "ntrs:20140006750: condition attributed to FLEX by the paper text: 'Figure 1b (R374) shows the combustion characteristics for a 3.79 mm n-decane dro'",
+    "ntrs:20140006750: condition attributed to FLEX by the paper text: '17%O2 and 83%N2 mixture at 0.5 atm'"
   ],
   "review_status": "model_only",
   "extraction": {
@@ -346,6 +285,7 @@
         },
         "excerpt_chars": 4825
       }
-    ]
+    ],
+    "rechecked_at": "2026-11-14T15:35:28+00:00"
   }
 }

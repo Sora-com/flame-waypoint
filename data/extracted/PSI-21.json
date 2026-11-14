@@ -28,8 +28,7 @@
     "test_type": "combustion",
     "fuels": [
       "methane",
-      "ethylene",
-      "CH4"
+      "ethylene"
     ],
     "fuel_phases": [
       "gas"
@@ -59,20 +58,7 @@
     ],
     "earth_applications": "Understanding the interaction of convection, diffusion and chemistry under momentum-dominated conditions.",
     "conditions": [],
-    "paper_findings": [
-      {
-        "text": "Computed temperature profiles accurately modeled the shapes and magnitudes of measured temperature profiles.",
-        "source": "ntrs:20150002322"
-      },
-      {
-        "text": "The influences of varying inlet velocity were correctly captured.",
-        "source": "ntrs:20150002322"
-      },
-      {
-        "text": "As gravity is eliminated, the discrepancy between computed and measured flame lengths decreased.",
-        "source": "ntrs:20150002322"
-      }
-    ]
+    "paper_findings": []
   },
   "warnings": [
     "ntrs:20150002322: [CH4-air diffusion flames under microgravity] evidence not found in source: 'A series of nitrogen-diluted flames measured in the Structure and Liftoﬀ in Comb'",
@@ -80,7 +66,10 @@
     "ntrs:20150002322: [CH4-air diffusion flames under microgravity] flow_speed: 23-90 cm/s not in evidence, dropped",
     "ntrs:20150002322: [CH4-air diffusion flames under normal gravity] evidence not found in source: 'A series of nitrogen-diluted flames measured in the Structure and Liftoﬀ in Comb'",
     "ntrs:20150002322: [CH4-air diffusion flames under normal gravity] oxygen: 0.21-0.21 mole fraction not in evidence, dropped",
-    "ntrs:20150002322: [CH4-air diffusion flames under normal gravity] flow_speed: 23-90 cm/s not in evidence, dropped"
+    "ntrs:20150002322: [CH4-air diffusion flames under normal gravity] flow_speed: 23-90 cm/s not in evidence, dropped",
+    "ntrs:20150002322: finding attributed to SLICE by the paper text: 'Computed temperature profiles accurately modeled the shapes and magnitudes of me'",
+    "ntrs:20150002322: finding attributed to SLICE by the paper text: 'The influences of varying inlet velocity were correctly captured.'",
+    "ntrs:20150002322: finding attributed to SLICE by the paper text: 'As gravity is eliminated, the discrepancy between computed and measured flame le'"
   ],
   "review_status": "model_only",
   "extraction": {
@@ -242,6 +231,7 @@
         },
         "excerpt_chars": 5154
       }
-    ]
+    ],
+    "rechecked_at": "2026-11-14T15:35:28+00:00"
   }
 }

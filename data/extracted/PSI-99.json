@@ -130,10 +130,6 @@
     ],
     "paper_findings": [
       {
-        "text": "SIBAL cloth burns like cotton but maintains structural integrity after the cotton is consumed.",
-        "source": "ntrs:20170001636"
-      },
-      {
         "text": "The selected materials have normal gravity Maximum Oxygen Concentration (MOC) flammability limits that indicate they will burn in normal gravity just above and below 21% O2 by volume.",
         "source": "ntrs:20170001636"
       },
@@ -153,7 +149,8 @@
   },
   "warnings": [
     "ntrs:20170001636: [Saffire-I and III, low-speed combustion tests] flow_speed: 53-90 cm/s not in evidence, dropped",
-    "ntrs:20170001636: [Saffire-II, low-speed combustion tests] flow_speed: 20-20 cm/s not in evidence, dropped"
+    "ntrs:20170001636: [Saffire-II, low-speed combustion tests] flow_speed: 20-20 cm/s not in evidence, dropped",
+    "ntrs:20170001636: finding attributed to SAFFIRE-I, SAFFIRE-III by the paper text: 'SIBAL cloth burns like cotton but maintains structural integrity after the cotto'"
   ],
   "review_status": "model_only",
   "extraction": {
@@ -371,6 +368,7 @@
         },
         "excerpt_chars": 5812
       }
-    ]
+    ],
+    "rechecked_at": "2026-11-14T15:35:28+00:00"
   }
 }

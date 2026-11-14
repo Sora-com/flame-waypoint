@@ -35,9 +35,6 @@
     "fuels": [
       "decane",
       "ethanol",
-      "n-heptane",
-      "n-octane",
-      "n-decane",
       "Fuel"
     ],
     "fuel_phases": [
@@ -90,71 +87,9 @@
           "The chamber was filled with the appropriate atmosphere, which was varied in pressure between 0.5 atm to 3.0 atm and O2 concentration between 0.1 to 0.4 mole fraction"
         ],
         "source": "psi:PSI-68"
-      },
-      {
-        "label": "n-decane droplets, 0.5 atm pressure, 21% O2 and 79% N2",
-        "context": "flight",
-        "fuel": "n-decane",
-        "oxygen_pct": {
-          "min": 21,
-          "max": 21
-        },
-        "pressure_kpa": {
-          "min": 50.663,
-          "max": 50.663,
-          "original": "0.5-0.5 atm"
-        },
-        "flow_cm_s": null,
-        "evidence": [
-          "Figure 1a (R377) corresponds to a n-decane droplet with an initial diameter of 4.03 mm burning in 21% oxygen and 79% nitrogen mixture at 0.5 atm pressure."
-        ],
-        "source": "ntrs:20140006750"
-      },
-      {
-        "label": "n-decane droplets, 0.5 atm pressure, 25% O2 and 75% N2",
-        "context": "flight",
-        "fuel": "n-decane",
-        "oxygen_pct": {
-          "min": 25,
-          "max": 25
-        },
-        "pressure_kpa": {
-          "min": 50.663,
-          "max": 50.663,
-          "original": "0.5-0.5 atm"
-        },
-        "flow_cm_s": null,
-        "evidence": [
-          "Figure 1b (R374) shows the combustion characteristics for a 3.79 mm n-decane droplet burning at a slightly increased oxygen concentration of 25% and the rest being nitrogen at 0.5 atm pressure."
-        ],
-        "source": "ntrs:20140006750"
-      },
-      {
-        "label": "n-decane droplets, 0.5 atm pressure, 17% O2 and 83% N2",
-        "context": "flight",
-        "fuel": "n-decane",
-        "oxygen_pct": null,
-        "pressure_kpa": {
-          "min": 50.663,
-          "max": 50.663,
-          "original": "0.5-0.5 atm"
-        },
-        "flow_cm_s": null,
-        "evidence": [
-          "17%O2 and 83%N2 mixture at 0.5 atm"
-        ],
-        "source": "ntrs:20140006750"
       }
     ],
     "paper_findings": [
-      {
-        "text": "Large n-alkane droplets exhibited quasi-steady low-temperature burning and extinction following radiative extinction of the visible flame",
-        "source": "ntrs:20140006750"
-      },
-      {
-        "text": "Smaller droplets burned to completion or disruptively extinguished",
-        "source": "ntrs:20140006750"
-      },
       {
         "text": "Cool-flame temperatures are greater than that of the hot-flame.",
         "source": "ntrs:20170000666"
@@ -172,7 +107,12 @@
   "warnings": [
     "ntrs:20140006750: [n-decane droplets, 0.5 atm pressure, 21% O2 and 79% N2] evidence repaired from source text",
     "ntrs:20140006750: [n-decane droplets, 0.5 atm pressure, 25% O2 and 75% N2] evidence repaired from source text",
-    "ntrs:20140006750: [n-decane droplets, 0.5 atm pressure, 17% O2 and 83% N2] oxygen: 17-17 % not in evidence, dropped"
+    "ntrs:20140006750: [n-decane droplets, 0.5 atm pressure, 17% O2 and 83% N2] oxygen: 17-17 % not in evidence, dropped",
+    "ntrs:20140006750: finding attributed to FLEX by the paper text: 'Large n-alkane droplets exhibited quasi-steady low-temperature burning and extin'",
+    "ntrs:20140006750: finding attributed to FLEX by the paper text: 'Smaller droplets burned to completion or disruptively extinguished'",
+    "ntrs:20140006750: condition attributed to FLEX by the paper text: 'Figure 1a (R377) corresponds to a n-decane droplet with an initial diameter of 4'",
+    "ntrs:20140006750: condition attributed to FLEX by the paper text: 'Figure 1b (R374) shows the combustion characteristics for a 3.79 mm n-decane dro'",
+    "ntrs:20140006750: condition attributed to FLEX by the paper text: '17%O2 and 83%N2 mixture at 0.5 atm'"
   ],
   "review_status": "model_only",
   "extraction": {
@@ -362,6 +302,7 @@
         },
         "excerpt_chars": 2302
       }
-    ]
+    ],
+    "rechecked_at": "2026-11-14T15:35:28+00:00"
   }
 }
