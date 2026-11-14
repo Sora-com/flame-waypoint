@@ -119,5 +119,60 @@ class RowTest(unittest.TestCase):
         self.assertIsNone(tests[0]["oxygen_pct"])
 
 
+class AcmeDayTablesTest(unittest.TestCase):
+    """Tables without O2/p (CLD, SLICE, E-FIELD) must still yield one record per test."""
+
+    def test_cld_flow_controllers_are_not_the_fuel(self):
+        rows = [["Test Type", "Test Day", "Fuel MFC", "N2 MFC", "Fuel Bottle", "Fuel conc. Range", "Flames ignited", "Notes"],
+                ["Methane based test", "17319", "0.1", "0.1", "40% CH4", "30%-40%", "10", "Test Day - ..."],
+                ["Methane based test", "17324", "0.1", "0.1", "40% CH5", "30%-40%", "5", ""],
+                ["Methane based test", "17342", "0.1", "0.1", "40% CH6", "40%", "8", ""],
+                ["Ethylene based test", "18145", "0.2", "0.1", "100% C2H4", "80%-100%", "3", ""],
+                ["Ethylene based test", "18151", "0.2", "0.1", "100% C2H5", "100%", "4", ""],
+                ["Ethylene based test", "18177", "0.2", "0.1", "100% C2H6", "80%-100%", "2", ""]]
+        tests, _, _ = pt.parse_rows(rows, "cld.csv")
+        self.assertEqual(len(tests), 6)
+        self.assertEqual([t["fuel"] for t in tests], ["40% CH4"] * 3 + ["100% C2H4"] * 3)
+        self.assertEqual(tests[0]["date"], "2017-11-15")
+        self.assertEqual(tests[0]["issues"], [])
+        self.assertEqual(tests[3]["issues"], [])            # a new run starts, not a slip
+        self.assertIn("autofill", tests[1]["issues"][0])
+        # A real ethane row on its own is left alone.
+        alone = [rows[0], ["Ethane test", "18200", "0.2", "0.1", "100% C2H6", "100%", "1", ""]]
+        self.assertEqual(pt.parse_rows(alone, "x.csv")[0][0]["fuel"], "100% C2H6")
+        # Real numbering (Saffire) is not a formula subscript.
+        saffire = [["Sample Number", "Material", "Air Flow"],
+                   ["1", "Pre-test flow data for sample 1", ""], ["2", "Pre-test flow data for sample 2", ""]]
+        self.assertEqual([t["fuel"][-1] for t in pt.parse_rows(saffire, "s.csv")[0]], ["1", "2"])
+        self.assertIsNone(tests[0]["oxygen_pct"])
+        self.assertEqual(tests[0]["extra"]["Fuel MFC"], "0.1")
+
+    def test_slice_two_column_header_and_date_notes(self):
+        rows = [["Test Date", "Fuel Type"],
+                ["2012-FEB-09", "100% CH4"],
+                ["2012-FEB-13 SLICE testing with ", "40% CH4 (balance N2)"]]
+        tests, _, _ = pt.parse_rows(rows, "slice.csv")
+        self.assertEqual([t["date"] for t in tests], ["2012-02-09", "2012-02-13"])
+        self.assertEqual(tests[1]["extra"]["date note"], "SLICE testing with")
+        self.assertEqual(tests[1]["fuel"], "40% CH4 (balance N2)")
+
+    def test_efield_continuation_rows_merge_into_previous_test(self):
+        header = ["Test Type", "Test Day", "Year", "Month", "Date", "Mesh Polarity", "Fuel Bottle", "Fuel Conc", "Flames Ignited", "Notes"]
+        rows = [header,
+                ["First round", "18073", "2018", "3", "14", "negative", "100% CH4", "100%", "10", "note A"],
+                ["", "", "", "", "", "", "", "70%", "", "note B"],
+                ["First round", "18080", "2018", "3", "21", "negative", "40% CH4", "40%", "8", ""]]
+        tests, _, _ = pt.parse_rows(rows, "efield.csv")
+        self.assertEqual(len(tests), 2)
+        self.assertEqual(tests[0]["date"], "2018-03-14")
+        self.assertEqual(tests[0]["extra"]["Fuel Conc"], "100%; 70%")
+        self.assertEqual(tests[0]["extra"]["Notes"], "note A; note B")
+
+    def test_year_month_day_columns(self):
+        date, _ = pt.normalize_date("8", ["2019", "Feb", "8"], ["Year", "Month", "Date"])
+        self.assertEqual(date, "2019-02-08")
+        self.assertEqual(pt.normalize_date("3/30/2012", [], ["Date"]), ("3/30/2012", None))
+
+
 if __name__ == "__main__":
     unittest.main()

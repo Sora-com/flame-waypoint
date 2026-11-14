@@ -1,7 +1,7 @@
 {
   "accession": "PSI-26",
   "origin": "psi_files",
-  "parsed_at": "2026-11-14T12:14:49+00:00",
+  "parsed_at": "2026-11-14T13:31:49+00:00",
   "files": [
     {
       "file": "PSI-26_Experimental table_BASS.csv",
@@ -50,10 +50,10 @@
       "parrafin wax slab",
       "PMMA 1 cm",
       "pmma 1 cm",
-      "pmma 2 cm",
       "PMMA 2 cm",
-      "pmma slab",
+      "pmma 2 cm",
       "PMMA slab",
+      "pmma slab",
       "pmma slab   oppsed",
       "pmma slab opposed",
       "pmma sphere",

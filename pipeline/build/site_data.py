@@ -3,13 +3,13 @@
 Joins, per investigation: PSI metadata, LLM extraction (fields + conditions
 with evidence), and, if present locally, parsed PSI test tables.
 
-PSI test tables come from files that need a PSI account; they are only
-included with --include-tables (never in the public GitHub Pages build until
-the PSI data-use terms are confirmed).
+PSI test tables (parsed from files downloaded from PSI) are included with
+--include-tables, which the GitHub Pages build uses. Every table point keeps
+its source file and row.
 
 Usage:
-    python -m pipeline.build.site_data                    # public build
-    python -m pipeline.build.site_data --include-tables   # local build with test tables
+    python -m pipeline.build.site_data --include-tables   # site build (GitHub Pages)
+    python -m pipeline.build.site_data                    # metadata + LLM points only
 """
 
 from __future__ import annotations
@@ -105,7 +105,7 @@ def build(include_tables: bool) -> dict:
 
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--include-tables", action="store_true", help="Include parsed PSI test tables (local only)")
+    ap.add_argument("--include-tables", action="store_true", help="Include parsed PSI test tables")
     args = ap.parse_args(argv)
     site = build(args.include_tables)
     if not site["investigations"]:

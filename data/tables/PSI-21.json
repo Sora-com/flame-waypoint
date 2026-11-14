@@ -1,27 +1,801 @@
 {
   "accession": "PSI-21",
   "origin": "psi_files",
-  "parsed_at": "2026-11-14T12:14:49+00:00",
+  "parsed_at": "2026-11-14T13:31:49+00:00",
   "files": [
     {
       "file": "PSI-21_Experimental table_CLD Flame.csv",
       "sheet": "csv",
-      "tests": 0,
-      "mapped_columns": [],
-      "unmapped_columns": []
+      "tests": 32,
+      "mapped_columns": [
+        "Fuel Bottle",
+        "Test Day"
+      ],
+      "unmapped_columns": [
+        "Flames ignited",
+        "Fuel MFC",
+        "Fuel conc. Range",
+        "N2 MFC",
+        "Notes",
+        "Test Type"
+      ]
     }
   ],
   "summary": {
-    "tests": 0,
+    "tests": 32,
     "design_envelopes": 0,
     "with_oxygen": 0,
     "with_pressure": 0,
     "with_flow": 0,
-    "with_issues": 0,
+    "with_issues": 26,
     "oxygen_pct_range": null,
     "pressure_kpa_range": null,
     "flow_cm_s_range": null,
-    "fuels": []
+    "fuels": [
+      "100% C2H4",
+      "100% CH4",
+      "30% C2H4",
+      "40% CH4",
+      "50% C2H4"
+    ]
   },
-  "tests": []
+  "tests": [
+    {
+      "row": 2,
+      "kind": "test",
+      "test_id": "2",
+      "identifier": null,
+      "date": "2017-11-15",
+      "fuel": "40% CH4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Methane based test",
+        "Fuel MFC": "0.1",
+        "N2 MFC": "0.1",
+        "Fuel conc. Range": "30%-40%",
+        "Flames ignited": "10",
+        "Notes": "Test Day - includes the year as the first two digits followed by the 3-digit day of the year (where any late-hour transition to the next day is neglected). MFC - identifies the maximum flow rate of the specified ACME Mass Flow Controller (MFC) in slpm on a nitrogen basis. Fuel conc. - (as diluted with nitrogen on a volume basis) was varied between tests and sometimes during tests where the listing here accounts for both. However, it does not account for extinction that sometimes occurred before the flame fully reached the lowest concentration. Flames ignited is the number ignited on that test day."
+      },
+      "issues": [],
+      "source": "PSI-21_Experimental table_CLD Flame.csv#row2"
+    },
+    {
+      "row": 3,
+      "kind": "test",
+      "test_id": "3",
+      "identifier": null,
+      "date": "2017-11-20",
+      "fuel": "40% CH4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Methane based test",
+        "Fuel MFC": "0.1",
+        "N2 MFC": "0.1",
+        "Fuel conc. Range": "30%-40%",
+        "Flames ignited": "5"
+      },
+      "issues": [
+        "fuel '40% CH5' read as '40% CH4' (spreadsheet autofill)"
+      ],
+      "source": "PSI-21_Experimental table_CLD Flame.csv#row3"
+    },
+    {
+      "row": 4,
+      "kind": "test",
+      "test_id": "4",
+      "identifier": null,
+      "date": "2017-12-08",
+      "fuel": "40% CH4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Methane based test",
+        "Fuel MFC": "0.1",
+        "N2 MFC": "0.1",
+        "Fuel conc. Range": "40%",
+        "Flames ignited": "8"
+      },
+      "issues": [
+        "fuel '40% CH6' read as '40% CH4' (spreadsheet autofill)"
+      ],
+      "source": "PSI-21_Experimental table_CLD Flame.csv#row4"
+    },
+    {
+      "row": 5,
+      "kind": "test",
+      "test_id": "5",
+      "identifier": null,
+      "date": "2017-12-22",
+      "fuel": "40% CH4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Methane based test",
+        "Fuel MFC": "0.1",
+        "N2 MFC": "0.1",
+        "Fuel conc. Range": "30%-40%",
+        "Flames ignited": "3"
+      },
+      "issues": [
+        "fuel '40% CH7' read as '40% CH4' (spreadsheet autofill)"
+      ],
+      "source": "PSI-21_Experimental table_CLD Flame.csv#row5"
+    },
+    {
+      "row": 6,
+      "kind": "test",
+      "test_id": "6",
+      "identifier": null,
+      "date": "2018-01-03",
+      "fuel": "40% CH4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Methane based test",
+        "Fuel MFC": "0.1",
+        "N2 MFC": "0.1",
+        "Fuel conc. Range": "25%-40%",
+        "Flames ignited": "9"
+      },
+      "issues": [
+        "fuel '40% CH8' read as '40% CH4' (spreadsheet autofill)"
+      ],
+      "source": "PSI-21_Experimental table_CLD Flame.csv#row6"
+    },
+    {
+      "row": 7,
+      "kind": "test",
+      "test_id": "7",
+      "identifier": null,
+      "date": "2018-01-05",
+      "fuel": "40% CH4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Methane based test",
+        "Fuel MFC": "0.1",
+        "N2 MFC": "0.1",
+        "Fuel conc. Range": "30%-40%",
+        "Flames ignited": "7"
+      },
+      "issues": [
+        "fuel '40% CH9' read as '40% CH4' (spreadsheet autofill)"
+      ],
+      "source": "PSI-21_Experimental table_CLD Flame.csv#row7"
+    },
+    {
+      "row": 8,
+      "kind": "test",
+      "test_id": "8",
+      "identifier": null,
+      "date": "2018-01-08",
+      "fuel": "40% CH4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Methane based test",
+        "Fuel MFC": "0.1",
+        "N2 MFC": "0.1",
+        "Fuel conc. Range": "25%-40%",
+        "Flames ignited": "8"
+      },
+      "issues": [
+        "fuel '40% CH10' read as '40% CH4' (spreadsheet autofill)"
+      ],
+      "source": "PSI-21_Experimental table_CLD Flame.csv#row8"
+    },
+    {
+      "row": 9,
+      "kind": "test",
+      "test_id": "9",
+      "identifier": null,
+      "date": "2018-01-11",
+      "fuel": "40% CH4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Methane based test",
+        "Fuel MFC": "0.1",
+        "N2 MFC": "0.1",
+        "Fuel conc. Range": "25%-40%",
+        "Flames ignited": "14"
+      },
+      "issues": [
+        "fuel '40% CH11' read as '40% CH4' (spreadsheet autofill)"
+      ],
+      "source": "PSI-21_Experimental table_CLD Flame.csv#row9"
+    },
+    {
+      "row": 10,
+      "kind": "test",
+      "test_id": "10",
+      "identifier": null,
+      "date": "2018-01-22",
+      "fuel": "40% CH4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Methane based test",
+        "Fuel MFC": "0.1",
+        "N2 MFC": "0.1",
+        "Fuel conc. Range": "30%-40%",
+        "Flames ignited": "3"
+      },
+      "issues": [
+        "fuel '40% CH12' read as '40% CH4' (spreadsheet autofill)"
+      ],
+      "source": "PSI-21_Experimental table_CLD Flame.csv#row10"
+    },
+    {
+      "row": 11,
+      "kind": "test",
+      "test_id": "11",
+      "identifier": null,
+      "date": "2018-01-26",
+      "fuel": "40% CH4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Methane based test",
+        "Fuel MFC": "0.1",
+        "N2 MFC": "0.1",
+        "Fuel conc. Range": "25%-40%",
+        "Flames ignited": "16"
+      },
+      "issues": [
+        "fuel '40% CH13' read as '40% CH4' (spreadsheet autofill)"
+      ],
+      "source": "PSI-21_Experimental table_CLD Flame.csv#row11"
+    },
+    {
+      "row": 12,
+      "kind": "test",
+      "test_id": "12",
+      "identifier": null,
+      "date": "2018-02-01",
+      "fuel": "40% CH4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Methane based test",
+        "Fuel MFC": "0.1",
+        "N2 MFC": "0.1",
+        "Fuel conc. Range": "30%-40%",
+        "Flames ignited": "13"
+      },
+      "issues": [
+        "fuel '40% CH14' read as '40% CH4' (spreadsheet autofill)"
+      ],
+      "source": "PSI-21_Experimental table_CLD Flame.csv#row12"
+    },
+    {
+      "row": 13,
+      "kind": "test",
+      "test_id": "13",
+      "identifier": null,
+      "date": "2018-02-08",
+      "fuel": "100% CH4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Methane based test",
+        "Fuel MFC": "0.1",
+        "N2 MFC": "0.05",
+        "Fuel conc. Range": "50%-80%",
+        "Flames ignited": "8"
+      },
+      "issues": [],
+      "source": "PSI-21_Experimental table_CLD Flame.csv#row13"
+    },
+    {
+      "row": 14,
+      "kind": "test",
+      "test_id": "14",
+      "identifier": null,
+      "date": "2018-02-12",
+      "fuel": "100% CH4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Methane based test",
+        "Fuel MFC": "0.1",
+        "N2 MFC": "0.05",
+        "Fuel conc. Range": "50%-100%",
+        "Flames ignited": "10"
+      },
+      "issues": [
+        "fuel '100% CH5' read as '100% CH4' (spreadsheet autofill)"
+      ],
+      "source": "PSI-21_Experimental table_CLD Flame.csv#row14"
+    },
+    {
+      "row": 15,
+      "kind": "test",
+      "test_id": "15",
+      "identifier": null,
+      "date": "2018-02-22",
+      "fuel": "100% CH4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Methane based test",
+        "Fuel MFC": "0.1",
+        "N2 MFC": "0.02",
+        "Fuel conc. Range": "30%-40%",
+        "Flames ignited": "16"
+      },
+      "issues": [
+        "fuel '100% CH6' read as '100% CH4' (spreadsheet autofill)"
+      ],
+      "source": "PSI-21_Experimental table_CLD Flame.csv#row15"
+    },
+    {
+      "row": 16,
+      "kind": "test",
+      "test_id": "16",
+      "identifier": null,
+      "date": "2018-05-25",
+      "fuel": "100% C2H4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Ethylene based test",
+        "Fuel MFC": "0.2",
+        "N2 MFC": "0.1",
+        "Fuel conc. Range": "80%-100%",
+        "Flames ignited": "3"
+      },
+      "issues": [],
+      "source": "PSI-21_Experimental table_CLD Flame.csv#row16"
+    },
+    {
+      "row": 17,
+      "kind": "test",
+      "test_id": "17",
+      "identifier": null,
+      "date": "2018-05-31",
+      "fuel": "100% C2H4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Ethylene based test",
+        "Fuel MFC": "0.2",
+        "N2 MFC": "0.1",
+        "Fuel conc. Range": "100%",
+        "Flames ignited": "2"
+      },
+      "issues": [
+        "fuel '100% C2H5' read as '100% C2H4' (spreadsheet autofill)"
+      ],
+      "source": "PSI-21_Experimental table_CLD Flame.csv#row17"
+    },
+    {
+      "row": 18,
+      "kind": "test",
+      "test_id": "18",
+      "identifier": null,
+      "date": "2018-06-26",
+      "fuel": "100% C2H4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Ethylene based test",
+        "Fuel MFC": "0.2",
+        "N2 MFC": "0.1",
+        "Fuel conc. Range": "80%-100%",
+        "Flames ignited": "9"
+      },
+      "issues": [
+        "fuel '100% C2H6' read as '100% C2H4' (spreadsheet autofill)"
+      ],
+      "source": "PSI-21_Experimental table_CLD Flame.csv#row18"
+    },
+    {
+      "row": 19,
+      "kind": "test",
+      "test_id": "19",
+      "identifier": null,
+      "date": "2018-07-05",
+      "fuel": "100% C2H4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Ethylene based test",
+        "Fuel MFC": "0.2",
+        "N2 MFC": "0.1",
+        "Fuel conc. Range": "60%-100%",
+        "Flames ignited": "14"
+      },
+      "issues": [
+        "fuel '100% C2H7' read as '100% C2H4' (spreadsheet autofill)"
+      ],
+      "source": "PSI-21_Experimental table_CLD Flame.csv#row19"
+    },
+    {
+      "row": 20,
+      "kind": "test",
+      "test_id": "20",
+      "identifier": null,
+      "date": "2018-07-11",
+      "fuel": "100% C2H4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Ethylene based test",
+        "Fuel MFC": "0.2",
+        "N2 MFC": "0.1",
+        "Fuel conc. Range": "50%-60%",
+        "Flames ignited": "10"
+      },
+      "issues": [
+        "fuel '100% C2H8' read as '100% C2H4' (spreadsheet autofill)"
+      ],
+      "source": "PSI-21_Experimental table_CLD Flame.csv#row20"
+    },
+    {
+      "row": 21,
+      "kind": "test",
+      "test_id": "21",
+      "identifier": null,
+      "date": "2018-07-18",
+      "fuel": "100% C2H4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Ethylene based test",
+        "Fuel MFC": "0.2",
+        "N2 MFC": "0.1",
+        "Fuel conc. Range": "40%-100%",
+        "Flames ignited": "16"
+      },
+      "issues": [
+        "fuel '100% C2H9' read as '100% C2H4' (spreadsheet autofill)"
+      ],
+      "source": "PSI-21_Experimental table_CLD Flame.csv#row21"
+    },
+    {
+      "row": 22,
+      "kind": "test",
+      "test_id": "22",
+      "identifier": null,
+      "date": "2018-08-02",
+      "fuel": "100% C2H4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Ethylene based test",
+        "Fuel MFC": "0.2",
+        "N2 MFC": "0.05",
+        "Fuel conc. Range": "100%",
+        "Flames ignited": "13"
+      },
+      "issues": [
+        "fuel '100% C2H10' read as '100% C2H4' (spreadsheet autofill)"
+      ],
+      "source": "PSI-21_Experimental table_CLD Flame.csv#row22"
+    },
+    {
+      "row": 23,
+      "kind": "test",
+      "test_id": "23",
+      "identifier": null,
+      "date": "2018-08-06",
+      "fuel": "100% C2H4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Ethylene based test",
+        "Fuel MFC": "0.2",
+        "N2 MFC": "0.05",
+        "Fuel conc. Range": "80%",
+        "Flames ignited": "18"
+      },
+      "issues": [
+        "fuel '100% C2H11' read as '100% C2H4' (spreadsheet autofill)"
+      ],
+      "source": "PSI-21_Experimental table_CLD Flame.csv#row23"
+    },
+    {
+      "row": 24,
+      "kind": "test",
+      "test_id": "24",
+      "identifier": null,
+      "date": "2018-08-23",
+      "fuel": "50% C2H4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Ethylene based test",
+        "Fuel MFC": "0.2",
+        "N2 MFC": "0.1",
+        "Fuel conc. Range": "50%",
+        "Flames ignited": "16"
+      },
+      "issues": [],
+      "source": "PSI-21_Experimental table_CLD Flame.csv#row24"
+    },
+    {
+      "row": 25,
+      "kind": "test",
+      "test_id": "25",
+      "identifier": null,
+      "date": "2018-08-27",
+      "fuel": "50% C2H4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Ethylene based test",
+        "Fuel MFC": "0.2",
+        "N2 MFC": "0.1",
+        "Fuel conc. Range": "40%",
+        "Flames ignited": "14"
+      },
+      "issues": [
+        "fuel '50% C2H5' read as '50% C2H4' (spreadsheet autofill)"
+      ],
+      "source": "PSI-21_Experimental table_CLD Flame.csv#row25"
+    },
+    {
+      "row": 26,
+      "kind": "test",
+      "test_id": "26",
+      "identifier": null,
+      "date": "2018-08-29",
+      "fuel": "50% C2H4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Ethylene based test",
+        "Fuel MFC": "0.1",
+        "N2 MFC": "0.2",
+        "Fuel conc. Range": "10%-20%",
+        "Flames ignited": "6"
+      },
+      "issues": [
+        "fuel '50% C2H6' read as '50% C2H4' (spreadsheet autofill)"
+      ],
+      "source": "PSI-21_Experimental table_CLD Flame.csv#row26"
+    },
+    {
+      "row": 27,
+      "kind": "test",
+      "test_id": "27",
+      "identifier": null,
+      "date": "2018-09-06",
+      "fuel": "50% C2H4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Ethylene based test",
+        "Fuel MFC": "0.1",
+        "N2 MFC": "0.2",
+        "Fuel conc. Range": "10%-30%",
+        "Flames ignited": "12"
+      },
+      "issues": [
+        "fuel '50% C2H7' read as '50% C2H4' (spreadsheet autofill)"
+      ],
+      "source": "PSI-21_Experimental table_CLD Flame.csv#row27"
+    },
+    {
+      "row": 28,
+      "kind": "test",
+      "test_id": "28",
+      "identifier": null,
+      "date": "2018-09-10",
+      "fuel": "50% C2H4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Ethylene based test",
+        "Fuel MFC": "0.1",
+        "N2 MFC": "0.2",
+        "Fuel conc. Range": "15%-30%",
+        "Flames ignited": "14"
+      },
+      "issues": [
+        "fuel '50% C2H8' read as '50% C2H4' (spreadsheet autofill)"
+      ],
+      "source": "PSI-21_Experimental table_CLD Flame.csv#row28"
+    },
+    {
+      "row": 29,
+      "kind": "test",
+      "test_id": "29",
+      "identifier": null,
+      "date": "2018-09-14",
+      "fuel": "50% C2H4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Ethylene based test",
+        "Fuel MFC": "0.1",
+        "N2 MFC": "0.2",
+        "Fuel conc. Range": "15%-20%",
+        "Flames ignited": "15"
+      },
+      "issues": [
+        "fuel '50% C2H9' read as '50% C2H4' (spreadsheet autofill)"
+      ],
+      "source": "PSI-21_Experimental table_CLD Flame.csv#row29"
+    },
+    {
+      "row": 30,
+      "kind": "test",
+      "test_id": "30",
+      "identifier": null,
+      "date": "2021-02-10",
+      "fuel": "30% C2H4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Improved coflow tests",
+        "Fuel MFC": "0.2",
+        "N2 MFC": "0.2",
+        "Fuel conc. Range": "0%-30%",
+        "Flames ignited": "9"
+      },
+      "issues": [],
+      "source": "PSI-21_Experimental table_CLD Flame.csv#row30"
+    },
+    {
+      "row": 31,
+      "kind": "test",
+      "test_id": "31",
+      "identifier": null,
+      "date": "2021-02-15",
+      "fuel": "30% C2H4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Improved coflow tests",
+        "Fuel MFC": "0.2",
+        "N2 MFC": "0.2",
+        "Fuel conc. Range": "15%-20%",
+        "Flames ignited": "16"
+      },
+      "issues": [
+        "fuel '30% C2H5' read as '30% C2H4' (spreadsheet autofill)"
+      ],
+      "source": "PSI-21_Experimental table_CLD Flame.csv#row31"
+    },
+    {
+      "row": 32,
+      "kind": "test",
+      "test_id": "32",
+      "identifier": null,
+      "date": "2021-02-19",
+      "fuel": "40% CH4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Improved coflow tests",
+        "Fuel MFC": "0.2",
+        "N2 MFC": "0.2",
+        "Fuel conc. Range": "20%-40%",
+        "Flames ignited": "16"
+      },
+      "issues": [],
+      "source": "PSI-21_Experimental table_CLD Flame.csv#row32"
+    },
+    {
+      "row": 33,
+      "kind": "test",
+      "test_id": "33",
+      "identifier": null,
+      "date": "2021-03-03",
+      "fuel": "40% CH4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Improved coflow tests",
+        "Fuel MFC": "0.2",
+        "N2 MFC": "0.2",
+        "Fuel conc. Range": "30%-40%",
+        "Flames ignited": "11"
+      },
+      "issues": [
+        "fuel '40% CH5' read as '40% CH4' (spreadsheet autofill)"
+      ],
+      "source": "PSI-21_Experimental table_CLD Flame.csv#row33"
+    }
+  ]
 }

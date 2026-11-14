@@ -1,30 +1,30 @@
 {
   "accession": "PSI-22",
   "origin": "psi_files",
-  "parsed_at": "2026-11-14T12:14:49+00:00",
+  "parsed_at": "2026-11-14T13:31:49+00:00",
   "files": [
     {
       "file": "PSI-22_Experimental table_ACME E-FIELD Flames.csv",
       "sheet": "csv",
-      "tests": 32,
+      "tests": 21,
       "mapped_columns": [
-        "Date",
-        "Fuel Bottle"
+        "Fuel Bottle",
+        "Test Day"
       ],
       "unmapped_columns": [
+        "Date",
         "Flames Ignited",
         "Fuel Conc",
         "Mesh Polarity",
         "Month",
         "Notes",
-        "Test Day",
         "Test Type",
         "Year"
       ]
     }
   ],
   "summary": {
-    "tests": 32,
+    "tests": 21,
     "design_envelopes": 0,
     "with_oxygen": 0,
     "with_pressure": 0,
@@ -46,7 +46,7 @@
       "kind": "test",
       "test_id": "2",
       "identifier": null,
-      "date": "14",
+      "date": "2018-03-14",
       "fuel": "100% CH4",
       "outcome": null,
       "oxygen_pct": null,
@@ -55,9 +55,9 @@
       "diluents": {},
       "extra": {
         "Test Type": "First round of tests with coflow burner",
-        "Test Day": "18073",
         "Year": "2018",
         "Month": "3",
+        "Date": "14",
         "Mesh Polarity": "negative",
         "Fuel Conc": "100%",
         "Flames Ignited": "10",
@@ -71,7 +71,7 @@
       "kind": "test",
       "test_id": "3",
       "identifier": null,
-      "date": "19",
+      "date": "2018-03-19",
       "fuel": "100% CH4",
       "outcome": null,
       "oxygen_pct": null,
@@ -80,42 +80,23 @@
       "diluents": {},
       "extra": {
         "Test Type": "First round of tests with coflow burner",
-        "Test Day": "18078",
         "Year": "2018",
         "Month": "3",
+        "Date": "19",
         "Mesh Polarity": "negative",
-        "Fuel Conc": "70%",
+        "Fuel Conc": "70%; 100%",
         "Flames Ignited": "10",
-        "Notes": "Mesh polarity refers to the polarity of the high-voltage power supply and the copper electrode relative to the burner."
+        "Notes": "Mesh polarity refers to the polarity of the high-voltage power supply and the copper electrode relative to the burner.; Fuel Conc. (diluted with nitrogen on a volume basis) was varied between tests, but typically matched the bottle. The list only accounts for flames ignited."
       },
       "issues": [],
       "source": "PSI-22_Experimental table_ACME E-FIELD Flames.csv#row3"
-    },
-    {
-      "row": 4,
-      "kind": "test",
-      "test_id": "4",
-      "identifier": null,
-      "date": null,
-      "fuel": null,
-      "outcome": null,
-      "oxygen_pct": null,
-      "pressure_kpa": null,
-      "flow_cm_s": null,
-      "diluents": {},
-      "extra": {
-        "Fuel Conc": "100%",
-        "Notes": "Fuel Conc. (diluted with nitrogen on a volume basis) was varied between tests, but typically matched the bottle. The list only accounts for flames ignited."
-      },
-      "issues": [],
-      "source": "PSI-22_Experimental table_ACME E-FIELD Flames.csv#row4"
     },
     {
       "row": 5,
       "kind": "test",
       "test_id": "5",
       "identifier": null,
-      "date": "21",
+      "date": "2018-03-21",
       "fuel": "40% CH4",
       "outcome": null,
       "oxygen_pct": null,
@@ -124,9 +105,9 @@
       "diluents": {},
       "extra": {
         "Test Type": "First round of tests with coflow burner",
-        "Test Day": "18080",
         "Year": "2018",
         "Month": "3",
+        "Date": "21",
         "Mesh Polarity": "negative",
         "Fuel Conc": "40%",
         "Flames Ignited": "8",
@@ -140,7 +121,7 @@
       "kind": "test",
       "test_id": "6",
       "identifier": null,
-      "date": "28",
+      "date": "2018-03-28",
       "fuel": "100% C2H4",
       "outcome": null,
       "oxygen_pct": null,
@@ -149,40 +130,22 @@
       "diluents": {},
       "extra": {
         "Test Type": "First round of tests with coflow burner",
-        "Test Day": "18087",
         "Year": "2018",
         "Month": "3",
+        "Date": "28",
         "Mesh Polarity": "negative",
-        "Fuel Conc": "80%",
+        "Fuel Conc": "80%; 100%",
         "Flames Ignited": "10"
       },
       "issues": [],
       "source": "PSI-22_Experimental table_ACME E-FIELD Flames.csv#row6"
     },
     {
-      "row": 7,
-      "kind": "test",
-      "test_id": "7",
-      "identifier": null,
-      "date": null,
-      "fuel": null,
-      "outcome": null,
-      "oxygen_pct": null,
-      "pressure_kpa": null,
-      "flow_cm_s": null,
-      "diluents": {},
-      "extra": {
-        "Fuel Conc": "100%"
-      },
-      "issues": [],
-      "source": "PSI-22_Experimental table_ACME E-FIELD Flames.csv#row7"
-    },
-    {
       "row": 8,
       "kind": "test",
       "test_id": "8",
       "identifier": null,
-      "date": "2",
+      "date": "2018-04-02",
       "fuel": "30% C2H4",
       "outcome": null,
       "oxygen_pct": null,
@@ -191,9 +154,9 @@
       "diluents": {},
       "extra": {
         "Test Type": "First round of tests with coflow burner",
-        "Test Day": "18092",
         "Year": "2018",
         "Month": "4",
+        "Date": "2",
         "Mesh Polarity": "negative",
         "Fuel Conc": "30%",
         "Flames Ignited": "11"
@@ -206,7 +169,7 @@
       "kind": "test",
       "test_id": "9",
       "identifier": null,
-      "date": "5",
+      "date": "2018-04-05",
       "fuel": "30% C2H4",
       "outcome": null,
       "oxygen_pct": null,
@@ -215,9 +178,9 @@
       "diluents": {},
       "extra": {
         "Test Type": "First round of tests with coflow burner",
-        "Test Day": "18095",
         "Year": "2018",
         "Month": "4",
+        "Date": "5",
         "Mesh Polarity": "positive",
         "Fuel Conc": "30%",
         "Flames Ignited": "10"
@@ -230,7 +193,7 @@
       "kind": "test",
       "test_id": "10",
       "identifier": null,
-      "date": "12",
+      "date": "2018-04-12",
       "fuel": "40% CH4",
       "outcome": null,
       "oxygen_pct": null,
@@ -239,9 +202,9 @@
       "diluents": {},
       "extra": {
         "Test Type": "First round of tests with coflow burner",
-        "Test Day": "18102",
         "Year": "2018",
         "Month": "4",
+        "Date": "12",
         "Mesh Polarity": "positive",
         "Fuel Conc": "40%",
         "Flames Ignited": "8"
@@ -254,7 +217,7 @@
       "kind": "test",
       "test_id": "11",
       "identifier": null,
-      "date": "16",
+      "date": "2018-04-16",
       "fuel": "40% CH4",
       "outcome": null,
       "oxygen_pct": null,
@@ -263,9 +226,9 @@
       "diluents": {},
       "extra": {
         "Test Type": "First round of tests with coflow burner",
-        "Test Day": "18106",
         "Year": "2018",
         "Month": "4",
+        "Date": "16",
         "Mesh Polarity": "positive",
         "Fuel Conc": "40%",
         "Flames Ignited": "13"
@@ -278,7 +241,7 @@
       "kind": "test",
       "test_id": "12",
       "identifier": null,
-      "date": "23",
+      "date": "2018-04-23",
       "fuel": "100% CH4",
       "outcome": null,
       "oxygen_pct": null,
@@ -287,9 +250,9 @@
       "diluents": {},
       "extra": {
         "Test Type": "First round of tests with coflow burner",
-        "Test Day": "18113",
         "Year": "2018",
         "Month": "4",
+        "Date": "23",
         "Mesh Polarity": "positive",
         "Fuel Conc": "100%",
         "Flames Ignited": "15"
@@ -302,7 +265,7 @@
       "kind": "test",
       "test_id": "13",
       "identifier": null,
-      "date": "10",
+      "date": "2018-05-10",
       "fuel": "100% CH4",
       "outcome": null,
       "oxygen_pct": null,
@@ -311,9 +274,9 @@
       "diluents": {},
       "extra": {
         "Test Type": "First round of tests with coflow burner",
-        "Test Day": "18130",
         "Year": "2018",
         "Month": "5",
+        "Date": "10",
         "Mesh Polarity": "positive",
         "Fuel Conc": "70%",
         "Flames Ignited": "13"
@@ -326,7 +289,7 @@
       "kind": "test",
       "test_id": "14",
       "identifier": null,
-      "date": "17",
+      "date": "2018-05-17",
       "fuel": "100% C2H4",
       "outcome": null,
       "oxygen_pct": null,
@@ -335,40 +298,22 @@
       "diluents": {},
       "extra": {
         "Test Type": "First round of tests with coflow burner",
-        "Test Day": "18137",
         "Year": "2018",
         "Month": "5",
+        "Date": "17",
         "Mesh Polarity": "positive",
-        "Fuel Conc": "80%",
+        "Fuel Conc": "80%; 100%",
         "Flames Ignited": "12"
       },
       "issues": [],
       "source": "PSI-22_Experimental table_ACME E-FIELD Flames.csv#row14"
     },
     {
-      "row": 15,
-      "kind": "test",
-      "test_id": "15",
-      "identifier": null,
-      "date": null,
-      "fuel": null,
-      "outcome": null,
-      "oxygen_pct": null,
-      "pressure_kpa": null,
-      "flow_cm_s": null,
-      "diluents": {},
-      "extra": {
-        "Fuel Conc": "100%"
-      },
-      "issues": [],
-      "source": "PSI-22_Experimental table_ACME E-FIELD Flames.csv#row15"
-    },
-    {
       "row": 16,
       "kind": "test",
       "test_id": "16",
       "identifier": null,
-      "date": "26",
+      "date": "2018-09-26",
       "fuel": "40% CH4",
       "outcome": null,
       "oxygen_pct": null,
@@ -377,9 +322,9 @@
       "diluents": {},
       "extra": {
         "Test Type": "Second round of tests with gas-jet burner",
-        "Test Day": "18269",
         "Year": "2018",
         "Month": "9",
+        "Date": "26",
         "Mesh Polarity": "negative",
         "Fuel Conc": "40%",
         "Flames Ignited": "11"
@@ -392,7 +337,7 @@
       "kind": "test",
       "test_id": "17",
       "identifier": null,
-      "date": "1",
+      "date": "2018-10-01",
       "fuel": "30% C2H4",
       "outcome": null,
       "oxygen_pct": null,
@@ -401,9 +346,9 @@
       "diluents": {},
       "extra": {
         "Test Type": "Second round of tests with gas-jet burner",
-        "Test Day": "18274",
         "Year": "2018",
         "Month": "10",
+        "Date": "1",
         "Mesh Polarity": "negative",
         "Fuel Conc": "30%",
         "Flames Ignited": "11"
@@ -416,7 +361,7 @@
       "kind": "test",
       "test_id": "18",
       "identifier": null,
-      "date": "9",
+      "date": "2018-10-09",
       "fuel": "100% CH4",
       "outcome": null,
       "oxygen_pct": null,
@@ -425,40 +370,22 @@
       "diluents": {},
       "extra": {
         "Test Type": "Second round of tests with gas-jet burner",
-        "Test Day": "18282",
         "Year": "2018",
         "Month": "10",
+        "Date": "9",
         "Mesh Polarity": "negative",
-        "Fuel Conc": "70%",
+        "Fuel Conc": "70%; 100%",
         "Flames Ignited": "13"
       },
       "issues": [],
       "source": "PSI-22_Experimental table_ACME E-FIELD Flames.csv#row18"
     },
     {
-      "row": 19,
-      "kind": "test",
-      "test_id": "19",
-      "identifier": null,
-      "date": null,
-      "fuel": null,
-      "outcome": null,
-      "oxygen_pct": null,
-      "pressure_kpa": null,
-      "flow_cm_s": null,
-      "diluents": {},
-      "extra": {
-        "Fuel Conc": "100%"
-      },
-      "issues": [],
-      "source": "PSI-22_Experimental table_ACME E-FIELD Flames.csv#row19"
-    },
-    {
       "row": 20,
       "kind": "test",
       "test_id": "20",
       "identifier": null,
-      "date": "12",
+      "date": "2018-10-12",
       "fuel": "100% C2H4",
       "outcome": null,
       "oxygen_pct": null,
@@ -467,9 +394,9 @@
       "diluents": {},
       "extra": {
         "Test Type": "Second round of tests with gas-jet burner",
-        "Test Day": "18285",
         "Year": "2018",
         "Month": "10",
+        "Date": "12",
         "Mesh Polarity": "negative",
         "Fuel Conc": "100%",
         "Flames Ignited": "10"
@@ -482,7 +409,7 @@
       "kind": "test",
       "test_id": "21",
       "identifier": null,
-      "date": "17",
+      "date": "2018-10-17",
       "fuel": "100% C2H4",
       "outcome": null,
       "oxygen_pct": null,
@@ -491,9 +418,9 @@
       "diluents": {},
       "extra": {
         "Test Type": "Second round of tests with gas-jet burner",
-        "Test Day": "18290",
         "Year": "2018",
         "Month": "10",
+        "Date": "17",
         "Mesh Polarity": "negative",
         "Fuel Conc": "80%",
         "Flames Ignited": "11"
@@ -506,7 +433,7 @@
       "kind": "test",
       "test_id": "22",
       "identifier": null,
-      "date": "25",
+      "date": "2018-10-25",
       "fuel": "40% CH4",
       "outcome": null,
       "oxygen_pct": null,
@@ -515,9 +442,9 @@
       "diluents": {},
       "extra": {
         "Test Type": "Second round of tests with gas-jet burner",
-        "Test Day": "18298",
         "Year": "2018",
         "Month": "10",
+        "Date": "25",
         "Mesh Polarity": "positive",
         "Fuel Conc": "40%",
         "Flames Ignited": "9"
@@ -530,7 +457,7 @@
       "kind": "test",
       "test_id": "23",
       "identifier": null,
-      "date": "29",
+      "date": "2018-10-29",
       "fuel": "30% C2H4",
       "outcome": null,
       "oxygen_pct": null,
@@ -539,9 +466,9 @@
       "diluents": {},
       "extra": {
         "Test Type": "Second round of tests with gas-jet burner",
-        "Test Day": "18302",
         "Year": "2018",
         "Month": "10",
+        "Date": "29",
         "Mesh Polarity": "positive",
         "Fuel Conc": "30%",
         "Flames Ignited": "10"
@@ -554,7 +481,7 @@
       "kind": "test",
       "test_id": "24",
       "identifier": null,
-      "date": "8",
+      "date": "2018-11-08",
       "fuel": "100% CH4",
       "outcome": null,
       "oxygen_pct": null,
@@ -563,40 +490,22 @@
       "diluents": {},
       "extra": {
         "Test Type": "Second round of tests with gas-jet burner",
-        "Test Day": "18312",
         "Year": "2018",
         "Month": "11",
+        "Date": "8",
         "Mesh Polarity": "positive",
-        "Fuel Conc": "70%",
+        "Fuel Conc": "70%; 100%",
         "Flames Ignited": "13"
       },
       "issues": [],
       "source": "PSI-22_Experimental table_ACME E-FIELD Flames.csv#row24"
     },
     {
-      "row": 25,
-      "kind": "test",
-      "test_id": "25",
-      "identifier": null,
-      "date": null,
-      "fuel": null,
-      "outcome": null,
-      "oxygen_pct": null,
-      "pressure_kpa": null,
-      "flow_cm_s": null,
-      "diluents": {},
-      "extra": {
-        "Fuel Conc": "100%"
-      },
-      "issues": [],
-      "source": "PSI-22_Experimental table_ACME E-FIELD Flames.csv#row25"
-    },
-    {
       "row": 26,
       "kind": "test",
       "test_id": "26",
       "identifier": null,
-      "date": "15",
+      "date": "2018-11-15",
       "fuel": "100% C2H4",
       "outcome": null,
       "oxygen_pct": null,
@@ -605,76 +514,22 @@
       "diluents": {},
       "extra": {
         "Test Type": "Second round of tests with gas-jet burner",
-        "Test Day": "18319",
         "Year": "2018",
         "Month": "11",
+        "Date": "15",
         "Mesh Polarity": "positive",
-        "Fuel Conc": "25%",
+        "Fuel Conc": "25%; 50%; 80%; 100%",
         "Flames Ignited": "11"
       },
       "issues": [],
       "source": "PSI-22_Experimental table_ACME E-FIELD Flames.csv#row26"
     },
     {
-      "row": 27,
-      "kind": "test",
-      "test_id": "27",
-      "identifier": null,
-      "date": null,
-      "fuel": null,
-      "outcome": null,
-      "oxygen_pct": null,
-      "pressure_kpa": null,
-      "flow_cm_s": null,
-      "diluents": {},
-      "extra": {
-        "Fuel Conc": "50%"
-      },
-      "issues": [],
-      "source": "PSI-22_Experimental table_ACME E-FIELD Flames.csv#row27"
-    },
-    {
-      "row": 28,
-      "kind": "test",
-      "test_id": "28",
-      "identifier": null,
-      "date": null,
-      "fuel": null,
-      "outcome": null,
-      "oxygen_pct": null,
-      "pressure_kpa": null,
-      "flow_cm_s": null,
-      "diluents": {},
-      "extra": {
-        "Fuel Conc": "80%"
-      },
-      "issues": [],
-      "source": "PSI-22_Experimental table_ACME E-FIELD Flames.csv#row28"
-    },
-    {
-      "row": 29,
-      "kind": "test",
-      "test_id": "29",
-      "identifier": null,
-      "date": null,
-      "fuel": null,
-      "outcome": null,
-      "oxygen_pct": null,
-      "pressure_kpa": null,
-      "flow_cm_s": null,
-      "diluents": {},
-      "extra": {
-        "Fuel Conc": "100%"
-      },
-      "issues": [],
-      "source": "PSI-22_Experimental table_ACME E-FIELD Flames.csv#row29"
-    },
-    {
       "row": 30,
       "kind": "test",
       "test_id": "30",
       "identifier": null,
-      "date": "15",
+      "date": "2018-11-15",
       "fuel": "100% C2H4",
       "outcome": null,
       "oxygen_pct": null,
@@ -683,69 +538,15 @@
       "diluents": {},
       "extra": {
         "Test Type": "Second round of tests with gas-jet burner",
-        "Test Day": "18319",
         "Year": "2018",
         "Month": "11",
+        "Date": "15",
         "Mesh Polarity": "positive",
-        "Fuel Conc": "25%",
+        "Fuel Conc": "25%; 50%; 80%; 100%",
         "Flames Ignited": "11"
       },
       "issues": [],
       "source": "PSI-22_Experimental table_ACME E-FIELD Flames.csv#row30"
-    },
-    {
-      "row": 31,
-      "kind": "test",
-      "test_id": "31",
-      "identifier": null,
-      "date": null,
-      "fuel": null,
-      "outcome": null,
-      "oxygen_pct": null,
-      "pressure_kpa": null,
-      "flow_cm_s": null,
-      "diluents": {},
-      "extra": {
-        "Fuel Conc": "50%"
-      },
-      "issues": [],
-      "source": "PSI-22_Experimental table_ACME E-FIELD Flames.csv#row31"
-    },
-    {
-      "row": 32,
-      "kind": "test",
-      "test_id": "32",
-      "identifier": null,
-      "date": null,
-      "fuel": null,
-      "outcome": null,
-      "oxygen_pct": null,
-      "pressure_kpa": null,
-      "flow_cm_s": null,
-      "diluents": {},
-      "extra": {
-        "Fuel Conc": "80%"
-      },
-      "issues": [],
-      "source": "PSI-22_Experimental table_ACME E-FIELD Flames.csv#row32"
-    },
-    {
-      "row": 33,
-      "kind": "test",
-      "test_id": "33",
-      "identifier": null,
-      "date": null,
-      "fuel": null,
-      "outcome": null,
-      "oxygen_pct": null,
-      "pressure_kpa": null,
-      "flow_cm_s": null,
-      "diluents": {},
-      "extra": {
-        "Fuel Conc": "100%"
-      },
-      "issues": [],
-      "source": "PSI-22_Experimental table_ACME E-FIELD Flames.csv#row33"
     }
   ]
 }

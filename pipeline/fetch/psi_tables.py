@@ -25,7 +25,7 @@ import io
 import json
 import re
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from pipeline.extract.checks import TO_CM_S, TO_KPA
@@ -42,8 +42,10 @@ COLUMNS = [
     ("test_id", r"^(?:as run )?test ?(?:#|no\.?|number)$|^(?:\w+ )?test #$|^sample (?:number|no\.?|#)$"
                 r"|^flex number$|^test$"),
     ("identifier", r"identifier|data file|^test id"),
-    ("date", r"^(?:test )?date$"),
-    ("fuel", r"^fuel|material|fuel type|^sample type$"),
+    # ACME "Test Day" is YYDDD (year + day of year); it wins over a bare "Date" (day of month).
+    ("date", r"^(?:test )?date$|^test day$"),
+    # ACME "Fuel MFC" is a flow controller and "Fuel Conc." the dilution: neither names the fuel.
+    ("fuel", r"^fuel(?! mfc| conc)|material|fuel type|^sample type$"),
     ("pressure", r"pressure|^p\b|^pinit\b"),
     # BASS-II has "calibrated initial O2 % by vol" then "... final O2 ...": the first (initial) wins.
     # ACME s-Flame: "Atmosphere" = "~21% O2 with N2".
@@ -102,8 +104,55 @@ def to_unit(lo, hi, unit: str | None, table: dict) -> dict | None:
 
 def is_header(row: list[str]) -> bool:
     cells = [c for c in row if c.strip()]
-    return len(cells) >= 3 and not any(NUM.fullmatch(c.strip()) for c in cells) and \
-        len(map_columns(row)) >= 2
+    if len(cells) < 2 or any(NUM.fullmatch(c.strip()) for c in cells):
+        return False
+    n = len(map_columns(row))
+    # Short headers (SLICE: "Test Date, Fuel Type") count only if every cell is recognised.
+    return n >= 2 and (len(cells) >= 3 or n == len(cells))
+
+
+MONTHS = {m: i for i, m in enumerate(
+    ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"], start=1)}
+
+
+def normalize_date(cell: str, row: list[str], header: list[str]) -> tuple[str | None, str | None]:
+    """Return (ISO date or the original text, trailing note). Unknown formats are kept as is."""
+    cell = (cell or "").strip()
+    if not cell:
+        return None, None
+    names = [h.strip().lower() for h in header]
+    m = re.fullmatch(r"(\d{2})(\d{3})", cell)                      # ACME YYDDD
+    if m and 1 <= int(m.group(2)) <= 366:
+        d = datetime(2000 + int(m.group(1)), 1, 1) + timedelta(days=int(m.group(2)) - 1)
+        return d.date().isoformat(), None
+    m = re.match(r"(\d{4})-([A-Za-z]{3})-(\d{1,2})\b\s*(.*)", cell)  # SLICE "2012-FEB-13 notes"
+    if m and m.group(2).lower() in MONTHS:
+        iso = f"{m.group(1)}-{MONTHS[m.group(2).lower()]:02d}-{int(m.group(3)):02d}"
+        return iso, m.group(4).strip() or None
+    if re.fullmatch(r"\d{1,2}", cell) and "year" in names and "month" in names:
+        # Separate Year / Month / Date columns (ACME BRE, E-FIELD): "Date" is the day of month.
+        year = row[names.index("year")].strip() if names.index("year") < len(row) else ""
+        month = row[names.index("month")].strip().lower() if names.index("month") < len(row) else ""
+        mon = int(month) if month.isdigit() else MONTHS.get(month[:3])
+        if year.isdigit() and mon:
+            return f"{year}-{mon:02d}-{int(cell):02d}", None
+    return cell, None
+
+
+def fix_autofill(tests: list[dict]) -> None:
+    """ACME CLD lists '40% CH4', '40% CH5', ... '40% CH14' on consecutive rows: a spreadsheet
+    autofill slip (also s-Flame 'with N2' -> 'with N3'). A fuel equal to the previous row's with
+    the subscript of its last formula + 1 is the same fuel. Only formula subscripts count (digit
+    right after an element symbol), so real numbering such as 'sample 1', 'sample 2' is kept."""
+    formula_end = re.compile(r"(.*?[A-Z][a-z]?)(\d+)")
+    prev_raw = prev_fixed = None
+    for rec in tests:
+        raw = rec["fuel"]
+        m, p = formula_end.fullmatch(raw or ""), formula_end.fullmatch(prev_raw or "")
+        if m and p and m.group(1) == p.group(1) and int(m.group(2)) == int(p.group(2)) + 1:
+            rec["fuel"] = prev_fixed
+            rec["issues"].append(f"fuel {raw!r} read as {prev_fixed!r} (spreadsheet autofill)")
+        prev_raw, prev_fixed = raw, rec["fuel"]
 
 
 def parse_rows(rows: list[list[str]], source_file: str) -> tuple[list[dict], list[str], list[str]]:
@@ -119,6 +168,14 @@ def parse_rows(rows: list[list[str]], source_file: str) -> tuple[list[dict], lis
             unmapped |= {h for i, h in enumerate(header) if h.strip() and i not in cols.values()}
             continue
         if header is None:
+            continue
+        if tests and _is_continuation(row, cols):
+            # E-FIELD: a row holding only a second "Fuel Conc" or a note belongs to the test above.
+            prev = tests[-1]
+            for i, h in enumerate(header):
+                if i < len(row) and h.strip() and row[i].strip():
+                    key = h.strip()
+                    prev["extra"][key] = "; ".join(filter(None, [prev["extra"].get(key), row[i].strip()]))
             continue
         # Lists/ranges in two or more condition columns (FLEX-2: "0.17; 0.21; 0.25" x
         # "0.5; 1.0; ... or 3.0") describe a design envelope, not individual tests.
@@ -141,7 +198,14 @@ def parse_rows(rows: list[list[str]], source_file: str) -> tuple[list[dict], lis
                     tests.append(rec)
             continue
         tests += _parse_row(row, header, cols, line_no, source_file)
+    fix_autofill(tests)
     return tests, sorted(mapped), sorted(unmapped)
+
+
+def _is_continuation(row: list[str], cols: dict[str, int]) -> bool:
+    """No test identity (id, identifier, date, fuel) and no conditions: not a test of its own."""
+    keys = ("test_id", "identifier", "date", "fuel", "oxygen", "pressure", "flow")
+    return not any(cols[f] < len(row) and row[cols[f]].strip() for f in keys if f in cols)
 
 
 def _fix_percent(value: str, issues: list[str]) -> str:
@@ -160,9 +224,10 @@ def _parse_row(row, header, cols, line_no, source_file) -> list[dict]:
     if "oxygen" in cols and cols["oxygen"] < len(row):
         row = list(row)
         row[cols["oxygen"]] = _fix_percent(row[cols["oxygen"]], issues)
+    date, date_note = normalize_date(get("date"), row, header)
     rec = {"row": line_no, "kind": "test",
            "test_id": get("test_id") or get("identifier") or str(line_no),
-           "identifier": get("identifier") or None, "date": get("date") or None,
+           "identifier": get("identifier") or None, "date": date,
            "fuel": get("fuel") or None, "outcome": get("outcome") or None}
 
     ox_cell = get("oxygen")
@@ -232,6 +297,8 @@ def _parse_row(row, header, cols, line_no, source_file) -> list[dict]:
             issues.append(f"composition sums to {total:.3f}, not 1")
     rec["extra"] = {h.strip(): row[i].strip() for i, h in enumerate(header)
                     if i < len(row) and h.strip() and i not in cols.values() and row[i].strip()}
+    if date_note:
+        rec["extra"]["date note"] = date_note
     if any("�" in c for c in row):
         issues.append("row contains unreadable characters")
     rec["issues"] = issues
@@ -264,7 +331,7 @@ def summarize(tests: list[dict]) -> dict:
         "oxygen_pct_range": span("oxygen_pct"),
         "pressure_kpa_range": span("pressure_kpa"),
         "flow_cm_s_range": span("flow_cm_s"),
-        "fuels": sorted({t["fuel"] for t in tests if t["fuel"]}, key=str.lower),
+        "fuels": sorted({t["fuel"] for t in tests if t["fuel"]}, key=lambda f: (f.lower(), f)),
     }
 
 

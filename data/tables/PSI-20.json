@@ -1,7 +1,7 @@
 {
   "accession": "PSI-20",
   "origin": "psi_files",
-  "parsed_at": "2026-11-14T12:14:49+00:00",
+  "parsed_at": "2026-11-14T13:31:49+00:00",
   "files": [
     {
       "file": "PSI-20_Experimental table_ACME BRE.csv",
@@ -47,7 +47,7 @@
       "kind": "test",
       "test_id": "2.1",
       "identifier": null,
-      "date": "8",
+      "date": "2019-02-08",
       "fuel": "100% C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -72,7 +72,7 @@
       "kind": "test",
       "test_id": "2.2",
       "identifier": null,
-      "date": "8",
+      "date": "2019-02-08",
       "fuel": "100% C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -97,7 +97,7 @@
       "kind": "test",
       "test_id": "2.3",
       "identifier": null,
-      "date": "8",
+      "date": "2019-02-08",
       "fuel": "100% C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -122,7 +122,7 @@
       "kind": "test",
       "test_id": "3.1",
       "identifier": null,
-      "date": "20",
+      "date": "2019-02-20",
       "fuel": "100% C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -147,7 +147,7 @@
       "kind": "test",
       "test_id": "3.2",
       "identifier": null,
-      "date": "20",
+      "date": "2019-02-20",
       "fuel": "100% C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -172,7 +172,7 @@
       "kind": "test",
       "test_id": "4.1",
       "identifier": null,
-      "date": "25",
+      "date": "2019-02-25",
       "fuel": "50% C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -196,7 +196,7 @@
       "kind": "test",
       "test_id": "4.2",
       "identifier": null,
-      "date": "25",
+      "date": "2019-02-25",
       "fuel": "50% C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -220,7 +220,7 @@
       "kind": "test",
       "test_id": "4.3",
       "identifier": null,
-      "date": "25",
+      "date": "2019-02-25",
       "fuel": "50% C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -244,7 +244,7 @@
       "kind": "test",
       "test_id": "4.4",
       "identifier": null,
-      "date": "25",
+      "date": "2019-02-25",
       "fuel": "50% C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -268,7 +268,7 @@
       "kind": "test",
       "test_id": "5.1",
       "identifier": null,
-      "date": "4",
+      "date": "2019-03-04",
       "fuel": "50% C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -292,7 +292,7 @@
       "kind": "test",
       "test_id": "5.2",
       "identifier": null,
-      "date": "4",
+      "date": "2019-03-04",
       "fuel": "50% C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -316,7 +316,7 @@
       "kind": "test",
       "test_id": "6",
       "identifier": null,
-      "date": "7",
+      "date": "2019-03-07",
       "fuel": "50% C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -342,7 +342,7 @@
       "kind": "test",
       "test_id": "7.1",
       "identifier": null,
-      "date": "11",
+      "date": "2019-03-11",
       "fuel": "50% C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -366,7 +366,7 @@
       "kind": "test",
       "test_id": "7.2",
       "identifier": null,
-      "date": "11",
+      "date": "2019-03-11",
       "fuel": "50% C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -390,7 +390,7 @@
       "kind": "test",
       "test_id": "8.1",
       "identifier": null,
-      "date": "28",
+      "date": "2019-03-28",
       "fuel": "100%C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -414,7 +414,7 @@
       "kind": "test",
       "test_id": "8.2",
       "identifier": null,
-      "date": "28",
+      "date": "2019-03-28",
       "fuel": "100%C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -438,7 +438,7 @@
       "kind": "test",
       "test_id": "9",
       "identifier": null,
-      "date": "1",
+      "date": "2019-04-01",
       "fuel": "100%C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -464,7 +464,7 @@
       "kind": "test",
       "test_id": "10.1",
       "identifier": null,
-      "date": "4",
+      "date": "2019-04-04",
       "fuel": "100%C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -488,7 +488,7 @@
       "kind": "test",
       "test_id": "10.2",
       "identifier": null,
-      "date": "4",
+      "date": "2019-04-04",
       "fuel": "100%C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -512,7 +512,7 @@
       "kind": "test",
       "test_id": "10.3",
       "identifier": null,
-      "date": "4",
+      "date": "2019-04-04",
       "fuel": "100%C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -536,7 +536,7 @@
       "kind": "test",
       "test_id": "11.1",
       "identifier": null,
-      "date": "3",
+      "date": "2020-09-03",
       "fuel": "100% C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -560,7 +560,7 @@
       "kind": "test",
       "test_id": "11.2",
       "identifier": null,
-      "date": "3",
+      "date": "2020-09-03",
       "fuel": "100% C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -584,7 +584,7 @@
       "kind": "test",
       "test_id": "11.3",
       "identifier": null,
-      "date": "3",
+      "date": "2020-09-03",
       "fuel": "100% C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -608,7 +608,7 @@
       "kind": "test",
       "test_id": "12.1",
       "identifier": null,
-      "date": "17",
+      "date": "2020-10-17",
       "fuel": "100% C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -632,7 +632,7 @@
       "kind": "test",
       "test_id": "12.2",
       "identifier": null,
-      "date": "17",
+      "date": "2020-10-17",
       "fuel": "100% C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -656,7 +656,7 @@
       "kind": "test",
       "test_id": "13.1",
       "identifier": null,
-      "date": "5",
+      "date": "2020-12-05",
       "fuel": "100% CH4",
       "outcome": null,
       "oxygen_pct": {
@@ -680,7 +680,7 @@
       "kind": "test",
       "test_id": "13.2",
       "identifier": null,
-      "date": "5",
+      "date": "2020-12-05",
       "fuel": "100% CH4",
       "outcome": null,
       "oxygen_pct": {
@@ -704,7 +704,7 @@
       "kind": "test",
       "test_id": "13.3",
       "identifier": null,
-      "date": "5",
+      "date": "2020-12-05",
       "fuel": "100% CH4",
       "outcome": null,
       "oxygen_pct": {
@@ -728,7 +728,7 @@
       "kind": "test",
       "test_id": "14.1",
       "identifier": null,
-      "date": "4",
+      "date": "2020-12-04",
       "fuel": "100% CH4",
       "outcome": null,
       "oxygen_pct": {
@@ -752,7 +752,7 @@
       "kind": "test",
       "test_id": "14.2",
       "identifier": null,
-      "date": "4",
+      "date": "2020-12-04",
       "fuel": "100% CH4",
       "outcome": null,
       "oxygen_pct": {
@@ -776,7 +776,7 @@
       "kind": "test",
       "test_id": "15.1",
       "identifier": null,
-      "date": "11",
+      "date": "2020-12-11",
       "fuel": "50% C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -800,7 +800,7 @@
       "kind": "test",
       "test_id": "15.2",
       "identifier": null,
-      "date": "11",
+      "date": "2020-12-11",
       "fuel": "50% C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -824,7 +824,7 @@
       "kind": "test",
       "test_id": "16.1",
       "identifier": null,
-      "date": "17",
+      "date": "2020-12-17",
       "fuel": "100% C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -848,7 +848,7 @@
       "kind": "test",
       "test_id": "16.2",
       "identifier": null,
-      "date": "17",
+      "date": "2020-12-17",
       "fuel": "100% C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -872,7 +872,7 @@
       "kind": "test",
       "test_id": "17.1",
       "identifier": null,
-      "date": "23",
+      "date": "2020-12-23",
       "fuel": "100% C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -896,7 +896,7 @@
       "kind": "test",
       "test_id": "17.2",
       "identifier": null,
-      "date": "23",
+      "date": "2020-12-23",
       "fuel": "100% C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -920,7 +920,7 @@
       "kind": "test",
       "test_id": "17.3",
       "identifier": null,
-      "date": "23",
+      "date": "2020-12-23",
       "fuel": "100% C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -944,7 +944,7 @@
       "kind": "test",
       "test_id": "18.1",
       "identifier": null,
-      "date": "20",
+      "date": "2021-01-20",
       "fuel": "100% C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -968,7 +968,7 @@
       "kind": "test",
       "test_id": "18.2",
       "identifier": null,
-      "date": "20",
+      "date": "2021-01-20",
       "fuel": "100% C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -992,7 +992,7 @@
       "kind": "test",
       "test_id": "18.3",
       "identifier": null,
-      "date": "20",
+      "date": "2021-01-20",
       "fuel": "100% C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -1016,7 +1016,7 @@
       "kind": "test",
       "test_id": "19.1",
       "identifier": null,
-      "date": "28",
+      "date": "2021-01-28",
       "fuel": "100% C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -1040,7 +1040,7 @@
       "kind": "test",
       "test_id": "19.2",
       "identifier": null,
-      "date": "28",
+      "date": "2021-01-28",
       "fuel": "100% C2H4",
       "outcome": null,
       "oxygen_pct": {
@@ -1064,7 +1064,7 @@
       "kind": "test",
       "test_id": "19.3",
       "identifier": null,
-      "date": "28",
+      "date": "2021-01-28",
       "fuel": "100% C2H4",
       "outcome": null,
       "oxygen_pct": {
