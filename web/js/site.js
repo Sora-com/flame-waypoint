@@ -114,6 +114,9 @@
     .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
     .then(site => {
       D.experiments = site.investigations.map(toExperiment);
+      D.scenarios = Object.fromEntries(site.scenarios.map(s => [s.id,
+        { name: s.name, short: s.short, o2: s.oxygen_pct, psi: s.pressure_psi, g: s.gravity_g, note: s.note }]));
+      D.lunarZone = { o2min: site.moon_zone.oxygen_pct_min, psimax: site.moon_zone.pressure_psi_max };
       D.site = { generatedAt: site.generated_at, includesTables: site.includes_psi_tables, ask: site.ask || null };
       start();
     })

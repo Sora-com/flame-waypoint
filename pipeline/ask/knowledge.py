@@ -17,7 +17,6 @@ from collections import Counter
 from pipeline.build.site_data import ROOT, build
 
 KPA_PER_PSI = 6.894757
-MOON = {"o2_min": 30.0, "psi_max": 10.2}  # challenge statement: >= 30 % O2 at <= 10.2 psi
 WORD = re.compile(r"[a-z0-9]+(?:[-.][a-z0-9]+)*")
 GLOSSARY = ROOT / "web" / "js" / "data.js"  # the dashboard glossary: ["term", "category", "definition"]
 STOP = set("the a an of and or in on at to for with by from is are was were be been what which who how "
@@ -43,6 +42,8 @@ class Knowledge:
     def __init__(self, site: dict | None = None):
         self.site = site or build(include_tables=True)
         self.investigations = self.site["investigations"]
+        zone = self.site["moon_zone"]  # same requirement as the dashboard (pipeline/build/site_data.py)
+        self.moon = {"o2_min": zone["oxygen_pct_min"], "psi_max": zone["pressure_psi_max"]}
         self.sources = {}  # id -> {title, url}
         for inv in self.investigations:
             self.sources[inv["accession"]] = {"title": f"{inv['acronym']}: {inv['title']}",
@@ -63,7 +64,7 @@ class Knowledge:
             rng = lambda k: [v for p in pts if p.get(k) for v in p[k] if v is not None]
             o2, kpa, flow = rng("o2_range"), rng("p_range"), rng("flow_range")
             for p in pts:
-                if _exact(p.get("o2_range")) and _exact(p.get("p_range")) and p["o2_range"][0] >= MOON["o2_min"]:
+                if _exact(p.get("o2_range")) and _exact(p.get("p_range")) and p["o2_range"][0] >= self.moon["o2_min"]:
                     rich.append((p["p_range"][0] / KPA_PER_PSI, p["o2_range"][0], inv, p))
             psi = [v / KPA_PER_PSI for v in kpa]
             tag = f"[{inv['accession']}] {inv['acronym']}"
@@ -88,8 +89,9 @@ class Knowledge:
         lines.append(f"Investigations with no O2 value in the data ({len(no_o2)}): {'; '.join(no_o2) or 'none'}.")
         lines.append(f"Investigations with no pressure value in the data ({len(no_p)}): {'; '.join(no_p) or 'none'}.")
         lines.append("")
-        lines.append(f"MOON BASE ATMOSPHERE: >= {MOON['o2_min']:g} % O2 at <= {MOON['psi_max']} psi.")
-        inside = [r for r in rich if r[0] <= MOON["psi_max"]]
+        lines.append(f"MOON BASE ATMOSPHERE (challenge requirement): >= {self.moon['o2_min']:g} % O2 at "
+                     f"<= {self.moon['psi_max']} psi.")
+        inside = [r for r in rich if r[0] <= self.moon["psi_max"]]
         if inside:
             names = sorted({f"[{r[2]['accession']}] {r[2]['acronym']}" for r in inside})
             lines.append(f"Tests inside that zone: {len(inside)}, in {', '.join(names)}.")
@@ -97,7 +99,7 @@ class Knowledge:
             lines.append("Tests inside that zone: none in the data.")
         if rich:
             psi, o2, inv, p = min(rich, key=lambda r: r[0])
-            lines.append(f"Lowest pressure tested at >= {MOON['o2_min']:g} % O2: {psi:.1f} psi at {o2:g} % O2, "
+            lines.append(f"Lowest pressure tested at >= {self.moon['o2_min']:g} % O2: {psi:.1f} psi at {o2:g} % O2, "
                          f"[{inv['accession']}] {inv['acronym']} ({p.get('label')}, {p.get('source')}).")
         lines += ["", *self.rankings(), "", *self.scenarios()]
         return "\n".join(lines)
@@ -138,8 +140,11 @@ class Knowledge:
     def scenarios(self) -> list[str]:
         """Closest tested conditions to each dashboard scenario, with the dashboard's distance d."""
         out = ["SCENARIOS (closest tests with both O2 and pressure; d = sqrt((dO2/15)^2 + (dp_psi/6)^2), 0 = exact match):"]
+        atmospheres: dict[tuple, list[dict]] = {}  # scenarios sharing an atmosphere get one line
         for scn in self.site.get("scenarios", []):
-            s_o2, s_psi = scn["oxygen_pct"], scn["pressure_kpa"] / KPA_PER_PSI
+            atmospheres.setdefault((scn["oxygen_pct"], scn["pressure_psi"]), []).append(scn)
+        for (s_o2, s_psi), group in atmospheres.items():
+            scn = {"name": " / ".join(s["name"] for s in group)}
             best = []
             for inv in self.investigations:
                 d = [(math.hypot((o2 - s_o2) / 15, (psi - s_psi) / 6), o2, psi)

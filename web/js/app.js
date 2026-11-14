@@ -19,6 +19,7 @@
     set(v) { try { localStorage.setItem("ff-dash-v3", JSON.stringify(v)); } catch {} }
   };
   const saved = store.get();
+  if (saved.scn && saved.scn !== "custom" && !D.scenarios[saved.scn]) delete saved.scn;  // scenario removed from data
   const S = {
     scn: saved.scn || "moon",
     o2: saved.o2 ?? D.scenarios.moon.o2, psi: saved.psi ?? D.scenarios.moon.psi, g: saved.g ?? D.scenarios.moon.g,
@@ -179,6 +180,8 @@
     persist();
     renderScenarioDependent();
   }
+  $("#scnSelect").innerHTML = Object.entries(D.scenarios).map(([k, s]) => `<option value="${k}">${esc(s.name)}</option>`).join("") + `<option value="custom">Custom</option>`;
+  $("#scnSeg").innerHTML = Object.entries(D.scenarios).map(([k, s]) => `<button data-v="${k}">${esc(s.short || s.name)}</button>`).join("");
   $("#scnSelect").addEventListener("change", e => setScenario(e.target.value));
   $$("#scnSeg button").forEach(b => b.addEventListener("click", () => setScenario(b.dataset.v)));
   [["pO2", "o2"], ["pP", "psi"], ["pG", "g"]].forEach(([id, k]) => $("#" + id).addEventListener("input", e => { S[k] = +e.target.value; S.scn = "custom"; syncScenario(); }));
@@ -236,7 +239,7 @@
     $("#kpis").innerHTML = [
       ["Investigations", EX.length, "", `${flight} in flight · ${EX.length - flight} on ground`],
       ["O₂ and p measured", both, ` / ${EX.length}`, `${nf(nPts)} distinct test points`],
-      ["In lunar zone", zone, "", "≥ 30 % O₂ and ≤ 10.2 psi", true],
+      ["In lunar zone", zone, "", `≥ ${D.lunarZone.o2min} % O₂ and ≤ ${nf(D.lunarZone.psimax, 1)} psi`, true],
       ["Test records", nf(tests), "", `from ${EX.filter(e => e.tests).length} PSI test tables`],
       ["Mean completeness", Math.round(compl * 100), " %", `${unreviewed} LLM extractions not yet reviewed`]
     ].map(([k, v, u, d, al]) => `<div class="kpi${al ? " alert" : ""}"><p class="kk">${k}</p><p class="v">${v}<small>${u}</small></p><p class="d">${d}</p></div>`).join("");

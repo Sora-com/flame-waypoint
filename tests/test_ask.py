@@ -79,5 +79,17 @@ class KnowledgeTest(unittest.TestCase):
             self.assertRegex(p["source"], r"^(PSI-\d+|ntrs:\d+|glossary)$")
 
 
+class SharedScenariosTest(unittest.TestCase):
+    def test_dashboard_and_assistant_use_the_same_scenarios(self):
+        from pipeline.build.site_data import MOON_ZONE, SCENARIOS
+        kb = Knowledge()
+        self.assertEqual(kb.site["scenarios"], SCENARIOS)
+        self.assertEqual(kb.site["moon_zone"], MOON_ZONE)
+        facts = kb.facts()
+        self.assertIn(f">= {MOON_ZONE['oxygen_pct_min']:g} % O2 at <= {MOON_ZONE['pressure_psi_max']} psi", facts)
+        for scn in SCENARIOS:
+            self.assertIn(scn["name"], facts.split("SCENARIOS")[1])
+
+
 if __name__ == "__main__":
     unittest.main()

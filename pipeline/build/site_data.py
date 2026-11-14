@@ -28,17 +28,24 @@ ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "data"
 OUT = ROOT / "web" / "data" / "site.json"
 
-# Reference atmospheres shown on the map and used for ranking.
+KPA_PER_PSI = 6.894757
+
+# Design scenarios and the Moon base requirement, shared by the dashboard, the assistant and the
+# coverage report (single source). Pressures are absolute. Moon, rover and Mars use NASA's exploration
+# atmosphere (34 % O2 at 8.2 psia) as the representative point inside the challenge requirement.
+MOON_ZONE = {"oxygen_pct_min": 30.0, "pressure_psi_max": 10.2}  # challenge statement
 SCENARIOS = [
-    {"id": "moon", "name": "Moon base (challenge)", "oxygen_pct": 30.0, "pressure_kpa": 70.3,
-     "note": ">= 30 % O2 at <= 10.2 psi (challenge statement)"},
-    {"id": "exploration", "name": "Exploration atmosphere", "oxygen_pct": 34.0, "pressure_kpa": 56.5,
-     "note": "34 % O2 at 8.2 psia (NASA exploration atmosphere studied in ACME BRE)"},
-    {"id": "iss", "name": "ISS cabin", "oxygen_pct": 21.0, "pressure_kpa": 101.3,
-     "note": "Sea-level air: 21 % O2 at 14.7 psi"},
-    {"id": "suit", "name": "Spacesuit", "oxygen_pct": 100.0, "pressure_kpa": 29.6,
-     "note": "100 % O2 at 4.3 psi (off the chart scale)"},
+    {"id": "iss", "name": "ISS", "short": "ISS", "oxygen_pct": 21.0, "pressure_psi": 14.7, "gravity_g": 0.0,
+     "note": "Sea-level cabin air: 21 % O₂ at 14.7 psi."},
+    {"id": "moon", "name": "Moon base", "short": "Moon", "oxygen_pct": 34.0, "pressure_psi": 8.2, "gravity_g": 0.16,
+     "note": "Requirement ≥ 30 % O₂ at ≤ 10.2 psi (challenge statement). Point: NASA exploration atmosphere."},
+    {"id": "rover", "name": "Pressurized rover", "short": "Rover", "oxygen_pct": 34.0, "pressure_psi": 8.2,
+     "gravity_g": 0.16, "note": "Same atmosphere as the Moon base, very small free volume."},
+    {"id": "mars", "name": "Mars", "short": "Mars", "oxygen_pct": 34.0, "pressure_psi": 8.2, "gravity_g": 0.38,
+     "note": "Habitat atmosphere not defined; exploration atmosphere assumed."},
 ]
+for _s in SCENARIOS:
+    _s["pressure_kpa"] = round(_s["pressure_psi"] * KPA_PER_PSI, 1)
 
 
 def load(path: Path, default=None):
@@ -128,6 +135,7 @@ def build(include_tables: bool) -> dict:
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "includes_psi_tables": include_tables,
         "scenarios": SCENARIOS,
+        "moon_zone": MOON_ZONE,
         "investigations": investigations,
         "ask": load(DATA / "ask" / "demo.json"),
     }

@@ -18,13 +18,15 @@ import json
 import sys
 from pathlib import Path
 
+from pipeline.build.site_data import KPA_PER_PSI, MOON_ZONE
+
 ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "data"
 
 # Moon base / exploration atmosphere from the challenge: >= 30 % O2 at <= 10.2 psi.
 # A small pressure margin keeps the 10.3-10.5 psi FLEX tests visible.
-MOON_O2_MIN = 30.0
-MOON_P_MAX_KPA = 10.5 * 6.894757
+MOON_O2_MIN = MOON_ZONE["oxygen_pct_min"]
+MOON_P_MAX_KPA = (MOON_ZONE["pressure_psi_max"] + 0.3) * KPA_PER_PSI
 
 
 def load(path: Path, default=None):

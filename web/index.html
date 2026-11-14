@@ -45,13 +45,7 @@
 
     <div class="side-scn">
       <p class="side-h">Active scenario</p>
-      <select id="scnSelect" aria-label="Active scenario">
-        <option value="iss">ISS</option>
-        <option value="moon">Moon base</option>
-        <option value="rover">Pressurized rover</option>
-        <option value="mars">Mars</option>
-        <option value="custom">Custom</option>
-      </select>
+      <select id="scnSelect" aria-label="Active scenario"></select>
       <dl class="scn-vals">
         <div><dt>O₂</dt><dd id="sO2"></dd></div>
         <div><dt>p</dt><dd id="sP"></dd></div>
@@ -146,9 +140,7 @@
         <div class="grid-side">
           <div class="panel controls">
             <div class="panel-h"><h3>Parameters</h3></div>
-            <div class="seg full" id="scnSeg">
-              <button data-v="iss">ISS</button><button data-v="moon">Moon</button><button data-v="rover">Rover</button><button data-v="mars">Mars</button>
-            </div>
+            <div class="seg full" id="scnSeg"></div>
             <div class="field"><label for="pO2">O₂ <output id="vO2"></output></label><input type="range" id="pO2" min="15" max="90" step="0.5"></div>
             <div class="field"><label for="pP">Pressure <output id="vP"></output></label><input type="range" id="pP" min="3" max="45" step="0.1"></div>
             <div class="field"><label for="pG">Gravity <output id="vG"></output></label><input type="range" id="pG" min="0" max="1" step="0.01"></div>
@@ -314,7 +306,7 @@
 
 <div class="toast" id="toast" hidden></div>
 
-<script src="js/data.js?v=3"></script>
-<script src="js/site.js?v=3"></script>
+<script src="js/data.js?v=4"></script>
+<script src="js/site.js?v=4"></script>
 </body>
 </html>

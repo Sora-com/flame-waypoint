@@ -1,20 +1,9 @@
-// Static dashboard content: design scenarios, glossary and model benchmark.
-// Investigations are not defined here: js/site.js loads them from data/site.json
-// (built by pipeline/build/site_data.py) into FIRE_DATA.experiments.
-//
-// Scenario pressures are absolute psi. g: gravity of the scenario (0 = µg, 1 = Earth).
+// Static dashboard content: glossary and model benchmark.
+// Investigations, design scenarios and the Moon base requirement are not defined here: js/site.js loads
+// them from data/site.json (built by pipeline/build/site_data.py, shared with the assistant).
 
 window.FIRE_DATA = {
   experiments: [],
-
-  // Design scenarios. Moon/rover: requirement ≥ 30 % O₂, ≤ 10.2 psi; representative point = NASA exploration atmosphere (34 %, 8.2 psi).
-  scenarios: {
-    iss:   { name: "ISS", o2: 21, psi: 14.7, g: 0, note: "Sea-level cabin air." },
-    moon:  { name: "Moon base", o2: 34, psi: 8.2, g: 0.16, note: "Requirement ≥ 30 % O₂ / ≤ 10.2 psi. Point: exploration atmosphere." },
-    rover: { name: "Pressurized rover", o2: 34, psi: 8.2, g: 0.16, note: "Same atmosphere as the base, very small free volume." },
-    mars:  { name: "Mars", o2: 34, psi: 8.2, g: 0.38, note: "Atmosphere not defined; exploration atmosphere assumed." }
-  },
-  lunarZone: { o2min: 30, psimax: 10.2 },
 
   // Technical glossary. Categories: facility, combustion, material, instrument, dashboard.
   glossary: [
