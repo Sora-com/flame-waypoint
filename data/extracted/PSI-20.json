@@ -1,0 +1,242 @@
+{
+  "accession": "PSI-20",
+  "acronym": "ACME BRE",
+  "title": "Advanced Combustion via Microgravity Experiments - Burning Rate Emulator",
+  "source_url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-20",
+  "origin": "psi",
+  "gravity": "microgravity",
+  "hardware": "Combustion Integrated Rack (CIR)  ACME",
+  "platform": "International Space Station (ISS)",
+  "period": [
+    "01-01-2010",
+    "02-08-2025"
+  ],
+  "sources": [
+    {
+      "id": "psi:PSI-20",
+      "title": "Advanced Combustion via Microgravity Experiments - Burning Rate Emulator",
+      "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-20"
+    }
+  ],
+  "fields": {
+    "test_type": "combustion",
+    "fuels": [
+      "CH4/N2",
+      "C2H4/N2"
+    ],
+    "fuel_phases": [
+      "gas"
+    ],
+    "sample_geometry": [
+      "porous circular burners"
+    ],
+    "sample_size": null,
+    "diluents": [
+      "N2"
+    ],
+    "suppressants": [],
+    "variables_studied": [
+      "fuel flow rate",
+      "burner surface temperature",
+      "heat flux"
+    ],
+    "sensors": [
+      "thermocouple",
+      "heat flux sensor"
+    ],
+    "safety_pillars": [
+      "detection",
+      "suppression"
+    ],
+    "key_findings": [
+      "Quasi-steady burning corresponding to various condensed-phase materials was observed in microgravity despite the absence of air flow",
+      "The ongoing combustion without air flow was notably seen in elevated-oxygen atmospheres",
+      "BRE’s results suggest that NASA may want to increase use of its alternative flammability Test 2, with the cone calorimeter"
+    ],
+    "earth_applications": "BRE yielded important data relevant to spacecraft fire safety",
+    "conditions": [
+      {
+        "label": "NASA considered atmosphere for human space missions",
+        "fuel": null,
+        "oxygen_pct": {
+          "min": 21,
+          "max": 21
+        },
+        "pressure_kpa": {
+          "min": 101.353,
+          "max": 101.353,
+          "original": "14.7-14.7 psia"
+        },
+        "flow_cm_s": null,
+        "evidence": [
+          "NASA - considered atmosphere for human space missions will be examined: 14.7 psia, 21 % oxygen"
+        ],
+        "source": "psi:PSI-20"
+      },
+      {
+        "label": "O2/N2 ambients with various pressures and ambient O2 concentrations",
+        "fuel": null,
+        "oxygen_pct": {
+          "min": 26.5,
+          "max": 26.5
+        },
+        "pressure_kpa": {
+          "min": 70.327,
+          "max": 70.327,
+          "original": "10.2-10.2 psia"
+        },
+        "flow_cm_s": null,
+        "evidence": [
+          "10.2 psia, 26.5 %;"
+        ],
+        "source": "psi:PSI-20"
+      },
+      {
+        "label": "O2/N2 ambients with various pressures and ambient O2 concentrations",
+        "fuel": null,
+        "oxygen_pct": {
+          "min": 34,
+          "max": 34
+        },
+        "pressure_kpa": {
+          "min": 56.537,
+          "max": 56.537,
+          "original": "8.2-8.2 psia"
+        },
+        "flow_cm_s": null,
+        "evidence": [
+          "and 8.2 psia, 34 % oxygen."
+        ],
+        "source": "psi:PSI-20"
+      }
+    ],
+    "paper_findings": []
+  },
+  "warnings": [
+    "psi:PSI-20: [O2/N2 ambients with various pressures and ambient O2 concentrations] evidence repaired from source text",
+    "psi:PSI-20: [O2/N2 ambients with various pressures and ambient O2 concentrations] evidence repaired from source text"
+  ],
+  "review_status": "model_only",
+  "extraction": {
+    "model": "mistral-nemo",
+    "prompt_version": "2",
+    "source_hash": "9a038895ddb681ae",
+    "papers": [],
+    "extracted_at": "2026-11-14T11:12:17+00:00",
+    "seconds": 40.1,
+    "runs": [
+      {
+        "source": "psi:PSI-20",
+        "seconds": 40.1,
+        "prompt_tokens": 1741,
+        "output_tokens": 618,
+        "raw": {
+          "test_type": "combustion",
+          "fuels": [
+            "CH4/N2",
+            "C2H4/N2"
+          ],
+          "fuel_phases": [
+            "gas"
+          ],
+          "sample_geometry": [
+            "porous circular burners"
+          ],
+          "sample_size": null,
+          "conditions": [
+            {
+              "label": "NASA considered atmosphere for human space missions",
+              "fuel": null,
+              "oxygen": {
+                "min": 21,
+                "max": 21,
+                "unit": "%"
+              },
+              "pressure": {
+                "min": 14.7,
+                "max": 14.7,
+                "unit": "psia"
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": [
+                "NASA - considered atmosphere for human space missions will be examined: 14.7 psia, 21 % oxygen"
+              ]
+            },
+            {
+              "label": "O2/N2 ambients with various pressures and ambient O2 concentrations",
+              "fuel": null,
+              "oxygen": {
+                "min": 26.5,
+                "max": 26.5,
+                "unit": "%"
+              },
+              "pressure": {
+                "min": 10.2,
+                "max": 10.2,
+                "unit": "psia"
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": [
+                "O2/N2 ambients with various pressures and ambient O2 concentrations"
+              ]
+            },
+            {
+              "label": "O2/N2 ambients with various pressures and ambient O2 concentrations",
+              "fuel": null,
+              "oxygen": {
+                "min": 34,
+                "max": 34,
+                "unit": "%"
+              },
+              "pressure": {
+                "min": 8.2,
+                "max": 8.2,
+                "unit": "psia"
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": [
+                "O2/N2 ambients with various pressures and ambient O2 concentrations"
+              ]
+            }
+          ],
+          "diluents": [
+            "N2"
+          ],
+          "suppressants": [],
+          "variables_studied": [
+            "fuel flow rate",
+            "burner surface temperature",
+            "heat flux"
+          ],
+          "sensors": [
+            "thermocouple",
+            "heat flux sensor"
+          ],
+          "safety_pillars": [
+            "detection",
+            "suppression"
+          ],
+          "key_findings": [
+            "Quasi-steady burning corresponding to various condensed-phase materials was observed in microgravity despite the absence of air flow",
+            "The ongoing combustion without air flow was notably seen in elevated-oxygen atmospheres",
+            "BRE’s results suggest that NASA may want to increase use of its alternative flammability Test 2, with the cone calorimeter"
+          ],
+          "earth_applications": "BRE yielded important data relevant to spacecraft fire safety"
+        }
+      }
+    ],
+    "rechecked_at": "2026-11-14T11:26:22+00:00"
+  }
+}

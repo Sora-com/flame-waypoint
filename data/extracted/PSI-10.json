@@ -1,0 +1,355 @@
+{
+  "accession": "PSI-10",
+  "acronym": "ACME/Flame Design",
+  "title": "Advanced Combustion via Microgravity Experiments / Flame Design",
+  "source_url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-10",
+  "origin": "psi",
+  "gravity": "microgravity",
+  "hardware": "Advanced Combustion via Microgravity Experiments (ACME)  Combustion Integrated Rack (CIR)  Reconfiguration of Combustion Integrated Rack (CIR)",
+  "platform": "International Space Station (ISS)",
+  "period": [
+    "01-14-1999",
+    "04-30-2025"
+  ],
+  "sources": [
+    {
+      "id": "psi:PSI-10",
+      "title": "Advanced Combustion via Microgravity Experiments / Flame Design",
+      "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-10"
+    },
+    {
+      "id": "ntrs:20070017909",
+      "title": "Radiative Extinction of Gaseous Spherical Diffusion Flames in Microgravity",
+      "url": "https://ntrs.nasa.gov/citations/20070017909",
+      "year": "2019"
+    },
+    {
+      "id": "ntrs:20000057049",
+      "title": "Effects of Structure and Hydrodynamics on the Sooting Behavior of Spherical Microgravity Diffusion Flames",
+      "url": "https://ntrs.nasa.gov/citations/20000057049",
+      "year": "2019"
+    }
+  ],
+  "fields": {
+    "test_type": "combustion",
+    "fuels": [
+      "ethylene",
+      "methane",
+      "propane"
+    ],
+    "fuel_phases": [
+      "gas"
+    ],
+    "sample_geometry": [
+      "spherical diffusion flames"
+    ],
+    "sample_size": "quasi-steady",
+    "diluents": [
+      "N2",
+      "CO2"
+    ],
+    "suppressants": [],
+    "variables_studied": [
+      "flow rate",
+      "Zst",
+      "amount of N2",
+      "pressure"
+    ],
+    "sensors": [
+      "cameras",
+      "radiometers",
+      "photomultiplier tubes",
+      "thermocouples"
+    ],
+    "safety_pillars": [
+      "detection",
+      "suppression"
+    ],
+    "key_findings": [
+      "Soot formation requires a region where local C/O ratio and T exceed their critical values, and where strain rate is sufficiently low.",
+      "Microgravity spherical diffusion flames extinguish when the peak temperature first decreases below 1130 K.",
+      "Steady-state spherical diffusion flames are possible."
+    ],
+    "earth_applications": "This project has the potential for improving efficiency and reducing pollutant emissions in terrestrial combustors.",
+    "conditions": [
+      {
+        "label": "Oxygen flowing into 4% ethylene",
+        "fuel": "ethylene",
+        "oxygen_pct": {
+          "min": 4,
+          "max": 4
+        },
+        "pressure_kpa": null,
+        "flow_cm_s": null,
+        "evidence": [
+          "oxygen issuing into 4% ethylene at 104 mg/s"
+        ],
+        "source": "ntrs:20070017909"
+      },
+      {
+        "label": "Quiescent ambient gas at 98 kPa",
+        "fuel": "ethylene",
+        "oxygen_pct": null,
+        "pressure_kpa": {
+          "min": 98,
+          "max": 98,
+          "original": "98-98 kPa"
+        },
+        "flow_cm_s": null,
+        "evidence": [
+          "The The in the NASA mm sphere sphere 2.2-second of a windowed CCD camera, diameter was Glenn porous supported was positioned pressure drop vessel a microprocessor sphere and fed at the center tower consisting using supported controller of the cylindrical by a fuel- and of sintered by a 1.6 mm a general- stainless lead-acid 10 micron steel chamber, tube whose diameter,length and volume were 25 cm, 53 cm and 27 liters, respectively.All testswere conductedin quiescentambientgasat 98kPa."
+        ],
+        "source": "ntrs:20000057049"
+      }
+    ],
+    "paper_findings": [
+      {
+        "text": "Extinction temperature is nearly invariant with flow rate, around 1100 K for oxygen into 4% ethylene flames.",
+        "source": "ntrs:20070017909"
+      },
+      {
+        "text": "Extinction begins when the flame radius starts to decrease.",
+        "source": "ntrs:20070017909"
+      },
+      {
+        "text": "Base extinction often led to complete extinction, where all flame luminosity disappeared during a drop test.",
+        "source": "ntrs:20070017909"
+      },
+      {
+        "text": "Microgravity laminar flames are sensitive to hydrodynamic disturbances.",
+        "source": "ntrs:20000057049"
+      },
+      {
+        "text": "The flames were ignited immediately after release into microgravity using a spring-loaded wire.",
+        "source": "ntrs:20000057049"
+      },
+      {
+        "text": "The serial pair of solenoid valves facilitated smooth ignition via optimization of the initial gas discharge.",
+        "source": "ntrs:20000057049"
+      }
+    ]
+  },
+  "warnings": [
+    "psi:PSI-10: [C2H4 normal flame, varying flow rate, Zst, N2, pressure] evidence not found in source: 'Obtain soot-inception limits... for C2H4 flames'",
+    "psi:PSI-10: [CH4 normal flame, varying flow rate, Zst, N2, pressure] evidence not found in source: 'Obtain soot-inception limits... for CH4 flames'",
+    "ntrs:20070017909: [Ethylene burning in normal flame, 17% oxygen] evidence not found in source: 'propane is flowing into an atmosphere of extinguishing flame of propane flowing '",
+    "ntrs:20070017909: [Ethylene burning in normal flame, 17% oxygen] oxygen: 17-17 % not in evidence, dropped",
+    "ntrs:20070017909: [Ethylene burning in normal flame, 17% oxygen] pressure: 0.98-0.98 bar not in evidence, dropped",
+    "ntrs:20070017909: [Ethylene burning in normal flame, 17% oxygen] flow_speed: 1.35-1.35 mg/s not in evidence, dropped",
+    "ntrs:20070017909: [Oxygen flowing into 4% ethylene] flow_speed: 104-104 mg/s not in evidence, dropped",
+    "ntrs:20000057049: [Quiescent ambient gas at 98 kPa] evidence repaired from source text"
+  ],
+  "review_status": "model_only",
+  "extraction": {
+    "model": "mistral-nemo",
+    "prompt_version": "2",
+    "source_hash": "eb154cd7922ba612",
+    "papers": [
+      "20000057049",
+      "20070017909"
+    ],
+    "extracted_at": "2026-11-14T11:03:47+00:00",
+    "seconds": 76.3,
+    "runs": [
+      {
+        "source": "psi:PSI-10",
+        "seconds": 30.5,
+        "prompt_tokens": 1091,
+        "output_tokens": 487,
+        "raw": {
+          "test_type": "combustion",
+          "fuels": [
+            "ethylene",
+            "methane"
+          ],
+          "fuel_phases": [
+            "gas"
+          ],
+          "sample_geometry": [
+            "spherical diffusion flames"
+          ],
+          "sample_size": "quasi-steady",
+          "conditions": [
+            {
+              "label": "C2H4 normal flame, varying flow rate, Zst, N2, pressure",
+              "fuel": "ethylene",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": [
+                "Obtain soot-inception limits... for C2H4 flames"
+              ]
+            },
+            {
+              "label": "CH4 normal flame, varying flow rate, Zst, N2, pressure",
+              "fuel": "methane",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": [
+                "Obtain soot-inception limits... for CH4 flames"
+              ]
+            }
+          ],
+          "diluents": [
+            "N2",
+            "CO2"
+          ],
+          "suppressants": [],
+          "variables_studied": [
+            "flow rate",
+            "Zst",
+            "amount of N2",
+            "pressure"
+          ],
+          "sensors": [
+            "cameras",
+            "radiometers",
+            "photomultiplier tubes",
+            "thermocouples"
+          ],
+          "safety_pillars": [
+            "detection",
+            "suppression"
+          ],
+          "key_findings": [
+            "Soot formation requires a region where local C/O ratio and T exceed their critical values, and where strain rate is sufficiently low.",
+            "Microgravity spherical diffusion flames extinguish when the peak temperature first decreases below 1130 K.",
+            "Steady-state spherical diffusion flames are possible."
+          ],
+          "earth_applications": "This project has the potential for improving efficiency and reducing pollutant emissions in terrestrial combustors."
+        }
+      },
+      {
+        "source": "ntrs:20070017909",
+        "seconds": 28.8,
+        "prompt_tokens": 1630,
+        "output_tokens": 356,
+        "raw": {
+          "fuels": [
+            "ethylene",
+            "propane"
+          ],
+          "conditions": [
+            {
+              "label": "Ethylene burning in normal flame, 17% oxygen",
+              "fuel": "ethylene",
+              "oxygen": {
+                "min": 17,
+                "max": 17,
+                "unit": "%"
+              },
+              "pressure": {
+                "min": 0.98,
+                "max": 0.98,
+                "unit": "bar"
+              },
+              "flow_speed": {
+                "min": 1.35,
+                "max": 1.35,
+                "unit": "mg/s"
+              },
+              "evidence": [
+                "propane is flowing into an atmosphere of extinguishing flame of propane flowing into 17% oxygen at 1.35 mg/s"
+              ]
+            },
+            {
+              "label": "Oxygen flowing into 4% ethylene",
+              "fuel": "ethylene",
+              "oxygen": {
+                "min": 4,
+                "max": 4,
+                "unit": "%"
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": 104,
+                "max": 104,
+                "unit": "mg/s"
+              },
+              "evidence": [
+                "oxygen issuing into 4% ethylene at 104 mg/s"
+              ]
+            }
+          ],
+          "key_findings": [
+            "Extinction temperature is nearly invariant with flow rate, around 1100 K for oxygen into 4% ethylene flames.",
+            "Extinction begins when the flame radius starts to decrease.",
+            "Base extinction often led to complete extinction, where all flame luminosity disappeared during a drop test."
+          ]
+        },
+        "excerpt_chars": 5815
+      },
+      {
+        "source": "ntrs:20000057049",
+        "seconds": 17.0,
+        "prompt_tokens": 1397,
+        "output_tokens": 198,
+        "raw": {
+          "fuels": [
+            "ethylene"
+          ],
+          "conditions": [
+            {
+              "label": "Quiescent ambient gas at 98 kPa",
+              "fuel": "ethylene",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": 98,
+                "max": 98,
+                "unit": "kPa"
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": [
+                "All tests were conducted in quiescent ambient gas at 98 kPa."
+              ]
+            }
+          ],
+          "key_findings": [
+            "Microgravity laminar flames are sensitive to hydrodynamic disturbances.",
+            "The flames were ignited immediately after release into microgravity using a spring-loaded wire.",
+            "The serial pair of solenoid valves facilitated smooth ignition via optimization of the initial gas discharge."
+          ]
+        },
+        "excerpt_chars": 4673
+      }
+    ],
+    "rechecked_at": "2026-11-14T11:26:22+00:00"
+  }
+}

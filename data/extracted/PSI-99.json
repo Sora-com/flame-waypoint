@@ -1,0 +1,383 @@
+{
+  "accession": "PSI-99",
+  "acronym": "SAFFIRE-II",
+  "title": "Spacecraft Fire Experiment-II",
+  "source_url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-99",
+  "origin": "psi",
+  "gravity": "microgravity",
+  "hardware": "Cygnus Pressurized Cargo Module  SAFFIRE",
+  "platform": "Cygnus Spacecraft",
+  "period": [
+    "09-30-2016",
+    "04-01-2017"
+  ],
+  "sources": [
+    {
+      "id": "psi:PSI-99",
+      "title": "Spacecraft Fire Experiment-II",
+      "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-99"
+    },
+    {
+      "id": "ntrs:20170001636",
+      "title": "The Spacecraft Fire Experiment (Saffire) - Objectives, Development and Status",
+      "url": "https://ntrs.nasa.gov/citations/20170001636",
+      "year": "2019"
+    },
+    {
+      "id": "ntrs:20200000557",
+      "title": "Buoyancy Effects on Concurrent Flame Spread Over Thick PMMA",
+      "url": "https://ntrs.nasa.gov/citations/20200000557",
+      "year": "2018"
+    }
+  ],
+  "fields": {
+    "test_type": "combustion",
+    "fuels": [
+      "PMMA",
+      "Nomex",
+      "SIBAL",
+      "silicone",
+      "SIBAL cloth",
+      "Silicone",
+      "polymethyl methacrylate (PMMA)"
+    ],
+    "fuel_phases": [
+      "solid"
+    ],
+    "sample_geometry": [
+      "5 cm x 29 cm"
+    ],
+    "sample_size": "9 samples",
+    "diluents": [],
+    "suppressants": [],
+    "variables_studied": [
+      "flow velocity",
+      "sample material"
+    ],
+    "sensors": [
+      "thermocouples",
+      "radiometers",
+      "solid state sensors",
+      "anemometer",
+      "two cameras"
+    ],
+    "safety_pillars": [
+      "detection",
+      "suppression"
+    ],
+    "key_findings": [
+      "Determined microgravity flammability limits for several spacecraft materials",
+      "Validated NASA’s material selection criteria",
+      "Examined how microgravity and limited oxygen affect flame size"
+    ],
+    "earth_applications": "Studying fire in small, sealed environments such as the Cygnus cargo supply vehicle benefits fire safety and prevention efforts on Earth, including inside mines, airplanes, or submarines.",
+    "conditions": [
+      {
+        "label": "PMMA samples, low-gravity combustion",
+        "fuel": "PMMA",
+        "oxygen_pct": null,
+        "pressure_kpa": null,
+        "flow_cm_s": {
+          "min": 20,
+          "max": 30,
+          "original": "20-30 cm/s"
+        },
+        "evidence": [
+          "The Saffire-II was conducted at an air flow velocity of either 20 or 30 cm/s"
+        ],
+        "source": "psi:PSI-99"
+      },
+      {
+        "label": "Saffire-III samples, normal gravity",
+        "fuel": "SIBAL cloth",
+        "oxygen_pct": null,
+        "pressure_kpa": null,
+        "flow_cm_s": {
+          "min": 30,
+          "max": 30,
+          "original": "30-30 cm/s"
+        },
+        "evidence": [
+          "while Saffire-III will be run at a flow velocity of 30 cm/s"
+        ],
+        "source": "ntrs:20170001636"
+      },
+      {
+        "label": "Normal gravity, varying pressure",
+        "fuel": "PMMA",
+        "oxygen_pct": null,
+        "pressure_kpa": {
+          "min": 40,
+          "max": 100,
+          "original": "40-100 kPa"
+        },
+        "flow_cm_s": {
+          "min": 20.0,
+          "max": 20.0,
+          "original": "200-200 mm/s"
+        },
+        "evidence": [
+          "Experiments in normal gravity were conducted over pressures ranging between 100 and 40 kPa and a forced flow velocity of 200 mm/s."
+        ],
+        "source": "ntrs:20200000557"
+      },
+      {
+        "label": "Microgravity, fixed pressure and flow speed",
+        "fuel": "PMMA",
+        "oxygen_pct": null,
+        "pressure_kpa": {
+          "min": 100,
+          "max": 100,
+          "original": "100-100 kPa"
+        },
+        "flow_cm_s": {
+          "min": 20.0,
+          "max": 20.0,
+          "original": "200-200 mm/s"
+        },
+        "evidence": [
+          "Microgravity experiments were conducted during NASA’s Spacecraft Fire Experiment (Saffire II), on board the Cygnus spacecraft at 100 kPa with an air flow velocity of 200 mm/s."
+        ],
+        "source": "ntrs:20200000557"
+      }
+    ],
+    "paper_findings": [
+      {
+        "text": "The materials selected for Saffire-II have normal gravity Maximum Oxygen Concentration (MOC) flammability limits that indicate they will burn in normal gravity just above and below 21% O2 by volume.",
+        "source": "ntrs:20170001636"
+      },
+      {
+        "text": "Reductions of pressure slow down the flame spread over the PMMA surface approaching that in microgravity.",
+        "source": "ntrs:20200000557"
+      },
+      {
+        "text": "At an ambient pressure of 100 kPa, the pyrolysis front takes about 150 s to progress over the entire length of the sample (~140 mm), which is significantly faster when compared to the average 450 s obtained at about 40 kPa.",
+        "source": "ntrs:20200000557"
+      },
+      {
+        "text": "The flame brightness is also reduced with pressure, becoming weaker as pressure is reduced.",
+        "source": "ntrs:20200000557"
+      }
+    ]
+  },
+  "warnings": [
+    "ntrs:20170001636: [Saffire-II samples, normal gravity] flow_speed: 20-20 cm/s not in evidence, dropped"
+  ],
+  "review_status": "model_only",
+  "extraction": {
+    "model": "mistral-nemo",
+    "prompt_version": "2",
+    "source_hash": "15a6c20728c06a65",
+    "papers": [
+      "20170001636",
+      "20200000557"
+    ],
+    "extracted_at": "2026-11-14T11:25:10+00:00",
+    "seconds": 79.9,
+    "runs": [
+      {
+        "source": "psi:PSI-99",
+        "seconds": 26.6,
+        "prompt_tokens": 1296,
+        "output_tokens": 419,
+        "raw": {
+          "test_type": "combustion",
+          "fuels": [
+            "PMMA",
+            "Nomex",
+            "SIBAL",
+            "silicone"
+          ],
+          "fuel_phases": [
+            "solid",
+            "solid",
+            "solid",
+            "solid"
+          ],
+          "sample_geometry": [
+            "5 cm x 29 cm",
+            "5 cm x 29 cm",
+            "5 cm x 29 cm",
+            "5 cm x 29 cm"
+          ],
+          "sample_size": "9 samples",
+          "conditions": [
+            {
+              "label": "PMMA samples, low-gravity combustion",
+              "fuel": "PMMA",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": 20,
+                "max": 30,
+                "unit": "cm/s"
+              },
+              "evidence": [
+                "The Saffire-II was conducted at an air flow velocity of either 20 or 30 cm/s"
+              ]
+            }
+          ],
+          "diluents": [],
+          "suppressants": [],
+          "variables_studied": [
+            "flow velocity",
+            "sample material"
+          ],
+          "sensors": [
+            "thermocouples",
+            "radiometers",
+            "solid state sensors",
+            "anemometer",
+            "two cameras"
+          ],
+          "safety_pillars": [
+            "detection",
+            "suppression"
+          ],
+          "key_findings": [
+            "Determined microgravity flammability limits for several spacecraft materials",
+            "Validated NASA’s material selection criteria",
+            "Examined how microgravity and limited oxygen affect flame size"
+          ],
+          "earth_applications": "Studying fire in small, sealed environments such as the Cygnus cargo supply vehicle benefits fire safety and prevention efforts on Earth, including inside mines, airplanes, or submarines."
+        }
+      },
+      {
+        "source": "ntrs:20170001636",
+        "seconds": 22.4,
+        "prompt_tokens": 991,
+        "output_tokens": 412,
+        "raw": {
+          "fuels": [
+            "SIBAL cloth",
+            "Silicone",
+            "PMMA",
+            "Nomex"
+          ],
+          "conditions": [
+            {
+              "label": "Saffire-II samples, normal gravity",
+              "fuel": "SIBAL cloth",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": 20,
+                "max": 20,
+                "unit": "cm/s"
+              },
+              "evidence": [
+                "Saffire-II has a sample card that contains 9 samples, each 5 cm x 29 cm. ... Air Flow (cm/s) Igniter Position S1 Silicone 0.25 mm 20 Upstream and atmospheric parameters."
+              ]
+            },
+            {
+              "label": "Saffire-III samples, normal gravity",
+              "fuel": "SIBAL cloth",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": 30,
+                "max": 30,
+                "unit": "cm/s"
+              },
+              "evidence": [
+                "while Saffire-III will be run at a flow velocity of 30 cm/s"
+              ]
+            }
+          ],
+          "key_findings": [
+            "The materials selected for Saffire-II have normal gravity Maximum Oxygen Concentration (MOC) flammability limits that indicate they will burn in normal gravity just above and below 21% O2 by volume."
+          ]
+        },
+        "excerpt_chars": 2823
+      },
+      {
+        "source": "ntrs:20200000557",
+        "seconds": 30.9,
+        "prompt_tokens": 1583,
+        "output_tokens": 431,
+        "raw": {
+          "fuels": [
+            "polymethyl methacrylate (PMMA)"
+          ],
+          "conditions": [
+            {
+              "label": "Normal gravity, varying pressure",
+              "fuel": "PMMA",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": 40,
+                "max": 100,
+                "unit": "kPa"
+              },
+              "flow_speed": {
+                "min": 200,
+                "max": 200,
+                "unit": "mm/s"
+              },
+              "evidence": [
+                "Experiments in normal gravity were conducted over pressures ranging between 100 and 40 kPa and a forced flow velocity of 200 mm/s."
+              ]
+            },
+            {
+              "label": "Microgravity, fixed pressure and flow speed",
+              "fuel": "PMMA",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": 100,
+                "max": 100,
+                "unit": "kPa"
+              },
+              "flow_speed": {
+                "min": 200,
+                "max": 200,
+                "unit": "mm/s"
+              },
+              "evidence": [
+                "Microgravity experiments were conducted during NASA’s Spacecraft Fire Experiment (Saffire II), on board the Cygnus spacecraft at 100 kPa with an air flow velocity of 200 mm/s."
+              ]
+            }
+          ],
+          "key_findings": [
+            "Reductions of pressure slow down the flame spread over the PMMA surface approaching that in microgravity.",
+            "At an ambient pressure of 100 kPa, the pyrolysis front takes about 150 s to progress over the entire length of the sample (~140 mm), which is significantly faster when compared to the average 450 s obtained at about 40 kPa.",
+            "The flame brightness is also reduced with pressure, becoming weaker as pressure is reduced."
+          ]
+        },
+        "excerpt_chars": 5812
+      }
+    ],
+    "rechecked_at": "2026-11-14T11:26:22+00:00"
+  }
+}

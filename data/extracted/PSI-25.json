@@ -1,0 +1,491 @@
+{
+  "accession": "PSI-25",
+  "acronym": "BASS-II",
+  "title": "Burning and Suppression of Solids - II",
+  "source_url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-25",
+  "origin": "psi",
+  "gravity": "microgravity",
+  "hardware": "Microgravity Science Glovebox (MSG)",
+  "platform": "International Space Station (ISS)",
+  "period": [
+    "01-01-2010",
+    "12-31-2022"
+  ],
+  "sources": [
+    {
+      "id": "psi:PSI-25",
+      "title": "Burning and Suppression of Solids - II",
+      "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-25"
+    },
+    {
+      "id": "ntrs:20150019858",
+      "title": "Results from On-Board CSA-CP and CDM Sensor Readings During the Burning and Suppression of Solids II (BASS-II) Experiment in the Microgravity Science Glovebox (MSG)",
+      "url": "https://ntrs.nasa.gov/citations/20150019858",
+      "year": "2019"
+    },
+    {
+      "id": "ntrs:20150008962",
+      "title": "Concurrent Flame Growth, Spread and Extinction over Composite Fabric Samples in Low Speed Purely Forced Flow in Microgravity",
+      "url": "https://ntrs.nasa.gov/citations/20150008962",
+      "year": "2019"
+    },
+    {
+      "id": "ntrs:20160012691",
+      "title": "Correlation of Normal Gravity Mixed Convection Blowoff Limits with Microgravity Forced Flow Blowoff Limits",
+      "url": "https://ntrs.nasa.gov/citations/20160012691",
+      "year": "2019"
+    },
+    {
+      "id": "ntrs:20150008961",
+      "title": "Microgravity Flammability of PMMA Rods in Concurrent Flow",
+      "url": "https://ntrs.nasa.gov/citations/20150008961",
+      "year": "2019"
+    }
+  ],
+  "fields": {
+    "test_type": "combustion",
+    "fuels": [
+      "PMMA",
+      "cotton-fiberglass fabric blend",
+      "polymethylmethacrylate (PMMA)"
+    ],
+    "fuel_phases": [
+      "solid"
+    ],
+    "sample_geometry": [
+      "rods"
+    ],
+    "sample_size": null,
+    "diluents": [
+      "nitrogen"
+    ],
+    "suppressants": [],
+    "variables_studied": [
+      "forced flow velocity",
+      "ambient oxygen concentration"
+    ],
+    "sensors": [
+      "color video camera"
+    ],
+    "safety_pillars": [
+      "detection",
+      "suppression"
+    ],
+    "key_findings": [
+      "BASS-II results contribute to the combustion computational models used in the design of fire detection and suppression systems in microgravity and on Earth."
+    ],
+    "earth_applications": "BASS-II helps engineers select the safest materials and improve firefighting methods on future space missions.",
+    "conditions": [
+      {
+        "label": "PMMA rod, low-oxygen blowoff tests",
+        "fuel": "PMMA",
+        "oxygen_pct": null,
+        "pressure_kpa": null,
+        "flow_cm_s": {
+          "min": null,
+          "max": 40,
+          "original": "None-40 cm/s"
+        },
+        "evidence": [
+          "Fuel samples were mounted inside a small wind tunnel which could impose airflow speeds up to 40 cm/s."
+        ],
+        "source": "psi:PSI-25"
+      },
+      {
+        "label": "PMMA rod, low-oxygen blowoff tests",
+        "fuel": "PMMA",
+        "oxygen_pct": null,
+        "pressure_kpa": null,
+        "flow_cm_s": {
+          "min": 35,
+          "max": 55,
+          "original": "35-55 cm/s"
+        },
+        "evidence": [
+          "With no restrictors, the maximum flow velocity was ~55 cm/s, and with two restrictors this was reduced to ~35 cm/s."
+        ],
+        "source": "ntrs:20150019858"
+      },
+      {
+        "label": "Cotton-fiberglass fabric blend, varying oxygen and flow speed",
+        "fuel": "cotton-fiberglass fabric blend",
+        "oxygen_pct": {
+          "min": 16,
+          "max": 21
+        },
+        "pressure_kpa": null,
+        "flow_cm_s": {
+          "min": 1,
+          "max": 55,
+          "original": "1-55 cm/s"
+        },
+        "evidence": [
+          "Ambient oxygen was varied from 21% down to 16% and flow speed from 40 cm/s down to 1 cm/s.",
+          "The tests were conducted in ambient oxygen molar fraction of 16% to 21%.",
+          "The flow speed could be varied from 1 to 55 cm/s."
+        ],
+        "source": "ntrs:20150008962"
+      },
+      {
+        "label": "2.2 cm cotton-fiberglass fabric blend, 21% O2, varying flow speed",
+        "fuel": "cotton-fiberglass fabric blend",
+        "oxygen_pct": null,
+        "pressure_kpa": null,
+        "flow_cm_s": {
+          "min": 2.2,
+          "max": 10,
+          "original": "2.2-10 cm/s"
+        },
+        "evidence": [
+          "A 2.2 cm wide sample in 18.7% O2 was first ignited at 10 cm/s flow.",
+          "Flow speed was decreased to 2.2 cm/s incrementally after ignition."
+        ],
+        "source": "ntrs:20150008962"
+      },
+      {
+        "label": "PMMA rod, low-oxygen blowoff tests",
+        "fuel": "PMMA",
+        "oxygen_pct": {
+          "min": 14,
+          "max": 21
+        },
+        "pressure_kpa": null,
+        "flow_cm_s": null,
+        "evidence": [
+          "Oxygen concentrations in the MSG working volume were varied during the testing from ambient ISS oxygen levels (~ 21% O2) down to ~14% O2"
+        ],
+        "source": "ntrs:20150008961"
+      }
+    ],
+    "paper_findings": [
+      {
+        "text": "The CO versus CO2 followed a linear trend for some datasets, but not for all the different geometries of fuel and flow tested.",
+        "source": "ntrs:20150019858"
+      },
+      {
+        "text": "The majority of the tests had heat release rates well below 100 Watts.",
+        "source": "ntrs:20150019858"
+      },
+      {
+        "text": "The global equivalence ratio for the tests is estimated to be fuel rich: 1.3 on average using mass loss and oxygen consumption data.",
+        "source": "ntrs:20150019858"
+      },
+      {
+        "text": "The quenching speeds were found to be between 1 and 5 cm/s with higher speed in lower oxygen atmosphere.",
+        "source": "ntrs:20150008962"
+      },
+      {
+        "text": "Flames spread more slowly across the narrower samples, at lower flow velocities and at lower oxygen percentages.",
+        "source": "ntrs:20150008962"
+      },
+      {
+        "text": "For this thin fabric fuel in concurrent flow, flame spread rate is relatively large and the sample is not long enough to fine tune the flow speed during the one to two minutes of experimental run time.",
+        "source": "ntrs:20150008962"
+      },
+      {
+        "text": "The blowoff boundaries found for each rod radius are approximately linear with flow, with the exception of the 14% oxygen data.",
+        "source": "ntrs:20160012691"
+      },
+      {
+        "text": "The forced stretch rate at blowoff varies linearly with oxygen in addition to varying as the square root of the rod radius.",
+        "source": "ntrs:20160012691"
+      },
+      {
+        "text": "An empirical linear superposition of the buoyant stretch rate of ab=78 s-1 aligns the data with the BASS-II boundary.",
+        "source": "ntrs:20160012691"
+      },
+      {
+        "text": "Twenty-four concurrent axial flow flammability tests with three diameters of cast PMMA cylindrical rods were performed.",
+        "source": "ntrs:20150008961"
+      },
+      {
+        "text": "Oxygen concentrations before and after each test were measured with an on-board CSA-CP sensor.",
+        "source": "ntrs:20150008961"
+      },
+      {
+        "text": "Flow velocity through the duct was also varied by changing the fan voltage, and measured with a hot-wire anemometer.",
+        "source": "ntrs:20150008961"
+      }
+    ]
+  },
+  "warnings": [
+    "psi:PSI-25: [PMMA rod, low-oxygen blowoff tests] evidence repaired from source text",
+    "ntrs:20150019858: [PMMA rod, low-oxygen blowoff tests] evidence not found in source: 'The oxygen concentrations in the MSG working volume were varied during the testi'",
+    "ntrs:20150019858: [PMMA rod, low-oxygen blowoff tests] oxygen: 14-21 % not in evidence, dropped",
+    "ntrs:20150008962: [Cotton-fiberglass fabric blend, varying oxygen and flow speed] pressure: None-1 atm not in evidence, dropped",
+    "ntrs:20150008962: [2.2 cm cotton-fiberglass fabric blend, 21% O2, varying flow speed] oxygen: 21-21 % not in evidence, dropped",
+    "ntrs:20150008962: [2.2 cm cotton-fiberglass fabric blend, 21% O2, varying flow speed] pressure: None-1 atm not in evidence, dropped",
+    "ntrs:20150008962: [2.2 cm cotton-fiberglass fabric blend, 21% O2, varying flow speed] flow_speed: min > max, swapped",
+    "ntrs:20160012691: [Cast PMMA rods, 14-18% oxygen, varying flow speeds] evidence not found in source: 'cast PMMA rods of diameters ranging from 0.635 cm to 3.81 cm were burned at oxyg'",
+    "ntrs:20160012691: [Cast PMMA rods, 14-18% oxygen, varying flow speeds] oxygen: 14-18 % not in evidence, dropped",
+    "ntrs:20160012691: [Cast PMMA rods, 14-18% oxygen, varying flow speeds] flow_speed: None-165 SLPM not in evidence, dropped"
+  ],
+  "review_status": "model_only",
+  "extraction": {
+    "model": "mistral-nemo",
+    "prompt_version": "2",
+    "source_hash": "7d29f1fc30714dcd",
+    "papers": [
+      "20150008961",
+      "20150008962",
+      "20150019858",
+      "20160012691"
+    ],
+    "extracted_at": "2026-11-14T11:15:51+00:00",
+    "seconds": 95.1,
+    "runs": [
+      {
+        "source": "psi:PSI-25",
+        "seconds": 20.0,
+        "prompt_tokens": 1286,
+        "output_tokens": 301,
+        "raw": {
+          "test_type": "combustion",
+          "fuels": [
+            "PMMA"
+          ],
+          "fuel_phases": [
+            "solid"
+          ],
+          "sample_geometry": [
+            "rods"
+          ],
+          "sample_size": null,
+          "conditions": [
+            {
+              "label": "PMMA rod, low-oxygen blowoff tests",
+              "fuel": "PMMA",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": 40,
+                "unit": "cm/s"
+              },
+              "evidence": []
+            }
+          ],
+          "diluents": [
+            "nitrogen"
+          ],
+          "suppressants": [],
+          "variables_studied": [
+            "forced flow velocity",
+            "ambient oxygen concentration"
+          ],
+          "sensors": [
+            "color video camera"
+          ],
+          "safety_pillars": [
+            "detection",
+            "suppression"
+          ],
+          "key_findings": [
+            "BASS-II results contribute to the combustion computational models used in the design of fire detection and suppression systems in microgravity and on Earth."
+          ],
+          "earth_applications": "BASS-II helps engineers select the safest materials and improve firefighting methods on future space missions."
+        }
+      },
+      {
+        "source": "ntrs:20150019858",
+        "seconds": 16.3,
+        "prompt_tokens": 1566,
+        "output_tokens": 283,
+        "raw": {
+          "fuels": [
+            "PMMA"
+          ],
+          "conditions": [
+            {
+              "label": "PMMA rod, low-oxygen blowoff tests",
+              "fuel": "PMMA",
+              "oxygen": {
+                "min": 14,
+                "max": 21,
+                "unit": "%"
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": 35,
+                "max": 55,
+                "unit": "cm/s"
+              },
+              "evidence": [
+                "The oxygen concentrations in the MSG working volume were varied during the testing from ambient ISS oxygen levels (~ 21% O2) down to ~ 14% O2 for very near-limit flames.",
+                "With no restrictors, the maximum flow velocity was ~55 cm/s, and with two restrictors this was reduced to ~35 cm/s."
+              ]
+            }
+          ],
+          "key_findings": [
+            "The CO versus CO2 followed a linear trend for some datasets, but not for all the different geometries of fuel and flow tested.",
+            "The majority of the tests had heat release rates well below 100 Watts.",
+            "The global equivalence ratio for the tests is estimated to be fuel rich: 1.3 on average using mass loss and oxygen consumption data."
+          ]
+        },
+        "excerpt_chars": 5428
+      },
+      {
+        "source": "ntrs:20150008962",
+        "seconds": 26.9,
+        "prompt_tokens": 1722,
+        "output_tokens": 476,
+        "raw": {
+          "fuels": [
+            "cotton-fiberglass fabric blend"
+          ],
+          "conditions": [
+            {
+              "label": "Cotton-fiberglass fabric blend, varying oxygen and flow speed",
+              "fuel": "cotton-fiberglass fabric blend",
+              "oxygen": {
+                "min": 16,
+                "max": 21,
+                "unit": "%"
+              },
+              "pressure": {
+                "min": null,
+                "max": 1,
+                "unit": "atm"
+              },
+              "flow_speed": {
+                "min": 1,
+                "max": 55,
+                "unit": "cm/s"
+              },
+              "evidence": [
+                "Ambient oxygen was varied from 21% down to 16% and flow speed from 40 cm/s down to 1 cm/s.",
+                "The tests were conducted in ambient oxygen molar fraction of 16% to 21%.",
+                "The flow speed could be varied from 1 to 55 cm/s."
+              ]
+            },
+            {
+              "label": "2.2 cm cotton-fiberglass fabric blend, 21% O2, varying flow speed",
+              "fuel": "cotton-fiberglass fabric blend",
+              "oxygen": {
+                "min": 21,
+                "max": 21,
+                "unit": "%"
+              },
+              "pressure": {
+                "min": null,
+                "max": 1,
+                "unit": "atm"
+              },
+              "flow_speed": {
+                "min": 10,
+                "max": 2.2,
+                "unit": "cm/s"
+              },
+              "evidence": [
+                "A 2.2 cm wide sample in 18.7% O2 was first ignited at 10 cm/s flow.",
+                "Flow speed was decreased to 2.2 cm/s incrementally after ignition."
+              ]
+            }
+          ],
+          "key_findings": [
+            "The quenching speeds were found to be between 1 and 5 cm/s with higher speed in lower oxygen atmosphere.",
+            "Flames spread more slowly across the narrower samples, at lower flow velocities and at lower oxygen percentages.",
+            "For this thin fabric fuel in concurrent flow, flame spread rate is relatively large and the sample is not long enough to fine tune the flow speed during the one to two minutes of experimental run time."
+          ]
+        },
+        "excerpt_chars": 5632
+      },
+      {
+        "source": "ntrs:20160012691",
+        "seconds": 18.5,
+        "prompt_tokens": 1623,
+        "output_tokens": 318,
+        "raw": {
+          "fuels": [
+            "polymethylmethacrylate (PMMA)"
+          ],
+          "conditions": [
+            {
+              "label": "Cast PMMA rods, 14-18% oxygen, varying flow speeds",
+              "fuel": "PMMA",
+              "oxygen": {
+                "min": 14,
+                "max": 18,
+                "unit": "%"
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": 165,
+                "unit": "SLPM"
+              },
+              "evidence": [
+                "cast PMMA rods of diameters ranging from 0.635 cm to 3.81 cm were burned at oxygen concentrations ranging from 14 to 18% by volume.",
+                "The lowest flow rate where blowoff occurs was determined iteratively for each oxygen concentration. Due to limitations in system pressures, the maximum flow rate was 165 SLPM (60.3 cm/s average tube speed)."
+              ]
+            }
+          ],
+          "key_findings": [
+            "The blowoff boundaries found for each rod radius are approximately linear with flow, with the exception of the 14% oxygen data.",
+            "The forced stretch rate at blowoff varies linearly with oxygen in addition to varying as the square root of the rod radius.",
+            "An empirical linear superposition of the buoyant stretch rate of ab=78 s-1 aligns the data with the BASS-II boundary."
+          ]
+        },
+        "excerpt_chars": 5768
+      },
+      {
+        "source": "ntrs:20150008961",
+        "seconds": 13.4,
+        "prompt_tokens": 1259,
+        "output_tokens": 231,
+        "raw": {
+          "fuels": [
+            "PMMA"
+          ],
+          "conditions": [
+            {
+              "label": "PMMA rod, low-oxygen blowoff tests",
+              "fuel": "PMMA",
+              "oxygen": {
+                "min": 14,
+                "max": 21,
+                "unit": "%"
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": [
+                "Oxygen concentrations in the MSG working volume were varied during the testing from ambient ISS oxygen levels (~ 21% O2) down to ~14% O2"
+              ]
+            }
+          ],
+          "key_findings": [
+            "Twenty-four concurrent axial flow flammability tests with three diameters of cast PMMA cylindrical rods were performed.",
+            "Oxygen concentrations before and after each test were measured with an on-board CSA-CP sensor.",
+            "Flow velocity through the duct was also varied by changing the fan voltage, and measured with a hot-wire anemometer."
+          ]
+        },
+        "excerpt_chars": 4284
+      }
+    ],
+    "rechecked_at": "2026-11-14T11:26:22+00:00"
+  }
+}

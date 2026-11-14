@@ -1,0 +1,614 @@
+{
+  "accession": "PSI-101",
+  "acronym": "SAME-R",
+  "title": "Smoke Aerosol Measurement Experiment-Reflight",
+  "source_url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-101",
+  "origin": "psi",
+  "gravity": "microgravity",
+  "hardware": "Comparitive Soot Diagnostic Hardware; Refer to final report",
+  "platform": "International Space Station (ISS)",
+  "period": [
+    "07-01-2010",
+    "09-30-2010"
+  ],
+  "sources": [
+    {
+      "id": "psi:PSI-101",
+      "title": "Smoke Aerosol Measurement Experiment-Reflight",
+      "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-101"
+    },
+    {
+      "id": "ntrs:20140006585",
+      "title": "Evaluation of Low-Gravity Smoke Particulate for Spacecraft Fire Detection",
+      "url": "https://ntrs.nasa.gov/citations/20140006585",
+      "year": "2019"
+    },
+    {
+      "id": "ntrs:20130000422",
+      "title": "Particle Morphology and Size Results from the Smoke Aerosol Measurement Experiment-2",
+      "url": "https://ntrs.nasa.gov/citations/20130000422",
+      "year": "2019"
+    }
+  ],
+  "fields": {
+    "test_type": "smoke_pyrolysis",
+    "fuels": [
+      "Pyrell®",
+      "Teflon",
+      "Pyrell",
+      "Lampwick",
+      "Kapton",
+      "Silicone",
+      "Cotton",
+      "Silicone rubber"
+    ],
+    "fuel_phases": [
+      "solid"
+    ],
+    "sample_geometry": [
+      "rod"
+    ],
+    "sample_size": null,
+    "diluents": [],
+    "suppressants": [],
+    "variables_studied": [
+      "heating temperature"
+    ],
+    "sensors": [
+      "M-pass",
+      "DustTrak",
+      "ionization detector"
+    ],
+    "safety_pillars": [
+      "detection"
+    ],
+    "key_findings": [
+      "In microgravity, smoke particle growth leads to larger particles compared to normal gravity.",
+      "The change in size distribution and number density affects the response of smoke detectors."
+    ],
+    "earth_applications": "The results can lead to technology for an advanced fire detector for future spacecraft and other extreme environments on Earth.",
+    "conditions": [
+      {
+        "label": "Baseline air flow rate with no heating",
+        "fuel": null,
+        "oxygen_pct": null,
+        "pressure_kpa": null,
+        "flow_cm_s": {
+          "min": null,
+          "max": 8,
+          "original": "None-8 cm/s"
+        },
+        "evidence": [
+          "The air flow past the sample during the heating period ranged from quiescent to 8 cm/s."
+        ],
+        "source": "ntrs:20130000422"
+      },
+      {
+        "label": "Air flow rates down to 2 cm/s",
+        "fuel": null,
+        "oxygen_pct": null,
+        "pressure_kpa": null,
+        "flow_cm_s": {
+          "min": 2,
+          "max": 8,
+          "original": "2-8 cm/s"
+        },
+        "evidence": [
+          "The baseline air flow rate was 8 cm/s with runs conducted at rates down to 2 cm/s with a limited set conducted with no airflow while the sample was heated."
+        ],
+        "source": "ntrs:20130000422"
+      }
+    ],
+    "paper_findings": [
+      {
+        "text": "Particle sizes ranged from 100 to 600 nm",
+        "source": "ntrs:20140006585"
+      },
+      {
+        "text": "Particle sizes increase substantially with aging",
+        "source": "ntrs:20140006585"
+      },
+      {
+        "text": "Particle dimensions increase substantially as air flow was decreased",
+        "source": "ntrs:20140006585"
+      },
+      {
+        "text": "The diameter of average mass is 30 % to 40 % larger for the zero-flow tests compared to the flow tests.",
+        "source": "ntrs:20130000422"
+      },
+      {
+        "text": "The zero flow conditions produced smoke particles that were 2 to 3 times larger than those produced at the nominal 8 cm/s flow rate.",
+        "source": "ntrs:20130000422"
+      }
+    ]
+  },
+  "warnings": [
+    "ntrs:20130000422: [Air flow rates down to 2 cm/s] evidence repaired from source text",
+    "ntrs:20130000422: [No airflow while the sample was heated] flow_speed: None-0 cm/s not in evidence, dropped"
+  ],
+  "review_status": "model_only",
+  "extraction": {
+    "model": "mistral-nemo",
+    "prompt_version": "2",
+    "source_hash": "7176f3a53c372afb",
+    "papers": [
+      "20130000422",
+      "20140006585"
+    ],
+    "extracted_at": "2026-11-14T11:07:23+00:00",
+    "seconds": 167.2,
+    "runs": [
+      {
+        "source": "psi:PSI-101",
+        "seconds": 21.9,
+        "prompt_tokens": 1405,
+        "output_tokens": 308,
+        "raw": {
+          "test_type": "smoke_pyrolysis",
+          "fuels": [
+            "Pyrell®"
+          ],
+          "fuel_phases": [
+            "solid"
+          ],
+          "sample_geometry": [
+            "rod"
+          ],
+          "sample_size": null,
+          "conditions": [
+            {
+              "label": "Pyrell® rod, low gravity, no-flow heating",
+              "fuel": "Pyrell®",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": []
+            }
+          ],
+          "diluents": [],
+          "suppressants": [],
+          "variables_studied": [
+            "heating temperature"
+          ],
+          "sensors": [
+            "M-pass",
+            "DustTrak",
+            "ionization detector"
+          ],
+          "safety_pillars": [
+            "detection"
+          ],
+          "key_findings": [
+            "In microgravity, smoke particle growth leads to larger particles compared to normal gravity.",
+            "The change in size distribution and number density affects the response of smoke detectors."
+          ],
+          "earth_applications": "The results can lead to technology for an advanced fire detector for future spacecraft and other extreme environments on Earth."
+        }
+      },
+      {
+        "source": "ntrs:20140006585",
+        "seconds": 110.3,
+        "prompt_tokens": 1936,
+        "output_tokens": 1721,
+        "raw": {
+          "fuels": [
+            "Teflon",
+            "Pyrell",
+            "Lampwick",
+            "Kapton",
+            "Silicone"
+          ],
+          "conditions": [
+            {
+              "label": "Teflon, Baseline Temperature",
+              "fuel": "Teflon",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": []
+            },
+            {
+              "label": "Teflon, High Temperature",
+              "fuel": "Teflon",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": []
+            },
+            {
+              "label": "Teflon, Baseline Temperature, Aged",
+              "fuel": "Teflon",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": []
+            },
+            {
+              "label": "Kapton, Baseline Temperature",
+              "fuel": "Kapton",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": []
+            },
+            {
+              "label": "Kapton, High Temperature",
+              "fuel": "Kapton",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": []
+            },
+            {
+              "label": "Kapton, Baseline Temperature, Aged",
+              "fuel": "Kapton",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": []
+            },
+            {
+              "label": "Kapton, High Temperature, Aged",
+              "fuel": "Kapton",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": []
+            },
+            {
+              "label": "Lampwick, Baseline Temperature",
+              "fuel": "Lampwick",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": []
+            },
+            {
+              "label": "Lampwick, High Temperature",
+              "fuel": "Lampwick",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": []
+            },
+            {
+              "label": "Lampwick, Baseline Temperature, Aged",
+              "fuel": "Lampwick",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": []
+            },
+            {
+              "label": "Lampwick, High Temperature, Aged",
+              "fuel": "Lampwick",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": []
+            },
+            {
+              "label": "Silicone, Baseline Temperature",
+              "fuel": "Silicone",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": []
+            },
+            {
+              "label": "Silicone, High Temperature",
+              "fuel": "Silicone",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": []
+            },
+            {
+              "label": "Silicone, Baseline Temperature, Aged",
+              "fuel": "Silicone",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": []
+            },
+            {
+              "label": "Pyrell, Baseline Temperature",
+              "fuel": "Pyrell",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": []
+            }
+          ],
+          "key_findings": [
+            "Particle sizes ranged from 100 to 600 nm",
+            "Particle sizes increase substantially with aging",
+            "Particle dimensions increase substantially as air flow was decreased"
+          ]
+        },
+        "excerpt_chars": 5901
+      },
+      {
+        "source": "ntrs:20130000422",
+        "seconds": 35.0,
+        "prompt_tokens": 1556,
+        "output_tokens": 506,
+        "raw": {
+          "fuels": [
+            "Teflon",
+            "Kapton",
+            "Cotton",
+            "Silicone rubber",
+            "Pyrell"
+          ],
+          "conditions": [
+            {
+              "label": "Baseline air flow rate with no heating",
+              "fuel": null,
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": 8,
+                "unit": "cm/s"
+              },
+              "evidence": [
+                "The air flow past the sample during the heating period ranged from quiescent to 8 cm/s."
+              ]
+            },
+            {
+              "label": "Air flow rates down to 2 cm/s",
+              "fuel": null,
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": 2,
+                "max": 8,
+                "unit": "cm/s"
+              },
+              "evidence": [
+                "The baseline air flow rate was 8 cm/s with runs conducted at rates down to 2 cm/s."
+              ]
+            },
+            {
+              "label": "No airflow while the sample was heated",
+              "fuel": null,
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": 0,
+                "unit": "cm/s"
+              },
+              "evidence": [
+                "A limited set conducted with no airflow while the sample was heated."
+              ]
+            }
+          ],
+          "key_findings": [
+            "The diameter of average mass is 30 % to 40 % larger for the zero-flow tests compared to the flow tests.",
+            "The zero flow conditions produced smoke particles that were 2 to 3 times larger than those produced at the nominal 8 cm/s flow rate."
+          ]
+        },
+        "excerpt_chars": 4950
+      }
+    ],
+    "rechecked_at": "2026-11-14T11:26:22+00:00"
+  }
+}

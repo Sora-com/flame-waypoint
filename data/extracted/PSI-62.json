@@ -1,0 +1,117 @@
+{
+  "accession": "PSI-62",
+  "acronym": null,
+  "title": "Concurrent Flame Spread Modeling using Flamelet Generated Manifolds in Microgravity with Comparison to BASS Experiments using Two-Color Tomography",
+  "source_url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-62",
+  "origin": "psi",
+  "gravity": "normal (ground)",
+  "hardware": null,
+  "platform": null,
+  "period": [
+    "05-01-2019",
+    "04-30-2021"
+  ],
+  "sources": [
+    {
+      "id": "psi:PSI-62",
+      "title": "Concurrent Flame Spread Modeling using Flamelet Generated Manifolds in Microgravity with Comparison to BASS Experiments using Two-Color Tomography",
+      "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-62"
+    }
+  ],
+  "fields": {
+    "test_type": "combustion",
+    "fuels": [
+      "PMMA"
+    ],
+    "fuel_phases": [
+      "solid"
+    ],
+    "sample_geometry": [
+      "flat sheets",
+      "spheres",
+      "rod-shaped",
+      "cylinders"
+    ],
+    "sample_size": null,
+    "diluents": [],
+    "suppressants": [],
+    "variables_studied": [
+      "heat transfer",
+      "mass transport",
+      "chemical kinetics"
+    ],
+    "sensors": [
+      "thermocouple",
+      "color video camera",
+      "CSA-CP"
+    ],
+    "safety_pillars": [
+      "detection",
+      "suppression"
+    ],
+    "key_findings": [
+      "The UFGM approach accurately reproduced concurrent flame spread in microgravity, including the 'Goldilocks' flammability zone.",
+      "The predictive capabilities of the UFGM approach were assessed across both microgravity and normal-gravity conditions."
+    ],
+    "earth_applications": "This research provides predictive tools for screening new materials’ flammability limits, which can lead to the design of safer spacecrafts.",
+    "conditions": [],
+    "paper_findings": []
+  },
+  "warnings": [],
+  "review_status": "model_only",
+  "extraction": {
+    "model": "mistral-nemo",
+    "prompt_version": "2",
+    "source_hash": "f9c970be466a7100",
+    "papers": [],
+    "extracted_at": "2026-11-14T11:19:34+00:00",
+    "seconds": 17.8,
+    "runs": [
+      {
+        "source": "psi:PSI-62",
+        "seconds": 17.8,
+        "prompt_tokens": 1330,
+        "output_tokens": 242,
+        "raw": {
+          "test_type": "combustion",
+          "fuels": [
+            "PMMA"
+          ],
+          "fuel_phases": [
+            "solid"
+          ],
+          "sample_geometry": [
+            "flat sheets",
+            "spheres",
+            "rod-shaped",
+            "cylinders"
+          ],
+          "sample_size": null,
+          "conditions": [],
+          "diluents": [],
+          "suppressants": [],
+          "variables_studied": [
+            "heat transfer",
+            "mass transport",
+            "chemical kinetics"
+          ],
+          "sensors": [
+            "thermocouple",
+            "color video camera",
+            "CSA-CP"
+          ],
+          "safety_pillars": [
+            "detection",
+            "suppression"
+          ],
+          "key_findings": [
+            "The UFGM approach accurately reproduced concurrent flame spread in microgravity, including the 'Goldilocks' flammability zone.",
+            "The predictive capabilities of the UFGM approach were assessed across both microgravity and normal-gravity conditions."
+          ],
+          "earth_applications": "This research provides predictive tools for screening new materials’ flammability limits, which can lead to the design of safer spacecrafts."
+        }
+      }
+    ],
+    "rechecked_at": "2026-11-14T11:26:22+00:00"
+  }
+}

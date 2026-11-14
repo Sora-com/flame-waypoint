@@ -1,0 +1,18 @@
+{
+  "ntrs_id": "20010074094",
+  "title": "SMOKE: Characterization of Smoke Particulate for Spacecraft Fire Detection",
+  "year": "2016",
+  "authors": [
+    "Urban, D. L.",
+    "Mulholland, G.",
+    "Yuan, Z. G.",
+    "Yang, J.",
+    "Cleary, T."
+  ],
+  "type": "CONFERENCE_PAPER",
+  "abstract": "'Smoke' is a flight definition investigation whose purpose is to characterize the smoke particulate from microgravity smoke sources to enable improved design of future space-craft smoke detectors. In the earliest missions (Mercury, Gemini and Apollo), the crew quarters were so cramped that it was considered reasonable that the astronauts would rapidly detect any fire. The Skylab module, however, included approximately 30 UV-sensing fire detectors. The Space Shuttle Orbiter has nine particle-ionization smoke detectors in the mid-deck and flight deck. The detectors for the US segments of the International Space Station (ISS) are laser-diode, forward-scattering, smoke detectors. Current plans for the ISS call for two detectors in the open area of the module, and detectors in racks that have cooling air-flow. Due to the complete absence of microgravity data, all three of these detector systems were designed based upon 1-g test data and experience. As planned mission durations and complexity increase and the volume of spacecraft increases, the need for and importance of effective, crew-independent, fire detection will grow significantly, necessitating more research into microgravity fire phenomena. In 1997 the Comparative Soot Diagnostics Experiment (CSD) flew in the Orbiter Middeck as a Glovebox payload. The CSD experiment was designed to produce small quantities of smoke from several sources to obtain particulate samples and to determine the response of the ISS and Orbiter smoke detectors to these sources. Marked differences in the performance of the detectors compared to their behavior in 1-g were observed. In extreme cases, the detector used in the orbiter was completely blind to easily visible smoke from sources that were readily detected in 1-g. It is hypothesized but as yet unverified that this performance difference was due to enhanced growth of liquid smoke droplets in low-g. These CSD results clearly demonstrate that spacecraft smoke detector design cannot be based on 1-g experience.",
+  "url": "https://ntrs.nasa.gov/citations/20010074094",
+  "pdf_url": "https://ntrs.nasa.gov/api/citations/20010074094/downloads/20010074094.pdf",
+  "fulltext_url": "https://ntrs.nasa.gov/api/citations/20010074094/downloads/20010074094.txt",
+  "copyright": null
+}

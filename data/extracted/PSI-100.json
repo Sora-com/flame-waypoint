@@ -1,0 +1,246 @@
+{
+  "accession": "PSI-100",
+  "acronym": "SAFFIRE-III",
+  "title": "Spacecraft Fire Experiment-III",
+  "source_url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-100",
+  "origin": "psi",
+  "gravity": "microgravity",
+  "hardware": "Saffire III enclosure in Cygnus",
+  "platform": "International Space Station (ISS)",
+  "period": [
+    "04-18-2017",
+    null
+  ],
+  "sources": [
+    {
+      "id": "psi:PSI-100",
+      "title": "Spacecraft Fire Experiment-III",
+      "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-100"
+    },
+    {
+      "id": "ntrs:20170001636",
+      "title": "The Spacecraft Fire Experiment (Saffire) - Objectives, Development and Status",
+      "url": "https://ntrs.nasa.gov/citations/20170001636",
+      "year": "2019"
+    }
+  ],
+  "fields": {
+    "test_type": "combustion",
+    "fuels": [
+      "SIBAL",
+      "SIBAL cloth",
+      "Silicone",
+      "PMMA",
+      "Nomex"
+    ],
+    "fuel_phases": [
+      "solid"
+    ],
+    "sample_geometry": [
+      "rod"
+    ],
+    "sample_size": "unknown",
+    "diluents": [],
+    "suppressants": [],
+    "variables_studied": [
+      "flow velocity"
+    ],
+    "sensors": [
+      "thermocouple",
+      "radiometers",
+      "solid state sensors",
+      "anemometer"
+    ],
+    "safety_pillars": [
+      "detection",
+      "suppression"
+    ],
+    "key_findings": [
+      "Determined microgravity flammability limits for several spacecraft materials",
+      "Validated NASA’s material selection criteria"
+    ],
+    "earth_applications": "Studying fire in small, sealed environments benefits fire safety and prevention efforts on Earth",
+    "conditions": [
+      {
+        "label": "Saffire III experiments in Cygnus",
+        "fuel": "SIBAL",
+        "oxygen_pct": null,
+        "pressure_kpa": null,
+        "flow_cm_s": {
+          "min": 30,
+          "max": 30,
+          "original": "30-30 cm/s"
+        },
+        "evidence": [
+          "Experiments were conducted at a flow velocity of 30 cm/s"
+        ],
+        "source": "psi:PSI-100"
+      },
+      {
+        "label": "Saffire-III samples, normal gravity",
+        "fuel": "SIBAL cloth",
+        "oxygen_pct": null,
+        "pressure_kpa": null,
+        "flow_cm_s": {
+          "min": 30,
+          "max": 30,
+          "original": "30-30 cm/s"
+        },
+        "evidence": [
+          "while Saffire-III will be run at a flow velocity of 30 cm/s"
+        ],
+        "source": "ntrs:20170001636"
+      }
+    ],
+    "paper_findings": [
+      {
+        "text": "The materials selected for Saffire-II have normal gravity Maximum Oxygen Concentration (MOC) flammability limits that indicate they will burn in normal gravity just above and below 21% O2 by volume.",
+        "source": "ntrs:20170001636"
+      }
+    ]
+  },
+  "warnings": [
+    "ntrs:20170001636: [Saffire-II samples, normal gravity] flow_speed: 20-20 cm/s not in evidence, dropped"
+  ],
+  "review_status": "model_only",
+  "extraction": {
+    "model": "mistral-nemo",
+    "prompt_version": "2",
+    "source_hash": "ca22b1075117105a",
+    "papers": [
+      "20170001636"
+    ],
+    "extracted_at": "2026-11-14T11:04:36+00:00",
+    "seconds": 48.5,
+    "runs": [
+      {
+        "source": "psi:PSI-100",
+        "seconds": 20.5,
+        "prompt_tokens": 1208,
+        "output_tokens": 315,
+        "raw": {
+          "test_type": "combustion",
+          "fuels": [
+            "SIBAL"
+          ],
+          "fuel_phases": [
+            "solid"
+          ],
+          "sample_geometry": [
+            "rod"
+          ],
+          "sample_size": "unknown",
+          "conditions": [
+            {
+              "label": "Saffire III experiments in Cygnus",
+              "fuel": "SIBAL",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": 30,
+                "max": 30,
+                "unit": "cm/s"
+              },
+              "evidence": [
+                "Experiments were conducted at a flow velocity of 30 cm/s"
+              ]
+            }
+          ],
+          "diluents": [],
+          "suppressants": [],
+          "variables_studied": [
+            "flow velocity"
+          ],
+          "sensors": [
+            "thermocouple",
+            "radiometers",
+            "solid state sensors",
+            "anemometer"
+          ],
+          "safety_pillars": [
+            "detection",
+            "suppression"
+          ],
+          "key_findings": [
+            "Determined microgravity flammability limits for several spacecraft materials",
+            "Validated NASA’s material selection criteria"
+          ],
+          "earth_applications": "Studying fire in small, sealed environments benefits fire safety and prevention efforts on Earth"
+        }
+      },
+      {
+        "source": "ntrs:20170001636",
+        "seconds": 28.0,
+        "prompt_tokens": 991,
+        "output_tokens": 412,
+        "raw": {
+          "fuels": [
+            "SIBAL cloth",
+            "Silicone",
+            "PMMA",
+            "Nomex"
+          ],
+          "conditions": [
+            {
+              "label": "Saffire-II samples, normal gravity",
+              "fuel": "SIBAL cloth",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": 20,
+                "max": 20,
+                "unit": "cm/s"
+              },
+              "evidence": [
+                "Saffire-II has a sample card that contains 9 samples, each 5 cm x 29 cm. ... Air Flow (cm/s) Igniter Position S1 Silicone 0.25 mm 20 Upstream and atmospheric parameters."
+              ]
+            },
+            {
+              "label": "Saffire-III samples, normal gravity",
+              "fuel": "SIBAL cloth",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": 30,
+                "max": 30,
+                "unit": "cm/s"
+              },
+              "evidence": [
+                "while Saffire-III will be run at a flow velocity of 30 cm/s"
+              ]
+            }
+          ],
+          "key_findings": [
+            "The materials selected for Saffire-II have normal gravity Maximum Oxygen Concentration (MOC) flammability limits that indicate they will burn in normal gravity just above and below 21% O2 by volume."
+          ]
+        },
+        "excerpt_chars": 2823
+      }
+    ],
+    "rechecked_at": "2026-11-14T11:26:22+00:00"
+  }
+}

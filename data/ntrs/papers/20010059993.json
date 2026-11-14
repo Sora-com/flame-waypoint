@@ -1,0 +1,17 @@
+{
+  "ntrs_id": "20010059993",
+  "title": "On Soot Inception in Nonpremixed Flames and the Effects of Flame Structure",
+  "year": "2019",
+  "authors": [
+    "Chao, B. H.",
+    "Liu, S.",
+    "Axelbaum, R. L.",
+    "Gokoglu, Suleyman"
+  ],
+  "type": "REPRINT",
+  "abstract": "A simplified three-step model of soot inception has been employed with high activation energy asymptotics to study soot inception in nonpremixed counterflow systems with emphasis on understanding the effects of hydrodynamics and transport. The resulting scheme yields three zones: (1) a fuel oxidation zone wherein the fuel and oxidizer react to form product as well as a radical R, (e.g., H), (2) a soot/precursor formation zone where the radical R reacts with fuel to form \"soot/precursor\" S, and (3) a soot/precursor consumption zone where S reacts with the oxidizer to form product. The kinetic scheme, although greatly simplified, allows the coupling between soot inception and flame structure to be assessed. The results yield flame temperature, flame location, and a soot/precursor index S(sub I) as functions of Damkohler number for S formation. The soot/precursor index indicates the amount of S at the boundary of the formation region. The flame temperature indirectly indicates the total amount of S integrated over the formation region because as S is formed less heat release is available. The results show that unlike oxidation reactions, an extinction turning-point behavior does not exist for soot. Instead, the total amount of S slowly decreases with decreasing Damkohler number (increasing strain rate), which is consistent with counterflow flame experiments. When the Lewis number of the radical is decreased from unity, the total S reduces due to reduced residence time for the radical in the soot formation region. Similarly, when the Lewis number of the soot/precursor is increased from unity the amount of S increases for all Damkohler numbers. In addition to studying fuel-air (low stoichiometric mixture fraction) flames, the air-side nitrogen was substituted into the fuel, yielding diluted fuel-oxygen (high stoichiometric mixture fraction) flames with the same flame temperature as the fuel - air flames. The relative flame locations were different however, and, consistent with counterflow flame experiments, this difference was found to dramatically reduce the total amount of S generated because the change in stoichiometric mixture fraction affects residence times, temperatures and concentrations in the soot/precursor formation and consumption zones. Furthermore, while the soot/precursor consumption reaction had a negligible effect on the soot process for fuel-air flames it was very important to diluted fuel - oxygen flames.",
+  "url": "https://ntrs.nasa.gov/citations/20010059993",
+  "pdf_url": null,
+  "fulltext_url": null,
+  "copyright": null
+}

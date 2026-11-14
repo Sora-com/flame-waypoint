@@ -1,0 +1,272 @@
+{
+  "accession": "PSI-106",
+  "acronym": "SLICE",
+  "title": "Structure and Liftoff In Combustion Experiment",
+  "source_url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-106",
+  "origin": "psi",
+  "gravity": "microgravity",
+  "hardware": null,
+  "platform": "International Space Station (ISS)",
+  "period": [
+    null,
+    null
+  ],
+  "sources": [
+    {
+      "id": "psi:PSI-106",
+      "title": "Structure and Liftoff In Combustion Experiment",
+      "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-106"
+    },
+    {
+      "id": "ntrs:20150002322",
+      "title": "A Computational and Experimental Study of Coflow Laminar Methane/Air Diffusion Flames: Effects of Fuel Dilution, Inlet Velocity, and Gravity",
+      "url": "https://ntrs.nasa.gov/citations/20150002322",
+      "year": "2019"
+    }
+  ],
+  "fields": {
+    "test_type": "combustion",
+    "fuels": [
+      "methane",
+      "ethylene",
+      "nitrogen-diluted mixtures",
+      "CH4"
+    ],
+    "fuel_phases": [
+      "gas"
+    ],
+    "sample_geometry": [
+      "rod"
+    ],
+    "sample_size": "unknown",
+    "diluents": [
+      "nitrogen"
+    ],
+    "suppressants": [],
+    "variables_studied": [
+      "burner diameter",
+      "coflow velocity",
+      "fuel composition"
+    ],
+    "sensors": [
+      "high resolution camera",
+      "integrated sensors"
+    ],
+    "safety_pillars": [
+      "detection",
+      "suppression"
+    ],
+    "key_findings": [
+      "The structure and stability of laminar diffusion flames in microgravity are significantly influenced by burner diameter, coflow velocity, and fuel composition.",
+      "Flames observed in microgravity are fundamentally different than those observed on Earth.",
+      "More than 4,000 high-resolution images were captured across 13 testing experiments."
+    ],
+    "earth_applications": "Improved numerical models for flame behavior lead to more efficient combustion technologies on Earth.",
+    "conditions": [],
+    "paper_findings": [
+      {
+        "text": "The flames become longer and wider as buoyancy is eliminated or fuel concentration is increased.",
+        "source": "ntrs:20150002322"
+      },
+      {
+        "text": "The computed temperature profiles and measured soot temperatures are modeled accurately.",
+        "source": "ntrs:20150002322"
+      },
+      {
+        "text": "The influences of varying inlet velocity are correctly captured.",
+        "source": "ntrs:20150002322"
+      }
+    ]
+  },
+  "warnings": [
+    "ntrs:20150002322: [CH4-air diffusion flames, microgravity (μg)] evidence not found in source: 'The average inlet velocity ranging from 23 to 90 cm/s'",
+    "ntrs:20150002322: [CH4-air diffusion flames, microgravity (μg)] oxygen: 0.21-0.21 mole fraction not in evidence, dropped",
+    "ntrs:20150002322: [CH4-air diffusion flames, microgravity (μg)] flow_speed: 23-90 cm/s not in evidence, dropped",
+    "ntrs:20150002322: [CH4-air diffusion flames, normal gravity (1g)] evidence not found in source: 'Eighteen flames have been studied under both microgravity (μg) and normal gravit'",
+    "ntrs:20150002322: [CH4-air diffusion flames, normal gravity (1g)] oxygen: 0.21-0.21 mole fraction not in evidence, dropped",
+    "ntrs:20150002322: [CH4-air diffusion flames, normal gravity (1g)] flow_speed: 24-89 cm/s not in evidence, dropped"
+  ],
+  "review_status": "model_only",
+  "extraction": {
+    "model": "mistral-nemo",
+    "prompt_version": "2",
+    "source_hash": "3753423ac4833473",
+    "papers": [
+      "20150002322"
+    ],
+    "extracted_at": "2026-11-14T11:09:03+00:00",
+    "seconds": 65.6,
+    "runs": [
+      {
+        "source": "psi:PSI-106",
+        "seconds": 34.3,
+        "prompt_tokens": 1040,
+        "output_tokens": 577,
+        "raw": {
+          "test_type": "combustion",
+          "fuels": [
+            "methane",
+            "ethylene",
+            "nitrogen-diluted mixtures"
+          ],
+          "fuel_phases": [
+            "gas"
+          ],
+          "sample_geometry": [
+            "rod"
+          ],
+          "sample_size": "unknown",
+          "conditions": [
+            {
+              "label": "Methane flame, microgravity",
+              "fuel": "methane",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": []
+            },
+            {
+              "label": "Ethylene flame, microgravity",
+              "fuel": "ethylene",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": []
+            },
+            {
+              "label": "Nitrogen-diluted mixtures flame, microgravity",
+              "fuel": "nitrogen-diluted mixtures",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": []
+            }
+          ],
+          "diluents": [
+            "nitrogen"
+          ],
+          "suppressants": [],
+          "variables_studied": [
+            "burner diameter",
+            "coflow velocity",
+            "fuel composition"
+          ],
+          "sensors": [
+            "high resolution camera",
+            "integrated sensors"
+          ],
+          "safety_pillars": [
+            "detection",
+            "suppression"
+          ],
+          "key_findings": [
+            "The structure and stability of laminar diffusion flames in microgravity are significantly influenced by burner diameter, coflow velocity, and fuel composition.",
+            "Flames observed in microgravity are fundamentally different than those observed on Earth.",
+            "More than 4,000 high-resolution images were captured across 13 testing experiments."
+          ],
+          "earth_applications": "Improved numerical models for flame behavior lead to more efficient combustion technologies on Earth."
+        }
+      },
+      {
+        "source": "ntrs:20150002322",
+        "seconds": 31.3,
+        "prompt_tokens": 1843,
+        "output_tokens": 407,
+        "raw": {
+          "fuels": [
+            "CH4"
+          ],
+          "conditions": [
+            {
+              "label": "CH4-air diffusion flames, microgravity (μg)",
+              "fuel": "CH4",
+              "oxygen": {
+                "min": 0.21,
+                "max": 0.21,
+                "unit": "mole fraction"
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": 23,
+                "max": 90,
+                "unit": "cm/s"
+              },
+              "evidence": [
+                "The average inlet velocity ranging from 23 to 90 cm/s"
+              ]
+            },
+            {
+              "label": "CH4-air diffusion flames, normal gravity (1g)",
+              "fuel": "CH4",
+              "oxygen": {
+                "min": 0.21,
+                "max": 0.21,
+                "unit": "mole fraction"
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": 24,
+                "max": 89,
+                "unit": "cm/s"
+              },
+              "evidence": [
+                "Eighteen flames have been studied under both microgravity (μg) and normal gravity (1g) (36 flames total): three fuel dilution levels (40%, 70%, and 100% CH4 in mole fractions) and six inlet velocities (approximately 24, 46, 55, 64, 80, 89 cm/s, changing slightly at different fuel dilutions)"
+              ]
+            }
+          ],
+          "key_findings": [
+            "The flames become longer and wider as buoyancy is eliminated or fuel concentration is increased.",
+            "The computed temperature profiles and measured soot temperatures are modeled accurately.",
+            "The influences of varying inlet velocity are correctly captured."
+          ]
+        },
+        "excerpt_chars": 5154
+      }
+    ],
+    "rechecked_at": "2026-11-14T11:26:22+00:00"
+  }
+}

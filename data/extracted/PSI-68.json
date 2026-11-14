@@ -1,0 +1,368 @@
+{
+  "accession": "PSI-68",
+  "acronym": "FLEX-2",
+  "title": "Flame Extinguishment Experiment - 2",
+  "source_url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-68",
+  "origin": "psi",
+  "gravity": "microgravity",
+  "hardware": "Combustion Integrated Rack (CIR)  Multi-user Droplet Combustion Appartatus (MDCA)",
+  "platform": "International Space Station (ISS)",
+  "period": [
+    "08-12-2016",
+    "09-30-2019"
+  ],
+  "sources": [
+    {
+      "id": "psi:PSI-68",
+      "title": "Flame Extinguishment Experiment - 2",
+      "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-68"
+    },
+    {
+      "id": "ntrs:20140006750",
+      "title": "Cool-flame Extinction During N-Alkane Droplet Combustion in Microgravity",
+      "url": "https://ntrs.nasa.gov/citations/20140006750",
+      "year": "2019"
+    },
+    {
+      "id": "ntrs:20170000666",
+      "title": "A Burke-Schumann Analysis of Dual-Flame Structure Supported by a Burning Droplet",
+      "url": "https://ntrs.nasa.gov/citations/20170000666",
+      "year": "2019"
+    }
+  ],
+  "fields": {
+    "test_type": "combustion",
+    "fuels": [
+      "decane",
+      "ethanol",
+      "n-heptane",
+      "n-octane",
+      "n-decane",
+      "Fuel"
+    ],
+    "fuel_phases": [
+      "liquid"
+    ],
+    "sample_geometry": [
+      "droplet"
+    ],
+    "sample_size": "variable",
+    "diluents": [
+      "nitrogen"
+    ],
+    "suppressants": [
+      "nitrogen"
+    ],
+    "variables_studied": [
+      "Fuel type",
+      "Ambient gas composition",
+      "Ambient Pressure",
+      "Droplet initial diameter",
+      "Droplet translation velocity (and acceleration)",
+      "Droplet spacing and initial size in a binary linear array"
+    ],
+    "sensors": [
+      "color video camera"
+    ],
+    "safety_pillars": [
+      "detection",
+      "suppression"
+    ],
+    "key_findings": [
+      "The experiments aim to study the role of liquid-phase mixing on the burning characteristics of bi-component fuel droplets.",
+      "The primary goal is to provide benchmark experimental data on bi-component droplet combustion over a wide range of initial conditions."
+    ],
+    "earth_applications": "More sustainable energy production.",
+    "conditions": [
+      {
+        "label": "Decane droplet combustion",
+        "fuel": "decane",
+        "oxygen_pct": {
+          "min": 10.0,
+          "max": 40.0
+        },
+        "pressure_kpa": {
+          "min": 50.663,
+          "max": 303.975,
+          "original": "0.5-3.0 atm"
+        },
+        "flow_cm_s": null,
+        "evidence": [
+          "The chamber was filled with the appropriate atmosphere, which was varied in pressure between 0.5 atm to 3.0 atm and O2 concentration between 0.1 to 0.4 mole fraction"
+        ],
+        "source": "psi:PSI-68"
+      },
+      {
+        "label": "n-decane, 21% O2, 0.5 atm pressure",
+        "fuel": "n-decane",
+        "oxygen_pct": {
+          "min": 21,
+          "max": 21
+        },
+        "pressure_kpa": {
+          "min": 50.663,
+          "max": 50.663,
+          "original": "0.5-0.5 atm"
+        },
+        "flow_cm_s": null,
+        "evidence": [
+          "21% oxygen and 79% nitrogen mixture at 0.5 atm pressure"
+        ],
+        "source": "ntrs:20140006750"
+      },
+      {
+        "label": "n-decane, 25% O2, 0.5 atm pressure",
+        "fuel": "n-decane",
+        "oxygen_pct": {
+          "min": 25,
+          "max": 25
+        },
+        "pressure_kpa": {
+          "min": 50.663,
+          "max": 50.663,
+          "original": "0.5-0.5 atm"
+        },
+        "flow_cm_s": null,
+        "evidence": [
+          "Figure 1b (R374) shows the combustion characteristics for a 3.79 mm n-decane droplet burning at a slightly increased oxygen concentration of 25% and the rest being nitrogen at 0.5 atm pressure."
+        ],
+        "source": "ntrs:20140006750"
+      },
+      {
+        "label": "n-decane, 17% O2, 0.5 atm pressure",
+        "fuel": "n-decane",
+        "oxygen_pct": null,
+        "pressure_kpa": {
+          "min": 50.663,
+          "max": 50.663,
+          "original": "0.5-0.5 atm"
+        },
+        "flow_cm_s": null,
+        "evidence": [
+          "17%O2 and 83%N2 mixture at 0.5 atm"
+        ],
+        "source": "ntrs:20140006750"
+      }
+    ],
+    "paper_findings": [
+      {
+        "text": "Large n-alkane droplets exhibited quasi-steady low-temperature burning and extinction following radiative extinction of the visible flame while smaller droplets burned to completion or disruptively extinguished.",
+        "source": "ntrs:20140006750"
+      },
+      {
+        "text": "The visible flame diameter initially increases with time and then it decreases until the droplet micro-explodes 26 seconds after ignition.",
+        "source": "ntrs:20140006750"
+      },
+      {
+        "text": "With the reduced oxygen concentration the overall radiative heat loss decreases due to reduced flame temperature.",
+        "source": "ntrs:20140006750"
+      },
+      {
+        "text": "Cool-flame temperatures are greater than that of the hot-flame.",
+        "source": "ntrs:20170000666"
+      },
+      {
+        "text": "A dominant cool-flame is established with fuel leakage of only 50% and relative heat of combustion of only 10%.",
+        "source": "ntrs:20170000666"
+      },
+      {
+        "text": "With the heat of combustion of the cool-flame around 20% of the hot-flame, a weak cool-flame is established when the fuel leakage is high.",
+        "source": "ntrs:20170000666"
+      }
+    ]
+  },
+  "warnings": [
+    "ntrs:20140006750: [n-decane, 25% O2, 0.5 atm pressure] evidence repaired from source text",
+    "ntrs:20140006750: [n-decane, 17% O2, 0.5 atm pressure] oxygen: 17-17 % not in evidence, dropped"
+  ],
+  "review_status": "model_only",
+  "extraction": {
+    "model": "mistral-nemo",
+    "prompt_version": "2",
+    "source_hash": "b839134a97237ee7",
+    "papers": [
+      "20140006750",
+      "20170000666"
+    ],
+    "extracted_at": "2026-11-14T11:20:41+00:00",
+    "seconds": 67.0,
+    "runs": [
+      {
+        "source": "psi:PSI-68",
+        "seconds": 28.4,
+        "prompt_tokens": 1754,
+        "output_tokens": 394,
+        "raw": {
+          "test_type": "combustion",
+          "fuels": [
+            "decane",
+            "ethanol"
+          ],
+          "fuel_phases": [
+            "liquid"
+          ],
+          "sample_geometry": [
+            "droplet"
+          ],
+          "sample_size": "variable",
+          "conditions": [
+            {
+              "label": "Decane droplet combustion",
+              "fuel": "decane",
+              "oxygen": {
+                "min": 0.1,
+                "max": 0.4,
+                "unit": "mole fraction"
+              },
+              "pressure": {
+                "min": 0.5,
+                "max": 3.0,
+                "unit": "atm"
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": [
+                "The chamber was filled with the appropriate atmosphere, which was varied in pressure between 0.5 atm to 3.0 atm and O2 concentration between 0.1 to 0.4 mole fraction"
+              ]
+            }
+          ],
+          "diluents": [
+            "nitrogen"
+          ],
+          "suppressants": [
+            "nitrogen"
+          ],
+          "variables_studied": [
+            "Fuel type",
+            "Ambient gas composition",
+            "Ambient Pressure",
+            "Droplet initial diameter",
+            "Droplet translation velocity (and acceleration)",
+            "Droplet spacing and initial size in a binary linear array"
+          ],
+          "sensors": [
+            "color video camera"
+          ],
+          "safety_pillars": [
+            "detection",
+            "suppression"
+          ],
+          "key_findings": [
+            "The experiments aim to study the role of liquid-phase mixing on the burning characteristics of bi-component fuel droplets.",
+            "The primary goal is to provide benchmark experimental data on bi-component droplet combustion over a wide range of initial conditions."
+          ],
+          "earth_applications": "More sustainable energy production."
+        }
+      },
+      {
+        "source": "ntrs:20140006750",
+        "seconds": 28.9,
+        "prompt_tokens": 1754,
+        "output_tokens": 521,
+        "raw": {
+          "fuels": [
+            "n-heptane",
+            "n-octane",
+            "n-decane"
+          ],
+          "conditions": [
+            {
+              "label": "n-decane, 21% O2, 0.5 atm pressure",
+              "fuel": "n-decane",
+              "oxygen": {
+                "min": 21,
+                "max": 21,
+                "unit": "%"
+              },
+              "pressure": {
+                "min": 0.5,
+                "max": 0.5,
+                "unit": "atm"
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": [
+                "21% oxygen and 79% nitrogen mixture at 0.5 atm pressure"
+              ]
+            },
+            {
+              "label": "n-decane, 25% O2, 0.5 atm pressure",
+              "fuel": "n-decane",
+              "oxygen": {
+                "min": 25,
+                "max": 25,
+                "unit": "%"
+              },
+              "pressure": {
+                "min": 0.5,
+                "max": 0.5,
+                "unit": "atm"
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": [
+                "25% oxygen and the rest being nitrogen at 0.5 atm pressure"
+              ]
+            },
+            {
+              "label": "n-decane, 17% O2, 0.5 atm pressure",
+              "fuel": "n-decane",
+              "oxygen": {
+                "min": 17,
+                "max": 17,
+                "unit": "%"
+              },
+              "pressure": {
+                "min": 0.5,
+                "max": 0.5,
+                "unit": "atm"
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": [
+                "17%O2 and 83%N2 mixture at 0.5 atm"
+              ]
+            }
+          ],
+          "key_findings": [
+            "Large n-alkane droplets exhibited quasi-steady low-temperature burning and extinction following radiative extinction of the visible flame while smaller droplets burned to completion or disruptively extinguished.",
+            "The visible flame diameter initially increases with time and then it decreases until the droplet micro-explodes 26 seconds after ignition.",
+            "With the reduced oxygen concentration the overall radiative heat loss decreases due to reduced flame temperature."
+          ]
+        },
+        "excerpt_chars": 4825
+      },
+      {
+        "source": "ntrs:20170000666",
+        "seconds": 9.7,
+        "prompt_tokens": 973,
+        "output_tokens": 108,
+        "raw": {
+          "fuels": [
+            "Fuel"
+          ],
+          "conditions": [],
+          "key_findings": [
+            "Cool-flame temperatures are greater than that of the hot-flame.",
+            "A dominant cool-flame is established with fuel leakage of only 50% and relative heat of combustion of only 10%.",
+            "With the heat of combustion of the cool-flame around 20% of the hot-flame, a weak cool-flame is established when the fuel leakage is high."
+          ]
+        },
+        "excerpt_chars": 2302
+      }
+    ],
+    "rechecked_at": "2026-11-14T11:26:22+00:00"
+  }
+}

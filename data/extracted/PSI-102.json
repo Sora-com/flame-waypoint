@@ -1,0 +1,201 @@
+{
+  "accession": "PSI-102",
+  "acronym": "SAME",
+  "title": "Smoke and Aerosol Measurement Experiment",
+  "source_url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-102",
+  "origin": "psi",
+  "gravity": "microgravity",
+  "hardware": "Comparitive Soot Diagnostic Hardware",
+  "platform": "International Space Station (ISS)",
+  "period": [
+    "03-02-2001",
+    "02-28-2008"
+  ],
+  "sources": [
+    {
+      "id": "psi:PSI-102",
+      "title": "Smoke and Aerosol Measurement Experiment",
+      "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-102"
+    },
+    {
+      "id": "ntrs:20080012612",
+      "title": "Spacecraft Fire Detection: Smoke Properties and Transport in Low-Gravity",
+      "url": "https://ntrs.nasa.gov/citations/20080012612",
+      "year": "2019"
+    },
+    {
+      "id": "ntrs:20010074094",
+      "title": "SMOKE: Characterization of Smoke Particulate for Spacecraft Fire Detection",
+      "url": "https://ntrs.nasa.gov/citations/20010074094",
+      "year": "2016"
+    },
+    {
+      "id": "ntrs:20070013892",
+      "title": "The Microgravity Science Glovebox (MSG), a Resource for Gravity-Dependent Phenomena Research on the International Space Station (ISS)",
+      "url": "https://ntrs.nasa.gov/citations/20070013892",
+      "year": "2019"
+    }
+  ],
+  "fields": {
+    "test_type": "smoke_pyrolysis",
+    "fuels": [
+      "smoke",
+      "PMMA"
+    ],
+    "fuel_phases": [
+      "liquid"
+    ],
+    "sample_geometry": [
+      "rod"
+    ],
+    "sample_size": null,
+    "diluents": [],
+    "suppressants": [],
+    "variables_studied": [
+      "sample temperature",
+      "flow field",
+      "particle aging time"
+    ],
+    "sensors": [
+      "thermophoretic soot samplers",
+      "Transmission Electron microscope (TEM)",
+      "smoke detectors"
+    ],
+    "safety_pillars": [
+      "detection",
+      "suppression"
+    ],
+    "key_findings": [
+      "In microgravity, smoke particle growth leads to larger particles compared to normal gravity due to reduced velocities and mixing.",
+      "The change in size distribution and number density affects the response of smoke detectors.",
+      "The SAME experiment provides quantitative data on the sensitivity of detectors to reduced gravity smokes."
+    ],
+    "earth_applications": "The smoke detectors developed from SAME can be useful in extreme environments on Earth, such as submarines or underwater laboratories.",
+    "conditions": [],
+    "paper_findings": [
+      {
+        "text": "Smoke particulate produced in low-gravity was found to be typically 50% larger in count mean diameter than similar conditions in normal gravity.",
+        "source": "ntrs:20080012612"
+      },
+      {
+        "text": "The resultant sizes were all below 300 nm suggesting that discriminating smoke from spacecraft dust possibly could be achieved by detecting in the sub-micrometer range.",
+        "source": "ntrs:20080012612"
+      }
+    ]
+  },
+  "warnings": [],
+  "review_status": "model_only",
+  "extraction": {
+    "model": "mistral-nemo",
+    "prompt_version": "2",
+    "source_hash": "3e2d9a1dc736ce91",
+    "papers": [
+      "20010074094",
+      "20070013892",
+      "20080012612"
+    ],
+    "extracted_at": "2026-11-14T11:07:57+00:00",
+    "seconds": 34.1,
+    "runs": [
+      {
+        "source": "psi:PSI-102",
+        "seconds": 17.5,
+        "prompt_tokens": 1306,
+        "output_tokens": 244,
+        "raw": {
+          "test_type": "smoke_pyrolysis",
+          "fuels": [
+            "smoke"
+          ],
+          "fuel_phases": [
+            "liquid"
+          ],
+          "sample_geometry": [
+            "rod"
+          ],
+          "sample_size": null,
+          "conditions": [],
+          "diluents": [],
+          "suppressants": [],
+          "variables_studied": [
+            "sample temperature",
+            "flow field",
+            "particle aging time"
+          ],
+          "sensors": [
+            "thermophoretic soot samplers",
+            "Transmission Electron microscope (TEM)",
+            "smoke detectors"
+          ],
+          "safety_pillars": [
+            "detection",
+            "suppression"
+          ],
+          "key_findings": [
+            "In microgravity, smoke particle growth leads to larger particles compared to normal gravity due to reduced velocities and mixing.",
+            "The change in size distribution and number density affects the response of smoke detectors.",
+            "The SAME experiment provides quantitative data on the sensitivity of detectors to reduced gravity smokes."
+          ],
+          "earth_applications": "The smoke detectors developed from SAME can be useful in extreme environments on Earth, such as submarines or underwater laboratories."
+        }
+      },
+      {
+        "source": "ntrs:20080012612",
+        "seconds": 14.4,
+        "prompt_tokens": 536,
+        "output_tokens": 214,
+        "raw": {
+          "fuels": [
+            "PMMA"
+          ],
+          "conditions": [
+            {
+              "label": "Low-gravity smoke particulate production",
+              "fuel": "PMMA",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": [
+                "Smoke particulate produced in low-gravity was found to be typically 50% large in count mean diameter than similar conditions in normal gravity."
+              ]
+            }
+          ],
+          "key_findings": [
+            "Smoke particulate produced in low-gravity was found to be typically 50% larger in count mean diameter than similar conditions in normal gravity.",
+            "The resultant sizes were all below 300 nm suggesting that discriminating smoke from spacecraft dust possibly could be achieved by detecting in the sub-micrometer range."
+          ]
+        },
+        "excerpt_chars": 1111
+      },
+      {
+        "source": "ntrs:20010074094",
+        "skipped": "no condition-bearing sentences"
+      },
+      {
+        "source": "ntrs:20070013892",
+        "seconds": 2.2,
+        "prompt_tokens": 475,
+        "output_tokens": 21,
+        "raw": {
+          "fuels": [],
+          "conditions": [],
+          "key_findings": []
+        },
+        "excerpt_chars": 658
+      }
+    ],
+    "rechecked_at": "2026-11-14T11:26:22+00:00"
+  }
+}

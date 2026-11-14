@@ -1,0 +1,406 @@
+{
+  "source": "https://ntrs.nasa.gov/api/citations/search",
+  "min_similarity": 0.9,
+  "updated_at": "2026-11-14T11:02:13+00:00",
+  "investigations": {
+    "PSI-10": [
+      {
+        "ntrs_id": "25983543780692",
+        "psi_title": "On the existence of steady-state gaseous microgravity spherical diffusion flames in the presence of radiation heat loss",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "31112159710975",
+        "psi_title": "Critical temperature and reactant mass flux for radiative extinction of ethylene microgravity spherical diffusion flames at 1 bar",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "15732120706972",
+        "psi_title": "An investigation of thermal radiation from laminar diffusion flames in a tri-coflow burner with central oxygen",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "50051858674903",
+        "psi_title": "Dilution effects on laminar jet diffusion flame lengths",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "33978975350427",
+        "psi_title": "A new method of flame temperature measurement utilizing the acoustic emissions from laser-induced plasmas",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "23296868447605",
+        "psi_title": "Simplifying the complexity of diffusion flames through interpretation in C/O ratio space",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "20070017909",
+        "psi_title": "Radiative extinction of gaseous spherical diffusion flames in microgravity",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "10022129583755",
+        "psi_title": "The effects of elevated pressure on the kinetics and extinction of hot, warm, and cool gaseous ethylene spherical diffusion flames",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "20010059993",
+        "psi_title": "On Soot Inception in Nonpremixed Flames and the Effects of Flame Structure",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "20000057049",
+        "psi_title": "Effects of structure and hydrodynamics on the sooting behavior of spherical microgravity diffusion flames",
+        "similarity": 1.0
+      }
+    ],
+    "PSI-20": [
+      {
+        "ntrs_id": "27482090396921",
+        "psi_title": "Burning in microgravity: Experimental results and analysis",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "79490066403600",
+        "psi_title": "Transient dynamics of radiative extinction in low-momentum microgravity diffusion flames",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "17720132749449",
+        "psi_title": "Theoretical analysis and predictions of burning in microgravity using a burning emulator",
+        "similarity": 1.0
+      }
+    ],
+    "PSI-21": [
+      {
+        "ntrs_id": "20150002322",
+        "psi_title": "A computational and experimental study of coflow laminar methane/air diffusion flames: Effects of fuel dilution, inlet velocity, and gravity",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "27530189361808",
+        "psi_title": "A Combined Experimental and Computational Study of Soot Formation in Normal and Microgravity Conditions",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "10021121381631",
+        "psi_title": "Constrained-temperature solutions of coflow laminar diffusion flames",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "10847623572838",
+        "psi_title": "Effect of soot self-absorption on color-ratio pyrometry in laminar coflow diffusion flames",
+        "similarity": 1.0
+      }
+    ],
+    "PSI-22": [
+      {
+        "ntrs_id": "31427677890843",
+        "psi_title": "Electric Field Induced Changes of a Diffusion Flame and Heat Transfer near an Impinging Surface",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "30580252934587",
+        "psi_title": "Electric-field effects on methane coflow flames aboard the international space station (ISS): ACME E-FIELD flames",
+        "similarity": 1.0
+      }
+    ],
+    "PSI-23": [
+      {
+        "ntrs_id": "19960008450",
+        "psi_title": "On burner-stabilized cylindrical premixed flames in microgravity",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "18564228327142",
+        "psi_title": "Direct Numerical Simulation of turbulent nonpremixed “cool” flames: Applicability of flamelet models",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "23660487788725",
+        "psi_title": "Binary collision of a burning droplet and a non-burning droplet of xylene: Outcome regimes and flame dynamics",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "19980028145",
+        "psi_title": "Stabilization mechanisms and burning rates of cylindrical burner flames",
+        "similarity": 1.0
+      }
+    ],
+    "PSI-25": [
+      {
+        "ntrs_id": "21663019227875",
+        "psi_title": "Experimental validation of a correlation capturing the boundary layer effect on spread rate in the kinetic regime of opposed-flow flame spread",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "20150019858",
+        "psi_title": "Results from on-board CSA-CP and CDM Sensor Readings during the Burning and Suppression of Solids - II (BASS-II) Experiment in the Microgravity Science Glovebox (MSG)",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "20150008962",
+        "psi_title": "Concurrent flame growth, spread and extinction over composite fabric samples in low speed purely forced flow in microgravity",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "20160012691",
+        "psi_title": "Correlation of normal gravity mixed convection blowoff limits with microgravity forced flow blowoff limits",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "20150008961",
+        "psi_title": "Microgravity Flammability of PMMA Rods in Concurrent Flow",
+        "similarity": 1.0
+      }
+    ],
+    "PSI-26": [
+      {
+        "ntrs_id": "20140011099",
+        "psi_title": "Thickness and Fuel Preheating Effects on Material Flammability in Microgravity from the BASS Experiment",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "20140004923",
+        "psi_title": "Opposed-Flow Flame Spread in a Narrow Channel Apparatus over Thin PMMA Sheets",
+        "similarity": 1.0
+      }
+    ],
+    "PSI-39": [
+      {
+        "ntrs_id": "20140006750",
+        "psi_title": "Cool-flame extinction during n-alkane droplet combustion in microgravity",
+        "similarity": 1.0
+      }
+    ],
+    "PSI-47": [],
+    "PSI-60": [],
+    "PSI-62": [
+      {
+        "ntrs_id": "16842364914670",
+        "psi_title": "Two-color pyrometry based flame to fuel surface radiative heat flux diagnostic using flamelets",
+        "similarity": 1.0
+      }
+    ],
+    "PSI-68": [
+      {
+        "ntrs_id": "20140006750",
+        "psi_title": "Cool-flame extinction during n-alkane droplet combustion in microgravity",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "27411022589758",
+        "psi_title": "Combustion of Submillimeter Heptane/Methanol and Heptane/Ethanol Droplets in Reduced Gravity",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "33966871921292",
+        "psi_title": "Combustion of Methanol Droplets in Air-Diluent Environments with Reduced and Normal Gravity",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "67052638184922",
+        "psi_title": "Experimental Observations of the Low-Temperature Burning of Decane/Hexanol Droplets in Microgravity",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "77379521988671",
+        "psi_title": "Cool-flame dodecane-droplet extinction diameters",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "20170000666",
+        "psi_title": "A Burke-Schumann analysis of dual-flame structure supported by a burning droplet",
+        "similarity": 1.0
+      }
+    ],
+    "PSI-69": [
+      {
+        "ntrs_id": "20130014061",
+        "psi_title": "Methanol Droplet Combustion in Oxygen-Inert Environments in Microgravity",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "20120016855",
+        "psi_title": "Methanol Droplet Extinction in Oxygen/Carbon-dioxide/Nitrogen Mixtures in Microgravity: Results from the International Space Station Experiments",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "20120015928",
+        "psi_title": "FLEX: A Decisive Step Forward in NASA's Combustion Research Program",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "20130010979",
+        "psi_title": "Dynamics of Water Absorption and Evaporation During Methanol Droplet Combustion in Microgravity",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "20140006750",
+        "psi_title": "Cool-flame extinction during n-alkane droplet combustion in microgravity",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "27411022589758",
+        "psi_title": "Combustion of Submillimeter Heptane/Methanol and Heptane/Ethanol Droplets in Reduced Gravity",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "33966871921292",
+        "psi_title": "Combustion of Methanol Droplets in Air-Diluent Environments with Reduced and Normal Gravity",
+        "similarity": 1.0
+      }
+    ],
+    "PSI-98": [
+      {
+        "ntrs_id": "20170001636",
+        "psi_title": "The Spacecraft Fire Experiment (Saffire) - Objectives, Development and Status",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "20150022421",
+        "psi_title": "Buoyant Effects on the Flammability of Silicone Samples Planned for the Spacecraft Fire Experiment (Saffire)",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "28281624294078",
+        "psi_title": "Fire safety in space – beyond flammability testing of small samples",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "20170000230",
+        "psi_title": "Operation and Development Status of the Spacecraft Fire Experiments (Saffire)",
+        "similarity": 1.0
+      }
+    ],
+    "PSI-99": [
+      {
+        "ntrs_id": "20170001636",
+        "psi_title": "The Spacecraft Fire Experiment (Saffire) - Objectives, Development and Status",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "20200000557",
+        "psi_title": "Buoyancy effects on concurrent flame spread over thick PMMA",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "77766245676546",
+        "psi_title": "Evaluation of gas and particle sensors for detecting spacecraft-relevant fire emissions",
+        "similarity": 1.0
+      }
+    ],
+    "PSI-100": [
+      {
+        "ntrs_id": "20170001636",
+        "psi_title": "The Spacecraft Fire Experiment (Saffire) - Objectives, Development and Status",
+        "similarity": 1.0
+      }
+    ],
+    "PSI-101": [
+      {
+        "ntrs_id": "20140006585",
+        "psi_title": "Evaluation of Low-Gravity Smoke Particulate for Spacecraft Fire Detection",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "20130000422",
+        "psi_title": "Particle Morphology and Size Results from the Smoke Aerosol Measurement Experiment-2",
+        "similarity": 1.0
+      }
+    ],
+    "PSI-102": [
+      {
+        "ntrs_id": "20080012612",
+        "psi_title": "Spacecraft Fire Detection: Smoke Properties and Transport in Low-Gravity",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "20070021776",
+        "psi_title": "ISS Destiny Laboratory Smoke Detection Model",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "20010074094",
+        "psi_title": "Smoke: Characterization of Smoke Particulate for Spacecraft Fire Detection",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "20070013892",
+        "psi_title": "The Microgravity Science Glovebox (MSG), a Resource for Gravity-Dependent Phenomena Research on the International Space Station (ISS)",
+        "similarity": 1.0
+      }
+    ],
+    "PSI-106": [
+      {
+        "ntrs_id": "20150002322",
+        "psi_title": "A computational and experimental study of coflow laminar methane/air diffusion flames: Effects of fuel dilution, inlet velocity, and gravity",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "27530189361808",
+        "psi_title": "A Combined Experimental and Computational Study of Soot Formation in Normal and Microgravity Conditions",
+        "similarity": 1.0
+      }
+    ],
+    "PSI-107": [
+      {
+        "ntrs_id": "20070013892",
+        "psi_title": "The Microgravity Science Glovebox (MSG), a Resource for Gravity-Dependent Phenomena Research on the International Space Station (ISS)",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "27530189361808",
+        "psi_title": "A Combined Experimental and Computational Study of Soot Formation in Normal and Microgravity Conditions",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "20010117668",
+        "psi_title": "Shapes of nonbuoyant round luminous hydrocarbon/air laminar jet diffusion flames",
+        "similarity": 1.0
+      }
+    ],
+    "PSI-115": [],
+    "PSI-117": [],
+    "PSI-142": [
+      {
+        "ntrs_id": "27270201908869",
+        "psi_title": "Dynamics of cool flames",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "12653711440682",
+        "psi_title": "The radical index and the effect of oxygen concentration on non-premixed cool flame extinction of large n-alkanes",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "13565623778282",
+        "psi_title": "Study of the low-temperature reactivity of large n-alkanes through cool diffusion flame extinction",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "13936609795162",
+        "psi_title": "Low-temperature multistage warm diffusion flames",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "19030765795041",
+        "psi_title": "On the chemical characteristics and dynamics of n-alkane low-temperature multistage diffusion flames",
+        "similarity": 1.0
+      },
+      {
+        "ntrs_id": "28027456094425",
+        "psi_title": "Transient interactions between a premixed double flame and a vortex",
+        "similarity": 1.0
+      }
+    ],
+    "PSI-159": [
+      {
+        "ntrs_id": "28516810543238",
+        "psi_title": "Spherical gas-fueled cool diffusion flames",
+        "similarity": 1.0
+      }
+    ]
+  }
+}

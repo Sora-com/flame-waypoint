@@ -1,0 +1,146 @@
+{
+  "accession": "PSI-115",
+  "acronym": null,
+  "title": "Utilization of the Smoke Aerosol Measurement Experiment Data for Advanced Modeling and Simulation of Smoke Generation in Micro-Gravity",
+  "source_url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-115",
+  "origin": "psi",
+  "gravity": "normal (ground)",
+  "hardware": null,
+  "platform": "Not Applicable",
+  "period": [
+    "01-30-2017",
+    "12-31-2019"
+  ],
+  "sources": [
+    {
+      "id": "psi:PSI-115",
+      "title": "Utilization of the Smoke Aerosol Measurement Experiment Data for Advanced Modeling and Simulation of Smoke Generation in Micro-Gravity",
+      "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-115"
+    }
+  ],
+  "fields": {
+    "test_type": "smoke_pyrolysis",
+    "fuels": [
+      "dibutyl-phthalate"
+    ],
+    "fuel_phases": [
+      "liquid"
+    ],
+    "sample_geometry": [
+      "rod"
+    ],
+    "sample_size": null,
+    "diluents": [],
+    "suppressants": [],
+    "variables_studied": [
+      "gravity",
+      "thermophoresis",
+      "particle settling",
+      "flow geometry"
+    ],
+    "sensors": [
+      "Navier-Stokes nodal approach"
+    ],
+    "safety_pillars": [],
+    "key_findings": [
+      "Without buoyancy, mixing and heat transfer are reduced",
+      "The time-temperature history of the combustion vapors and particle trajectories are significantly altered",
+      "The chemical composition of the burning material affects the characteristics of the smoke generated"
+    ],
+    "earth_applications": "Models and tools that characterize particles generated as smoke can be used to ascertain how temperature, gravity, and material properties affect the smoke produced.",
+    "conditions": [],
+    "paper_findings": []
+  },
+  "warnings": [],
+  "review_status": "model_only",
+  "extraction": {
+    "model": "mistral-nemo",
+    "prompt_version": "2",
+    "source_hash": "7733c68caf6e1658",
+    "papers": [],
+    "extracted_at": "2026-11-14T11:10:24+00:00",
+    "seconds": 27.2,
+    "runs": [
+      {
+        "source": "psi:PSI-115",
+        "seconds": 27.2,
+        "prompt_tokens": 1061,
+        "output_tokens": 450,
+        "raw": {
+          "test_type": "smoke_pyrolysis",
+          "fuels": [
+            "dibutyl-phthalate"
+          ],
+          "fuel_phases": [
+            "liquid"
+          ],
+          "sample_geometry": [
+            "rod"
+          ],
+          "sample_size": null,
+          "conditions": [
+            {
+              "label": "DBP pyrolysis in Earth gravity",
+              "fuel": "dibutyl-phthalate",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": []
+            },
+            {
+              "label": "DBP pyrolysis in microgravity",
+              "fuel": "dibutyl-phthalate",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": []
+            }
+          ],
+          "diluents": [],
+          "suppressants": [],
+          "variables_studied": [
+            "gravity",
+            "thermophoresis",
+            "particle settling",
+            "flow geometry"
+          ],
+          "sensors": [
+            "Navier-Stokes nodal approach"
+          ],
+          "safety_pillars": [],
+          "key_findings": [
+            "Without buoyancy, mixing and heat transfer are reduced",
+            "The time-temperature history of the combustion vapors and particle trajectories are significantly altered",
+            "The chemical composition of the burning material affects the characteristics of the smoke generated"
+          ],
+          "earth_applications": "Models and tools that characterize particles generated as smoke can be used to ascertain how temperature, gravity, and material properties affect the smoke produced."
+        }
+      }
+    ],
+    "rechecked_at": "2026-11-14T11:26:22+00:00"
+  }
+}

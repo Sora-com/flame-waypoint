@@ -1,0 +1,115 @@
+{
+  "accession": "PSI-60",
+  "acronym": null,
+  "title": "Computational and Experimental Analysis of SPICE Data Sets",
+  "source_url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-60",
+  "origin": "psi",
+  "gravity": "normal (ground)",
+  "hardware": null,
+  "platform": null,
+  "period": [
+    "06-05-2019",
+    "08-29-2022"
+  ],
+  "sources": [
+    {
+      "id": "psi:PSI-60",
+      "title": "Computational and Experimental Analysis of SPICE Data Sets",
+      "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-60"
+    }
+  ],
+  "fields": {
+    "test_type": "combustion",
+    "fuels": [
+      "PMMA"
+    ],
+    "fuel_phases": [
+      "solid"
+    ],
+    "sample_geometry": [
+      "rod"
+    ],
+    "sample_size": "unknown",
+    "diluents": [],
+    "suppressants": [],
+    "variables_studied": [
+      "soot formation",
+      "soot oxidation",
+      "radiative re-absorption",
+      "aggregate growth"
+    ],
+    "sensors": [
+      "thermocouple",
+      "color video camera",
+      "CSA-CP"
+    ],
+    "safety_pillars": [
+      "detection",
+      "suppression"
+    ],
+    "key_findings": [
+      "Microgravity conditions produced longer, more diffuse flames with lower temperatures and increased soot concentrations compared to normal gravity.",
+      "Integration of experimental temperature fields into simulations reduced discrepancies between measured and predicted soot distributions.",
+      "Sensitivity analyses of soot evolution parameters showed significant effects of radiation, scattering, boundary conditions, and heat transfer to the burner structure."
+    ],
+    "earth_applications": "The results support safer fire detection, suppression, and cleaner combustion technologies critical for long-duration missions on Earth.",
+    "conditions": [],
+    "paper_findings": []
+  },
+  "warnings": [],
+  "review_status": "model_only",
+  "extraction": {
+    "model": "mistral-nemo",
+    "prompt_version": "2",
+    "source_hash": "4e616020b8c35d44",
+    "papers": [],
+    "extracted_at": "2026-11-14T11:19:16+00:00",
+    "seconds": 16.7,
+    "runs": [
+      {
+        "source": "psi:PSI-60",
+        "seconds": 16.7,
+        "prompt_tokens": 1096,
+        "output_tokens": 251,
+        "raw": {
+          "test_type": "combustion",
+          "fuels": [
+            "PMMA"
+          ],
+          "fuel_phases": [
+            "solid"
+          ],
+          "sample_geometry": [
+            "rod"
+          ],
+          "sample_size": "unknown",
+          "conditions": [],
+          "diluents": [],
+          "suppressants": [],
+          "variables_studied": [
+            "soot formation",
+            "soot oxidation",
+            "radiative re-absorption",
+            "aggregate growth"
+          ],
+          "sensors": [
+            "thermocouple",
+            "color video camera",
+            "CSA-CP"
+          ],
+          "safety_pillars": [
+            "detection",
+            "suppression"
+          ],
+          "key_findings": [
+            "Microgravity conditions produced longer, more diffuse flames with lower temperatures and increased soot concentrations compared to normal gravity.",
+            "Integration of experimental temperature fields into simulations reduced discrepancies between measured and predicted soot distributions.",
+            "Sensitivity analyses of soot evolution parameters showed significant effects of radiation, scattering, boundary conditions, and heat transfer to the burner structure."
+          ],
+          "earth_applications": "The results support safer fire detection, suppression, and cleaner combustion technologies critical for long-duration missions on Earth."
+        }
+      }
+    ],
+    "rechecked_at": "2026-11-14T11:26:22+00:00"
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "accession": "PSI-117",
+  "acronym": null,
+  "title": "Effect of External Thermo-Convective Perturbation on Cool Flame Dynamics: A Multidimensional Multi-Physics CFD Analysis",
+  "source_url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-117",
+  "origin": "psi",
+  "gravity": "normal (ground)",
+  "hardware": null,
+  "platform": null,
+  "period": [
+    "02-15-2017",
+    "02-14-2022"
+  ],
+  "sources": [
+    {
+      "id": "psi:PSI-117",
+      "title": "Effect of External Thermo-Convective Perturbation on Cool Flame Dynamics: A Multidimensional Multi-Physics CFD Analysis",
+      "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-117"
+    }
+  ],
+  "fields": {
+    "test_type": "combustion",
+    "fuels": [
+      "n-alkane"
+    ],
+    "fuel_phases": [
+      "liquid"
+    ],
+    "sample_geometry": [
+      "droplet"
+    ],
+    "sample_size": "1–4 mm, ~0.5 mm",
+    "diluents": [],
+    "suppressants": [],
+    "variables_studied": [
+      "forcing amplitude",
+      "forcing frequency",
+      "ambient composition",
+      "pressure"
+    ],
+    "sensors": [
+      "OpenFOAM CFD model"
+    ],
+    "safety_pillars": [
+      "detection",
+      "suppression"
+    ],
+    "key_findings": [
+      "External thermo-convective perturbations regulated cool-flame dynamics and ultimate fate.",
+      "Stability windows for ignition, sustained oscillation, transitions, and extinction were mapped.",
+      "CFD model predicted observables for comparison with FLEX data."
+    ],
+    "earth_applications": "Advances low-temperature combustion understanding relevant to engine knock, efficiency, and emissions; delivers validated CFD tools transferrable to practical combustors.",
+    "conditions": [],
+    "paper_findings": []
+  },
+  "warnings": [],
+  "review_status": "model_only",
+  "extraction": {
+    "model": "mistral-nemo",
+    "prompt_version": "2",
+    "source_hash": "1bbbf00c334cdac4",
+    "papers": [],
+    "extracted_at": "2026-11-14T11:10:46+00:00",
+    "seconds": 22.6,
+    "runs": [
+      {
+        "source": "psi:PSI-117",
+        "seconds": 22.6,
+        "prompt_tokens": 1218,
+        "output_tokens": 350,
+        "raw": {
+          "test_type": "combustion",
+          "fuels": [
+            "n-alkane"
+          ],
+          "fuel_phases": [
+            "liquid"
+          ],
+          "sample_geometry": [
+            "droplet"
+          ],
+          "sample_size": "1–4 mm, ~0.5 mm",
+          "conditions": [
+            {
+              "label": "Microgravity, n-alkane droplet combustion",
+              "fuel": "n-alkane",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": []
+            }
+          ],
+          "diluents": [],
+          "suppressants": [],
+          "variables_studied": [
+            "forcing amplitude",
+            "forcing frequency",
+            "ambient composition",
+            "pressure"
+          ],
+          "sensors": [
+            "OpenFOAM CFD model"
+          ],
+          "safety_pillars": [
+            "detection",
+            "suppression"
+          ],
+          "key_findings": [
+            "External thermo-convective perturbations regulated cool-flame dynamics and ultimate fate.",
+            "Stability windows for ignition, sustained oscillation, transitions, and extinction were mapped.",
+            "CFD model predicted observables for comparison with FLEX data."
+          ],
+          "earth_applications": "Advances low-temperature combustion understanding relevant to engine knock, efficiency, and emissions; delivers validated CFD tools transferrable to practical combustors."
+        }
+      }
+    ],
+    "rechecked_at": "2026-11-14T11:26:22+00:00"
+  }
+}

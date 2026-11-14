@@ -1,0 +1,164 @@
+{
+  "accession": "PSI-22",
+  "acronym": "ACME E-FIELD Flames",
+  "title": "Advanced Combustion via Microgravity Experiments Electric-Field Effects on Laminar Diffusion Flames",
+  "source_url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-22",
+  "origin": "psi",
+  "gravity": "microgravity",
+  "hardware": "Combustion Integrated Rack (CIR)  ACME",
+  "platform": "International Space Station (ISS)",
+  "period": [
+    "11-18-2016",
+    "11-17-2020"
+  ],
+  "sources": [
+    {
+      "id": "psi:PSI-22",
+      "title": "Advanced Combustion via Microgravity Experiments Electric-Field Effects on Laminar Diffusion Flames",
+      "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-22"
+    }
+  ],
+  "fields": {
+    "test_type": "combustion",
+    "fuels": [
+      "methane",
+      "ethylene"
+    ],
+    "fuel_phases": [
+      "gas"
+    ],
+    "sample_geometry": [
+      "gas-jet burner",
+      "coflow burner"
+    ],
+    "sample_size": "small, focused flame",
+    "diluents": [
+      "nitrogen"
+    ],
+    "suppressants": [],
+    "variables_studied": [
+      "electric field strength",
+      "fuel flow rate",
+      "coflow velocity",
+      "field polarity"
+    ],
+    "sensors": [
+      "thermopile detectors",
+      "high-resolution cameras",
+      "spectral imaging"
+    ],
+    "safety_pillars": [
+      "detection",
+      "suppression"
+    ],
+    "key_findings": [
+      "Electric fields significantly influence laminar diffusion flames",
+      "Ion-driven convection enables precise manipulation of flame stability and combustion dynamics",
+      "Soot formation and behavior can be evaluated"
+    ],
+    "earth_applications": "The use of electric fields to control flames can reduce the production of harmful pollutants in practical terrestrial combustion.",
+    "conditions": [],
+    "paper_findings": []
+  },
+  "warnings": [],
+  "review_status": "model_only",
+  "extraction": {
+    "model": "mistral-nemo",
+    "prompt_version": "2",
+    "source_hash": "e92487e73cd7ee21",
+    "papers": [],
+    "extracted_at": "2026-11-14T11:13:32+00:00",
+    "seconds": 28.8,
+    "runs": [
+      {
+        "source": "psi:PSI-22",
+        "seconds": 28.8,
+        "prompt_tokens": 1347,
+        "output_tokens": 441,
+        "raw": {
+          "test_type": "combustion",
+          "fuels": [
+            "methane",
+            "ethylene"
+          ],
+          "fuel_phases": [
+            "gas"
+          ],
+          "sample_geometry": [
+            "gas-jet burner",
+            "coflow burner"
+          ],
+          "sample_size": "small, focused flame",
+          "conditions": [
+            {
+              "label": "Methane flames with electric field",
+              "fuel": "methane",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": []
+            },
+            {
+              "label": "Ethylene flames with electric field",
+              "fuel": "ethylene",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": []
+            }
+          ],
+          "diluents": [
+            "nitrogen"
+          ],
+          "suppressants": [],
+          "variables_studied": [
+            "electric field strength",
+            "fuel flow rate",
+            "coflow velocity",
+            "field polarity"
+          ],
+          "sensors": [
+            "thermopile detectors",
+            "high-resolution cameras",
+            "spectral imaging"
+          ],
+          "safety_pillars": [
+            "detection",
+            "suppression"
+          ],
+          "key_findings": [
+            "Electric fields significantly influence laminar diffusion flames",
+            "Ion-driven convection enables precise manipulation of flame stability and combustion dynamics",
+            "Soot formation and behavior can be evaluated"
+          ],
+          "earth_applications": "The use of electric fields to control flames can reduce the production of harmful pollutants in practical terrestrial combustion."
+        }
+      }
+    ],
+    "rechecked_at": "2026-11-14T11:26:22+00:00"
+  }
+}

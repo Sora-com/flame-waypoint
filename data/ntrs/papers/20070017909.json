@@ -1,0 +1,19 @@
+{
+  "ntrs_id": "20070017909",
+  "title": "Radiative Extinction of Gaseous Spherical Diffusion Flames in Microgravity",
+  "year": "2019",
+  "authors": [
+    "Santa, K. J.",
+    "Chao, B. H.",
+    "Sunderland, P. B.",
+    "Urban, D. L.",
+    "Stocker, D. P.",
+    "Axelbaum, R. L."
+  ],
+  "type": "CONFERENCE_PAPER",
+  "abstract": "Radiative extinction of spherical diffusion flames was investigated experimentally and numerically. The experiments involved microgravity spherical diffusion flames burning ethylene and propane at 0.98 bar. Both normal (fuel flowing into oxidizer) and inverse (oxidizer flowing into fuel) flames were studied, with nitrogen supplied to either the fuel or the oxygen. Flame conditions were chosen to ensure that the flames extinguished within the 2.2 s of available test time; thus extinction occurred during unsteady flame conditions. Diagnostics included color video and thin-filament pyrometry. The computations, which simulated flow from a porous sphere into a quiescent environment, included detailed chemistry, transport and radiation, and yielded transient results. Radiative extinction was observed experimentally and simulated numerically. Extinction time, peak temperature, and radiative loss fraction were found to be independent of flow rate except at very low flow rates. Radiative heat loss was dominated by the combustion products downstream of the flame and was found to scale with flame surface area, not volume. For large transient flames the heat release rate also scaled with surface area and thus the radiative loss fraction was largely independent of flow rate. Peak temperatures at extinction onset were about 1100 K, which is significantly lower than for kinetic extinction. One observation of this work is that while radiative heat losses can drive transient extinction, this is not because radiative losses are increasing with time (flame size) but rather because the heat release rate is falling off as the temperature drops.",
+  "url": "https://ntrs.nasa.gov/citations/20070017909",
+  "pdf_url": "https://ntrs.nasa.gov/api/citations/20070017909/downloads/20070017909.pdf",
+  "fulltext_url": "https://ntrs.nasa.gov/api/citations/20070017909/downloads/20070017909.txt",
+  "copyright": null
+}

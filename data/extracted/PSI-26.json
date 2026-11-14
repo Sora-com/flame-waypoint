@@ -1,0 +1,454 @@
+{
+  "accession": "PSI-26",
+  "acronym": "BASS",
+  "title": "Burning and Suppression of Solids",
+  "source_url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-26",
+  "origin": "psi",
+  "gravity": "microgravity",
+  "hardware": "Microgravity Science Glovebox",
+  "platform": "International Space Station (ISS)",
+  "period": [
+    "10-01-2009",
+    "06-30-2013"
+  ],
+  "sources": [
+    {
+      "id": "psi:PSI-26",
+      "title": "Burning and Suppression of Solids",
+      "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-26"
+    },
+    {
+      "id": "ntrs:20140011099",
+      "title": "Thickness and Fuel Preheating Effects on Material Flammability in Microgravity from the BASS Experiment",
+      "url": "https://ntrs.nasa.gov/citations/20140011099",
+      "year": "2019"
+    },
+    {
+      "id": "ntrs:20140004923",
+      "title": "Opposed-Flow Flame Spread in a Narrow Channel Apparatus over Thin PMMA Sheets",
+      "url": "https://ntrs.nasa.gov/citations/20140004923",
+      "year": "2019"
+    }
+  ],
+  "fields": {
+    "test_type": "combustion",
+    "fuels": [
+      "cotton-fiberglass fabric",
+      "Nomex fabric",
+      "Ultem",
+      "Ultem® 1000",
+      "Nomex®",
+      "Nomex-III®",
+      "PMMA",
+      "cellulose"
+    ],
+    "fuel_phases": [
+      "solid"
+    ],
+    "sample_geometry": [
+      "fabric samples",
+      "spheres",
+      "cylinders"
+    ],
+    "sample_size": "76 mm x 76 mm cross section",
+    "diluents": [
+      "nitrogen"
+    ],
+    "suppressants": [
+      "nitrogen"
+    ],
+    "variables_studied": [
+      "flow direction",
+      "sample geometry"
+    ],
+    "sensors": [
+      "color video camera"
+    ],
+    "safety_pillars": [
+      "detection",
+      "suppression"
+    ],
+    "key_findings": [
+      "Materials burn as well if not better than in normal gravity",
+      "Nitrogen effective in extinguishing flames"
+    ],
+    "earth_applications": "BASS results provide essential guidance to ground-based microgravity combustion research efforts.",
+    "conditions": [
+      {
+        "label": "Concurrent-flow air",
+        "fuel": "cotton-fiberglass fabric",
+        "oxygen_pct": null,
+        "pressure_kpa": null,
+        "flow_cm_s": {
+          "min": null,
+          "max": 40,
+          "original": "None-40 cm/s"
+        },
+        "evidence": [
+          "Airflow speeds reaching as high as 40 cm/s"
+        ],
+        "source": "psi:PSI-26"
+      },
+      {
+        "label": "Opposed-flow air",
+        "fuel": "cotton-fiberglass fabric",
+        "oxygen_pct": null,
+        "pressure_kpa": null,
+        "flow_cm_s": {
+          "min": null,
+          "max": 40,
+          "original": "None-40 cm/s"
+        },
+        "evidence": [
+          "Airflow speeds reaching as high as 40 cm/s"
+        ],
+        "source": "psi:PSI-26"
+      },
+      {
+        "label": "PMMA sphere, 17% oxygen, 12 cm/s flow",
+        "fuel": "PMMA",
+        "oxygen_pct": {
+          "min": 17,
+          "max": 17
+        },
+        "pressure_kpa": null,
+        "flow_cm_s": {
+          "min": 12,
+          "max": 12,
+          "original": "12-12 cm/s"
+        },
+        "evidence": [
+          "Flame sequence of a burning 2-cm diameter PMMA sphere at 17% oxygen and 12 cm/s flow."
+        ],
+        "source": "ntrs:20140011099"
+      },
+      {
+        "label": "PMMA sphere, 17% oxygen, less than 1 cm/s flow",
+        "fuel": "PMMA",
+        "oxygen_pct": {
+          "min": 17,
+          "max": 17
+        },
+        "pressure_kpa": null,
+        "flow_cm_s": {
+          "min": null,
+          "max": 1,
+          "original": "None-1 cm/s"
+        },
+        "evidence": [
+          "Flame sequence of a burning PMMA sphere (1-cm diameter) at 17% oxygen and less than 1 cm/s."
+        ],
+        "source": "ntrs:20140011099"
+      },
+      {
+        "label": "PMMA rod, low-oxygen blowoff tests",
+        "fuel": "PMMA",
+        "oxygen_pct": {
+          "min": 21,
+          "max": 21
+        },
+        "pressure_kpa": {
+          "min": 101.325,
+          "max": 101.325,
+          "original": "1-1 atm"
+        },
+        "flow_cm_s": {
+          "min": 7,
+          "max": 35,
+          "original": "7-35 cm/s"
+        },
+        "evidence": [
+          "Similar to the work done on cellulose in [8], this article explores the effect gap height has on the flame spread rate for 75 µm PMMA at 1 atm pressure and 21% oxygen concentration by volume in the SDSU NCA. Gap height tests were conducted with an opposed oxidizer velocity ranging from 7 to 35 cm/s. 2."
+        ],
+        "source": "ntrs:20140004923"
+      },
+      {
+        "label": "PMMA sheet, microgravity simulation",
+        "fuel": "PMMA",
+        "oxygen_pct": {
+          "min": 21,
+          "max": 50
+        },
+        "pressure_kpa": {
+          "min": 101.325,
+          "max": 101.325,
+          "original": "1-1 atm"
+        },
+        "flow_cm_s": {
+          "min": 3,
+          "max": 35,
+          "original": "3-35 cm/s"
+        },
+        "evidence": [
+          "This article presents results from the SDSU NCA for clear, extruded polymethylmethacrylate (PMMA) at 1 atm pressure, opposed oxidizer velocity ranging from 3 to 35 cm/s, oxygen concentration by volume at 21%, 30 %, and 50%, and fuel thicknesses of 50 and 75 µm."
+        ],
+        "source": "ntrs:20140004923"
+      }
+    ],
+    "paper_findings": [
+      {
+        "text": "Flame spread rate was fastest at an intermediate value of flow speed in opposed flow.",
+        "source": "ntrs:20140011099"
+      },
+      {
+        "text": "Flame spread rate increased linearly with increasing flow in concurrent flow.",
+        "source": "ntrs:20140011099"
+      },
+      {
+        "text": "Quenching extinction was observed around 1 cm/s in concurrent flow.",
+        "source": "ntrs:20140011099"
+      },
+      {
+        "text": "Flame spread rate for 75 µm PMMA at 1 atm pressure, 10 mm gap height, 7 cm/s opposed oxidizer velocity, and 21 percent oxygen concentration is 0.216 cm/s with an R-squared correlation coefficient of 0.9995.",
+        "source": "ntrs:20140004923"
+      },
+      {
+        "text": "NCA successfully simulates microgravity for thin PMMA sheets as well as thin cellulose fuels at 1 atm pressure.",
+        "source": "ntrs:20140004923"
+      },
+      {
+        "text": "Oxygen concentration plays a large role in the flame spread rate.",
+        "source": "ntrs:20140004923"
+      }
+    ]
+  },
+  "warnings": [
+    "ntrs:20140004923: [PMMA rod, low-oxygen blowoff tests] evidence repaired from source text"
+  ],
+  "review_status": "model_only",
+  "extraction": {
+    "model": "mistral-nemo",
+    "prompt_version": "2",
+    "source_hash": "7affcb2353cf50ee",
+    "papers": [
+      "20140004923",
+      "20140011099"
+    ],
+    "extracted_at": "2026-11-14T11:17:28+00:00",
+    "seconds": 96.6,
+    "runs": [
+      {
+        "source": "psi:PSI-26",
+        "seconds": 30.0,
+        "prompt_tokens": 1388,
+        "output_tokens": 462,
+        "raw": {
+          "test_type": "combustion",
+          "fuels": [
+            "cotton-fiberglass fabric",
+            "Nomex fabric",
+            "Ultem"
+          ],
+          "fuel_phases": [
+            "solid"
+          ],
+          "sample_geometry": [
+            "fabric samples",
+            "spheres",
+            "cylinders"
+          ],
+          "sample_size": "76 mm x 76 mm cross section",
+          "conditions": [
+            {
+              "label": "Concurrent-flow air",
+              "fuel": "cotton-fiberglass fabric",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": 40,
+                "unit": "cm/s"
+              },
+              "evidence": [
+                "Airflow speeds reaching as high as 40 cm/s"
+              ]
+            },
+            {
+              "label": "Opposed-flow air",
+              "fuel": "cotton-fiberglass fabric",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": 40,
+                "unit": "cm/s"
+              },
+              "evidence": [
+                "Airflow speeds reaching as high as 40 cm/s"
+              ]
+            }
+          ],
+          "diluents": [
+            "nitrogen"
+          ],
+          "suppressants": [
+            "nitrogen"
+          ],
+          "variables_studied": [
+            "flow direction",
+            "sample geometry"
+          ],
+          "sensors": [
+            "color video camera"
+          ],
+          "safety_pillars": [
+            "detection",
+            "suppression"
+          ],
+          "key_findings": [
+            "Materials burn as well if not better than in normal gravity",
+            "Nitrogen effective in extinguishing flames"
+          ],
+          "earth_applications": "BASS results provide essential guidance to ground-based microgravity combustion research efforts."
+        }
+      },
+      {
+        "source": "ntrs:20140011099",
+        "seconds": 31.6,
+        "prompt_tokens": 1701,
+        "output_tokens": 422,
+        "raw": {
+          "fuels": [
+            "Ultem® 1000",
+            "Nomex®",
+            "Nomex-III®",
+            "PMMA"
+          ],
+          "conditions": [
+            {
+              "label": "PMMA sphere, 17% oxygen, 12 cm/s flow",
+              "fuel": "PMMA",
+              "oxygen": {
+                "min": 17,
+                "max": 17,
+                "unit": "%"
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": 12,
+                "max": 12,
+                "unit": "cm/s"
+              },
+              "evidence": [
+                "Flame sequence of a burning 2-cm diameter PMMA sphere at 17% oxygen and 12 cm/s flow."
+              ]
+            },
+            {
+              "label": "PMMA sphere, 17% oxygen, less than 1 cm/s flow",
+              "fuel": "PMMA",
+              "oxygen": {
+                "min": 17,
+                "max": 17,
+                "unit": "%"
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": 1,
+                "unit": "cm/s"
+              },
+              "evidence": [
+                "Flame sequence of a burning PMMA sphere (1-cm diameter) at 17% oxygen and less than 1 cm/s."
+              ]
+            }
+          ],
+          "key_findings": [
+            "Flame spread rate was fastest at an intermediate value of flow speed in opposed flow.",
+            "Flame spread rate increased linearly with increasing flow in concurrent flow.",
+            "Quenching extinction was observed around 1 cm/s in concurrent flow."
+          ]
+        },
+        "excerpt_chars": 5843
+      },
+      {
+        "source": "ntrs:20140004923",
+        "seconds": 35.0,
+        "prompt_tokens": 1500,
+        "output_tokens": 505,
+        "raw": {
+          "fuels": [
+            "PMMA",
+            "cellulose"
+          ],
+          "conditions": [
+            {
+              "label": "PMMA rod, low-oxygen blowoff tests",
+              "fuel": "PMMA",
+              "oxygen": {
+                "min": 21,
+                "max": 21,
+                "unit": "%"
+              },
+              "pressure": {
+                "min": 1,
+                "max": 1,
+                "unit": "atm"
+              },
+              "flow_speed": {
+                "min": 7,
+                "max": 35,
+                "unit": "cm/s"
+              },
+              "evidence": [
+                "This article explores the effect gap height has on the flame spread rate for 75 µm PMMA at 1 atm pressure and 21% oxygen concentration by volume in the SDSU NCA."
+              ]
+            },
+            {
+              "label": "PMMA sheet, microgravity simulation",
+              "fuel": "PMMA",
+              "oxygen": {
+                "min": 21,
+                "max": 50,
+                "unit": "%"
+              },
+              "pressure": {
+                "min": 1,
+                "max": 1,
+                "unit": "atm"
+              },
+              "flow_speed": {
+                "min": 3,
+                "max": 35,
+                "unit": "cm/s"
+              },
+              "evidence": [
+                "This article presents results from the SDSU NCA for clear, extruded polymethylmethacrylate (PMMA) at 1 atm pressure, opposed oxidizer velocity ranging from 3 to 35 cm/s, oxygen concentration by volume at 21%, 30 %, and 50%, and fuel thicknesses of 50 and 75 µm."
+              ]
+            }
+          ],
+          "key_findings": [
+            "Flame spread rate for 75 µm PMMA at 1 atm pressure, 10 mm gap height, 7 cm/s opposed oxidizer velocity, and 21 percent oxygen concentration is 0.216 cm/s with an R-squared correlation coefficient of 0.9995.",
+            "NCA successfully simulates microgravity for thin PMMA sheets as well as thin cellulose fuels at 1 atm pressure.",
+            "Oxygen concentration plays a large role in the flame spread rate."
+          ]
+        },
+        "excerpt_chars": 5208
+      }
+    ],
+    "rechecked_at": "2026-11-14T11:26:22+00:00"
+  }
+}

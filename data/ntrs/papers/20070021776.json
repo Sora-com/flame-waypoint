@@ -1,0 +1,16 @@
+{
+  "ntrs_id": "20070021776",
+  "title": "ISS Destiny Laboratory Smoke Detection Model",
+  "year": "2019",
+  "authors": [
+    "Brooker, John E.",
+    "Urban, David L.",
+    "Ruff, Gary A."
+  ],
+  "type": "CONFERENCE_PAPER",
+  "abstract": "Smoke transport and detection were modeled numerically in the ISS Destiny module using the NIST, Fire Dynamics Simulator code. The airflows in Destiny were modeled using the existing flow conditions and the module geometry included obstructions that simulate the currently installed hardware on orbit. The smoke source was modeled as a 0.152 by 0.152 m region that emitted smoke particulate ranging from 1.46 to 8.47 mg/s. In the module domain, the smoke source was placed in the center of each Destiny rack location and the model was run to determine the time required for the two smoke detectors to alarm. Overall the detection times were dominated by the circumferential flow, the axial flow from the intermodule ventilation and the smoke source strength.",
+  "url": "https://ntrs.nasa.gov/citations/20070021776",
+  "pdf_url": null,
+  "fulltext_url": null,
+  "copyright": null
+}

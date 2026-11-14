@@ -1,0 +1,124 @@
+{
+  "accession": "PSI-47",
+  "acronym": "DAFT / DAFT-2",
+  "title": "Dust and Aerosol Measurement Feasibility Test / Dust and Aerosol Measurement Feasibility Test-2",
+  "source_url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-47",
+  "origin": "psi",
+  "gravity": "microgravity",
+  "hardware": "TSI P-Trak",
+  "platform": "International Space Station (ISS)",
+  "period": [
+    "03-01-2003",
+    "06-01-2009"
+  ],
+  "sources": [
+    {
+      "id": "psi:PSI-47",
+      "title": "Dust and Aerosol Measurement Feasibility Test / Dust and Aerosol Measurement Feasibility Test-2",
+      "url": "https://psi.nasa.gov/physci/repo/data/investigation/PSI-47"
+    }
+  ],
+  "fields": {
+    "test_type": "aerosol_dust",
+    "fuels": [
+      "Arizona Red Dust (ARD)"
+    ],
+    "fuel_phases": [
+      "solid"
+    ],
+    "sample_geometry": [
+      "particle samples"
+    ],
+    "sample_size": "15-liter Mylar bags",
+    "diluents": [],
+    "suppressants": [],
+    "variables_studied": [
+      "Aerosol particle concentration"
+    ],
+    "sensors": [
+      "TSI P-Trak",
+      "DustTrak CNC"
+    ],
+    "safety_pillars": [
+      "detection"
+    ],
+    "key_findings": [
+      "The modified TSI P-Trak functioned normally in microgravity.",
+      "The aerosol created and filtered was within the measurement capabilities of the test devices."
+    ],
+    "earth_applications": "The successful adaptation of the TSI P-Trak for microgravity can inform the design of instruments for use in other challenging Earth environments.",
+    "conditions": [],
+    "paper_findings": []
+  },
+  "warnings": [],
+  "review_status": "model_only",
+  "extraction": {
+    "model": "mistral-nemo",
+    "prompt_version": "2",
+    "source_hash": "c483ab10a220f6bf",
+    "papers": [],
+    "extracted_at": "2026-11-14T11:19:00+00:00",
+    "seconds": 23.7,
+    "runs": [
+      {
+        "source": "psi:PSI-47",
+        "seconds": 23.7,
+        "prompt_tokens": 1326,
+        "output_tokens": 326,
+        "raw": {
+          "test_type": "aerosol_dust",
+          "fuels": [
+            "Arizona Red Dust (ARD)"
+          ],
+          "fuel_phases": [
+            "solid"
+          ],
+          "sample_geometry": [
+            "particle samples"
+          ],
+          "sample_size": "15-liter Mylar bags",
+          "conditions": [
+            {
+              "label": "Microgravity aerosol measurement",
+              "fuel": "Arizona Red Dust (ARD)",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": []
+            }
+          ],
+          "diluents": [],
+          "suppressants": [],
+          "variables_studied": [
+            "Aerosol particle concentration"
+          ],
+          "sensors": [
+            "TSI P-Trak",
+            "DustTrak CNC"
+          ],
+          "safety_pillars": [
+            "detection"
+          ],
+          "key_findings": [
+            "The modified TSI P-Trak functioned normally in microgravity.",
+            "The aerosol created and filtered was within the measurement capabilities of the test devices."
+          ],
+          "earth_applications": "The successful adaptation of the TSI P-Trak for microgravity can inform the design of instruments for use in other challenging Earth environments."
+        }
+      }
+    ],
+    "rechecked_at": "2026-11-14T11:26:22+00:00"
+  }
+}
