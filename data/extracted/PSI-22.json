@@ -31,7 +31,7 @@
       "gas-jet burner",
       "coflow burner"
     ],
-    "sample_size": "small, focused flame",
+    "sample_size": null,
     "diluents": [
       "nitrogen"
     ],
@@ -64,17 +64,17 @@
   "review_status": "model_only",
   "extraction": {
     "model": "mistral-nemo",
-    "prompt_version": "2",
+    "prompt_version": "3",
     "source_hash": "e92487e73cd7ee21",
     "papers": [],
-    "extracted_at": "2026-11-14T11:13:32+00:00",
-    "seconds": 28.8,
+    "extracted_at": "2026-11-14T12:27:16+00:00",
+    "seconds": 28.6,
     "runs": [
       {
         "source": "psi:PSI-22",
-        "seconds": 28.8,
-        "prompt_tokens": 1347,
-        "output_tokens": 441,
+        "seconds": 28.6,
+        "prompt_tokens": 1415,
+        "output_tokens": 451,
         "raw": {
           "test_type": "combustion",
           "fuels": [
@@ -88,10 +88,11 @@
             "gas-jet burner",
             "coflow burner"
           ],
-          "sample_size": "small, focused flame",
+          "sample_size": null,
           "conditions": [
             {
               "label": "Methane flames with electric field",
+              "context": "flight",
               "fuel": "methane",
               "oxygen": {
                 "min": null,
@@ -112,6 +113,7 @@
             },
             {
               "label": "Ethylene flames with electric field",
+              "context": "flight",
               "fuel": "ethylene",
               "oxygen": {
                 "min": null,
@@ -158,7 +160,6 @@
           "earth_applications": "The use of electric fields to control flames can reduce the production of harmful pollutants in practical terrestrial combustion."
         }
       }
-    ],
-    "rechecked_at": "2026-11-14T11:26:22+00:00"
+    ]
   }
 }

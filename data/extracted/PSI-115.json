@@ -55,17 +55,17 @@
   "review_status": "model_only",
   "extraction": {
     "model": "mistral-nemo",
-    "prompt_version": "2",
+    "prompt_version": "3",
     "source_hash": "7733c68caf6e1658",
     "papers": [],
-    "extracted_at": "2026-11-14T11:10:24+00:00",
-    "seconds": 27.2,
+    "extracted_at": "2026-11-14T12:24:11+00:00",
+    "seconds": 27.7,
     "runs": [
       {
         "source": "psi:PSI-115",
-        "seconds": 27.2,
-        "prompt_tokens": 1061,
-        "output_tokens": 450,
+        "seconds": 27.7,
+        "prompt_tokens": 1129,
+        "output_tokens": 470,
         "raw": {
           "test_type": "smoke_pyrolysis",
           "fuels": [
@@ -80,7 +80,8 @@
           "sample_size": null,
           "conditions": [
             {
-              "label": "DBP pyrolysis in Earth gravity",
+              "label": "DBP pyrolysis smoke growth in Earth gravity",
+              "context": "simulation",
               "fuel": "dibutyl-phthalate",
               "oxygen": {
                 "min": null,
@@ -100,7 +101,8 @@
               "evidence": []
             },
             {
-              "label": "DBP pyrolysis in microgravity",
+              "label": "DBP pyrolysis smoke growth in microgravity",
+              "context": "simulation",
               "fuel": "dibutyl-phthalate",
               "oxygen": {
                 "min": null,
@@ -140,7 +142,6 @@
           "earth_applications": "Models and tools that characterize particles generated as smoke can be used to ascertain how temperature, gravity, and material properties affect the smoke produced."
         }
       }
-    ],
-    "rechecked_at": "2026-11-14T11:26:22+00:00"
+    ]
   }
 }

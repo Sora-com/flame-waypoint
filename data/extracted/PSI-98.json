@@ -59,7 +59,7 @@
     "diluents": [],
     "suppressants": [],
     "variables_studied": [
-      "air flow velocity"
+      "flow speed"
     ],
     "sensors": [
       "thermocouples",
@@ -74,13 +74,13 @@
     ],
     "key_findings": [
       "Determined microgravity flammability limits for Sibal",
-      "Validated NASA’s material selection criteria",
-      "Studied how microgravity and limited oxygen affect flame size"
+      "Validated NASA’s material selection criteria"
     ],
     "earth_applications": "Studying fire in small, sealed environments benefits fire safety and prevention efforts on Earth",
     "conditions": [
       {
-        "label": "Saffire-1 experiment in Cygnus",
+        "label": "Saffire-1 on Cygnus",
+        "context": "flight",
         "fuel": "Sibal",
         "oxygen_pct": null,
         "pressure_kpa": null,
@@ -95,22 +95,8 @@
         "source": "psi:PSI-98"
       },
       {
-        "label": "Saffire-III samples, normal gravity",
-        "fuel": "SIBAL cloth",
-        "oxygen_pct": null,
-        "pressure_kpa": null,
-        "flow_cm_s": {
-          "min": 30,
-          "max": 30,
-          "original": "30-30 cm/s"
-        },
-        "evidence": [
-          "while Saffire-III will be run at a flow velocity of 30 cm/s"
-        ],
-        "source": "ntrs:20170001636"
-      },
-      {
-        "label": "Saffire I & III, SIBAL fuel, air atmosphere",
+        "label": "Saffire I & III, SIBAL fuel, low-oxygen blowoff tests",
+        "context": "flight",
         "fuel": "SIBAL fuel",
         "oxygen_pct": null,
         "pressure_kpa": null,
@@ -125,7 +111,8 @@
         "source": "ntrs:20150022421"
       },
       {
-        "label": "Saffire II, silicone samples, air atmosphere",
+        "label": "Saffire II, silicone samples, upward flame spread tests",
+        "context": "flight",
         "fuel": "silicone",
         "oxygen_pct": null,
         "pressure_kpa": null,
@@ -140,7 +127,8 @@
         "source": "ntrs:20150022421"
       },
       {
-        "label": "PMMA samples, concurrent flow up to 2 m/s",
+        "label": "Ground tests, PMMA samples, concurrent flow up to 2 m/s",
+        "context": "ground",
         "fuel": "PMMA",
         "oxygen_pct": null,
         "pressure_kpa": null,
@@ -157,7 +145,11 @@
     ],
     "paper_findings": [
       {
-        "text": "The materials selected for Saffire-II have normal gravity Maximum Oxygen Concentration (MOC) flammability limits that indicate they will burn in normal gravity just above and below 21% O2 by volume.",
+        "text": "SIBAL cloth burns like cotton but maintains structural integrity after the cotton is consumed.",
+        "source": "ntrs:20170001636"
+      },
+      {
+        "text": "The selected materials have normal gravity Maximum Oxygen Concentration (MOC) flammability limits that indicate they will burn in normal gravity just above and below 21% O2 by volume.",
         "source": "ntrs:20170001636"
       },
       {
@@ -173,39 +165,36 @@
         "source": "ntrs:20150022421"
       },
       {
-        "text": "The flame propagates or self-extinguishes",
-        "source": "ntrs:20170000230"
-      },
-      {
-        "text": "Flame spread rate will be obtained if the flame propagates",
+        "text": "The flame propagates or self-extinguishes in the composite fabric sample in 21% O2 mole fraction.",
         "source": "ntrs:20170000230"
       }
     ]
   },
   "warnings": [
-    "ntrs:20170001636: [Saffire-II samples, normal gravity] flow_speed: 20-20 cm/s not in evidence, dropped",
-    "ntrs:20150022421: [Saffire I & III, SIBAL fuel, air atmosphere] evidence repaired from source text",
-    "ntrs:20150022421: [Saffire II, silicone samples, air atmosphere] evidence repaired from source text",
-    "ntrs:20170000230: [NASA-STD-6001 Test 1] oxygen: 0.21-0.21 mole fraction not in evidence, dropped"
+    "ntrs:20170001636: [Saffire-I and III, low-speed combustion tests] flow_speed: 53-90 cm/s not in evidence, dropped",
+    "ntrs:20170001636: [Saffire-II, low-speed combustion tests] flow_speed: 20-20 cm/s not in evidence, dropped",
+    "ntrs:20150022421: [Saffire I & III, SIBAL fuel, low-oxygen blowoff tests] evidence repaired from source text",
+    "ntrs:20150022421: [Saffire II, silicone samples, upward flame spread tests] evidence repaired from source text",
+    "ntrs:20170000230: [Saffire-I and -III sample card] oxygen: 0.21-0.21 mole fraction not in evidence, dropped"
   ],
   "review_status": "model_only",
   "extraction": {
     "model": "mistral-nemo",
-    "prompt_version": "2",
+    "prompt_version": "3",
     "source_hash": "0903f755e821783b",
     "papers": [
       "20150022421",
       "20170000230",
       "20170001636"
     ],
-    "extracted_at": "2026-11-14T11:23:50+00:00",
-    "seconds": 96.2,
+    "extracted_at": "2026-11-14T12:38:17+00:00",
+    "seconds": 104.2,
     "runs": [
       {
         "source": "psi:PSI-98",
-        "seconds": 24.3,
-        "prompt_tokens": 1288,
-        "output_tokens": 360,
+        "seconds": 24.1,
+        "prompt_tokens": 1356,
+        "output_tokens": 351,
         "raw": {
           "test_type": "combustion",
           "fuels": [
@@ -221,7 +210,8 @@
           "sample_size": "75% cotton, 25% fiberglass by weight",
           "conditions": [
             {
-              "label": "Saffire-1 experiment in Cygnus",
+              "label": "Saffire-1 on Cygnus",
+              "context": "flight",
               "fuel": "Sibal",
               "oxygen": {
                 "min": null,
@@ -246,7 +236,7 @@
           "diluents": [],
           "suppressants": [],
           "variables_studied": [
-            "air flow velocity"
+            "flow speed"
           ],
           "sensors": [
             "thermocouples",
@@ -261,17 +251,16 @@
           ],
           "key_findings": [
             "Determined microgravity flammability limits for Sibal",
-            "Validated NASA’s material selection criteria",
-            "Studied how microgravity and limited oxygen affect flame size"
+            "Validated NASA’s material selection criteria"
           ],
           "earth_applications": "Studying fire in small, sealed environments benefits fire safety and prevention efforts on Earth"
         }
       },
       {
         "source": "ntrs:20170001636",
-        "seconds": 22.9,
-        "prompt_tokens": 991,
-        "output_tokens": 412,
+        "seconds": 26.4,
+        "prompt_tokens": 1059,
+        "output_tokens": 476,
         "raw": {
           "fuels": [
             "SIBAL cloth",
@@ -281,8 +270,32 @@
           ],
           "conditions": [
             {
-              "label": "Saffire-II samples, normal gravity",
+              "label": "Saffire-I and III, low-speed combustion tests",
+              "context": "ground",
               "fuel": "SIBAL cloth",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": 53,
+                "max": 90,
+                "unit": "cm/s"
+              },
+              "evidence": [
+                "The experiment module is approximately 53- by 90- by 133-cm. cm/s while Saffire-III will be run at a flow velocity of 30 cm/s"
+              ]
+            },
+            {
+              "label": "Saffire-II, low-speed combustion tests",
+              "context": "ground",
+              "fuel": "Silicone",
               "oxygen": {
                 "min": null,
                 "max": null,
@@ -299,43 +312,22 @@
                 "unit": "cm/s"
               },
               "evidence": [
-                "Saffire-II has a sample card that contains 9 samples, each 5 cm x 29 cm. ... Air Flow (cm/s) Igniter Position S1 Silicone 0.25 mm 20 Upstream and atmospheric parameters."
-              ]
-            },
-            {
-              "label": "Saffire-III samples, normal gravity",
-              "fuel": "SIBAL cloth",
-              "oxygen": {
-                "min": null,
-                "max": null,
-                "unit": null
-              },
-              "pressure": {
-                "min": null,
-                "max": null,
-                "unit": null
-              },
-              "flow_speed": {
-                "min": 30,
-                "max": 30,
-                "unit": "cm/s"
-              },
-              "evidence": [
-                "while Saffire-III will be run at a flow velocity of 30 cm/s"
+                "Fig. 2 shows their locations on the sample card. These materials were selected because they have normal gravity Maximum Oxygen Concentration (MOC) flammability limits that indicate they will burn in normal gravity just above and below 21% O2 by volume, i.e., the expected concentration of O2 when"
               ]
             }
           ],
           "key_findings": [
-            "The materials selected for Saffire-II have normal gravity Maximum Oxygen Concentration (MOC) flammability limits that indicate they will burn in normal gravity just above and below 21% O2 by volume."
+            "SIBAL cloth burns like cotton but maintains structural integrity after the cotton is consumed.",
+            "The selected materials have normal gravity Maximum Oxygen Concentration (MOC) flammability limits that indicate they will burn in normal gravity just above and below 21% O2 by volume."
           ]
         },
         "excerpt_chars": 2823
       },
       {
         "source": "ntrs:20150022421",
-        "seconds": 33.4,
-        "prompt_tokens": 1655,
-        "output_tokens": 472,
+        "seconds": 37.2,
+        "prompt_tokens": 1723,
+        "output_tokens": 499,
         "raw": {
           "fuels": [
             "SIBAL fuel",
@@ -344,7 +336,8 @@
           ],
           "conditions": [
             {
-              "label": "Saffire I & III, SIBAL fuel, air atmosphere",
+              "label": "Saffire I & III, SIBAL fuel, low-oxygen blowoff tests",
+              "context": "flight",
               "fuel": "SIBAL fuel",
               "oxygen": {
                 "min": null,
@@ -366,7 +359,8 @@
               ]
             },
             {
-              "label": "Saffire II, silicone samples, air atmosphere",
+              "label": "Saffire II, silicone samples, upward flame spread tests",
+              "context": "flight",
               "fuel": "silicone",
               "oxygen": {
                 "min": null,
@@ -384,11 +378,12 @@
                 "unit": "m/s"
               },
               "evidence": [
-                "Four of the samples on Saffire II will be silicone ... burned in upward 1-g testing"
+                "Four of the samples on Saffire II will be silicone ... upward flame spread tests"
               ]
             },
             {
-              "label": "PMMA samples, concurrent flow up to 2 m/s",
+              "label": "Ground tests, PMMA samples, concurrent flow up to 2 m/s",
+              "context": "ground",
               "fuel": "PMMA",
               "oxygen": {
                 "min": null,
@@ -420,16 +415,17 @@
       },
       {
         "source": "ntrs:20170000230",
-        "seconds": 15.6,
-        "prompt_tokens": 796,
-        "output_tokens": 240,
+        "seconds": 16.5,
+        "prompt_tokens": 864,
+        "output_tokens": 248,
         "raw": {
           "fuels": [
             "Composite fabric (75% cotton – 25% fiberglass by mass)"
           ],
           "conditions": [
             {
-              "label": "NASA-STD-6001 Test 1",
+              "label": "Saffire-I and -III sample card",
+              "context": "flight",
               "fuel": "Composite fabric (75% cotton – 25% fiberglass by mass)",
               "oxygen": {
                 "min": 0.21,
@@ -452,13 +448,11 @@
             }
           ],
           "key_findings": [
-            "The flame propagates or self-extinguishes",
-            "Flame spread rate will be obtained if the flame propagates"
+            "The flame propagates or self-extinguishes in the composite fabric sample in 21% O2 mole fraction."
           ]
         },
         "excerpt_chars": 2334
       }
-    ],
-    "rechecked_at": "2026-11-14T11:26:22+00:00"
+    ]
   }
 }

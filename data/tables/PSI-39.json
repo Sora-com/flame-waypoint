@@ -1,0 +1,2586 @@
+{
+  "accession": "PSI-39",
+  "origin": "psi_files",
+  "parsed_at": "2026-11-14T12:14:49+00:00",
+  "files": [
+    {
+      "file": "PSI-39_Experimental table_CFI.csv",
+      "sheet": "csv",
+      "tests": 87,
+      "mapped_columns": [
+        "Flex Number",
+        "Fuel ",
+        "Helium",
+        "Nitrogen",
+        "Oxygen",
+        "Pressure",
+        "Test Date"
+      ],
+      "unmapped_columns": [
+        "CIR ",
+        "Fiber",
+        "Local Time"
+      ]
+    }
+  ],
+  "summary": {
+    "tests": 87,
+    "design_envelopes": 0,
+    "with_oxygen": 87,
+    "with_pressure": 87,
+    "with_flow": 0,
+    "with_issues": 4,
+    "oxygen_pct_range": [
+      17.0,
+      21.0
+    ],
+    "pressure_kpa_range": [
+      50.663,
+      506.625
+    ],
+    "flow_cm_s_range": null,
+    "fuels": [
+      "[.60]/[.40] C12H26/iso-dodecane",
+      "[.75]/[.25] C12H26/iso-dodecane",
+      "C12H26"
+    ]
+  },
+  "tests": [
+    {
+      "row": 2,
+      "kind": "test",
+      "test_id": "1206",
+      "identifier": null,
+      "date": "9-Mar-17",
+      "fuel": "C12H26",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "02:03:08 pm est",
+        "CIR": "f068a03",
+        "Fiber": "No"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row2"
+    },
+    {
+      "row": 3,
+      "kind": "test",
+      "test_id": "1207",
+      "identifier": null,
+      "date": "9-Mar-17",
+      "fuel": "C12H26",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "03:53:26 pm est",
+        "CIR": "f068a07",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row3"
+    },
+    {
+      "row": 4,
+      "kind": "test",
+      "test_id": "1208",
+      "identifier": null,
+      "date": "9-Mar-17",
+      "fuel": "C12H26",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "04:25:22 pm est",
+        "CIR": "f068a08",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row4"
+    },
+    {
+      "row": 5,
+      "kind": "test",
+      "test_id": "1209",
+      "identifier": null,
+      "date": "9-Mar-17",
+      "fuel": "C12H26",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "04:49:43 pm est",
+        "CIR": "f068a09",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row5"
+    },
+    {
+      "row": 6,
+      "kind": "test",
+      "test_id": "1210",
+      "identifier": null,
+      "date": "9-Mar-17",
+      "fuel": "C12H26",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "05:43:01 pm est",
+        "CIR": "f068a11",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row6"
+    },
+    {
+      "row": 7,
+      "kind": "test",
+      "test_id": "1211",
+      "identifier": null,
+      "date": "21-Mar-17",
+      "fuel": "C12H26",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "10:17:45 am est",
+        "CIR": "f080a01",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row7"
+    },
+    {
+      "row": 8,
+      "kind": "test",
+      "test_id": "1213",
+      "identifier": null,
+      "date": "27-Mar-17",
+      "fuel": "C12H26",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.0,
+        "max": 17.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.83
+      },
+      "extra": {
+        "Local Time": "10:37:21 am est",
+        "CIR": "f086a04",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row8"
+    },
+    {
+      "row": 9,
+      "kind": "test",
+      "test_id": "1215",
+      "identifier": null,
+      "date": "27-Mar-17",
+      "fuel": "C12H26",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.0,
+        "max": 17.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.83
+      },
+      "extra": {
+        "Local Time": "11:45:48 am est",
+        "CIR": "f086a06",
+        "Fiber": "No"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row9"
+    },
+    {
+      "row": 10,
+      "kind": "test",
+      "test_id": "1216",
+      "identifier": null,
+      "date": "27-Mar-17",
+      "fuel": "C12H26",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.0,
+        "max": 17.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.83
+      },
+      "extra": {
+        "Local Time": "12:10:26 pm est",
+        "CIR": "f086a07",
+        "Fiber": "No"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row10"
+    },
+    {
+      "row": 11,
+      "kind": "test",
+      "test_id": "1217",
+      "identifier": null,
+      "date": "27-Mar-17",
+      "fuel": "C12H26",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.0,
+        "max": 17.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.83
+      },
+      "extra": {
+        "Local Time": "01:02:35 pm est",
+        "CIR": "f086a08",
+        "Fiber": "No"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row11"
+    },
+    {
+      "row": 12,
+      "kind": "test",
+      "test_id": "1218",
+      "identifier": null,
+      "date": "31-Mar-17",
+      "fuel": "C12H26",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "12:21:21 pm est",
+        "CIR": "f090a03",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row12"
+    },
+    {
+      "row": 13,
+      "kind": "test",
+      "test_id": "1219",
+      "identifier": null,
+      "date": "31-Mar-17",
+      "fuel": "C12H26",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.76
+      },
+      "extra": {
+        "Local Time": "12:57:07 pm est",
+        "CIR": "f090a04",
+        "Fiber": "No"
+      },
+      "issues": [
+        "composition sums to 0.970, not 1"
+      ],
+      "source": "PSI-39_Experimental table_CFI.csv#row13"
+    },
+    {
+      "row": 14,
+      "kind": "test",
+      "test_id": "1220",
+      "identifier": null,
+      "date": "31-Mar-17",
+      "fuel": "C12H26",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.76
+      },
+      "extra": {
+        "Local Time": "01:18 pm est",
+        "CIR": "f090a05"
+      },
+      "issues": [
+        "composition sums to 0.970, not 1"
+      ],
+      "source": "PSI-39_Experimental table_CFI.csv#row14"
+    },
+    {
+      "row": 15,
+      "kind": "test",
+      "test_id": "1221",
+      "identifier": null,
+      "date": "31-Mar-17",
+      "fuel": "C12H26",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.76
+      },
+      "extra": {
+        "Local Time": "01:56:05 pm est",
+        "CIR": "f090a06",
+        "Fiber": "No"
+      },
+      "issues": [
+        "composition sums to 0.970, not 1"
+      ],
+      "source": "PSI-39_Experimental table_CFI.csv#row15"
+    },
+    {
+      "row": 16,
+      "kind": "test",
+      "test_id": "1222",
+      "identifier": null,
+      "date": "31-Mar-17",
+      "fuel": "C12H26",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.76
+      },
+      "extra": {
+        "Local Time": "02:26:52 pm est",
+        "CIR": "f090a07",
+        "Fiber": "No"
+      },
+      "issues": [
+        "composition sums to 0.970, not 1"
+      ],
+      "source": "PSI-39_Experimental table_CFI.csv#row16"
+    },
+    {
+      "row": 17,
+      "kind": "test",
+      "test_id": "1223",
+      "identifier": null,
+      "date": "31-Mar-17",
+      "fuel": "C12H26",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 126.656,
+        "max": 126.656,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "03:55:56 pm est",
+        "CIR": "f090a08",
+        "Fiber": "No"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row17"
+    },
+    {
+      "row": 18,
+      "kind": "test",
+      "test_id": "1224",
+      "identifier": null,
+      "date": "31-Mar-17",
+      "fuel": "C12H26",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 126.656,
+        "max": 126.656,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "04:22:52 pm est",
+        "CIR": "f090a09",
+        "Fiber": "No"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row18"
+    },
+    {
+      "row": 19,
+      "kind": "test",
+      "test_id": "1225",
+      "identifier": null,
+      "date": "31-Mar-17",
+      "fuel": "C12H26",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 126.656,
+        "max": 126.656,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "04:39:07 pm est",
+        "CIR": "f090a10",
+        "Fiber": "No"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row19"
+    },
+    {
+      "row": 20,
+      "kind": "test",
+      "test_id": "1226",
+      "identifier": null,
+      "date": "31-Mar-17",
+      "fuel": "C12H26",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 126.656,
+        "max": 126.656,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "04:52:01 pm est",
+        "CIR": "f090a11",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row20"
+    },
+    {
+      "row": 21,
+      "kind": "test",
+      "test_id": "1227",
+      "identifier": null,
+      "date": "5-Apr-17",
+      "fuel": "C12H26",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 202.65,
+        "max": 202.65,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "1:47:47 pm est",
+        "CIR": "f095a01",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row21"
+    },
+    {
+      "row": 22,
+      "kind": "test",
+      "test_id": "1228",
+      "identifier": null,
+      "date": "5-Apr-17",
+      "fuel": "C12H26",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 202.65,
+        "max": 202.65,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "02:28:02 pm est",
+        "CIR": "f095a02",
+        "Fiber": "No"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row22"
+    },
+    {
+      "row": 23,
+      "kind": "test",
+      "test_id": "1229",
+      "identifier": null,
+      "date": "5-Apr-17",
+      "fuel": "C12H26",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 202.65,
+        "max": 202.65,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "04:08:33 pm est",
+        "CIR": "f095a04",
+        "Fiber": "No"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row23"
+    },
+    {
+      "row": 24,
+      "kind": "test",
+      "test_id": "1285",
+      "identifier": null,
+      "date": "22-Jun-17",
+      "fuel": "[.75]/[.25] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.0,
+        "max": 17.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.83
+      },
+      "extra": {
+        "Local Time": "11:05:52 am est",
+        "CIR": "f173e01",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row24"
+    },
+    {
+      "row": 25,
+      "kind": "test",
+      "test_id": "1286",
+      "identifier": null,
+      "date": "22-Jun-17",
+      "fuel": "[.75]/[.25] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.0,
+        "max": 17.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.83
+      },
+      "extra": {
+        "Local Time": "11:23:26 am est",
+        "CIR": "f173e02",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row25"
+    },
+    {
+      "row": 26,
+      "kind": "test",
+      "test_id": "1287",
+      "identifier": null,
+      "date": "22-Jun-17",
+      "fuel": "[.75]/[.25] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.0,
+        "max": 17.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.83
+      },
+      "extra": {
+        "Local Time": "11:42:32 am est",
+        "CIR": "f173e03",
+        "Fiber": "No"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row26"
+    },
+    {
+      "row": 27,
+      "kind": "test",
+      "test_id": "1288",
+      "identifier": null,
+      "date": "22-Jun-17",
+      "fuel": "[.75]/[.25] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.0,
+        "max": 17.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.83
+      },
+      "extra": {
+        "Local Time": "12:36:48 pm est",
+        "CIR": "f173e05",
+        "Fiber": "No"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row27"
+    },
+    {
+      "row": 28,
+      "kind": "test",
+      "test_id": "1289",
+      "identifier": null,
+      "date": "22-Jun-17",
+      "fuel": "[.75]/[.25] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.0,
+        "max": 17.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.83
+      },
+      "extra": {
+        "Local Time": "12:47:53 pm est",
+        "CIR": "f173e06",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row28"
+    },
+    {
+      "row": 29,
+      "kind": "test",
+      "test_id": "1295",
+      "identifier": null,
+      "date": "28-Jun-17",
+      "fuel": "[.75]/[.25] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "09:24:35 am est",
+        "CIR": "f179e01",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row29"
+    },
+    {
+      "row": 30,
+      "kind": "test",
+      "test_id": "1296",
+      "identifier": null,
+      "date": "28-Jun-17",
+      "fuel": "[.75]/[.25] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "9:43:08 am est",
+        "CIR": "f179e02",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row30"
+    },
+    {
+      "row": 31,
+      "kind": "test",
+      "test_id": "1297",
+      "identifier": null,
+      "date": "28-Jun-17",
+      "fuel": "[.75]/[.25] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "11:51:50 am est",
+        "CIR": "f179e05",
+        "Fiber": "No"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row31"
+    },
+    {
+      "row": 32,
+      "kind": "test",
+      "test_id": "1290",
+      "identifier": null,
+      "date": "26-Jun-17",
+      "fuel": "[.75]/[.25] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.0,
+        "max": 17.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.83
+      },
+      "extra": {
+        "Local Time": "09:24:29 am est",
+        "CIR": "f177d01",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row32"
+    },
+    {
+      "row": 33,
+      "kind": "test",
+      "test_id": "1291",
+      "identifier": null,
+      "date": "26-Jun-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.0,
+        "max": 17.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.83
+      },
+      "extra": {
+        "Local Time": "09:48:40 am est",
+        "CIR": "f177d02",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row33"
+    },
+    {
+      "row": 34,
+      "kind": "test",
+      "test_id": "1292",
+      "identifier": null,
+      "date": "26-Jun-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.0,
+        "max": 17.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.83
+      },
+      "extra": {
+        "Local Time": "10:28:20 am est",
+        "CIR": "f177d03",
+        "Fiber": "No"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row34"
+    },
+    {
+      "row": 35,
+      "kind": "test",
+      "test_id": "1293",
+      "identifier": null,
+      "date": "26-Jun-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.0,
+        "max": 17.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.83
+      },
+      "extra": {
+        "Local Time": "10:43:35 am est",
+        "CIR": "f177d04",
+        "Fiber": "No"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row35"
+    },
+    {
+      "row": 36,
+      "kind": "test",
+      "test_id": "1294",
+      "identifier": null,
+      "date": "26-Jun-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.0,
+        "max": 17.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.83
+      },
+      "extra": {
+        "Local Time": "11:12:25 am est",
+        "CIR": "f177d05",
+        "Fiber": "No"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row36"
+    },
+    {
+      "row": 37,
+      "kind": "test",
+      "test_id": "1300",
+      "identifier": null,
+      "date": "29-Jun-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "10:42:16 pm est",
+        "CIR": "f180d01",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row37"
+    },
+    {
+      "row": 38,
+      "kind": "test",
+      "test_id": "1301",
+      "identifier": null,
+      "date": "29-Jul-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "11:06:59 am est",
+        "CIR": "f180d02",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row38"
+    },
+    {
+      "row": 39,
+      "kind": "test",
+      "test_id": "1310",
+      "identifier": null,
+      "date": "5-Jul-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 126.656,
+        "max": 126.656,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "09:30:30 am est",
+        "CIR": "f186d01",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row39"
+    },
+    {
+      "row": 40,
+      "kind": "test",
+      "test_id": "1311",
+      "identifier": null,
+      "date": "5-Jul-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 126.656,
+        "max": 126.656,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "09:44:25 am est",
+        "CIR": "f186d02",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row40"
+    },
+    {
+      "row": 41,
+      "kind": "test",
+      "test_id": "1312",
+      "identifier": null,
+      "date": "5-Jul-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 126.656,
+        "max": 126.656,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "10:35:41 am est",
+        "CIR": "f186d04",
+        "Fiber": "No"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row41"
+    },
+    {
+      "row": 42,
+      "kind": "test",
+      "test_id": "1313",
+      "identifier": null,
+      "date": "5-Jul-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 126.656,
+        "max": 126.656,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "11:05:35 am est",
+        "CIR": "f186d05"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row42"
+    },
+    {
+      "row": 43,
+      "kind": "test",
+      "test_id": "1314",
+      "identifier": null,
+      "date": "5-Jul-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 126.656,
+        "max": 126.656,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "11:27:49 am est",
+        "CIR": "f186d06",
+        "Fiber": "No"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row43"
+    },
+    {
+      "row": 44,
+      "kind": "test",
+      "test_id": "1320",
+      "identifier": null,
+      "date": "10-Jul-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 202.65,
+        "max": 202.65,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "9:44:19 am est",
+        "CIR": "f191d02",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row44"
+    },
+    {
+      "row": 45,
+      "kind": "test",
+      "test_id": "1321",
+      "identifier": null,
+      "date": "10-Jul-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 202.65,
+        "max": 202.65,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "10:33:53 am est",
+        "CIR": "f191d03",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row45"
+    },
+    {
+      "row": 46,
+      "kind": "test",
+      "test_id": "1322",
+      "identifier": null,
+      "date": "10-Jul-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 202.65,
+        "max": 202.65,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "11:02:40 am est",
+        "CIR": "f191d04",
+        "Fiber": "No"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row46"
+    },
+    {
+      "row": 47,
+      "kind": "test",
+      "test_id": "1323",
+      "identifier": null,
+      "date": "10-Jul-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 202.65,
+        "max": 202.65,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "11:16:11 am est",
+        "CIR": "f191d05",
+        "Fiber": "No"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row47"
+    },
+    {
+      "row": 48,
+      "kind": "test",
+      "test_id": "1328",
+      "identifier": null,
+      "date": "14-Jul-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.0,
+        "max": 17.0
+      },
+      "pressure_kpa": {
+        "min": 303.975,
+        "max": 303.975,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.83
+      },
+      "extra": {
+        "Local Time": "10:23:39 am est",
+        "CIR": "f195d01",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row48"
+    },
+    {
+      "row": 49,
+      "kind": "test",
+      "test_id": "1329",
+      "identifier": null,
+      "date": "14-Jul-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.0,
+        "max": 17.0
+      },
+      "pressure_kpa": {
+        "min": 303.975,
+        "max": 303.975,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.83
+      },
+      "extra": {
+        "Local Time": "10:51:22 am est",
+        "CIR": "f195d02",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row49"
+    },
+    {
+      "row": 50,
+      "kind": "test",
+      "test_id": "1330",
+      "identifier": null,
+      "date": "14-Jul-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.0,
+        "max": 17.0
+      },
+      "pressure_kpa": {
+        "min": 303.975,
+        "max": 303.975,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.83
+      },
+      "extra": {
+        "Local Time": "12:53:00 pm est",
+        "CIR": "f195d07",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row50"
+    },
+    {
+      "row": 51,
+      "kind": "test",
+      "test_id": "1331",
+      "identifier": null,
+      "date": "14-Jul-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.0,
+        "max": 17.0
+      },
+      "pressure_kpa": {
+        "min": 303.975,
+        "max": 303.975,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.83
+      },
+      "extra": {
+        "Local Time": "01:41:52 pm est",
+        "CIR": "f195d10",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row51"
+    },
+    {
+      "row": 52,
+      "kind": "test",
+      "test_id": "1332",
+      "identifier": null,
+      "date": "14-Jul-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.0,
+        "max": 17.0
+      },
+      "pressure_kpa": {
+        "min": 303.975,
+        "max": 303.975,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.83
+      },
+      "extra": {
+        "Local Time": "02:22:xx pm est",
+        "CIR": "f195d11",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row52"
+    },
+    {
+      "row": 53,
+      "kind": "test",
+      "test_id": "1335",
+      "identifier": null,
+      "date": "19-Jul-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 303.975,
+        "max": 303.975,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "09:35:03 am est",
+        "CIR": "f200d01",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row53"
+    },
+    {
+      "row": 54,
+      "kind": "test",
+      "test_id": "1336",
+      "identifier": null,
+      "date": "19-Jul-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 303.975,
+        "max": 303.975,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "11:14:07 am est",
+        "CIR": "f200d03",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row54"
+    },
+    {
+      "row": 55,
+      "kind": "test",
+      "test_id": "1337",
+      "identifier": null,
+      "date": "19-Jul-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 303.975,
+        "max": 303.975,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "11:37:54 am est",
+        "CIR": "f200d04",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row55"
+    },
+    {
+      "row": 56,
+      "kind": "test",
+      "test_id": "1338",
+      "identifier": null,
+      "date": "19-Jul-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 303.975,
+        "max": 303.975,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "12:07:00 am est",
+        "CIR": "f200d05",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row56"
+    },
+    {
+      "row": 57,
+      "kind": "test",
+      "test_id": "1340",
+      "identifier": null,
+      "date": "21-Jul-17",
+      "fuel": "[.75]/[.25] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 506.625,
+        "max": 506.625,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "10:22:42 am est",
+        "CIR": "f202e02",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row57"
+    },
+    {
+      "row": 58,
+      "kind": "test",
+      "test_id": "1341",
+      "identifier": null,
+      "date": "24-Jul-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 506.625,
+        "max": 506.625,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "10:13:27 am est",
+        "CIR": "f205d01",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row58"
+    },
+    {
+      "row": 59,
+      "kind": "test",
+      "test_id": "1342",
+      "identifier": null,
+      "date": "24-Jul-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 506.625,
+        "max": 506.625,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "11:10:04 am est",
+        "CIR": "f205d02",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row59"
+    },
+    {
+      "row": 60,
+      "kind": "test",
+      "test_id": "1346",
+      "identifier": null,
+      "date": "27-Jul-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 75.994,
+        "max": 75.994,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "10:13:41 am est",
+        "CIR": "f208d01",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row60"
+    },
+    {
+      "row": 61,
+      "kind": "test",
+      "test_id": "1347",
+      "identifier": null,
+      "date": "27-Jul-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 75.994,
+        "max": 75.994,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "11:04:48 am est",
+        "CIR": "f208d02",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row61"
+    },
+    {
+      "row": 62,
+      "kind": "test",
+      "test_id": "1348",
+      "identifier": null,
+      "date": "27-Jul-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 75.994,
+        "max": 75.994,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "11:41:29 am est",
+        "CIR": "f208d03",
+        "Fiber": "No"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row62"
+    },
+    {
+      "row": 63,
+      "kind": "test",
+      "test_id": "1349",
+      "identifier": null,
+      "date": "27-Jul-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 75.994,
+        "max": 75.994,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "12:02:11 am est",
+        "CIR": "f208d04",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row63"
+    },
+    {
+      "row": 64,
+      "kind": "test",
+      "test_id": "1356",
+      "identifier": null,
+      "date": "1-Aug-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 50.663,
+        "max": 50.663,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "09:34:26 am est",
+        "CIR": "f213d02",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row64"
+    },
+    {
+      "row": 65,
+      "kind": "test",
+      "test_id": "1357",
+      "identifier": null,
+      "date": "1-Aug-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 50.663,
+        "max": 50.663,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "10:07:16 am est",
+        "CIR": "f213d03",
+        "Fiber": "No"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row65"
+    },
+    {
+      "row": 66,
+      "kind": "test",
+      "test_id": "1358",
+      "identifier": null,
+      "date": "1-Aug-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 50.663,
+        "max": 50.663,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "11:04:35 am est",
+        "CIR": "f213d04",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row66"
+    },
+    {
+      "row": 67,
+      "kind": "test",
+      "test_id": "1362",
+      "identifier": null,
+      "date": "9-Aug-17",
+      "fuel": "[.75]/[.25] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.5,
+        "HE": 0.29
+      },
+      "extra": {
+        "Local Time": "11:27:27 am est",
+        "CIR": "f221e06"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row67"
+    },
+    {
+      "row": 68,
+      "kind": "test",
+      "test_id": "1363",
+      "identifier": null,
+      "date": "10-Aug-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.5,
+        "HE": 0.29
+      },
+      "extra": {
+        "Local Time": "11:04:53 am est",
+        "CIR": "f222d01",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row68"
+    },
+    {
+      "row": 69,
+      "kind": "test",
+      "test_id": "1364",
+      "identifier": null,
+      "date": "10-Aug-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.5,
+        "HE": 0.29
+      },
+      "extra": {
+        "Local Time": "11:21:53 am est",
+        "CIR": "f222d02",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row69"
+    },
+    {
+      "row": 70,
+      "kind": "test",
+      "test_id": "1365",
+      "identifier": null,
+      "date": "10-Aug-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.5,
+        "HE": 0.29
+      },
+      "extra": {
+        "Local Time": "11:58:01 am est",
+        "CIR": "f222d03",
+        "Fiber": "No"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row70"
+    },
+    {
+      "row": 71,
+      "kind": "test",
+      "test_id": "1366",
+      "identifier": null,
+      "date": "10-Aug-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.5,
+        "HE": 0.29
+      },
+      "extra": {
+        "Local Time": "12:40:21 pm est",
+        "CIR": "f222d04",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row71"
+    },
+    {
+      "row": 72,
+      "kind": "test",
+      "test_id": "1367",
+      "identifier": null,
+      "date": "14-Aug-17",
+      "fuel": "[.75]/[.25] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 303.975,
+        "max": 303.975,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.5,
+        "HE": 0.29
+      },
+      "extra": {
+        "Local Time": "10:48:38 am est",
+        "CIR": "f226e01"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row72"
+    },
+    {
+      "row": 73,
+      "kind": "test",
+      "test_id": "1368",
+      "identifier": null,
+      "date": "14-Aug-17",
+      "fuel": "[.75]/[.25] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 303.975,
+        "max": 303.975,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.5,
+        "HE": 0.29
+      },
+      "extra": {
+        "Local Time": "11:12:23 am est",
+        "CIR": "f226e02"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row73"
+    },
+    {
+      "row": 74,
+      "kind": "test",
+      "test_id": "1369",
+      "identifier": null,
+      "date": "14-Aug-17",
+      "fuel": "[.75]/[.25] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 303.975,
+        "max": 303.975,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.5,
+        "HE": 0.29
+      },
+      "extra": {
+        "Local Time": "11:48:32 am est",
+        "CIR": "f226e03"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row74"
+    },
+    {
+      "row": 75,
+      "kind": "test",
+      "test_id": "1373",
+      "identifier": null,
+      "date": "16-Aug-17",
+      "fuel": "[.75]/[.25] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 303.975,
+        "max": 303.975,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.2,
+        "HE": 0.59
+      },
+      "extra": {
+        "Local Time": "01:56:42 pm est",
+        "CIR": "f228e01"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row75"
+    },
+    {
+      "row": 76,
+      "kind": "test",
+      "test_id": "1374",
+      "identifier": null,
+      "date": "16-Aug-17",
+      "fuel": "[.75]/[.25] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 303.975,
+        "max": 303.975,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.2,
+        "HE": 0.59
+      },
+      "extra": {
+        "Local Time": "02:32:45 pm est",
+        "CIR": "f228e02"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row76"
+    },
+    {
+      "row": 77,
+      "kind": "test",
+      "test_id": "1383",
+      "identifier": null,
+      "date": "21-Aug-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.2,
+        "HE": 0.59
+      },
+      "extra": {
+        "Local Time": "11:16:35 am est",
+        "CIR": "f233d01",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row77"
+    },
+    {
+      "row": 78,
+      "kind": "test",
+      "test_id": "1384",
+      "identifier": null,
+      "date": "21-Aug-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.2,
+        "HE": 0.59
+      },
+      "extra": {
+        "Local Time": "11:31:44 am est",
+        "CIR": "f233d02",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row78"
+    },
+    {
+      "row": 79,
+      "kind": "test",
+      "test_id": "1386",
+      "identifier": null,
+      "date": "21-Aug-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.2,
+        "HE": 0.59
+      },
+      "extra": {
+        "Local Time": "12:24:13 am est",
+        "CIR": "f233d04",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row79"
+    },
+    {
+      "row": 80,
+      "kind": "test",
+      "test_id": "1387",
+      "identifier": null,
+      "date": "21-Aug-17",
+      "fuel": "[.60]/[.40] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.2,
+        "HE": 0.59
+      },
+      "extra": {
+        "Local Time": "12:48:15 pm est",
+        "CIR": "f233d05"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row80"
+    },
+    {
+      "row": 81,
+      "kind": "test",
+      "test_id": "1285",
+      "identifier": null,
+      "date": "22-Jun-17",
+      "fuel": "[.75]/[.25] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.0,
+        "max": 17.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.83
+      },
+      "extra": {
+        "Local Time": "11:05:52 am est",
+        "CIR": "f173e01",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row81"
+    },
+    {
+      "row": 82,
+      "kind": "test",
+      "test_id": "1286",
+      "identifier": null,
+      "date": "22-Jun-17",
+      "fuel": "[.75]/[.25] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.0,
+        "max": 17.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.83
+      },
+      "extra": {
+        "Local Time": "11:23:26 am est",
+        "CIR": "f173e02",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row82"
+    },
+    {
+      "row": 83,
+      "kind": "test",
+      "test_id": "1287",
+      "identifier": null,
+      "date": "22-Jun-17",
+      "fuel": "[.75]/[.25] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.0,
+        "max": 17.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.83
+      },
+      "extra": {
+        "Local Time": "11:42:32 am est",
+        "CIR": "f173e03",
+        "Fiber": "No"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row83"
+    },
+    {
+      "row": 84,
+      "kind": "test",
+      "test_id": "1288",
+      "identifier": null,
+      "date": "22-Jun-17",
+      "fuel": "[.75]/[.25] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.0,
+        "max": 17.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.83
+      },
+      "extra": {
+        "Local Time": "12:36:48 pm est",
+        "CIR": "f173e05",
+        "Fiber": "No"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row84"
+    },
+    {
+      "row": 85,
+      "kind": "test",
+      "test_id": "1289",
+      "identifier": null,
+      "date": "22-Jun-17",
+      "fuel": "[.75]/[.25] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.0,
+        "max": 17.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.83
+      },
+      "extra": {
+        "Local Time": "12:47:53 pm est",
+        "CIR": "f173e06",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row85"
+    },
+    {
+      "row": 86,
+      "kind": "test",
+      "test_id": "1295",
+      "identifier": null,
+      "date": "28-Jun-17",
+      "fuel": "[.75]/[.25] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "09:24:35 am est",
+        "CIR": "f179e01",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row86"
+    },
+    {
+      "row": 87,
+      "kind": "test",
+      "test_id": "1296",
+      "identifier": null,
+      "date": "28-Jun-17",
+      "fuel": "[.75]/[.25] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "9:43:08 am est",
+        "CIR": "f179e02",
+        "Fiber": "Yes"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row87"
+    },
+    {
+      "row": 88,
+      "kind": "test",
+      "test_id": "1297",
+      "identifier": null,
+      "date": "28-Jun-17",
+      "fuel": "[.75]/[.25] C12H26/iso-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {
+        "Local Time": "11:51:50 am est",
+        "CIR": "f179e05",
+        "Fiber": "No"
+      },
+      "issues": [],
+      "source": "PSI-39_Experimental table_CFI.csv#row88"
+    }
+  ]
+}

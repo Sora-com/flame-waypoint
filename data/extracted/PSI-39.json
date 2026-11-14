@@ -47,12 +47,12 @@
     "suppressants": [],
     "variables_studied": [
       "pressure",
-      "droplet size"
+      "helium dilution"
     ],
     "sensors": [
-      "hot-wire igniter",
       "black-and-white camera",
       "UV camera",
+      "high resolution cameras",
       "narrow-band radiometers",
       "wide-band radiometers"
     ],
@@ -61,13 +61,30 @@
       "suppression"
     ],
     "key_findings": [
-      "Understanding of cool flames is important for understanding ignition phenomena of practical fuels and fuel additives.",
-      "Cool flames play a key role in the development and selection of new fuels and the design of advanced engines such as clean, high-efficiency Homogeneous Charge Compression Ignition (HCCI) engines."
+      "The research will help combustion chemists to develop new computational models to compute combustion performance in many practical applications on earth.",
+      "Cool Flames Investigation (CFI) will provide critical validation for complex chemical kinetic mechanisms, advance the understanding of flame dynamics and instabilities in low-temperature combustion, and support the design of safer spacecraft systems by refining knowledge of combustion in microgravity environments."
     ],
-    "earth_applications": "The research will also help combustion chemists to develop new computational models to compute combustion performance in many practical applications on earth, including an understanding of how cool flame reactivity determines octane and cetane number for fuels in spark ignition and diesel engines.",
+    "earth_applications": "A basic understanding of cool flames is important for understanding ignition phenomena of practical fuels and fuel additives.",
     "conditions": [
       {
-        "label": "n-decane, 21% O2, 0.5 atm pressure",
+        "label": "n-dodecane combustion at varying pressures",
+        "context": "ground",
+        "fuel": "n-dodecane",
+        "oxygen_pct": null,
+        "pressure_kpa": {
+          "min": 25.331,
+          "max": 506.625,
+          "original": "0.25-5 atm"
+        },
+        "flow_cm_s": null,
+        "evidence": [
+          "Examine the combustion behavior of n-dodecane and mixtures of n-dodecane/iso-dodecane at pressures ranging from 0.25 atm to 5 atm."
+        ],
+        "source": "psi:PSI-39"
+      },
+      {
+        "label": "n-decane droplets, 0.5 atm pressure, 21% O2 and 79% N2",
+        "context": "flight",
         "fuel": "n-decane",
         "oxygen_pct": {
           "min": 21,
@@ -80,12 +97,13 @@
         },
         "flow_cm_s": null,
         "evidence": [
-          "21% oxygen and 79% nitrogen mixture at 0.5 atm pressure"
+          "Figure 1a (R377) corresponds to a n-decane droplet with an initial diameter of 4.03 mm burning in 21% oxygen and 79% nitrogen mixture at 0.5 atm pressure."
         ],
         "source": "ntrs:20140006750"
       },
       {
-        "label": "n-decane, 25% O2, 0.5 atm pressure",
+        "label": "n-decane droplets, 0.5 atm pressure, 25% O2 and 75% N2",
+        "context": "flight",
         "fuel": "n-decane",
         "oxygen_pct": {
           "min": 25,
@@ -103,7 +121,8 @@
         "source": "ntrs:20140006750"
       },
       {
-        "label": "n-decane, 17% O2, 0.5 atm pressure",
+        "label": "n-decane droplets, 0.5 atm pressure, 17% O2 and 83% N2",
+        "context": "flight",
         "fuel": "n-decane",
         "oxygen_pct": null,
         "pressure_kpa": {
@@ -120,40 +139,36 @@
     ],
     "paper_findings": [
       {
-        "text": "Large n-alkane droplets exhibited quasi-steady low-temperature burning and extinction following radiative extinction of the visible flame while smaller droplets burned to completion or disruptively extinguished.",
+        "text": "Large n-alkane droplets exhibited quasi-steady low-temperature burning and extinction following radiative extinction of the visible flame",
         "source": "ntrs:20140006750"
       },
       {
-        "text": "The visible flame diameter initially increases with time and then it decreases until the droplet micro-explodes 26 seconds after ignition.",
-        "source": "ntrs:20140006750"
-      },
-      {
-        "text": "With the reduced oxygen concentration the overall radiative heat loss decreases due to reduced flame temperature.",
+        "text": "Smaller droplets burned to completion or disruptively extinguished",
         "source": "ntrs:20140006750"
       }
     ]
   },
   "warnings": [
-    "psi:PSI-39: [n-dodecane and mixtures of n-dodecane/iso-dodecane at pressures ranging from 0.25 atm to 5 atm] oxygen: 0.25-5 atm not in evidence, dropped",
-    "ntrs:20140006750: [n-decane, 25% O2, 0.5 atm pressure] evidence repaired from source text",
-    "ntrs:20140006750: [n-decane, 17% O2, 0.5 atm pressure] oxygen: 17-17 % not in evidence, dropped"
+    "ntrs:20140006750: [n-decane droplets, 0.5 atm pressure, 21% O2 and 79% N2] evidence repaired from source text",
+    "ntrs:20140006750: [n-decane droplets, 0.5 atm pressure, 25% O2 and 75% N2] evidence repaired from source text",
+    "ntrs:20140006750: [n-decane droplets, 0.5 atm pressure, 17% O2 and 83% N2] oxygen: 17-17 % not in evidence, dropped"
   ],
   "review_status": "model_only",
   "extraction": {
     "model": "mistral-nemo",
-    "prompt_version": "2",
+    "prompt_version": "3",
     "source_hash": "4d4d1a43f605ef63",
     "papers": [
       "20140006750"
     ],
-    "extracted_at": "2026-11-14T11:18:36+00:00",
-    "seconds": 68.3,
+    "extracted_at": "2026-11-14T12:32:55+00:00",
+    "seconds": 72.2,
     "runs": [
       {
         "source": "psi:PSI-39",
-        "seconds": 28.7,
-        "prompt_tokens": 1265,
-        "output_tokens": 450,
+        "seconds": 33.6,
+        "prompt_tokens": 1333,
+        "output_tokens": 524,
         "raw": {
           "test_type": "combustion",
           "fuels": [
@@ -170,12 +185,36 @@
           "sample_size": null,
           "conditions": [
             {
-              "label": "n-dodecane and mixtures of n-dodecane/iso-dodecane at pressures ranging from 0.25 atm to 5 atm",
+              "label": "n-dodecane combustion at varying pressures",
+              "context": "ground",
               "fuel": "n-dodecane",
               "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
                 "min": 0.25,
                 "max": 5,
                 "unit": "atm"
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": [
+                "Examine the combustion behavior of n-dodecane and mixtures of n-dodecane/iso-dodecane at pressures ranging from 0.25 atm to 5 atm."
+              ]
+            },
+            {
+              "label": "Helium dilution effects on cool flame behavior",
+              "context": "ground",
+              "fuel": null,
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
               },
               "pressure": {
                 "min": null,
@@ -188,7 +227,7 @@
                 "unit": null
               },
               "evidence": [
-                "Examine the combustion behavior of n-dodecane and mixtures of n-dodecane/iso-dodecane at pressures ranging from 0.25 atm to 5 atm."
+                "Analyze the effects of helium dilution on cool flame behavior."
               ]
             }
           ],
@@ -198,12 +237,12 @@
           "suppressants": [],
           "variables_studied": [
             "pressure",
-            "droplet size"
+            "helium dilution"
           ],
           "sensors": [
-            "hot-wire igniter",
             "black-and-white camera",
             "UV camera",
+            "high resolution cameras",
             "narrow-band radiometers",
             "wide-band radiometers"
           ],
@@ -212,17 +251,17 @@
             "suppression"
           ],
           "key_findings": [
-            "Understanding of cool flames is important for understanding ignition phenomena of practical fuels and fuel additives.",
-            "Cool flames play a key role in the development and selection of new fuels and the design of advanced engines such as clean, high-efficiency Homogeneous Charge Compression Ignition (HCCI) engines."
+            "The research will help combustion chemists to develop new computational models to compute combustion performance in many practical applications on earth.",
+            "Cool Flames Investigation (CFI) will provide critical validation for complex chemical kinetic mechanisms, advance the understanding of flame dynamics and instabilities in low-temperature combustion, and support the design of safer spacecraft systems by refining knowledge of combustion in microgravity environments."
           ],
-          "earth_applications": "The research will also help combustion chemists to develop new computational models to compute combustion performance in many practical applications on earth, including an understanding of how cool flame reactivity determines octane and cetane number for fuels in spark ignition and diesel engines."
+          "earth_applications": "A basic understanding of cool flames is important for understanding ignition phenomena of practical fuels and fuel additives."
         }
       },
       {
         "source": "ntrs:20140006750",
-        "seconds": 39.6,
-        "prompt_tokens": 1754,
-        "output_tokens": 521,
+        "seconds": 38.6,
+        "prompt_tokens": 1822,
+        "output_tokens": 522,
         "raw": {
           "fuels": [
             "n-heptane",
@@ -231,7 +270,8 @@
           ],
           "conditions": [
             {
-              "label": "n-decane, 21% O2, 0.5 atm pressure",
+              "label": "n-decane droplets, 0.5 atm pressure, 21% O2 and 79% N2",
+              "context": "flight",
               "fuel": "n-decane",
               "oxygen": {
                 "min": 21,
@@ -249,11 +289,12 @@
                 "unit": null
               },
               "evidence": [
-                "21% oxygen and 79% nitrogen mixture at 0.5 atm pressure"
+                "21%O2 and 79%N2 at 0.5 atm pressure"
               ]
             },
             {
-              "label": "n-decane, 25% O2, 0.5 atm pressure",
+              "label": "n-decane droplets, 0.5 atm pressure, 25% O2 and 75% N2",
+              "context": "flight",
               "fuel": "n-decane",
               "oxygen": {
                 "min": 25,
@@ -271,11 +312,12 @@
                 "unit": null
               },
               "evidence": [
-                "25% oxygen and the rest being nitrogen at 0.5 atm pressure"
+                "25%O2 and the rest being nitrogen at 0.5 atm"
               ]
             },
             {
-              "label": "n-decane, 17% O2, 0.5 atm pressure",
+              "label": "n-decane droplets, 0.5 atm pressure, 17% O2 and 83% N2",
+              "context": "flight",
               "fuel": "n-decane",
               "oxygen": {
                 "min": 17,
@@ -298,14 +340,12 @@
             }
           ],
           "key_findings": [
-            "Large n-alkane droplets exhibited quasi-steady low-temperature burning and extinction following radiative extinction of the visible flame while smaller droplets burned to completion or disruptively extinguished.",
-            "The visible flame diameter initially increases with time and then it decreases until the droplet micro-explodes 26 seconds after ignition.",
-            "With the reduced oxygen concentration the overall radiative heat loss decreases due to reduced flame temperature."
+            "Large n-alkane droplets exhibited quasi-steady low-temperature burning and extinction following radiative extinction of the visible flame",
+            "Smaller droplets burned to completion or disruptively extinguished"
           ]
         },
         "excerpt_chars": 4825
       }
-    ],
-    "rechecked_at": "2026-11-14T11:26:22+00:00"
+    ]
   }
 }

@@ -1,0 +1,2509 @@
+{
+  "accession": "PSI-26",
+  "origin": "psi_files",
+  "parsed_at": "2026-11-14T12:14:49+00:00",
+  "files": [
+    {
+      "file": "PSI-26_Experimental table_BASS.csv",
+      "sheet": "csv",
+      "tests": 122,
+      "mapped_columns": [
+        "As Run Test #",
+        "Date",
+        "Fuel Sample Material"
+      ],
+      "unmapped_columns": [
+        "GMT",
+        "Sample #",
+        "Test #"
+      ]
+    }
+  ],
+  "summary": {
+    "tests": 122,
+    "design_envelopes": 0,
+    "with_oxygen": 0,
+    "with_pressure": 0,
+    "with_flow": 0,
+    "with_issues": 0,
+    "oxygen_pct_range": null,
+    "pressure_kpa_range": null,
+    "flow_cm_s_range": null,
+    "fuels": [
+      "1 cm sphere",
+      "1 cm sphere   wake",
+      "1 cm wake sphere",
+      "2 cm pmma sphere",
+      "2 cm sphere",
+      "2 cm sphere   wake ign",
+      "candle",
+      "candle    paraffin   wake",
+      "candle   Japan wax",
+      "flat wax slab",
+      "Japan Wax Candle   wake",
+      "Nomex blend 2 cm",
+      "Nomex III Natural",
+      "nomex natural III",
+      "paraffin wax candle",
+      "paraffin wax slab",
+      "parrafin wax candle",
+      "parrafin wax slab",
+      "PMMA 1 cm",
+      "pmma 1 cm",
+      "pmma 2 cm",
+      "PMMA 2 cm",
+      "pmma slab",
+      "PMMA slab",
+      "pmma slab   oppsed",
+      "pmma slab opposed",
+      "pmma sphere",
+      "PMMA sphere 1 cm",
+      "PMMA sphere 2 cm",
+      "SIBAL 1 cm",
+      "SIBAL 2 cm",
+      "SIBAL 2 cm   opposed flow",
+      "SOOT Cleaning",
+      "ultem sheet"
+    ]
+  },
+  "tests": [
+    {
+      "row": 2,
+      "kind": "test",
+      "test_id": "1",
+      "identifier": null,
+      "date": "3/30/2012",
+      "fuel": "SIBAL 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "90",
+        "Test #": "1",
+        "Sample #": "4"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row2"
+    },
+    {
+      "row": 3,
+      "kind": "test",
+      "test_id": "2",
+      "identifier": null,
+      "date": "3/30/2012",
+      "fuel": "PMMA sphere 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "90",
+        "Test #": "42",
+        "Sample #": "24"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row3"
+    },
+    {
+      "row": 4,
+      "kind": "test",
+      "test_id": "3",
+      "identifier": null,
+      "date": "3/30/2012",
+      "fuel": "PMMA sphere 1 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "90",
+        "Test #": "18",
+        "Sample #": "19"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row4"
+    },
+    {
+      "row": 5,
+      "kind": "test",
+      "test_id": "4",
+      "identifier": null,
+      "date": "4/5/2012",
+      "fuel": "SIBAL 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "96",
+        "Test #": "7",
+        "Sample #": "10"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row5"
+    },
+    {
+      "row": 6,
+      "kind": "test",
+      "test_id": "5",
+      "identifier": null,
+      "date": "4/5/2012",
+      "fuel": "SIBAL 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "96",
+        "Test #": "8",
+        "Sample #": "11"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row6"
+    },
+    {
+      "row": 7,
+      "kind": "test",
+      "test_id": "6",
+      "identifier": null,
+      "date": "4/9/2012",
+      "fuel": "PMMA sphere 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "100",
+        "Test #": "43",
+        "Sample #": "24"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row7"
+    },
+    {
+      "row": 8,
+      "kind": "test",
+      "test_id": "7",
+      "identifier": null,
+      "date": "4/9/2012",
+      "fuel": "PMMA sphere 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "100",
+        "Test #": "44",
+        "Sample #": "24"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row8"
+    },
+    {
+      "row": 9,
+      "kind": "test",
+      "test_id": "8",
+      "identifier": null,
+      "date": "4/9/2012",
+      "fuel": "PMMA sphere 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "100",
+        "Test #": "45",
+        "Sample #": "24"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row9"
+    },
+    {
+      "row": 10,
+      "kind": "test",
+      "test_id": "9",
+      "identifier": null,
+      "date": "5/2/2012",
+      "fuel": "PMMA sphere 1 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "123",
+        "Test #": "19",
+        "Sample #": "19"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row10"
+    },
+    {
+      "row": 11,
+      "kind": "test",
+      "test_id": "10",
+      "identifier": null,
+      "date": "5/2/2012",
+      "fuel": "PMMA sphere 1 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "123",
+        "Test #": "20",
+        "Sample #": "19"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row11"
+    },
+    {
+      "row": 12,
+      "kind": "test",
+      "test_id": "11",
+      "identifier": null,
+      "date": "5/2/2012",
+      "fuel": "PMMA sphere 1 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "123",
+        "Test #": "21",
+        "Sample #": "19"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row12"
+    },
+    {
+      "row": 13,
+      "kind": "test",
+      "test_id": "12",
+      "identifier": null,
+      "date": "5/10/2012",
+      "fuel": "SIBAL 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "131",
+        "Test #": "4",
+        "Sample #": "12"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row13"
+    },
+    {
+      "row": 14,
+      "kind": "test",
+      "test_id": "13",
+      "identifier": null,
+      "date": "5/10/2012",
+      "fuel": "SIBAL 1 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "131",
+        "Test #": "10",
+        "Sample #": "2"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row14"
+    },
+    {
+      "row": 15,
+      "kind": "test",
+      "test_id": "14",
+      "identifier": null,
+      "date": "5/10/2012",
+      "fuel": "Nomex blend 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "131",
+        "Test #": "12",
+        "Sample #": "27"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row15"
+    },
+    {
+      "row": 16,
+      "kind": "test",
+      "test_id": "15",
+      "identifier": null,
+      "date": "5/11/2012",
+      "fuel": "PMMA 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "132",
+        "Test #": "54",
+        "Sample #": "21"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row16"
+    },
+    {
+      "row": 17,
+      "kind": "test",
+      "test_id": "16",
+      "identifier": null,
+      "date": "5/11/2012",
+      "fuel": "PMMA 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "132",
+        "Test #": "55",
+        "Sample #": "21"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row17"
+    },
+    {
+      "row": 18,
+      "kind": "test",
+      "test_id": "17",
+      "identifier": null,
+      "date": "5/11/2012",
+      "fuel": "PMMA 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "132",
+        "Test #": "56",
+        "Sample #": "21"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row18"
+    },
+    {
+      "row": 19,
+      "kind": "test",
+      "test_id": "18",
+      "identifier": null,
+      "date": "5/11/2012",
+      "fuel": "PMMA 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "132",
+        "Test #": "57",
+        "Sample #": "21"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row19"
+    },
+    {
+      "row": 20,
+      "kind": "test",
+      "test_id": "19",
+      "identifier": null,
+      "date": "5/11/2012",
+      "fuel": "PMMA 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "132",
+        "Test #": "110",
+        "Sample #": "21"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row20"
+    },
+    {
+      "row": 21,
+      "kind": "test",
+      "test_id": "20",
+      "identifier": null,
+      "date": "6/5/2012",
+      "fuel": "PMMA 1 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "157",
+        "Test #": "30",
+        "Sample #": "15"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row21"
+    },
+    {
+      "row": 22,
+      "kind": "test",
+      "test_id": "21",
+      "identifier": null,
+      "date": "6/5/2012",
+      "fuel": "PMMA 1 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "157",
+        "Test #": "31",
+        "Sample #": "15"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row22"
+    },
+    {
+      "row": 23,
+      "kind": "test",
+      "test_id": "22",
+      "identifier": null,
+      "date": "6/5/2012",
+      "fuel": "PMMA 1 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "157",
+        "Test #": "32",
+        "Sample #": "15"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row23"
+    },
+    {
+      "row": 24,
+      "kind": "test",
+      "test_id": "23",
+      "identifier": null,
+      "date": "6/5/2012",
+      "fuel": "PMMA 1 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "157",
+        "Test #": "33",
+        "Sample #": "15"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row24"
+    },
+    {
+      "row": 25,
+      "kind": "test",
+      "test_id": "24",
+      "identifier": null,
+      "date": "6/5/2012",
+      "fuel": "Nomex blend 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "157",
+        "Test #": "12-R",
+        "Sample #": "27"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row25"
+    },
+    {
+      "row": 26,
+      "kind": "test",
+      "test_id": "24",
+      "identifier": null,
+      "date": "6/5/2012",
+      "fuel": "Nomex blend 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "157",
+        "Test #": "12-R2",
+        "Sample #": "27"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row26"
+    },
+    {
+      "row": 27,
+      "kind": "test",
+      "test_id": "25",
+      "identifier": null,
+      "date": "6/11/2012",
+      "fuel": "2 cm sphere",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "163",
+        "Test #": "46",
+        "Sample #": "22"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row27"
+    },
+    {
+      "row": 28,
+      "kind": "test",
+      "test_id": "26",
+      "identifier": null,
+      "date": "6/11/2012",
+      "fuel": "2 cm sphere",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "163",
+        "Test #": "47",
+        "Sample #": "22"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row28"
+    },
+    {
+      "row": 29,
+      "kind": "test",
+      "test_id": "27",
+      "identifier": null,
+      "date": "6/11/2012",
+      "fuel": "2 cm sphere",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "163",
+        "Test #": "48",
+        "Sample #": "22"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row29"
+    },
+    {
+      "row": 30,
+      "kind": "test",
+      "test_id": "28",
+      "identifier": null,
+      "date": "6/11/2012",
+      "fuel": "2 cm sphere",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "163",
+        "Test #": "49",
+        "Sample #": "22"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row30"
+    },
+    {
+      "row": 31,
+      "kind": "test",
+      "test_id": "29",
+      "identifier": null,
+      "date": "6/14/2012",
+      "fuel": "1 cm sphere",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "166",
+        "Test #": "22",
+        "Sample #": "18"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row31"
+    },
+    {
+      "row": 32,
+      "kind": "test",
+      "test_id": "30",
+      "identifier": null,
+      "date": "6/14/2012",
+      "fuel": "1 cm sphere",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "166",
+        "Test #": "23",
+        "Sample #": "18"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row32"
+    },
+    {
+      "row": 33,
+      "kind": "test",
+      "test_id": "31",
+      "identifier": null,
+      "date": "6/14/2012",
+      "fuel": "1 cm sphere",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "166",
+        "Test #": "24",
+        "Sample #": "18"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row33"
+    },
+    {
+      "row": 34,
+      "kind": "test",
+      "test_id": "32",
+      "identifier": null,
+      "date": "6/14/2012",
+      "fuel": "1 cm sphere",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "166",
+        "Test #": "25",
+        "Sample #": "18"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row34"
+    },
+    {
+      "row": 35,
+      "kind": "test",
+      "test_id": "33",
+      "identifier": null,
+      "date": "6/18/2012",
+      "fuel": "2 cm sphere",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "170",
+        "Test #": "58",
+        "Sample #": "25"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row35"
+    },
+    {
+      "row": 36,
+      "kind": "test",
+      "test_id": "34",
+      "identifier": null,
+      "date": "6/18/2012",
+      "fuel": "2 cm sphere",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "170",
+        "Test #": "59",
+        "Sample #": "25"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row36"
+    },
+    {
+      "row": 37,
+      "kind": "test",
+      "test_id": "35",
+      "identifier": null,
+      "date": "6/18/2012",
+      "fuel": "2 cm sphere",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "170",
+        "Test #": "60",
+        "Sample #": "25"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row37"
+    },
+    {
+      "row": 38,
+      "kind": "test",
+      "test_id": "36",
+      "identifier": null,
+      "date": "6/18/2012",
+      "fuel": "2 cm sphere",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "170",
+        "Test #": "61",
+        "Sample #": "25"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row38"
+    },
+    {
+      "row": 39,
+      "kind": "test",
+      "test_id": "37",
+      "identifier": null,
+      "date": "6/28/2012",
+      "fuel": "SIBAL 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "180",
+        "Test #": "5",
+        "Sample #": "9"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row39"
+    },
+    {
+      "row": 40,
+      "kind": "test",
+      "test_id": "38",
+      "identifier": null,
+      "date": "6/28/2012",
+      "fuel": "Nomex III Natural",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "180",
+        "Test #": "14",
+        "Sample #": "29"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row40"
+    },
+    {
+      "row": 41,
+      "kind": "test",
+      "test_id": "39",
+      "identifier": null,
+      "date": "6/28/2012",
+      "fuel": "PMMA slab",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "180",
+        "Test #": "66",
+        "Sample #": "33"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row41"
+    },
+    {
+      "row": 42,
+      "kind": "test",
+      "test_id": "40",
+      "identifier": null,
+      "date": "6/28/2012",
+      "fuel": "PMMA slab",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "180",
+        "Test #": "67",
+        "Sample #": "33"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row42"
+    },
+    {
+      "row": 43,
+      "kind": "test",
+      "test_id": "41",
+      "identifier": null,
+      "date": "6/29/2012",
+      "fuel": "1 cm sphere",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "181",
+        "Test #": "34",
+        "Sample #": "16"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row43"
+    },
+    {
+      "row": 44,
+      "kind": "test",
+      "test_id": "42",
+      "identifier": null,
+      "date": "6/29/`12",
+      "fuel": "1 cm sphere",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "181",
+        "Test #": "35",
+        "Sample #": "16"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row44"
+    },
+    {
+      "row": 45,
+      "kind": "test",
+      "test_id": "43",
+      "identifier": null,
+      "date": "6/29/2012",
+      "fuel": "ultem sheet",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "181",
+        "Test #": "16",
+        "Sample #": "31"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row45"
+    },
+    {
+      "row": 46,
+      "kind": "test",
+      "test_id": "44",
+      "identifier": null,
+      "date": "6/29/2012",
+      "fuel": "SIBAL 2 cm   opposed flow",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "181",
+        "Test #": "5b",
+        "Sample #": "9"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row46"
+    },
+    {
+      "row": 47,
+      "kind": "test",
+      "test_id": "45",
+      "identifier": null,
+      "date": "7/3/2012",
+      "fuel": "SIBAL 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "185",
+        "Test #": "6",
+        "Sample #": "8"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row47"
+    },
+    {
+      "row": 48,
+      "kind": "test",
+      "test_id": "46",
+      "identifier": null,
+      "date": "7/3/2012",
+      "fuel": "candle",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "185",
+        "Test #": "82",
+        "Sample #": "35"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row48"
+    },
+    {
+      "row": 49,
+      "kind": "test",
+      "test_id": "47",
+      "identifier": null,
+      "date": "7/3/2012",
+      "fuel": "candle",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "185",
+        "Test #": "82a",
+        "Sample #": "35"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row49"
+    },
+    {
+      "row": 50,
+      "kind": "test",
+      "test_id": "48",
+      "identifier": null,
+      "date": "7/3/2012",
+      "fuel": "candle",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "185",
+        "Test #": "82b",
+        "Sample #": "35"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row50"
+    },
+    {
+      "row": 51,
+      "kind": "test",
+      "test_id": "49",
+      "identifier": null,
+      "date": "7/3/2012",
+      "fuel": "pmma slab",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "185",
+        "Test #": "68",
+        "Sample #": "33"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row51"
+    },
+    {
+      "row": 52,
+      "kind": "test",
+      "test_id": "50",
+      "identifier": null,
+      "date": "7/12/2012",
+      "fuel": "pmma slab",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "194",
+        "Test #": "69",
+        "Sample #": "33"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row52"
+    },
+    {
+      "row": 53,
+      "kind": "test",
+      "test_id": "51",
+      "identifier": null,
+      "date": "7/12/2012",
+      "fuel": "2 cm sphere   wake ign",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "194",
+        "Test #": "111",
+        "Sample #": "21"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row53"
+    },
+    {
+      "row": 54,
+      "kind": "test",
+      "test_id": "52",
+      "identifier": null,
+      "date": "7/12/2012",
+      "fuel": "2 cm sphere   wake ign",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "194",
+        "Test #": "112",
+        "Sample #": "21"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row54"
+    },
+    {
+      "row": 55,
+      "kind": "test",
+      "test_id": "53",
+      "identifier": null,
+      "date": "7/12/2012",
+      "fuel": "2 cm sphere   wake ign",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "194",
+        "Test #": "113",
+        "Sample #": "21"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row55"
+    },
+    {
+      "row": 56,
+      "kind": "test",
+      "test_id": "54",
+      "identifier": null,
+      "date": "7/19/2012",
+      "fuel": "SIBAL 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "201",
+        "Test #": "2",
+        "Sample #": "5"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row56"
+    },
+    {
+      "row": 57,
+      "kind": "test",
+      "test_id": "55",
+      "identifier": null,
+      "date": "7/19/2012",
+      "fuel": "SIBAL 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "201",
+        "Test #": "3",
+        "Sample #": "6"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row57"
+    },
+    {
+      "row": 58,
+      "kind": "test",
+      "test_id": "56",
+      "identifier": null,
+      "date": "7/19/2012",
+      "fuel": "nomex natural III",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "201",
+        "Test #": "15",
+        "Sample #": "30"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row58"
+    },
+    {
+      "row": 59,
+      "kind": "test",
+      "test_id": "57",
+      "identifier": null,
+      "date": "7/19/2012",
+      "fuel": "Nomex blend 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "201",
+        "Test #": "13",
+        "Sample #": "28"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row59"
+    },
+    {
+      "row": 60,
+      "kind": "test",
+      "test_id": "58",
+      "identifier": null,
+      "date": "7/19/2012",
+      "fuel": "ultem sheet",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "201",
+        "Test #": "17",
+        "Sample #": "32"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row60"
+    },
+    {
+      "row": 61,
+      "kind": "test",
+      "test_id": "59",
+      "identifier": null,
+      "date": "7/19/2012",
+      "fuel": "pmma sphere",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "201",
+        "Test #": "114",
+        "Sample #": "25"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row61"
+    },
+    {
+      "row": 62,
+      "kind": "test",
+      "test_id": "60",
+      "identifier": null,
+      "date": "7/23/2012",
+      "fuel": "PMMA sphere 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "205",
+        "Test #": "62",
+        "Sample #": "23"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row62"
+    },
+    {
+      "row": 63,
+      "kind": "test",
+      "test_id": "61",
+      "identifier": null,
+      "date": "7/23/2012",
+      "fuel": "PMMA sphere 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "205",
+        "Test #": "63",
+        "Sample #": "23"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row63"
+    },
+    {
+      "row": 64,
+      "kind": "test",
+      "test_id": "62",
+      "identifier": null,
+      "date": "7/23/2012",
+      "fuel": "PMMA sphere 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "205",
+        "Test #": "64",
+        "Sample #": "23"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row64"
+    },
+    {
+      "row": 65,
+      "kind": "test",
+      "test_id": "63",
+      "identifier": null,
+      "date": "7/23/2012",
+      "fuel": "PMMA sphere 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "205",
+        "Test #": "65",
+        "Sample #": "23"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row65"
+    },
+    {
+      "row": 66,
+      "kind": "test",
+      "test_id": "64",
+      "identifier": null,
+      "date": "7/23/2012",
+      "fuel": "PMMA sphere 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "205",
+        "Test #": "118",
+        "Sample #": "23"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row66"
+    },
+    {
+      "row": 67,
+      "kind": "test",
+      "test_id": "67",
+      "identifier": null,
+      "date": "8/3/2012",
+      "fuel": "SOOT Cleaning",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "216"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row67"
+    },
+    {
+      "row": 68,
+      "kind": "test",
+      "test_id": "65",
+      "identifier": null,
+      "date": "8/9/2012",
+      "fuel": "SIBAL 1 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "222",
+        "Test #": "11",
+        "Sample #": "3"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row68"
+    },
+    {
+      "row": 69,
+      "kind": "test",
+      "test_id": "66",
+      "identifier": null,
+      "date": "8/9/2012",
+      "fuel": "SIBAL 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "222",
+        "Test #": "9",
+        "Sample #": "7"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row69"
+    },
+    {
+      "row": 70,
+      "kind": "test",
+      "test_id": "67",
+      "identifier": null,
+      "date": "8/9/2012",
+      "fuel": "PMMA sphere 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "222",
+        "Test #": "102",
+        "Sample #": "22"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row70"
+    },
+    {
+      "row": 71,
+      "kind": "test",
+      "test_id": "68",
+      "identifier": null,
+      "date": "8/16/2012",
+      "fuel": "Japan Wax Candle   wake",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "229",
+        "Test #": "83a",
+        "Sample #": "36"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row71"
+    },
+    {
+      "row": 72,
+      "kind": "test",
+      "test_id": "69",
+      "identifier": null,
+      "date": "8/16/2012",
+      "fuel": "Japan Wax Candle   wake",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "229",
+        "Test #": "83b",
+        "Sample #": "36"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row72"
+    },
+    {
+      "row": 73,
+      "kind": "test",
+      "test_id": "70",
+      "identifier": null,
+      "date": "8/16/2012",
+      "fuel": "Japan Wax Candle   wake",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "229",
+        "Test #": "83c",
+        "Sample #": "36"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row73"
+    },
+    {
+      "row": 74,
+      "kind": "test",
+      "test_id": "71",
+      "identifier": null,
+      "date": "8/16/2012",
+      "fuel": "Japan Wax Candle   wake",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "229",
+        "Test #": "84a",
+        "Sample #": "37"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row74"
+    },
+    {
+      "row": 75,
+      "kind": "test",
+      "test_id": "72",
+      "identifier": null,
+      "date": "8/16/2012",
+      "fuel": "Japan Wax Candle   wake",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "229",
+        "Test #": "84b",
+        "Sample #": "37"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row75"
+    },
+    {
+      "row": 76,
+      "kind": "test",
+      "test_id": "73",
+      "identifier": null,
+      "date": "8/16/2012",
+      "fuel": "Japan Wax Candle   wake",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "229",
+        "Test #": "86a",
+        "Sample #": "38"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row76"
+    },
+    {
+      "row": 77,
+      "kind": "test",
+      "test_id": "74",
+      "identifier": null,
+      "date": "8/16/2012",
+      "fuel": "Japan Wax Candle   wake",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "229",
+        "Test #": "86b",
+        "Sample #": "38"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row77"
+    },
+    {
+      "row": 78,
+      "kind": "test",
+      "test_id": "75",
+      "identifier": null,
+      "date": "8/16/2012",
+      "fuel": "Japan Wax Candle   wake",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "229",
+        "Test #": "86c",
+        "Sample #": "38"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row78"
+    },
+    {
+      "row": 79,
+      "kind": "test",
+      "test_id": "76",
+      "identifier": null,
+      "date": "8/21/2012",
+      "fuel": "PMMA slab",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "234",
+        "Test #": "70",
+        "Sample #": "34"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row79"
+    },
+    {
+      "row": 80,
+      "kind": "test",
+      "test_id": "77",
+      "identifier": null,
+      "date": "8/21/2012",
+      "fuel": "PMMA slab",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "234",
+        "Test #": "71",
+        "Sample #": "34"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row80"
+    },
+    {
+      "row": 81,
+      "kind": "test",
+      "test_id": "78",
+      "identifier": null,
+      "date": "8/21/2012",
+      "fuel": "paraffin wax slab",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "234",
+        "Test #": "74",
+        "Sample #": "41"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row81"
+    },
+    {
+      "row": 82,
+      "kind": "test",
+      "test_id": "79",
+      "identifier": null,
+      "date": "8/21/2012",
+      "fuel": "parrafin wax slab",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "234",
+        "Test #": "75",
+        "Sample #": "41"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row82"
+    },
+    {
+      "row": 83,
+      "kind": "test",
+      "test_id": "80",
+      "identifier": null,
+      "date": "4/5/2013",
+      "fuel": "PMMA 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "95",
+        "Test #": "98",
+        "Sample #": "24"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row83"
+    },
+    {
+      "row": 84,
+      "kind": "test",
+      "test_id": "81",
+      "identifier": null,
+      "date": "4/5/2013",
+      "fuel": "PMMA 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "95",
+        "Test #": "99",
+        "Sample #": "24"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row84"
+    },
+    {
+      "row": 85,
+      "kind": "test",
+      "test_id": "82",
+      "identifier": null,
+      "date": "4/9/2013",
+      "fuel": "PMMA 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "99",
+        "Test #": "114",
+        "Sample #": "25"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row85"
+    },
+    {
+      "row": 86,
+      "kind": "test",
+      "test_id": "83",
+      "identifier": null,
+      "date": "4/9/2013",
+      "fuel": "pmma 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "99",
+        "Test #": "115",
+        "Sample #": "25"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row86"
+    },
+    {
+      "row": 87,
+      "kind": "test",
+      "test_id": "84",
+      "identifier": null,
+      "date": "4/9/2013",
+      "fuel": "pmma 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "99",
+        "Test #": "116",
+        "Sample #": "25"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row87"
+    },
+    {
+      "row": 88,
+      "kind": "test",
+      "test_id": "85",
+      "identifier": null,
+      "date": "4/9/2013",
+      "fuel": "pmma 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "99",
+        "Test #": "117",
+        "Sample #": "25"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row88"
+    },
+    {
+      "row": 89,
+      "kind": "test",
+      "test_id": "85",
+      "identifier": null,
+      "date": "4/9/2013",
+      "fuel": "pmma 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "99",
+        "Test #": "117a",
+        "Sample #": "25"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row89"
+    },
+    {
+      "row": 90,
+      "kind": "test",
+      "test_id": "86",
+      "identifier": null,
+      "date": "4/12/2013",
+      "fuel": "pmma 2 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "102",
+        "Test #": "100",
+        "Sample #": "24"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row90"
+    },
+    {
+      "row": 91,
+      "kind": "test",
+      "test_id": "87",
+      "identifier": null,
+      "date": "4/12/2013",
+      "fuel": "candle    paraffin   wake",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "102",
+        "Test #": "85",
+        "Sample #": "43"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row91"
+    },
+    {
+      "row": 92,
+      "kind": "test",
+      "test_id": "88",
+      "identifier": null,
+      "date": "4/12/2013",
+      "fuel": "candle    paraffin   wake",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "102",
+        "Test #": "93",
+        "Sample #": "43"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row92"
+    },
+    {
+      "row": 93,
+      "kind": "test",
+      "test_id": "89",
+      "identifier": null,
+      "date": "4/16/2013",
+      "fuel": "pmma 1 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "106",
+        "Test #": "26",
+        "Sample #": "17"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row93"
+    },
+    {
+      "row": 94,
+      "kind": "test",
+      "test_id": "90",
+      "identifier": null,
+      "date": "4/16/2013",
+      "fuel": "pmma 1 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "106",
+        "Test #": "27",
+        "Sample #": "17"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row94"
+    },
+    {
+      "row": 95,
+      "kind": "test",
+      "test_id": "91",
+      "identifier": null,
+      "date": "4/16/2013",
+      "fuel": "pmma 1 cm",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "106",
+        "Test #": "28",
+        "Sample #": "17"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row95"
+    },
+    {
+      "row": 96,
+      "kind": "test",
+      "test_id": "89",
+      "identifier": null,
+      "date": "4/23/2013",
+      "fuel": "candle   Japan wax",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "113",
+        "Test #": "87",
+        "Sample #": "40"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row96"
+    },
+    {
+      "row": 97,
+      "kind": "test",
+      "test_id": "90",
+      "identifier": null,
+      "date": "4/23/2013",
+      "fuel": "2 cm sphere",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "113",
+        "Test #": "103",
+        "Sample #": "22"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row97"
+    },
+    {
+      "row": 98,
+      "kind": "test",
+      "test_id": "91",
+      "identifier": null,
+      "date": "4/23/2013",
+      "fuel": "2 cm sphere",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "113",
+        "Test #": "104",
+        "Sample #": "22"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row98"
+    },
+    {
+      "row": 99,
+      "kind": "test",
+      "test_id": "92",
+      "identifier": null,
+      "date": "4/23/2013",
+      "fuel": "2 cm sphere",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "113",
+        "Test #": "105",
+        "Sample #": "22"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row99"
+    },
+    {
+      "row": 100,
+      "kind": "test",
+      "test_id": "93",
+      "identifier": null,
+      "date": "4/26/2013",
+      "fuel": "1 cm sphere   wake",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "113",
+        "Test #": "38",
+        "Sample #": "20"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row100"
+    },
+    {
+      "row": 101,
+      "kind": "test",
+      "test_id": "94",
+      "identifier": null,
+      "date": "4/26/2013",
+      "fuel": "1 cm wake sphere",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "116",
+        "Test #": "39",
+        "Sample #": "20"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row101"
+    },
+    {
+      "row": 102,
+      "kind": "test",
+      "test_id": "95",
+      "identifier": null,
+      "date": "4/26/2013",
+      "fuel": "1 cm wake sphere",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "116",
+        "Test #": "40",
+        "Sample #": "20"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row102"
+    },
+    {
+      "row": 103,
+      "kind": "test",
+      "test_id": "96",
+      "identifier": null,
+      "date": "4/26/2013",
+      "fuel": "pmma slab opposed",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "116",
+        "Test #": "72",
+        "Sample #": "34"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row103"
+    },
+    {
+      "row": 104,
+      "kind": "test",
+      "test_id": "97",
+      "identifier": null,
+      "date": "4/26/2013",
+      "fuel": "pmma slab   oppsed",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "116",
+        "Test #": "73",
+        "Sample #": "34"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row104"
+    },
+    {
+      "row": 105,
+      "kind": "test",
+      "test_id": "98",
+      "identifier": null,
+      "date": "4/29/2013",
+      "fuel": "2 cm pmma sphere",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "119",
+        "Test #": "118",
+        "Sample #": "23"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row105"
+    },
+    {
+      "row": 106,
+      "kind": "test",
+      "test_id": "99",
+      "identifier": null,
+      "date": "4/29/2013",
+      "fuel": "2 cm pmma sphere",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "119",
+        "Test #": "119",
+        "Sample #": "23"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row106"
+    },
+    {
+      "row": 107,
+      "kind": "test",
+      "test_id": "100",
+      "identifier": null,
+      "date": "5/2/2013",
+      "fuel": "parrafin wax candle",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "122",
+        "Test #": "89",
+        "Sample #": "44"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row107"
+    },
+    {
+      "row": 108,
+      "kind": "test",
+      "test_id": "101",
+      "identifier": null,
+      "date": "5/2/2013",
+      "fuel": "paraffin wax candle",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "122",
+        "Test #": "95",
+        "Sample #": "44"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row108"
+    },
+    {
+      "row": 109,
+      "kind": "test",
+      "test_id": "102",
+      "identifier": null,
+      "date": "5/2/2013",
+      "fuel": "candle   Japan wax",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "122",
+        "Test #": "92",
+        "Sample #": "40"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row109"
+    },
+    {
+      "row": 110,
+      "kind": "test",
+      "test_id": "103",
+      "identifier": null,
+      "date": "5/2/2013",
+      "fuel": "paraffin wax slab",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "122",
+        "Test #": "78",
+        "Sample #": "42"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row110"
+    },
+    {
+      "row": 111,
+      "kind": "test",
+      "test_id": "104",
+      "identifier": null,
+      "date": "5/15/2103",
+      "fuel": "2 cm pmma sphere",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "135",
+        "Test #": "50",
+        "Sample #": "26"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row111"
+    },
+    {
+      "row": 112,
+      "kind": "test",
+      "test_id": "105",
+      "identifier": null,
+      "date": "5/15/2013",
+      "fuel": "2 cm sphere",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "135",
+        "Test #": "51",
+        "Sample #": "26"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row112"
+    },
+    {
+      "row": 113,
+      "kind": "test",
+      "test_id": "106",
+      "identifier": null,
+      "date": "5/15/2013",
+      "fuel": "2 cm sphere",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "135",
+        "Test #": "52",
+        "Sample #": "26"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row113"
+    },
+    {
+      "row": 114,
+      "kind": "test",
+      "test_id": "107",
+      "identifier": null,
+      "date": "5/15/2013",
+      "fuel": "2 cm sphere",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "135",
+        "Test #": "53",
+        "Sample #": "26"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row114"
+    },
+    {
+      "row": 115,
+      "kind": "test",
+      "test_id": "108",
+      "identifier": null,
+      "date": "5/17/2013",
+      "fuel": "2 cm sphere",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "137",
+        "Test #": "106",
+        "Sample #": "26"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row115"
+    },
+    {
+      "row": 116,
+      "kind": "test",
+      "test_id": "109",
+      "identifier": null,
+      "date": "5/17/2013",
+      "fuel": "2 cm sphere",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "137",
+        "Test #": "107",
+        "Sample #": "26"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row116"
+    },
+    {
+      "row": 117,
+      "kind": "test",
+      "test_id": "110",
+      "identifier": null,
+      "date": "5/17/2013",
+      "fuel": "2 cm sphere",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "137",
+        "Test #": "108",
+        "Sample #": "26"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row117"
+    },
+    {
+      "row": 118,
+      "kind": "test",
+      "test_id": "111",
+      "identifier": null,
+      "date": "6/1/2013",
+      "fuel": "2 cm sphere",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "137",
+        "Test #": "109",
+        "Sample #": "26"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row118"
+    },
+    {
+      "row": 119,
+      "kind": "test",
+      "test_id": "112",
+      "identifier": null,
+      "date": "6/1/2013",
+      "fuel": "flat wax slab",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "150",
+        "Test #": "79",
+        "Sample #": "42"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row119"
+    },
+    {
+      "row": 120,
+      "kind": "test",
+      "test_id": "113",
+      "identifier": null,
+      "date": "6/1/2013",
+      "fuel": "flat wax slab",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "150",
+        "Test #": "80",
+        "Sample #": "42"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row120"
+    },
+    {
+      "row": 121,
+      "kind": "test",
+      "test_id": "114",
+      "identifier": null,
+      "date": "6/1/2013",
+      "fuel": "flat wax slab",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "150",
+        "Test #": "75",
+        "Sample #": "41"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row121"
+    },
+    {
+      "row": 122,
+      "kind": "test",
+      "test_id": "115",
+      "identifier": null,
+      "date": "6/1/2013",
+      "fuel": "pmma sphere",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "150",
+        "Test #": "53",
+        "Sample #": "26"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row122"
+    },
+    {
+      "row": 123,
+      "kind": "test",
+      "test_id": "116",
+      "identifier": null,
+      "date": "6/1/2013",
+      "fuel": "pmma sphere",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "GMT": "150",
+        "Test #": "53a",
+        "Sample #": "26"
+      },
+      "issues": [],
+      "source": "PSI-26_Experimental table_BASS.csv#row123"
+    }
+  ]
+}

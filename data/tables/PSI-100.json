@@ -1,0 +1,98 @@
+{
+  "accession": "PSI-100",
+  "origin": "psi_files",
+  "parsed_at": "2026-11-14T12:14:49+00:00",
+  "files": [
+    {
+      "file": "PSI-100_Experimental table_SAFFIRE-3.csv",
+      "sheet": "csv",
+      "tests": 2,
+      "mapped_columns": [
+        "Air Flow ",
+        "Material",
+        "Sample Number "
+      ],
+      "unmapped_columns": [
+        "Camera 1",
+        "Camera 2",
+        "Direction",
+        "Sample Length",
+        "Sample Thickness",
+        "Sample Width"
+      ]
+    }
+  ],
+  "summary": {
+    "tests": 2,
+    "design_envelopes": 0,
+    "with_oxygen": 0,
+    "with_pressure": 0,
+    "with_flow": 2,
+    "with_issues": 0,
+    "oxygen_pct_range": null,
+    "pressure_kpa_range": null,
+    "flow_cm_s_range": [
+      30.0,
+      30.0
+    ],
+    "fuels": [
+      "SIBAL Fabric"
+    ]
+  },
+  "tests": [
+    {
+      "row": 2,
+      "kind": "test",
+      "test_id": "S1",
+      "identifier": null,
+      "date": null,
+      "fuel": "SIBAL Fabric",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 30.0,
+        "max": 30.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Sample Thickness": ".33 cm",
+        "Sample Length": "94 cm",
+        "Sample Width": "40.6 cm",
+        "Direction": "Concurrent",
+        "Camera 1": "S1C1",
+        "Camera 2": "S1C2"
+      },
+      "issues": [],
+      "source": "PSI-100_Experimental table_SAFFIRE-3.csv#row2"
+    },
+    {
+      "row": 3,
+      "kind": "test",
+      "test_id": "S2",
+      "identifier": null,
+      "date": null,
+      "fuel": "SIBAL Fabric",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 30.0,
+        "max": 30.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Sample Thickness": ".33 cm",
+        "Sample Length": "94 cm",
+        "Sample Width": "40.6 cm",
+        "Direction": "Opposed",
+        "Camera 1": "S2C1",
+        "Camera 2": "S2C2"
+      },
+      "issues": [],
+      "source": "PSI-100_Experimental table_SAFFIRE-3.csv#row3"
+    }
+  ]
+}

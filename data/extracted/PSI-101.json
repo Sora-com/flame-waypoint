@@ -39,8 +39,8 @@
       "Lampwick",
       "Kapton",
       "Silicone",
-      "Cotton",
-      "Silicone rubber"
+      "cotton",
+      "silicone rubber"
     ],
     "fuel_phases": [
       "solid"
@@ -63,14 +63,16 @@
       "detection"
     ],
     "key_findings": [
-      "In microgravity, smoke particle growth leads to larger particles compared to normal gravity.",
-      "The change in size distribution and number density affects the response of smoke detectors."
+      "Liquid smoke particulate sizes were quantified in low gravity.",
+      "The droplet size distribution was related to smoke generation and transport conditions.",
+      "The results can lead to technology for an advanced fire detector for future spacecraft."
     ],
-    "earth_applications": "The results can lead to technology for an advanced fire detector for future spacecraft and other extreme environments on Earth.",
+    "earth_applications": "The smoke detectors developed can also be useful in other extreme environments on Earth, such as submarines or underwater laboratories.",
     "conditions": [
       {
-        "label": "Baseline air flow rate with no heating",
-        "fuel": null,
+        "label": "Quiescent to 8 cm/s airflow, various sample temperatures",
+        "context": "ground",
+        "fuel": "Teflon, Kapton, cotton, silicone rubber, Pyrell",
         "oxygen_pct": null,
         "pressure_kpa": null,
         "flow_cm_s": {
@@ -79,21 +81,7 @@
           "original": "None-8 cm/s"
         },
         "evidence": [
-          "The air flow past the sample during the heating period ranged from quiescent to 8 cm/s."
-        ],
-        "source": "ntrs:20130000422"
-      },
-      {
-        "label": "Air flow rates down to 2 cm/s",
-        "fuel": null,
-        "oxygen_pct": null,
-        "pressure_kpa": null,
-        "flow_cm_s": {
-          "min": 2,
-          "max": 8,
-          "original": "2-8 cm/s"
-        },
-        "evidence": [
+          "The air flow past the sample during the heating period ranged from quiescent to 8 cm/s.",
           "The baseline air flow rate was 8 cm/s with runs conducted at rates down to 2 cm/s with a limited set conducted with no airflow while the sample was heated."
         ],
         "source": "ntrs:20130000422"
@@ -123,26 +111,27 @@
     ]
   },
   "warnings": [
-    "ntrs:20130000422: [Air flow rates down to 2 cm/s] evidence repaired from source text",
-    "ntrs:20130000422: [No airflow while the sample was heated] flow_speed: None-0 cm/s not in evidence, dropped"
+    "ntrs:20130000422: [Quiescent to 8 cm/s airflow, various sample temperatures] flow_speed: min 0 not in evidence, removed",
+    "ntrs:20130000422: [Zero airflow, various sample temperatures] evidence not found in source: 'The zero-flow condition was not in the original design of the SAME hardware but '",
+    "ntrs:20130000422: [Zero airflow, various sample temperatures] flow_speed: None-0 cm/s not in evidence, dropped"
   ],
   "review_status": "model_only",
   "extraction": {
     "model": "mistral-nemo",
-    "prompt_version": "2",
+    "prompt_version": "3",
     "source_hash": "7176f3a53c372afb",
     "papers": [
       "20130000422",
       "20140006585"
     ],
-    "extracted_at": "2026-11-14T11:07:23+00:00",
-    "seconds": 167.2,
+    "extracted_at": "2026-11-14T12:21:28+00:00",
+    "seconds": 170.2,
     "runs": [
       {
         "source": "psi:PSI-101",
-        "seconds": 21.9,
-        "prompt_tokens": 1405,
-        "output_tokens": 308,
+        "seconds": 22.2,
+        "prompt_tokens": 1473,
+        "output_tokens": 325,
         "raw": {
           "test_type": "smoke_pyrolysis",
           "fuels": [
@@ -158,6 +147,7 @@
           "conditions": [
             {
               "label": "Pyrell® rod, low gravity, no-flow heating",
+              "context": "flight",
               "fuel": "Pyrell®",
               "oxygen": {
                 "min": null,
@@ -191,17 +181,18 @@
             "detection"
           ],
           "key_findings": [
-            "In microgravity, smoke particle growth leads to larger particles compared to normal gravity.",
-            "The change in size distribution and number density affects the response of smoke detectors."
+            "Liquid smoke particulate sizes were quantified in low gravity.",
+            "The droplet size distribution was related to smoke generation and transport conditions.",
+            "The results can lead to technology for an advanced fire detector for future spacecraft."
           ],
-          "earth_applications": "The results can lead to technology for an advanced fire detector for future spacecraft and other extreme environments on Earth."
+          "earth_applications": "The smoke detectors developed can also be useful in other extreme environments on Earth, such as submarines or underwater laboratories."
         }
       },
       {
         "source": "ntrs:20140006585",
-        "seconds": 110.3,
-        "prompt_tokens": 1936,
-        "output_tokens": 1721,
+        "seconds": 113.4,
+        "prompt_tokens": 2004,
+        "output_tokens": 1826,
         "raw": {
           "fuels": [
             "Teflon",
@@ -213,6 +204,7 @@
           "conditions": [
             {
               "label": "Teflon, Baseline Temperature",
+              "context": "flight",
               "fuel": "Teflon",
               "oxygen": {
                 "min": null,
@@ -233,6 +225,7 @@
             },
             {
               "label": "Teflon, High Temperature",
+              "context": "flight",
               "fuel": "Teflon",
               "oxygen": {
                 "min": null,
@@ -253,6 +246,7 @@
             },
             {
               "label": "Teflon, Baseline Temperature, Aged",
+              "context": "flight",
               "fuel": "Teflon",
               "oxygen": {
                 "min": null,
@@ -273,6 +267,7 @@
             },
             {
               "label": "Kapton, Baseline Temperature",
+              "context": "flight",
               "fuel": "Kapton",
               "oxygen": {
                 "min": null,
@@ -293,6 +288,7 @@
             },
             {
               "label": "Kapton, High Temperature",
+              "context": "flight",
               "fuel": "Kapton",
               "oxygen": {
                 "min": null,
@@ -313,6 +309,7 @@
             },
             {
               "label": "Kapton, Baseline Temperature, Aged",
+              "context": "flight",
               "fuel": "Kapton",
               "oxygen": {
                 "min": null,
@@ -333,6 +330,7 @@
             },
             {
               "label": "Kapton, High Temperature, Aged",
+              "context": "flight",
               "fuel": "Kapton",
               "oxygen": {
                 "min": null,
@@ -353,6 +351,7 @@
             },
             {
               "label": "Lampwick, Baseline Temperature",
+              "context": "flight",
               "fuel": "Lampwick",
               "oxygen": {
                 "min": null,
@@ -373,6 +372,7 @@
             },
             {
               "label": "Lampwick, High Temperature",
+              "context": "flight",
               "fuel": "Lampwick",
               "oxygen": {
                 "min": null,
@@ -393,6 +393,7 @@
             },
             {
               "label": "Lampwick, Baseline Temperature, Aged",
+              "context": "flight",
               "fuel": "Lampwick",
               "oxygen": {
                 "min": null,
@@ -413,6 +414,7 @@
             },
             {
               "label": "Lampwick, High Temperature, Aged",
+              "context": "flight",
               "fuel": "Lampwick",
               "oxygen": {
                 "min": null,
@@ -433,6 +435,7 @@
             },
             {
               "label": "Silicone, Baseline Temperature",
+              "context": "flight",
               "fuel": "Silicone",
               "oxygen": {
                 "min": null,
@@ -453,6 +456,7 @@
             },
             {
               "label": "Silicone, High Temperature",
+              "context": "flight",
               "fuel": "Silicone",
               "oxygen": {
                 "min": null,
@@ -473,6 +477,7 @@
             },
             {
               "label": "Silicone, Baseline Temperature, Aged",
+              "context": "flight",
               "fuel": "Silicone",
               "oxygen": {
                 "min": null,
@@ -493,6 +498,7 @@
             },
             {
               "label": "Pyrell, Baseline Temperature",
+              "context": "flight",
               "fuel": "Pyrell",
               "oxygen": {
                 "min": null,
@@ -522,21 +528,22 @@
       },
       {
         "source": "ntrs:20130000422",
-        "seconds": 35.0,
-        "prompt_tokens": 1556,
-        "output_tokens": 506,
+        "seconds": 34.6,
+        "prompt_tokens": 1624,
+        "output_tokens": 496,
         "raw": {
           "fuels": [
             "Teflon",
             "Kapton",
-            "Cotton",
-            "Silicone rubber",
+            "cotton",
+            "silicone rubber",
             "Pyrell"
           ],
           "conditions": [
             {
-              "label": "Baseline air flow rate with no heating",
-              "fuel": null,
+              "label": "Quiescent to 8 cm/s airflow, various sample temperatures",
+              "context": "ground",
+              "fuel": "Teflon, Kapton, cotton, silicone rubber, Pyrell",
               "oxygen": {
                 "min": null,
                 "max": null,
@@ -548,39 +555,19 @@
                 "unit": null
               },
               "flow_speed": {
-                "min": null,
+                "min": 0,
                 "max": 8,
                 "unit": "cm/s"
               },
               "evidence": [
-                "The air flow past the sample during the heating period ranged from quiescent to 8 cm/s."
+                "The air flow past the sample during the heating period ranged from quiescent to 8 cm/s.",
+                "The baseline air flow rate was 8 cm/s with runs conducted at rates down to 2 cm/s with a limited set conducted with no airflow while the sample was heated."
               ]
             },
             {
-              "label": "Air flow rates down to 2 cm/s",
-              "fuel": null,
-              "oxygen": {
-                "min": null,
-                "max": null,
-                "unit": null
-              },
-              "pressure": {
-                "min": null,
-                "max": null,
-                "unit": null
-              },
-              "flow_speed": {
-                "min": 2,
-                "max": 8,
-                "unit": "cm/s"
-              },
-              "evidence": [
-                "The baseline air flow rate was 8 cm/s with runs conducted at rates down to 2 cm/s."
-              ]
-            },
-            {
-              "label": "No airflow while the sample was heated",
-              "fuel": null,
+              "label": "Zero airflow, various sample temperatures",
+              "context": "ground",
+              "fuel": "Teflon, Kapton, cotton, silicone rubber, Pyrell",
               "oxygen": {
                 "min": null,
                 "max": null,
@@ -597,7 +584,8 @@
                 "unit": "cm/s"
               },
               "evidence": [
-                "A limited set conducted with no airflow while the sample was heated."
+                "A limited set conducted with no airflow while the sample was heated.",
+                "The zero-flow condition was not in the original design of the SAME hardware but was examined for 11 tests by modifying the valve operation in the SAME hardware."
               ]
             }
           ],
@@ -608,7 +596,6 @@
         },
         "excerpt_chars": 4950
       }
-    ],
-    "rechecked_at": "2026-11-14T11:26:22+00:00"
+    ]
   }
 }

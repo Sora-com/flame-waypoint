@@ -45,6 +45,7 @@
   "fields": {
     "test_type": "combustion",
     "fuels": [
+      "solid fuels",
       "PMMA",
       "cotton-fiberglass fabric blend",
       "polymethylmethacrylate (PMMA)"
@@ -53,7 +54,11 @@
       "solid"
     ],
     "sample_geometry": [
-      "rods"
+      "rods",
+      "spherical section",
+      "slabs",
+      "films",
+      "fabric sheets"
     ],
     "sample_size": null,
     "diluents": [
@@ -62,7 +67,8 @@
     "suppressants": [],
     "variables_studied": [
       "forced flow velocity",
-      "ambient oxygen concentration"
+      "ambient oxygen concentration",
+      "sample geometry"
     ],
     "sensors": [
       "color video camera"
@@ -72,13 +78,15 @@
       "suppression"
     ],
     "key_findings": [
-      "BASS-II results contribute to the combustion computational models used in the design of fire detection and suppression systems in microgravity and on Earth."
+      "Materials in microgravity burn as well if not better than in normal gravity under identical conditions",
+      "Flame appearance, flame growth, and spread rates were determined in both the opposed and concurrent flow"
     ],
-    "earth_applications": "BASS-II helps engineers select the safest materials and improve firefighting methods on future space missions.",
+    "earth_applications": "Improved spacecraft fire safety and understanding of combustion in space to avoid fires on future space missions",
     "conditions": [
       {
-        "label": "PMMA rod, low-oxygen blowoff tests",
-        "fuel": "PMMA",
+        "label": "BASS-II microgravity combustion tests",
+        "context": "flight",
+        "fuel": "solid fuels",
         "oxygen_pct": null,
         "pressure_kpa": null,
         "flow_cm_s": {
@@ -93,6 +101,7 @@
       },
       {
         "label": "PMMA rod, low-oxygen blowoff tests",
+        "context": "flight",
         "fuel": "PMMA",
         "oxygen_pct": null,
         "pressure_kpa": null,
@@ -108,6 +117,7 @@
       },
       {
         "label": "Cotton-fiberglass fabric blend, varying oxygen and flow speed",
+        "context": "flight",
         "fuel": "cotton-fiberglass fabric blend",
         "oxygen_pct": {
           "min": 16,
@@ -121,13 +131,13 @@
         },
         "evidence": [
           "Ambient oxygen was varied from 21% down to 16% and flow speed from 40 cm/s down to 1 cm/s.",
-          "The tests were conducted in ambient oxygen molar fraction of 16% to 21%.",
           "The flow speed could be varied from 1 to 55 cm/s."
         ],
         "source": "ntrs:20150008962"
       },
       {
         "label": "2.2 cm cotton-fiberglass fabric blend, 21% O2, varying flow speed",
+        "context": "flight",
         "fuel": "cotton-fiberglass fabric blend",
         "oxygen_pct": null,
         "pressure_kpa": null,
@@ -137,13 +147,29 @@
           "original": "2.2-10 cm/s"
         },
         "evidence": [
-          "A 2.2 cm wide sample in 18.7% O2 was first ignited at 10 cm/s flow.",
-          "Flow speed was decreased to 2.2 cm/s incrementally after ignition."
+          "A 2.2 cm wide sample in 18.7% O2 was first ignited at 10 cm/s flow. Flow speed was decreased to 2.2 cm/s incrementally after ignition."
         ],
         "source": "ntrs:20150008962"
       },
       {
+        "label": "Cast PMMA rods, ground tests",
+        "context": "ground",
+        "fuel": "PMMA",
+        "oxygen_pct": {
+          "min": 14,
+          "max": 18
+        },
+        "pressure_kpa": null,
+        "flow_cm_s": null,
+        "evidence": [
+          "Cast polymethylmethacrylate (PMMA) rods of diameters ranging from 0.635 cm to 3.81 cm were burned at oxygen concentrations ranging from 14 to 18% by volume.",
+          "The maximum flow rate was 165 SLPM (60.3 cm/s average tube speed)."
+        ],
+        "source": "ntrs:20160012691"
+      },
+      {
         "label": "PMMA rod, low-oxygen blowoff tests",
+        "context": "flight",
         "fuel": "PMMA",
         "oxygen_pct": {
           "min": 14,
@@ -183,47 +209,45 @@
         "source": "ntrs:20150008962"
       },
       {
-        "text": "The blowoff boundaries found for each rod radius are approximately linear with flow, with the exception of the 14% oxygen data.",
+        "text": "The forced flow velocity where blowoff occurred was determined for each rod size and oxygen concentration.",
         "source": "ntrs:20160012691"
       },
       {
-        "text": "The forced stretch rate at blowoff varies linearly with oxygen in addition to varying as the square root of the rod radius.",
+        "text": "Each boundary is approximately linear with flow, with the exception of the 14% oxygen data.",
         "source": "ntrs:20160012691"
       },
       {
-        "text": "An empirical linear superposition of the buoyant stretch rate of ab=78 s-1 aligns the data with the BASS-II boundary.",
+        "text": "The estimate is good because the microgravity quenching boundary turns upward away from the blowoff line only for low-speed flows.",
         "source": "ntrs:20160012691"
       },
       {
-        "text": "Twenty-four concurrent axial flow flammability tests with three diameters of cast PMMA cylindrical rods were performed.",
+        "text": "The minimum oxygen concentration for stable flames was 13.3% O2",
         "source": "ntrs:20150008961"
       },
       {
-        "text": "Oxygen concentrations before and after each test were measured with an on-board CSA-CP sensor.",
+        "text": "Flame spread was not observed below 16.4 % O2 in opposed flow flame spread rods tests",
         "source": "ntrs:20150008961"
       },
       {
-        "text": "Flow velocity through the duct was also varied by changing the fan voltage, and measured with a hot-wire anemometer.",
+        "text": "The solid conduction ratio falls off as Peclet number is reduced",
         "source": "ntrs:20150008961"
       }
     ]
   },
   "warnings": [
-    "psi:PSI-25: [PMMA rod, low-oxygen blowoff tests] evidence repaired from source text",
+    "psi:PSI-25: [BASS-II microgravity combustion tests] evidence repaired from source text",
     "ntrs:20150019858: [PMMA rod, low-oxygen blowoff tests] evidence not found in source: 'The oxygen concentrations in the MSG working volume were varied during the testi'",
     "ntrs:20150019858: [PMMA rod, low-oxygen blowoff tests] oxygen: 14-21 % not in evidence, dropped",
     "ntrs:20150008962: [Cotton-fiberglass fabric blend, varying oxygen and flow speed] pressure: None-1 atm not in evidence, dropped",
     "ntrs:20150008962: [2.2 cm cotton-fiberglass fabric blend, 21% O2, varying flow speed] oxygen: 21-21 % not in evidence, dropped",
     "ntrs:20150008962: [2.2 cm cotton-fiberglass fabric blend, 21% O2, varying flow speed] pressure: None-1 atm not in evidence, dropped",
     "ntrs:20150008962: [2.2 cm cotton-fiberglass fabric blend, 21% O2, varying flow speed] flow_speed: min > max, swapped",
-    "ntrs:20160012691: [Cast PMMA rods, 14-18% oxygen, varying flow speeds] evidence not found in source: 'cast PMMA rods of diameters ranging from 0.635 cm to 3.81 cm were burned at oxyg'",
-    "ntrs:20160012691: [Cast PMMA rods, 14-18% oxygen, varying flow speeds] oxygen: 14-18 % not in evidence, dropped",
-    "ntrs:20160012691: [Cast PMMA rods, 14-18% oxygen, varying flow speeds] flow_speed: None-165 SLPM not in evidence, dropped"
+    "ntrs:20160012691: [Cast PMMA rods, ground tests] flow_speed: None-165 SLPM not in evidence, dropped"
   ],
   "review_status": "model_only",
   "extraction": {
     "model": "mistral-nemo",
-    "prompt_version": "2",
+    "prompt_version": "3",
     "source_hash": "7d29f1fc30714dcd",
     "papers": [
       "20150008961",
@@ -231,30 +255,35 @@
       "20150019858",
       "20160012691"
     ],
-    "extracted_at": "2026-11-14T11:15:51+00:00",
-    "seconds": 95.1,
+    "extracted_at": "2026-11-14T12:30:10+00:00",
+    "seconds": 125.6,
     "runs": [
       {
         "source": "psi:PSI-25",
-        "seconds": 20.0,
-        "prompt_tokens": 1286,
-        "output_tokens": 301,
+        "seconds": 23.2,
+        "prompt_tokens": 1354,
+        "output_tokens": 355,
         "raw": {
           "test_type": "combustion",
           "fuels": [
-            "PMMA"
+            "solid fuels"
           ],
           "fuel_phases": [
             "solid"
           ],
           "sample_geometry": [
-            "rods"
+            "rods",
+            "spherical section",
+            "slabs",
+            "films",
+            "fabric sheets"
           ],
           "sample_size": null,
           "conditions": [
             {
-              "label": "PMMA rod, low-oxygen blowoff tests",
-              "fuel": "PMMA",
+              "label": "BASS-II microgravity combustion tests",
+              "context": "flight",
+              "fuel": "solid fuels",
               "oxygen": {
                 "min": null,
                 "max": null,
@@ -270,7 +299,9 @@
                 "max": 40,
                 "unit": "cm/s"
               },
-              "evidence": []
+              "evidence": [
+                "Airflow speeds up to 40 cm/s were imposed"
+              ]
             }
           ],
           "diluents": [
@@ -279,7 +310,8 @@
           "suppressants": [],
           "variables_studied": [
             "forced flow velocity",
-            "ambient oxygen concentration"
+            "ambient oxygen concentration",
+            "sample geometry"
           ],
           "sensors": [
             "color video camera"
@@ -289,16 +321,17 @@
             "suppression"
           ],
           "key_findings": [
-            "BASS-II results contribute to the combustion computational models used in the design of fire detection and suppression systems in microgravity and on Earth."
+            "Materials in microgravity burn as well if not better than in normal gravity under identical conditions",
+            "Flame appearance, flame growth, and spread rates were determined in both the opposed and concurrent flow"
           ],
-          "earth_applications": "BASS-II helps engineers select the safest materials and improve firefighting methods on future space missions."
+          "earth_applications": "Improved spacecraft fire safety and understanding of combustion in space to avoid fires on future space missions"
         }
       },
       {
         "source": "ntrs:20150019858",
-        "seconds": 16.3,
-        "prompt_tokens": 1566,
-        "output_tokens": 283,
+        "seconds": 23.0,
+        "prompt_tokens": 1634,
+        "output_tokens": 290,
         "raw": {
           "fuels": [
             "PMMA"
@@ -306,6 +339,7 @@
           "conditions": [
             {
               "label": "PMMA rod, low-oxygen blowoff tests",
+              "context": "flight",
               "fuel": "PMMA",
               "oxygen": {
                 "min": 14,
@@ -338,9 +372,9 @@
       },
       {
         "source": "ntrs:20150008962",
-        "seconds": 26.9,
-        "prompt_tokens": 1722,
-        "output_tokens": 476,
+        "seconds": 33.5,
+        "prompt_tokens": 1790,
+        "output_tokens": 468,
         "raw": {
           "fuels": [
             "cotton-fiberglass fabric blend"
@@ -348,6 +382,7 @@
           "conditions": [
             {
               "label": "Cotton-fiberglass fabric blend, varying oxygen and flow speed",
+              "context": "flight",
               "fuel": "cotton-fiberglass fabric blend",
               "oxygen": {
                 "min": 16,
@@ -366,12 +401,12 @@
               },
               "evidence": [
                 "Ambient oxygen was varied from 21% down to 16% and flow speed from 40 cm/s down to 1 cm/s.",
-                "The tests were conducted in ambient oxygen molar fraction of 16% to 21%.",
                 "The flow speed could be varied from 1 to 55 cm/s."
               ]
             },
             {
               "label": "2.2 cm cotton-fiberglass fabric blend, 21% O2, varying flow speed",
+              "context": "flight",
               "fuel": "cotton-fiberglass fabric blend",
               "oxygen": {
                 "min": 21,
@@ -389,8 +424,7 @@
                 "unit": "cm/s"
               },
               "evidence": [
-                "A 2.2 cm wide sample in 18.7% O2 was first ignited at 10 cm/s flow.",
-                "Flow speed was decreased to 2.2 cm/s incrementally after ignition."
+                "A 2.2 cm wide sample in 18.7% O2 was first ignited at 10 cm/s flow. Flow speed was decreased to 2.2 cm/s incrementally after ignition."
               ]
             }
           ],
@@ -404,16 +438,17 @@
       },
       {
         "source": "ntrs:20160012691",
-        "seconds": 18.5,
-        "prompt_tokens": 1623,
-        "output_tokens": 318,
+        "seconds": 22.5,
+        "prompt_tokens": 1691,
+        "output_tokens": 279,
         "raw": {
           "fuels": [
             "polymethylmethacrylate (PMMA)"
           ],
           "conditions": [
             {
-              "label": "Cast PMMA rods, 14-18% oxygen, varying flow speeds",
+              "label": "Cast PMMA rods, ground tests",
+              "context": "ground",
               "fuel": "PMMA",
               "oxygen": {
                 "min": 14,
@@ -431,24 +466,24 @@
                 "unit": "SLPM"
               },
               "evidence": [
-                "cast PMMA rods of diameters ranging from 0.635 cm to 3.81 cm were burned at oxygen concentrations ranging from 14 to 18% by volume.",
-                "The lowest flow rate where blowoff occurs was determined iteratively for each oxygen concentration. Due to limitations in system pressures, the maximum flow rate was 165 SLPM (60.3 cm/s average tube speed)."
+                "Cast polymethylmethacrylate (PMMA) rods of diameters ranging from 0.635 cm to 3.81 cm were burned at oxygen concentrations ranging from 14 to 18% by volume.",
+                "The maximum flow rate was 165 SLPM (60.3 cm/s average tube speed)."
               ]
             }
           ],
           "key_findings": [
-            "The blowoff boundaries found for each rod radius are approximately linear with flow, with the exception of the 14% oxygen data.",
-            "The forced stretch rate at blowoff varies linearly with oxygen in addition to varying as the square root of the rod radius.",
-            "An empirical linear superposition of the buoyant stretch rate of ab=78 s-1 aligns the data with the BASS-II boundary."
+            "The forced flow velocity where blowoff occurred was determined for each rod size and oxygen concentration.",
+            "Each boundary is approximately linear with flow, with the exception of the 14% oxygen data.",
+            "The estimate is good because the microgravity quenching boundary turns upward away from the blowoff line only for low-speed flows."
           ]
         },
         "excerpt_chars": 5768
       },
       {
         "source": "ntrs:20150008961",
-        "seconds": 13.4,
-        "prompt_tokens": 1259,
-        "output_tokens": 231,
+        "seconds": 23.4,
+        "prompt_tokens": 1327,
+        "output_tokens": 339,
         "raw": {
           "fuels": [
             "PMMA"
@@ -456,6 +491,7 @@
           "conditions": [
             {
               "label": "PMMA rod, low-oxygen blowoff tests",
+              "context": "flight",
               "fuel": "PMMA",
               "oxygen": {
                 "min": 14,
@@ -475,17 +511,39 @@
               "evidence": [
                 "Oxygen concentrations in the MSG working volume were varied during the testing from ambient ISS oxygen levels (~ 21% O2) down to ~14% O2"
               ]
+            },
+            {
+              "label": "Drop Tower tests",
+              "context": "drop_tower",
+              "fuel": "PMMA",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": [
+                "Complementary 5.18-second Zero Gravity Facility drop tests were conducted"
+              ]
             }
           ],
           "key_findings": [
-            "Twenty-four concurrent axial flow flammability tests with three diameters of cast PMMA cylindrical rods were performed.",
-            "Oxygen concentrations before and after each test were measured with an on-board CSA-CP sensor.",
-            "Flow velocity through the duct was also varied by changing the fan voltage, and measured with a hot-wire anemometer."
+            "The minimum oxygen concentration for stable flames was 13.3% O2",
+            "Flame spread was not observed below 16.4 % O2 in opposed flow flame spread rods tests",
+            "The solid conduction ratio falls off as Peclet number is reduced"
           ]
         },
         "excerpt_chars": 4284
       }
-    ],
-    "rechecked_at": "2026-11-14T11:26:22+00:00"
+    ]
   }
 }

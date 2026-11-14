@@ -1,0 +1,5094 @@
+{
+  "accession": "PSI-25",
+  "origin": "psi_files",
+  "parsed_at": "2026-11-14T12:14:49+00:00",
+  "files": [
+    {
+      "file": "PSI-25_BASS-II Test Matrix by PI Final.xlsx",
+      "sheet": "Bhattacharjee",
+      "tests": 22,
+      "mapped_columns": [
+        "Air display",
+        "Material",
+        "Test no.",
+        "calibrated  initial O2 % by vol "
+      ],
+      "unmapped_columns": [
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)",
+        "Fan display",
+        "Final CO (ppm)",
+        "Final CO2 % by vol",
+        "Flow restrictor",
+        "GMT 2014-",
+        "Initial CO (ppm)",
+        "Initial CO2 % by vol",
+        "Radiometer gain   (1000, 250, 50, 10)",
+        "Sample no.",
+        "calibrated final O2 % by vol",
+        "total frames shot"
+      ]
+    },
+    {
+      "file": "PSI-25_BASS-II Test Matrix by PI Final.xlsx",
+      "sheet": "Ferkul",
+      "tests": 4,
+      "mapped_columns": [
+        "Air display",
+        "Material",
+        "Test no.",
+        "calibrated  initial O2 % by vol "
+      ],
+      "unmapped_columns": [
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)",
+        "Fan display",
+        "Final CO (ppm)",
+        "Final CO2 % by vol",
+        "Flow restrictor",
+        "GMT 2014-",
+        "Initial CO (ppm)",
+        "Initial CO2 % by vol",
+        "Radiometer gain   (1000, 250, 50, 10)",
+        "Sample no.",
+        "calibrated final O2 % by vol",
+        "total frames shot"
+      ]
+    },
+    {
+      "file": "PSI-25_BASS-II Test Matrix by PI Final.xlsx",
+      "sheet": "Miller",
+      "tests": 20,
+      "mapped_columns": [
+        "Air display",
+        "Material",
+        "Test no.",
+        "calibrated  initial O2 % by vol "
+      ],
+      "unmapped_columns": [
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)",
+        "Fan display",
+        "Final CO (ppm)",
+        "Final CO2 % by vol",
+        "Flow restrictor",
+        "GMT 2014-",
+        "Initial CO (ppm)",
+        "Initial CO2 % by vol",
+        "Radiometer gain   (1000, 250, 50, 10)",
+        "Sample no.",
+        "calibrated final O2 % by vol",
+        "total frames shot"
+      ]
+    },
+    {
+      "file": "PSI-25_BASS-II Test Matrix by PI Final.xlsx",
+      "sheet": "Olson",
+      "tests": 27,
+      "mapped_columns": [
+        "Air display",
+        "Material",
+        "Test no.",
+        "calibrated  initial O2 % by vol "
+      ],
+      "unmapped_columns": [
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)",
+        "Fan display",
+        "Final CO (ppm)",
+        "Final CO2 % by vol",
+        "Flow restrictor",
+        "GMT 2014- (except last 3 tests from 2016)",
+        "Initial CO (ppm)",
+        "Initial CO2 % by vol",
+        "Radiometer gain   (1000, 250, 50, 10)",
+        "Sample no.",
+        "calibrated final O2 % by vol",
+        "total frames shot"
+      ]
+    },
+    {
+      "file": "PSI-25_BASS-II Test Matrix by PI Final.xlsx",
+      "sheet": "Fernandez-Pello",
+      "tests": 27,
+      "mapped_columns": [
+        "Air display",
+        "Material",
+        "Test no.",
+        "calibrated  initial O2 % by vol "
+      ],
+      "unmapped_columns": [
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)",
+        "Fan display",
+        "Final CO (ppm)",
+        "Final CO2 % by vol",
+        "Flow restrictor",
+        "GMT 2014-",
+        "Initial CO (ppm)",
+        "Initial CO2 % by vol",
+        "Radiometer gain   (1000, 250, 50, 10)",
+        "Sample no.",
+        "calibrated final O2 % by vol",
+        "total frames shot"
+      ]
+    },
+    {
+      "file": "PSI-25_BASS-II Test Matrix by PI Final.xlsx",
+      "sheet": "T'ien",
+      "tests": 29,
+      "mapped_columns": [
+        "Air display",
+        "Material",
+        "Test no.",
+        "calibrated  initial O2 % by vol "
+      ],
+      "unmapped_columns": [
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)",
+        "Fan display",
+        "Final CO (ppm)",
+        "Final CO2 % by vol",
+        "Flow restrictor",
+        "GMT 2014-",
+        "Initial CO (ppm)",
+        "Initial CO2 % by vol",
+        "Radiometer gain   (1000, 250, 50, 10)",
+        "Sample no.",
+        "calibrated final O2 % by vol",
+        "total frames shot"
+      ]
+    }
+  ],
+  "summary": {
+    "tests": 129,
+    "design_envelopes": 0,
+    "with_oxygen": 129,
+    "with_pressure": 0,
+    "with_flow": 123,
+    "with_issues": 124,
+    "oxygen_pct_range": [
+      13.6,
+      22.2
+    ],
+    "pressure_kpa_range": null,
+    "flow_cm_s_range": [
+      0.0,
+      53.0
+    ],
+    "fuels": [
+      "0.5\" black rod",
+      "1 cm SIBAL",
+      "1 cm SIBAL, top side ign",
+      "1 cm wide 200 micron thick pmma",
+      "1 cm wide pmma 1 mm thick",
+      "1 cm wide pmma 2 mm thick",
+      "1 cm wide pmma 3 mm thick",
+      "1 cm wide pmma 5 mm thick",
+      "1 cm, 0.2 mm pmma film",
+      "1 mm thick pmma, 1 sided, 2 cm",
+      "1 mm thick pmma, 2 cm wide",
+      "1/2\" clear pmma rod",
+      "1/2\" clear rod",
+      "1/4 blac rod",
+      "1/4 black rod",
+      "1/4 clear rod",
+      "1/4\"  black rod",
+      "1/4\" black rod",
+      "1/4\" clear rod",
+      "100 micron film, 2 cm wide",
+      "100 micron pmma film, 2 cm wide",
+      "2 cm 0.1 mm pmma film",
+      "2 cm 100 micron thick pmma",
+      "2 cm SIBAL",
+      "2 cm Sibal, moved igniter",
+      "2 cm wide pmma 2 mm thick",
+      "2 cm wide pmma 3 mm thick",
+      "2 cm wide, 5 mm thick 1 sided pmma",
+      "2 cm, 0.1 mm pmma film",
+      "2 cm, 0.2 mm pmma film",
+      "2 cm, 0.4 mm thick film",
+      "2 cm, 4 mm 1 sided pmma slab",
+      "2 mm thick pmma, 2 cm wide",
+      "200 micron  2 cm wide",
+      "200 micron pmma film, 2 cm wide",
+      "2mm thick pmma, 1 sided, 2 cm wide",
+      "3 mm thick pmma 1 sided , 2 cm wide",
+      "3 mm thick pmma, 2 sided, 2 cm thick",
+      "3/8\" black rod",
+      "3/8\" clear rod",
+      "3/8\"clear rod",
+      "300 micron film, 2 cm wide",
+      "300 micron pmma film, 2 cm wide",
+      "4 cm spherical section",
+      "4 mm thick pmma, 2 cm wide",
+      "4 mm thick, 1 cm wide pmma slab",
+      "4 mm thick, 2 cm 2ide pmma slab",
+      "400 micron film, 2 cm wide",
+      "5 mm thick pmma, 2 cm wide",
+      "Japan Wax candle",
+      "Nomex natural (nomex III)",
+      "SIBAL 2 cm"
+    ]
+  },
+  "tests": [
+    {
+      "row": 2,
+      "kind": "test",
+      "test_id": "B1",
+      "identifier": null,
+      "date": null,
+      "fuel": "100 micron pmma film, 2 cm wide",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 22.2,
+        "max": 22.2
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41689",
+        "GMT 2014-": "50",
+        "Sample no.": "147",
+        "Flow restrictor": "2",
+        "Fan display": "62",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "57",
+        "calibrated final O2 % by vol": "22.2",
+        "Initial CO2 % by vol": "0.44",
+        "Final CO2 % by vol": "0.44",
+        "Initial CO (ppm)": "0",
+        "Final CO (ppm)": "6"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row2"
+    },
+    {
+      "row": 3,
+      "kind": "test",
+      "test_id": "B2",
+      "identifier": null,
+      "date": null,
+      "fuel": "200 micron pmma film, 2 cm wide",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 22.2,
+        "max": 22.2
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41689",
+        "GMT 2014-": "50",
+        "Sample no.": "155",
+        "Flow restrictor": "2",
+        "Fan display": "62",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "none",
+        "calibrated final O2 % by vol": "1.6",
+        "Initial CO2 % by vol": "0.44",
+        "Initial CO (ppm)": "6"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row3"
+    },
+    {
+      "row": 4,
+      "kind": "test",
+      "test_id": "B3",
+      "identifier": null,
+      "date": null,
+      "fuel": "100 micron film, 2 cm wide",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 22.2,
+        "max": 22.2
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 2.0,
+        "max": 2.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41689",
+        "GMT 2014-": "50",
+        "Sample no.": "148",
+        "Flow restrictor": "2",
+        "Fan display": "47",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "253",
+        "calibrated final O2 % by vol": "21.8",
+        "Initial CO2 % by vol": "0.43",
+        "Final CO2 % by vol": "0.49",
+        "Initial CO (ppm)": "12",
+        "Final CO (ppm)": "19"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row4"
+    },
+    {
+      "row": 5,
+      "kind": "test",
+      "test_id": "B4",
+      "identifier": null,
+      "date": null,
+      "fuel": "300 micron pmma film, 2 cm wide",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 22.2,
+        "max": 22.2
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41689",
+        "GMT 2014-": "50",
+        "Sample no.": "159",
+        "Flow restrictor": "2",
+        "Fan display": "61",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "137",
+        "calibrated final O2 % by vol": "22.2",
+        "Initial CO2 % by vol": "0.44",
+        "Final CO2 % by vol": "0.51",
+        "Initial CO (ppm)": "-1",
+        "Final CO (ppm)": "10"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row5"
+    },
+    {
+      "row": 6,
+      "kind": "test",
+      "test_id": "B5",
+      "identifier": null,
+      "date": null,
+      "fuel": "200 micron  2 cm wide",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 22.2,
+        "max": 22.2
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41689",
+        "GMT 2014-": "50",
+        "Sample no.": "156",
+        "Flow restrictor": "2",
+        "Fan display": "59",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "206",
+        "calibrated final O2 % by vol": "21.9",
+        "Initial CO2 % by vol": "0.43",
+        "Final CO2 % by vol": "0.43",
+        "Initial CO (ppm)": "0",
+        "Final CO (ppm)": "12"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row6"
+    },
+    {
+      "row": 7,
+      "kind": "test",
+      "test_id": "B6",
+      "identifier": null,
+      "date": null,
+      "fuel": "2 cm 0.1 mm pmma film",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 3.0,
+        "max": 10.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41827",
+        "GMT 2014-": "188",
+        "Sample no.": "153m",
+        "Flow restrictor": "2",
+        "Fan display": "0.9, 1.3, 2.75",
+        "Radiometer gain   (1000, 250, 50, 10)": "10",
+        "total frames shot": "80",
+        "calibrated final O2 % by vol": "20.9",
+        "Initial CO2 % by vol": "0.33",
+        "Final CO2 % by vol": "0.41",
+        "Initial CO (ppm)": "0",
+        "Final CO (ppm)": "0.3"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row7"
+    },
+    {
+      "row": 8,
+      "kind": "test",
+      "test_id": "B7",
+      "identifier": null,
+      "date": null,
+      "fuel": "400 micron film, 2 cm wide",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 22.2,
+        "max": 22.2
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 2.0,
+        "max": 2.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41689",
+        "GMT 2014-": "50",
+        "Sample no.": "161",
+        "Flow restrictor": "2",
+        "Fan display": "47",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "84",
+        "calibrated final O2 % by vol": "22.1",
+        "Initial CO2 % by vol": "0.45",
+        "Final CO2 % by vol": "0.51",
+        "Initial CO (ppm)": "1",
+        "Final CO (ppm)": "17"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row8"
+    },
+    {
+      "row": 9,
+      "kind": "test",
+      "test_id": "B8",
+      "identifier": null,
+      "date": null,
+      "fuel": "2 cm, 0.2 mm pmma film",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 10.0,
+        "max": 10.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41827",
+        "GMT 2014-": "188",
+        "Sample no.": "157m",
+        "Flow restrictor": "0",
+        "Fan display": "1.4 , incr to 10.0",
+        "Radiometer gain   (1000, 250, 50, 10)": "10",
+        "total frames shot": "226",
+        "calibrated final O2 % by vol": "20.5",
+        "Initial CO2 % by vol": "0.33",
+        "Final CO2 % by vol": "0.57999999999999996",
+        "Initial CO (ppm)": "0",
+        "Final CO (ppm)": "131"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row9"
+    },
+    {
+      "row": 10,
+      "kind": "test",
+      "test_id": "B9",
+      "identifier": null,
+      "date": null,
+      "fuel": "2 cm, 0.1 mm pmma film",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 1.0,
+        "max": 2.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41827",
+        "GMT 2014-": "188",
+        "Sample no.": "154m",
+        "Flow restrictor": "2",
+        "Fan display": "0.6, 0.35",
+        "Radiometer gain   (1000, 250, 50, 10)": "10",
+        "total frames shot": "45",
+        "calibrated final O2 % by vol": "20.9",
+        "Initial CO2 % by vol": "0.33",
+        "Final CO2 % by vol": "0.35",
+        "Initial CO (ppm)": "0",
+        "Final CO (ppm)": "10"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row10"
+    },
+    {
+      "row": 11,
+      "kind": "test",
+      "test_id": "B10",
+      "identifier": null,
+      "date": null,
+      "fuel": "1 cm, 0.2 mm pmma film",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 1.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41827",
+        "GMT 2014-": "188",
+        "Sample no.": "173m",
+        "Flow restrictor": "2",
+        "Fan display": "1.7 (52), 1.25, 0.9, 0.6, 0.4, 0.35",
+        "Radiometer gain   (1000, 250, 50, 10)": "10",
+        "total frames shot": "123",
+        "calibrated final O2 % by vol": "20.8",
+        "Initial CO2 % by vol": "0.33",
+        "Final CO2 % by vol": "0.44",
+        "Initial CO (ppm)": "0",
+        "Final CO (ppm)": "23"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row11"
+    },
+    {
+      "row": 12,
+      "kind": "test",
+      "test_id": "B11",
+      "identifier": null,
+      "date": null,
+      "fuel": "2 cm, 0.2 mm pmma film",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 1.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41827",
+        "GMT 2014-": "188",
+        "Sample no.": "158m",
+        "Flow restrictor": "2",
+        "Fan display": "2.5 (59), 1.3, 0.7, 0.5, 0.35",
+        "Radiometer gain   (1000, 250, 50, 10)": "10",
+        "total frames shot": "131",
+        "calibrated final O2 % by vol": "20.7",
+        "Initial CO2 % by vol": "0.33",
+        "Final CO2 % by vol": "0.47",
+        "Initial CO (ppm)": "0",
+        "Final CO (ppm)": "46"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row12"
+    },
+    {
+      "row": 13,
+      "kind": "test",
+      "test_id": "B12",
+      "identifier": null,
+      "date": null,
+      "fuel": "300 micron film, 2 cm wide",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 22.2,
+        "max": 22.2
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 2.0,
+        "max": 2.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41689",
+        "GMT 2014-": "50",
+        "Sample no.": "160",
+        "Flow restrictor": "2",
+        "Fan display": "46.5",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "160",
+        "calibrated final O2 % by vol": "22.1",
+        "Initial CO2 % by vol": "0.51",
+        "Final CO2 % by vol": "0.56000000000000005",
+        "Initial CO (ppm)": "17",
+        "Final CO (ppm)": "33"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row13"
+    },
+    {
+      "row": 14,
+      "kind": "test",
+      "test_id": "B13",
+      "identifier": null,
+      "date": null,
+      "fuel": "2 cm, 0.4 mm thick film",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 1.0,
+        "max": 10.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41827",
+        "GMT 2014-": "188",
+        "Sample no.": "162m",
+        "Flow restrictor": "2",
+        "Fan display": "3.5 (68),  1.7, 1.25, 0.9, 0.6, 0.4, 0.35",
+        "Radiometer gain   (1000, 250, 50, 10)": "10",
+        "total frames shot": "311",
+        "calibrated final O2 % by vol": "20.5",
+        "Initial CO2 % by vol": "0.33",
+        "Final CO2 % by vol": "0.65",
+        "Initial CO (ppm)": "0",
+        "Final CO (ppm)": "61"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row14"
+    },
+    {
+      "row": 15,
+      "kind": "test",
+      "test_id": "B14",
+      "identifier": null,
+      "date": null,
+      "fuel": "1 cm wide 200 micron thick pmma",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 15.0,
+        "max": 15.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 2.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41822",
+        "GMT 2014-": "183",
+        "Sample no.": "174m",
+        "Flow restrictor": "2",
+        "Fan display": "pot 0.9, 0.5 and down",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "44",
+        "calibrated final O2 % by vol": "none",
+        "Initial CO2 % by vol": "0",
+        "Final CO2 % by vol": "none",
+        "Initial CO (ppm)": "0.2",
+        "Final CO (ppm)": "none"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row15"
+    },
+    {
+      "row": 16,
+      "kind": "test",
+      "test_id": "B15",
+      "identifier": null,
+      "date": null,
+      "fuel": "2 cm, 0.1 mm pmma film",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 10.0,
+        "max": 10.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41827",
+        "GMT 2014-": "188",
+        "Sample no.": "149m",
+        "Flow restrictor": "0",
+        "Fan display": "1.4 (50) incr to 10.0 pot",
+        "Radiometer gain   (1000, 250, 50, 10)": "10",
+        "total frames shot": "122",
+        "calibrated final O2 % by vol": "20.8",
+        "Initial CO2 % by vol": "0.33",
+        "Final CO2 % by vol": "0.43",
+        "Initial CO (ppm)": "0",
+        "Final CO (ppm)": "22"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row16"
+    },
+    {
+      "row": 17,
+      "kind": "test",
+      "test_id": "B16",
+      "identifier": null,
+      "date": null,
+      "fuel": "2 cm 100 micron thick pmma",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.3,
+        "max": 17.3
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.4,
+        "max": 3.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41822",
+        "GMT 2014-": "183",
+        "Sample no.": "150m",
+        "Flow restrictor": "2",
+        "Fan display": "44 (pot 0.68)",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "94",
+        "calibrated final O2 % by vol": "17.2",
+        "Initial CO2 % by vol": "0.47",
+        "Final CO2 % by vol": "0.51",
+        "Initial CO (ppm)": "103",
+        "Final CO (ppm)": "119"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row17"
+    },
+    {
+      "row": 18,
+      "kind": "test",
+      "test_id": "B17",
+      "identifier": null,
+      "date": null,
+      "fuel": "1 cm wide 200 micron thick pmma",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.5,
+        "max": 17.5
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.4,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41822",
+        "GMT 2014-": "183",
+        "Sample no.": "175m",
+        "Flow restrictor": "2",
+        "Fan display": "pot 1.2 (48),  0.9, 0.4",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "190",
+        "calibrated final O2 % by vol": "17.399999999999999",
+        "Initial CO2 % by vol": "0.2",
+        "Final CO2 % by vol": "0.34",
+        "Initial CO (ppm)": "0",
+        "Final CO (ppm)": "47"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row18"
+    },
+    {
+      "row": 19,
+      "kind": "test",
+      "test_id": "B18",
+      "identifier": null,
+      "date": null,
+      "fuel": "1 cm wide 200 micron thick pmma",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.4,
+        "max": 17.4
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 10.0,
+        "max": 10.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41822",
+        "GMT 2014-": "183",
+        "Sample no.": "176m",
+        "Flow restrictor": "0",
+        "Fan display": "pot 1.02 (47), incr to 7.0",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "152",
+        "calibrated final O2 % by vol": "17.399999999999999",
+        "Initial CO2 % by vol": "0.34",
+        "Final CO2 % by vol": "0.42",
+        "Initial CO (ppm)": "47",
+        "Final CO (ppm)": "78"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row19"
+    },
+    {
+      "row": 20,
+      "kind": "test",
+      "test_id": "B19",
+      "identifier": null,
+      "date": null,
+      "fuel": "2 cm 100 micron thick pmma",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.3,
+        "max": 17.3
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 10.0,
+        "max": 10.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41822",
+        "GMT 2014-": "183",
+        "Sample no.": "151m",
+        "Flow restrictor": "0",
+        "Fan display": "47 (pot 1.05), incr to pot 6.0",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "95",
+        "calibrated final O2 % by vol": "17.2",
+        "Initial CO2 % by vol": "0.51",
+        "Final CO2 % by vol": "0.56999999999999995",
+        "Initial CO (ppm)": "119",
+        "Final CO (ppm)": "131"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row20"
+    },
+    {
+      "row": 21,
+      "kind": "test",
+      "test_id": "B20",
+      "identifier": null,
+      "date": null,
+      "fuel": "2 cm 100 micron thick pmma",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.4,
+        "max": 17.4
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.5,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41822",
+        "GMT 2014-": "183",
+        "Sample no.": "152m",
+        "Flow restrictor": "2",
+        "Fan display": "48, pot 0.9, 0.5",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "111",
+        "calibrated final O2 % by vol": "17.399999999999999",
+        "Initial CO2 % by vol": "0.42",
+        "Final CO2 % by vol": "0.47",
+        "Initial CO (ppm)": "78",
+        "Final CO (ppm)": "103"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row21"
+    },
+    {
+      "row": 22,
+      "kind": "test",
+      "test_id": "B21",
+      "identifier": null,
+      "date": null,
+      "fuel": "1 cm wide 200 micron thick pmma",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 20.8,
+        "max": 20.8
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41855",
+        "GMT 2014-": "216",
+        "Sample no.": "174m",
+        "Flow restrictor": "1",
+        "Fan display": "53, and down",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "88",
+        "calibrated final O2 % by vol": "20.6",
+        "Initial CO2 % by vol": "0.36",
+        "Final CO2 % by vol": "0.44",
+        "Initial CO (ppm)": "-1",
+        "Final CO (ppm)": "18"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row22"
+    },
+    {
+      "row": 23,
+      "kind": "test",
+      "test_id": "B22",
+      "identifier": null,
+      "date": null,
+      "fuel": "1 cm wide 200 micron thick pmma",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 20.7,
+        "max": 20.7
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41855",
+        "GMT 2014-": "216",
+        "Sample no.": "176m",
+        "Flow restrictor": "1",
+        "Fan display": "53, 42, 41, 40.5",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "77",
+        "calibrated final O2 % by vol": "20.5",
+        "Initial CO2 % by vol": "0.41",
+        "Final CO2 % by vol": "0.47",
+        "Initial CO (ppm)": "-1",
+        "Final CO (ppm)": "10"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row23"
+    },
+    {
+      "row": 2,
+      "kind": "test",
+      "test_id": "F1",
+      "identifier": null,
+      "date": null,
+      "fuel": "Nomex natural (nomex III)",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 22.2,
+        "max": 22.2
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 9.5,
+        "max": 9.5,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41689",
+        "GMT 2014-": "50",
+        "Sample no.": "227",
+        "Flow restrictor": "2",
+        "Fan display": "82",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "208",
+        "calibrated final O2 % by vol": "22.2",
+        "Initial CO2 % by vol": "0.46",
+        "Final CO2 % by vol": "0.45",
+        "Initial CO (ppm)": "0",
+        "Final CO (ppm)": "2"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row2"
+    },
+    {
+      "row": 3,
+      "kind": "test",
+      "test_id": "F2",
+      "identifier": null,
+      "date": null,
+      "fuel": "Nomex natural (nomex III)",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 15.0,
+        "max": 15.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41848",
+        "GMT 2014-": "209",
+        "Sample no.": "228m",
+        "Flow restrictor": "2",
+        "Fan display": "92",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "72",
+        "calibrated final O2 % by vol": "21",
+        "Initial CO2 % by vol": "0.37",
+        "Final CO2 % by vol": "0.39",
+        "Initial CO (ppm)": "105",
+        "Final CO (ppm)": "82"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row3"
+    },
+    {
+      "row": 4,
+      "kind": "test",
+      "test_id": "F3",
+      "identifier": null,
+      "date": null,
+      "fuel": "Nomex natural (nomex III)",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.7,
+        "max": 21.7
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.0,
+        "max": 8.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41852",
+        "GMT 2014-": "213",
+        "Sample no.": "229m",
+        "Flow restrictor": "1",
+        "Fan display": "61",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "46",
+        "calibrated final O2 % by vol": "none",
+        "Initial CO2 % by vol": "0.36",
+        "Final CO2 % by vol": "none",
+        "Initial CO (ppm)": "2",
+        "Final CO (ppm)": "none"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row4"
+    },
+    {
+      "row": 5,
+      "kind": "test",
+      "test_id": "F4",
+      "identifier": null,
+      "date": null,
+      "fuel": "Japan Wax candle",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.4,
+        "max": 17.4
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 3.0,
+        "max": 3.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41814",
+        "GMT 2014-": "175",
+        "Sample no.": "39M",
+        "Flow restrictor": "2",
+        "Fan display": "see notes",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "270",
+        "calibrated final O2 % by vol": "17.399999999999999",
+        "Initial CO2 % by vol": "0.38",
+        "Final CO2 % by vol": "0.48",
+        "Initial CO (ppm)": "22",
+        "Final CO (ppm)": "56"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row5"
+    },
+    {
+      "row": 2,
+      "kind": "test",
+      "test_id": "M1",
+      "identifier": null,
+      "date": null,
+      "fuel": "1 mm thick pmma, 1 sided, 2 cm",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 22.2,
+        "max": 22.2
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.0,
+        "max": 10.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41690",
+        "GMT 2014-": "51",
+        "Sample no.": "222",
+        "Flow restrictor": "2",
+        "Fan display": "58, 54",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "304",
+        "calibrated final O2 % by vol": "21.9",
+        "Initial CO2 % by vol": "0.45",
+        "Final CO2 % by vol": "0.61",
+        "Initial CO (ppm)": "0",
+        "Final CO (ppm)": "60"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row2"
+    },
+    {
+      "row": 3,
+      "kind": "test",
+      "test_id": "M2",
+      "identifier": null,
+      "date": null,
+      "fuel": "3 mm thick pmma 1 sided , 2 cm wide",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 22.2,
+        "max": 22.2
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 13.0,
+        "max": 20.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41690",
+        "GMT 2014-": "51",
+        "Sample no.": "224",
+        "Flow restrictor": "0",
+        "Fan display": "116 (pot 9.3),  89, 80, 84",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "262",
+        "calibrated final O2 % by vol": "21.2",
+        "Initial CO2 % by vol": "0.46",
+        "Final CO2 % by vol": "1.33",
+        "Initial CO (ppm)": "12",
+        "Final CO (ppm)": "325"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row3"
+    },
+    {
+      "row": 4,
+      "kind": "test",
+      "test_id": "M3",
+      "identifier": null,
+      "date": null,
+      "fuel": "2 cm wide, 5 mm thick 1 sided pmma",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 20.8,
+        "max": 20.8
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 10.0,
+        "max": 20.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41831",
+        "GMT 2014-": "192",
+        "Sample no.": "226m",
+        "Flow restrictor": "2",
+        "Fan display": "3.0,3.1,3.2,6.4,5.5,5.4",
+        "Radiometer gain   (1000, 250, 50, 10)": "250>50>250",
+        "total frames shot": "223",
+        "calibrated final O2 % by vol": "19.7",
+        "Initial CO2 % by vol": "0.33",
+        "Final CO2 % by vol": "1.18",
+        "Initial CO (ppm)": "11",
+        "Final CO (ppm)": "300"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row4"
+    },
+    {
+      "row": 5,
+      "kind": "test",
+      "test_id": "M4",
+      "identifier": null,
+      "date": null,
+      "fuel": "5 mm thick pmma, 2 cm wide",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.8,
+        "max": 21.8
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 3.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41851",
+        "GMT 2014-": "212",
+        "Sample no.": "171m",
+        "Flow restrictor": "1",
+        "Fan display": "52, 47, 43",
+        "Radiometer gain   (1000, 250, 50, 10)": "250>50",
+        "total frames shot": "262",
+        "calibrated final O2 % by vol": "19.8",
+        "Initial CO2 % by vol": "0.42",
+        "Final CO2 % by vol": "2.15",
+        "Initial CO (ppm)": "2",
+        "Final CO (ppm)": "561"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row5"
+    },
+    {
+      "row": 6,
+      "kind": "test",
+      "test_id": "M5",
+      "identifier": null,
+      "date": null,
+      "fuel": "3 mm thick pmma, 2 sided, 2 cm thick",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 22.2,
+        "max": 22.2
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 20.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41690",
+        "GMT 2014-": "51",
+        "Sample no.": "167",
+        "Flow restrictor": "0",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "300+   +102",
+        "calibrated final O2 % by vol": "19",
+        "Initial CO2 % by vol": "0.44",
+        "Final CO2 % by vol": "3.22",
+        "Initial CO (ppm)": "9",
+        "Final CO (ppm)": ">500"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row6"
+    },
+    {
+      "row": 7,
+      "kind": "test",
+      "test_id": "M6",
+      "identifier": null,
+      "date": null,
+      "fuel": "1 mm thick pmma, 2 cm wide",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.8,
+        "max": 21.8
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 10.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41851",
+        "GMT 2014-": "212",
+        "Sample no.": "163m",
+        "Flow restrictor": "1",
+        "Fan display": "68, 52, 47, 43, 42, 41",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "269",
+        "calibrated final O2 % by vol": "20.7",
+        "Initial CO2 % by vol": "0.38",
+        "Final CO2 % by vol": "1.27",
+        "Initial CO (ppm)": "1",
+        "Final CO (ppm)": "345"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row7"
+    },
+    {
+      "row": 8,
+      "kind": "test",
+      "test_id": "M7",
+      "identifier": null,
+      "date": null,
+      "fuel": "1 cm wide pmma 1 mm thick",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 18.9,
+        "max": 18.9
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 3.0,
+        "max": 10.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41831",
+        "GMT 2014-": "192",
+        "Sample no.": "177m",
+        "Flow restrictor": "2",
+        "Fan display": "2.6, 1.3, 0.8,0.7,0.6,0.5; 60, 49,45,44,43,42",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "217",
+        "calibrated final O2 % by vol": "18.399999999999999",
+        "Initial CO2 % by vol": "1.42",
+        "Final CO2 % by vol": "1.84",
+        "Initial CO (ppm)": "398",
+        "Final CO (ppm)": "612"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row8"
+    },
+    {
+      "row": 9,
+      "kind": "test",
+      "test_id": "M8",
+      "identifier": null,
+      "date": null,
+      "fuel": "1 cm wide pmma 2 mm thick",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 19.1,
+        "max": 19.1
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 10.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41831",
+        "GMT 2014-": "192",
+        "Sample no.": "178m",
+        "Flow restrictor": "2",
+        "Fan display": "3.3, 1.6,1.0, decr",
+        "Radiometer gain   (1000, 250, 50, 10)": "50>250",
+        "total frames shot": "292",
+        "calibrated final O2 % by vol": "18.2",
+        "Initial CO2 % by vol": "0.44",
+        "Final CO2 % by vol": "1.28",
+        "Initial CO (ppm)": "52",
+        "Final CO (ppm)": "467"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row9"
+    },
+    {
+      "row": 10,
+      "kind": "test",
+      "test_id": "M9",
+      "identifier": null,
+      "date": null,
+      "fuel": "1 cm wide pmma 3 mm thick",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 18.0,
+        "max": 18.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 10.0,
+        "max": 14.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41831",
+        "GMT 2014-": "192",
+        "Sample no.": "179m",
+        "Flow restrictor": "2",
+        "Fan display": "3.3, 4.8;66,79",
+        "Radiometer gain   (1000, 250, 50, 10)": "50, 250",
+        "total frames shot": "156",
+        "calibrated final O2 % by vol": "17.600000000000001",
+        "Initial CO2 % by vol": "0.26",
+        "Final CO2 % by vol": "0.54",
+        "Initial CO (ppm)": "0",
+        "Final CO (ppm)": "191"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row10"
+    },
+    {
+      "row": 11,
+      "kind": "test",
+      "test_id": "M10",
+      "identifier": null,
+      "date": null,
+      "fuel": "4 mm thick, 1 cm wide pmma slab",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 20.1,
+        "max": 20.1
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.0,
+        "max": 17.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41843",
+        "GMT 2014-": "204",
+        "Sample no.": "180m",
+        "Flow restrictor": "2",
+        "Fan display": "75, 105, 94/91, 72/69, 63/61  (4.4, 8.0, 6.6/6.3, 4.0/3.7, 3/0/2.7)",
+        "Radiometer gain   (1000, 250, 50, 10)": "250,50,250",
+        "total frames shot": "209",
+        "calibrated final O2 % by vol": "18.600000000000001",
+        "Initial CO2 % by vol": "0.36",
+        "Final CO2 % by vol": "1.59",
+        "Initial CO (ppm)": "-1",
+        "Final CO (ppm)": "536"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row11"
+    },
+    {
+      "row": 12,
+      "kind": "test",
+      "test_id": "M11",
+      "identifier": null,
+      "date": null,
+      "fuel": "1 cm wide pmma 5 mm thick",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 20.0,
+        "max": 20.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 10.0,
+        "max": 20.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41831",
+        "GMT 2014-": "192",
+        "Sample no.": "181m",
+        "Flow restrictor": "2",
+        "Fan display": "3.9,6.5,4.6,3.3,2.9,2.8; 62.5,93,77,66,63,62",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "247",
+        "calibrated final O2 % by vol": "18.5",
+        "Initial CO2 % by vol": "0.57999999999999996",
+        "Final CO2 % by vol": "1.68",
+        "Initial CO (ppm)": "46",
+        "Final CO (ppm)": "577"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row12"
+    },
+    {
+      "row": 13,
+      "kind": "test",
+      "test_id": "M12",
+      "identifier": null,
+      "date": null,
+      "fuel": "2 mm thick pmma, 2 cm wide",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.7,
+        "max": 21.7
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 1.0,
+        "max": 1.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41851",
+        "GMT 2014-": "212",
+        "Sample no.": "165m",
+        "Flow restrictor": "1",
+        "Fan display": "41, 42, 41",
+        "Radiometer gain   (1000, 250, 50, 10)": "250>50",
+        "total frames shot": "271",
+        "calibrated final O2 % by vol": "20.399999999999999",
+        "Initial CO2 % by vol": "0.42",
+        "Final CO2 % by vol": "1.42",
+        "Initial CO (ppm)": "15",
+        "Final CO (ppm)": "443"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row13"
+    },
+    {
+      "row": 14,
+      "kind": "test",
+      "test_id": "M13",
+      "identifier": null,
+      "date": null,
+      "fuel": "4 mm thick pmma, 2 cm wide",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 20.8,
+        "max": 20.8
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 4.0,
+        "max": 6.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41851",
+        "GMT 2014-": "212",
+        "Sample no.": "169m",
+        "Flow restrictor": "1",
+        "Fan display": "52, 47, 43",
+        "Radiometer gain   (1000, 250, 50, 10)": "250>50",
+        "total frames shot": "258",
+        "calibrated final O2 % by vol": "19",
+        "Initial CO2 % by vol": "0.36",
+        "Final CO2 % by vol": "1.75",
+        "Initial CO (ppm)": "0",
+        "Final CO (ppm)": "487"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row14"
+    },
+    {
+      "row": 15,
+      "kind": "test",
+      "test_id": "M14",
+      "identifier": null,
+      "date": null,
+      "fuel": "2mm thick pmma, 1 sided, 2 cm wide",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 22.2,
+        "max": 22.2
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.0,
+        "max": 10.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41690",
+        "GMT 2014-": "51",
+        "Sample no.": "223",
+        "Flow restrictor": "2",
+        "Fan display": "pot 2.4, 1.87  (54)",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "259",
+        "calibrated final O2 % by vol": "21.6",
+        "Initial CO2 % by vol": "0.45",
+        "Final CO2 % by vol": "0.98",
+        "Initial CO (ppm)": "0",
+        "Final CO (ppm)": "198"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row15"
+    },
+    {
+      "row": 16,
+      "kind": "test",
+      "test_id": "M15",
+      "identifier": null,
+      "date": null,
+      "fuel": "2 cm, 4 mm 1 sided pmma slab",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 7.0,
+        "max": 20.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41827",
+        "GMT 2014-": "188",
+        "Sample no.": "225m",
+        "Flow restrictor": "2",
+        "Fan display": "ignited 10, adjusted down then up to 20, down in incrments to 15",
+        "Radiometer gain   (1000, 250, 50, 10)": "10, 250",
+        "total frames shot": "153",
+        "calibrated final O2 % by vol": "20",
+        "Initial CO2 % by vol": "0.37",
+        "Final CO2 % by vol": "1.1000000000000001",
+        "Initial CO (ppm)": "1",
+        "Final CO (ppm)": "220"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row16"
+    },
+    {
+      "row": 17,
+      "kind": "test",
+      "test_id": "M16",
+      "identifier": null,
+      "date": null,
+      "fuel": "1 mm thick pmma, 2 cm wide",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 19.2,
+        "max": 19.2
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 1.0,
+        "max": 10.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41843",
+        "GMT 2014-": "204",
+        "Sample no.": "164m",
+        "Flow restrictor": "2",
+        "Fan display": "73,57,59,48,45,43,75 (4.2,2.2,2.4,1.2,0.8,0.5,4.4)",
+        "Radiometer gain   (1000, 250, 50, 10)": "250,50,250",
+        "total frames shot": "299",
+        "calibrated final O2 % by vol": "18.7",
+        "Initial CO2 % by vol": "0.95",
+        "Final CO2 % by vol": "1.75",
+        "Initial CO (ppm)": "118",
+        "Final CO (ppm)": "421"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row17"
+    },
+    {
+      "row": 18,
+      "kind": "test",
+      "test_id": "M17",
+      "identifier": null,
+      "date": null,
+      "fuel": "2 cm wide pmma 2 mm thick",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 18.8,
+        "max": 18.8
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 10.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41835",
+        "GMT 2014-": "196",
+        "Sample no.": "166m",
+        "Flow restrictor": "2",
+        "Fan display": "Fan pot 3.7, 1.7, 1.5, 1.3, 0.8, 0.6, 0.5, 0.3ext",
+        "Radiometer gain   (1000, 250, 50, 10)": "250>50>250",
+        "total frames shot": "309",
+        "calibrated final O2 % by vol": "17.100000000000001",
+        "Initial CO2 % by vol": "0.35",
+        "Final CO2 % by vol": "1.7",
+        "Initial CO (ppm)": "4",
+        "Final CO (ppm)": "485"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row18"
+    },
+    {
+      "row": 19,
+      "kind": "test",
+      "test_id": "M18",
+      "identifier": null,
+      "date": null,
+      "fuel": "2 cm wide pmma 3 mm thick",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.9,
+        "max": 17.9
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.0,
+        "max": 15.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41835",
+        "GMT 2014-": "196",
+        "Sample no.": "168m",
+        "Flow restrictor": "2",
+        "Fan display": "Fan pot 3.5, 5 (brief), 3,5, 2.2",
+        "Radiometer gain   (1000, 250, 50, 10)": "50>250",
+        "total frames shot": "178",
+        "calibrated final O2 % by vol": "16.8",
+        "Initial CO2 % by vol": "0.32",
+        "Final CO2 % by vol": "1.31",
+        "Initial CO (ppm)": "0",
+        "Final CO (ppm)": "335"
+      },
+      "issues": [
+        "flow: ambiguous cell '10, 15 (brief), 10, 8', values in parentheses ignored - review",
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row19"
+    },
+    {
+      "row": 20,
+      "kind": "test",
+      "test_id": "M19",
+      "identifier": null,
+      "date": null,
+      "fuel": "4 mm thick, 2 cm 2ide pmma slab",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 19.0,
+        "max": 19.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 17.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41843",
+        "GMT 2014-": "204",
+        "Sample no.": "170m",
+        "Flow restrictor": "2",
+        "Fan display": "75,105,94,75,77,79,59,61,57,55,53 (4.4,8.0,6.6,4.4,4.6,4.8,2.5,2.7,2.2,2.0,1.8)",
+        "Radiometer gain   (1000, 250, 50, 10)": "250, 50, 250",
+        "total frames shot": "201",
+        "calibrated final O2 % by vol": "17.399999999999999",
+        "Initial CO2 % by vol": "0.35",
+        "Final CO2 % by vol": "1.6",
+        "Initial CO (ppm)": "3",
+        "Final CO (ppm)": "357"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row20"
+    },
+    {
+      "row": 21,
+      "kind": "test",
+      "test_id": "M20",
+      "identifier": null,
+      "date": null,
+      "fuel": "5 mm thick pmma, 2 cm wide",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 18.0,
+        "max": 18.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.0,
+        "max": 10.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41852",
+        "GMT 2014-": "213",
+        "Sample no.": "172m",
+        "Flow restrictor": "1",
+        "Fan display": "67, 58",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "168",
+        "calibrated final O2 % by vol": "17.399999999999999",
+        "Initial CO2 % by vol": "0.3",
+        "Final CO2 % by vol": "0.75",
+        "Initial CO (ppm)": "0",
+        "Final CO (ppm)": "157"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row21"
+    },
+    {
+      "row": 2,
+      "kind": "test",
+      "test_id": "O1",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/4\" clear rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 22.2,
+        "max": 22.2
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 1.0,
+        "max": 20.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41688",
+        "GMT 2014- (except last 3 tests from 2016)": "49",
+        "Sample no.": "207",
+        "Flow restrictor": "2",
+        "Fan display": "89,62,50,41",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "62",
+        "calibrated final O2 % by vol": "21.7",
+        "Initial CO2 % by vol": "0.44",
+        "Final CO2 % by vol": "0.85",
+        "Initial CO (ppm)": "-1",
+        "Final CO (ppm)": "51"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row2"
+    },
+    {
+      "row": 3,
+      "kind": "test",
+      "test_id": "O2",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/4\" clear rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 22.2,
+        "max": 22.2
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 0.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41688",
+        "GMT 2014- (except last 3 tests from 2016)": "49",
+        "Sample no.": "204",
+        "Flow restrictor": "2",
+        "Fan display": ".54 pot, 0.45 pot",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "287",
+        "calibrated final O2 % by vol": "21.9",
+        "Initial CO2 % by vol": "0.44",
+        "Final CO2 % by vol": "0.59",
+        "Initial CO (ppm)": "-1",
+        "Final CO (ppm)": "23"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row3"
+    },
+    {
+      "row": 4,
+      "kind": "test",
+      "test_id": "O3a",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/4\" clear rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 18.0,
+        "max": 18.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 3.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41803",
+        "GMT 2014- (except last 3 tests from 2016)": "164",
+        "Sample no.": "205M",
+        "Flow restrictor": "2",
+        "Radiometer gain   (1000, 250, 50, 10)": "1000",
+        "total frames shot": "85",
+        "calibrated final O2 % by vol": "18",
+        "Initial CO2 % by vol": "0.25",
+        "Final CO2 % by vol": "0.28000000000000003",
+        "Initial CO (ppm)": "16",
+        "Final CO (ppm)": "22"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row4"
+    },
+    {
+      "row": 5,
+      "kind": "test",
+      "test_id": "O3b",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/4\" clear rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 18.0,
+        "max": 18.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 1.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41803",
+        "GMT 2014- (except last 3 tests from 2016)": "164",
+        "Sample no.": "205M",
+        "Flow restrictor": "2",
+        "Radiometer gain   (1000, 250, 50, 10)": "1000, 250",
+        "total frames shot": "306",
+        "calibrated final O2 % by vol": "17.7",
+        "Initial CO2 % by vol": "0.28000000000000003",
+        "Final CO2 % by vol": "0.53",
+        "Initial CO (ppm)": "22",
+        "Final CO (ppm)": "116"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row5"
+    },
+    {
+      "row": 6,
+      "kind": "test",
+      "test_id": "O4",
+      "identifier": null,
+      "date": null,
+      "fuel": "3/8\"clear rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 14.8,
+        "max": 14.8
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41828",
+        "GMT 2014- (except last 3 tests from 2016)": "189",
+        "Sample no.": "216m",
+        "Flow restrictor": "2",
+        "Fan display": "5, 0.7, 0.5, 0.4, 0.36 ext",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "249",
+        "calibrated final O2 % by vol": "13.6",
+        "Initial CO2 % by vol": "0.72",
+        "Final CO2 % by vol": "1.72",
+        "Initial CO (ppm)": "290",
+        "Final CO (ppm)": "OR"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row6"
+    },
+    {
+      "row": 7,
+      "kind": "test",
+      "test_id": "O5a",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/2\" clear pmma rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 15.1,
+        "max": 15.1
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 10.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41841",
+        "GMT 2014- (except last 3 tests from 2016)": "202",
+        "Sample no.": "220m",
+        "Flow restrictor": "2",
+        "Fan display": "1.3, 2.7, 1.3, 0.7, 0.45. 4.0",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "164",
+        "calibrated final O2 % by vol": "14.2",
+        "Initial CO2 % by vol": "0.25",
+        "Final CO2 % by vol": "1.05",
+        "Initial CO (ppm)": "-2",
+        "Final CO (ppm)": "496"
+      },
+      "issues": [
+        "flow: ambiguous cell '5,10,5, 2, 0 (49, 62, 49, 44, 42)', values in parentheses ignored - review",
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row7"
+    },
+    {
+      "row": 8,
+      "kind": "test",
+      "test_id": "O5b",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/2\" clear pmma rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 14.2,
+        "max": 14.2
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 49.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41841",
+        "GMT 2014- (except last 3 tests from 2016)": "202",
+        "Sample no.": "220m",
+        "Flow restrictor": "2",
+        "Fan display": "1.3",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "2",
+        "calibrated final O2 % by vol": "14.1",
+        "Initial CO2 % by vol": "1.05",
+        "Final CO2 % by vol": "1.1399999999999999",
+        "Initial CO (ppm)": "496",
+        "Final CO (ppm)": "590"
+      },
+      "issues": [],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row8"
+    },
+    {
+      "row": 9,
+      "kind": "test",
+      "test_id": "O6",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/4\" clear rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 16.7,
+        "max": 16.7
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41816",
+        "GMT 2014- (except last 3 tests from 2016)": "177",
+        "Sample no.": "206M",
+        "Flow restrictor": "2",
+        "Fan display": "5, .36,.32,.31,.305, out .275",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "241",
+        "calibrated final O2 % by vol": "16",
+        "Initial CO2 % by vol": "0.32",
+        "Final CO2 % by vol": "0.74",
+        "Initial CO (ppm)": "1",
+        "Final CO (ppm)": "232"
+      },
+      "issues": [
+        "unreadable flow 'see fan'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row9"
+    },
+    {
+      "row": 10,
+      "kind": "test",
+      "test_id": "O7",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/4\" clear rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 16.0,
+        "max": 16.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41816",
+        "GMT 2014- (except last 3 tests from 2016)": "177",
+        "Sample no.": "214m",
+        "Flow restrictor": "2",
+        "Fan display": "5, .36,.32,..305, blowoff fan max 10",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "254",
+        "calibrated final O2 % by vol": "15.5",
+        "Initial CO2 % by vol": "0.74",
+        "Final CO2 % by vol": "1.27",
+        "Initial CO (ppm)": "232",
+        "Final CO (ppm)": "512"
+      },
+      "issues": [],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row10"
+    },
+    {
+      "row": 11,
+      "kind": "test",
+      "test_id": "O8a",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/4\" clear rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 15.7,
+        "max": 15.7
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41816",
+        "GMT 2014- (except last 3 tests from 2016)": "177",
+        "Sample no.": "208m",
+        "Flow restrictor": "2",
+        "Fan display": "5, .36,.32,.31, extinguished",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "133",
+        "calibrated final O2 % by vol": "15.3",
+        "Initial CO2 % by vol": "1.23",
+        "Final CO2 % by vol": "1.44",
+        "Initial CO (ppm)": "436",
+        "Final CO (ppm)": "536"
+      },
+      "issues": [],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row11"
+    },
+    {
+      "row": 12,
+      "kind": "test",
+      "test_id": "O8b",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/4\" clear rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 15.5,
+        "max": 15.5
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41816",
+        "GMT 2014- (except last 3 tests from 2016)": "177",
+        "Sample no.": "208m",
+        "Flow restrictor": "2",
+        "Fan display": "5,.36,.32,.31 blowoff fan pot 6.0",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "152",
+        "calibrated final O2 % by vol": "15.2",
+        "Initial CO2 % by vol": "1.44",
+        "Final CO2 % by vol": "1.74",
+        "Initial CO (ppm)": "536",
+        "Final CO (ppm)": "660"
+      },
+      "issues": [],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row12"
+    },
+    {
+      "row": 13,
+      "kind": "test",
+      "test_id": "O9",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/4\" clear rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 15.0,
+        "max": 15.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41816",
+        "GMT 2014- (except last 3 tests from 2016)": "177",
+        "Sample no.": "209m",
+        "Flow restrictor": "2",
+        "Fan display": "5, .36,.32 blowoff pt 4.0",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "154",
+        "calibrated final O2 % by vol": "14.8",
+        "Initial CO2 % by vol": "1.74",
+        "Final CO2 % by vol": "1.96",
+        "Initial CO (ppm)": "660",
+        "Final CO (ppm)": "794"
+      },
+      "issues": [],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row13"
+    },
+    {
+      "row": 14,
+      "kind": "test",
+      "test_id": "O10",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/4\" clear rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 16.7,
+        "max": 16.7
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41842",
+        "GMT 2014- (except last 3 tests from 2016)": "213",
+        "Sample no.": "210m",
+        "Flow restrictor": "2",
+        "Fan display": "49,44,41, 122 (1.3, 0.7, 0.4, 0.36, 0.32, 10)",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "172",
+        "calibrated final O2 % by vol": "16.100000000000001",
+        "Initial CO2 % by vol": "1.61",
+        "Final CO2 % by vol": "2.1",
+        "Initial CO (ppm)": "94",
+        "Final CO (ppm)": "287"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row14"
+    },
+    {
+      "row": 15,
+      "kind": "test",
+      "test_id": "O11",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/4\" black rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 15.4,
+        "max": 15.4
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41828",
+        "GMT 2014- (except last 3 tests from 2016)": "189",
+        "Sample no.": "184m",
+        "Flow restrictor": "2",
+        "Fan display": "ign 5, 0.36, 0.32, 0.31, 0.305, blowoff 6.0",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "271",
+        "calibrated final O2 % by vol": "14.8",
+        "Initial CO2 % by vol": "0.27",
+        "Final CO2 % by vol": "0.72",
+        "Initial CO (ppm)": "2",
+        "Final CO (ppm)": "290"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row15"
+    },
+    {
+      "row": 16,
+      "kind": "test",
+      "test_id": "O12",
+      "identifier": null,
+      "date": null,
+      "fuel": "3/8\" clear rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 13.6,
+        "max": 13.6
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41828",
+        "GMT 2014- (except last 3 tests from 2016)": "189",
+        "Sample no.": "217m",
+        "Flow restrictor": "2",
+        "Fan display": "pots 1.4, 3, 0.9, 0.7",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "52",
+        "calibrated final O2 % by vol": "13.5",
+        "Initial CO2 % by vol": "1.72",
+        "Final CO2 % by vol": "1.71",
+        "Initial CO (ppm)": "OR",
+        "Final CO (ppm)": "OR"
+      },
+      "issues": [
+        "unreadable flow 'no ign at any flow'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row16"
+    },
+    {
+      "row": 17,
+      "kind": "test",
+      "test_id": "O13a",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/2\" clear pmma rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 15.9,
+        "max": 15.9
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 40.5,
+        "max": 49.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41841",
+        "GMT 2014- (except last 3 tests from 2016)": "202",
+        "Sample no.": "221m",
+        "Flow restrictor": "2",
+        "Fan display": "1.3, 0.7, 0.45, 0.36, 0.32, 0.31",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "199",
+        "calibrated final O2 % by vol": "14.6",
+        "Initial CO2 % by vol": "0.91",
+        "Final CO2 % by vol": "1.85",
+        "Initial CO (ppm)": "389",
+        "Final CO (ppm)": "950"
+      },
+      "issues": [
+        "flow: ambiguous cell '49,44,42,41,41,40.5 (5, 2, 0)', values in parentheses ignored - review",
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row17"
+    },
+    {
+      "row": 18,
+      "kind": "test",
+      "test_id": "O13b",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/2\" clear pmma rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 14.6,
+        "max": 14.6
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 4.0,
+        "max": 7.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41841",
+        "GMT 2014- (except last 3 tests from 2016)": "202",
+        "Sample no.": "221m",
+        "Flow restrictor": "2",
+        "Fan display": "1.3, 0.9",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "6",
+        "calibrated final O2 % by vol": "14.4",
+        "Initial CO2 % by vol": "1.85",
+        "Final CO2 % by vol": "2.09",
+        "Initial CO (ppm)": "950",
+        "Final CO (ppm)": "over"
+      },
+      "issues": [
+        "flow: ambiguous cell '7, 4? (49, ?)', values in parentheses ignored - review",
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row18"
+    },
+    {
+      "row": 19,
+      "kind": "test",
+      "test_id": "O14",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/4\" black rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 16.3,
+        "max": 16.3
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41852",
+        "GMT 2014- (except last 3 tests from 2016)": "213",
+        "Sample no.": "183m",
+        "Flow restrictor": "1",
+        "Fan display": "52, and down",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "279",
+        "calibrated final O2 % by vol": "15.3",
+        "Initial CO2 % by vol": "0.28999999999999998",
+        "Final CO2 % by vol": "0.86",
+        "Initial CO (ppm)": "4",
+        "Final CO (ppm)": "352"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row19"
+    },
+    {
+      "row": 20,
+      "kind": "test",
+      "test_id": "O15a",
+      "identifier": null,
+      "date": null,
+      "fuel": "3/8\" clear rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.1,
+        "max": 17.1
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41848",
+        "GMT 2014- (except last 3 tests from 2016)": "209",
+        "Sample no.": "218m",
+        "Flow restrictor": "2",
+        "Fan display": "57.5, 47, 42, 41 (2.3, 1.0, 0.5, 0.35, 0.32)",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "124",
+        "calibrated final O2 % by vol": "16.7",
+        "Initial CO2 % by vol": "0.27",
+        "Final CO2 % by vol": "0.62",
+        "Initial CO (ppm)": "0",
+        "Final CO (ppm)": "176"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row20"
+    },
+    {
+      "row": 21,
+      "kind": "test",
+      "test_id": "O15b",
+      "identifier": null,
+      "date": null,
+      "fuel": "3/8\" clear rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 16.7,
+        "max": 16.7
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41848",
+        "GMT 2014- (except last 3 tests from 2016)": "209",
+        "Sample no.": "218m",
+        "Flow restrictor": "2",
+        "Fan display": "57.5, 42, 41, 40 (2.3, 0.5, 0.35, 0.34, 0.33, 0.32, 0.31, 0.30, 0.29, 0.28, 0.27)",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "316",
+        "calibrated final O2 % by vol": "15.6",
+        "Initial CO2 % by vol": "0.62",
+        "Final CO2 % by vol": "1.63",
+        "Initial CO (ppm)": "176",
+        "Final CO (ppm)": "751"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row21"
+    },
+    {
+      "row": 22,
+      "kind": "test",
+      "test_id": "O16",
+      "identifier": null,
+      "date": null,
+      "fuel": "3/8\"clear rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 14.5,
+        "max": 14.5
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41849",
+        "GMT 2014- (except last 3 tests from 2016)": "210",
+        "Sample no.": "219m",
+        "Flow restrictor": "2",
+        "Fan display": "60 (2.6)",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "10 postburn only",
+        "calibrated final O2 % by vol": "14.5",
+        "Initial CO2 % by vol": "0.27",
+        "Final CO2 % by vol": "0.32",
+        "Initial CO (ppm)": "2",
+        "Final CO (ppm)": "33"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row22"
+    },
+    {
+      "row": 23,
+      "kind": "test",
+      "test_id": "O17",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/4\" clear rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 15.1,
+        "max": 15.1
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 11.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41842",
+        "GMT 2014- (except last 3 tests from 2016)": "203",
+        "Sample no.": "211m",
+        "Flow restrictor": "2",
+        "Fan display": "49, 46.5, 44, 42,41,72, decr (1.3, 1.0, 0.7, 0.5, 0.4, 4.0, decr )",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "174",
+        "calibrated final O2 % by vol": "14.3",
+        "Initial CO2 % by vol": "0.31",
+        "Final CO2 % by vol": "0.9",
+        "Initial CO (ppm)": "2",
+        "Final CO (ppm)": "377"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row23"
+    },
+    {
+      "row": 24,
+      "kind": "test",
+      "test_id": "O18",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/4\" clear rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 15.2,
+        "max": 15.2
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 11.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41848",
+        "GMT 2014- (except last 3 tests from 2016)": "209",
+        "Sample no.": "212m",
+        "Flow restrictor": "2",
+        "Fan display": "57,51,47,72,51,72,51,47 (2.3, 1.5, 1.0, 4.0, 1.5, 4.0, 1.5, 1.0)",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "176",
+        "calibrated final O2 % by vol": "14.5",
+        "Initial CO2 % by vol": "1.45",
+        "Final CO2 % by vol": "1.94",
+        "Initial CO (ppm)": "523",
+        "Final CO (ppm)": "816"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row24"
+    },
+    {
+      "row": 25,
+      "kind": "test",
+      "test_id": "O19",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/4\" clear rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 15.3,
+        "max": 15.3
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41852",
+        "GMT 2014- (except last 3 tests from 2016)": "213",
+        "Sample no.": "213m",
+        "Flow restrictor": "1",
+        "Fan display": "52, and down",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "266",
+        "calibrated final O2 % by vol": "14.6",
+        "Initial CO2 % by vol": "0.86",
+        "Final CO2 % by vol": "1.51",
+        "Initial CO (ppm)": "352",
+        "Final CO (ppm)": "686"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row25"
+    },
+    {
+      "row": 26,
+      "kind": "test",
+      "test_id": "O20",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/4\" clear rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 16.5,
+        "max": 16.5
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 38.5,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "42426",
+        "GMT 2014- (except last 3 tests from 2016)": "57",
+        "Sample no.": "204m",
+        "Flow restrictor": "0",
+        "Fan display": "49 (1.3 pot), pots 7, 8,9, 10",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "video",
+        "calibrated final O2 % by vol": "15.9",
+        "Initial CO2 % by vol": "0.2",
+        "Final CO2 % by vol": "0.56999999999999995",
+        "Initial CO (ppm)": "-3",
+        "Final CO (ppm)": "57"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row26"
+    },
+    {
+      "row": 27,
+      "kind": "test",
+      "test_id": "O21",
+      "identifier": null,
+      "date": null,
+      "fuel": "3/8\" clear rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 15.9,
+        "max": 15.9
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 28.0,
+        "max": 28.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "42426",
+        "GMT 2014- (except last 3 tests from 2016)": "57",
+        "Sample no.": "219m",
+        "Flow restrictor": "0",
+        "Fan display": "46 (pot 0.8),  pot 7, 10",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "video",
+        "calibrated final O2 % by vol": "15.4",
+        "Initial CO2 % by vol": "0.53",
+        "Final CO2 % by vol": "0.95",
+        "Initial CO (ppm)": "52",
+        "Final CO (ppm)": "187"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row27"
+    },
+    {
+      "row": 28,
+      "kind": "test",
+      "test_id": "O22",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/2\" clear rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 15.4,
+        "max": 15.4
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 4.0,
+        "max": 26.5,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "42426",
+        "GMT 2014- (except last 3 tests from 2016)": "57",
+        "Sample no.": "220m",
+        "Flow restrictor": "0",
+        "Fan display": "49 (pot 1.1), blowoff pot 5, out at fan 87",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "video",
+        "calibrated final O2 % by vol": "14.9",
+        "Initial CO2 % by vol": "0.92",
+        "Final CO2 % by vol": "1.33",
+        "Initial CO (ppm)": "185",
+        "Final CO (ppm)": "322"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row28"
+    },
+    {
+      "row": 2,
+      "kind": "test",
+      "test_id": "P1",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/4\" black rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.7,
+        "max": 17.7
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 2.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41806",
+        "GMT 2014-": "167",
+        "Sample no.": "185M",
+        "Flow restrictor": "2",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "307",
+        "calibrated final O2 % by vol": "17.5",
+        "Initial CO2 % by vol": "0.27",
+        "Final CO2 % by vol": "0.44",
+        "Initial CO (ppm)": "1",
+        "Final CO (ppm)": "14"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row2"
+    },
+    {
+      "row": 3,
+      "kind": "test",
+      "test_id": "P2",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/4\" black rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.4,
+        "max": 17.4
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 2.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41806",
+        "GMT 2014-": "167",
+        "Sample no.": "188M",
+        "Flow restrictor": "2",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "303",
+        "calibrated final O2 % by vol": "17.2",
+        "Initial CO2 % by vol": "0.44",
+        "Final CO2 % by vol": "0.66",
+        "Initial CO (ppm)": "14",
+        "Final CO (ppm)": "26"
+      },
+      "issues": [
+        "flow: ambiguous cell '5, 2.5, 2 (pot .9, .5, .35.,.33)', values in parentheses ignored - review",
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row3"
+    },
+    {
+      "row": 4,
+      "kind": "test",
+      "test_id": "P3a",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/4\" clear rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.7,
+        "max": 17.7
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 2.5,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41806",
+        "GMT 2014-": "167",
+        "Sample no.": "215M",
+        "Flow restrictor": "2",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "304",
+        "calibrated final O2 % by vol": "17.399999999999999",
+        "Initial CO2 % by vol": "0.27",
+        "Final CO2 % by vol": "0.51",
+        "Initial CO (ppm)": "2",
+        "Final CO (ppm)": "33"
+      },
+      "issues": [
+        "flow: ambiguous cell '5, 2.5 (1.15, .5, .35, .33. .32, .315, .31, .3)', values in parentheses ignored - review",
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row4"
+    },
+    {
+      "row": 5,
+      "kind": "test",
+      "test_id": "P3b",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/4 clear rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.4,
+        "max": 17.4
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41806",
+        "GMT 2014-": "167",
+        "Sample no.": "215M",
+        "Flow restrictor": "2",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "303",
+        "calibrated final O2 % by vol": "16.8",
+        "Initial CO2 % by vol": "0.51",
+        "Final CO2 % by vol": "none",
+        "Initial CO (ppm)": "33",
+        "Final CO (ppm)": "79"
+      },
+      "issues": [
+        "flow: ambiguous cell '5, very low (0.85, 0.32, 0.31, 0.305, 0.30, 0.295)', values in parentheses ignored - review",
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row5"
+    },
+    {
+      "row": 6,
+      "kind": "test",
+      "test_id": "P4",
+      "identifier": null,
+      "date": null,
+      "fuel": "3/8\" black rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 18.5,
+        "max": 18.5
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.308,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41823",
+        "GMT 2014-": "184",
+        "Sample no.": "197m",
+        "Flow restrictor": "2",
+        "Fan display": "48, 41",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "297",
+        "calibrated final O2 % by vol": "17.100000000000001",
+        "Initial CO2 % by vol": "0.62",
+        "Final CO2 % by vol": "1.8",
+        "Initial CO (ppm)": "64",
+        "Final CO (ppm)": "493"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row6"
+    },
+    {
+      "row": 7,
+      "kind": "test",
+      "test_id": "P5",
+      "identifier": null,
+      "date": null,
+      "fuel": "0.5\" black rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 19.3,
+        "max": 19.3
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41834",
+        "GMT 2014-": "195",
+        "Sample no.": "202m",
+        "Flow restrictor": "2",
+        "Fan display": "Fan pot 1.5 (5cm/s), 0.9, 0.4, 0.36, 0.32, 0.308, 0.3, 0.29, 0.28, 0 ext",
+        "Radiometer gain   (1000, 250, 50, 10)": "250>50",
+        "total frames shot": "313",
+        "calibrated final O2 % by vol": "17.600000000000001",
+        "Initial CO2 % by vol": "0.32",
+        "Final CO2 % by vol": "1.67",
+        "Initial CO (ppm)": "0",
+        "Final CO (ppm)": "525"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row7"
+    },
+    {
+      "row": 8,
+      "kind": "test",
+      "test_id": "P6",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/4\" black rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 18.9,
+        "max": 18.9
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.31,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41823",
+        "GMT 2014-": "184",
+        "Sample no.": "186m",
+        "Flow restrictor": "2",
+        "Fan display": "48, 41",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "162",
+        "calibrated final O2 % by vol": "18.5",
+        "Initial CO2 % by vol": "0.3",
+        "Final CO2 % by vol": "0.62",
+        "Initial CO (ppm)": "0",
+        "Final CO (ppm)": "64"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row8"
+    },
+    {
+      "row": 9,
+      "kind": "test",
+      "test_id": "P8",
+      "identifier": null,
+      "date": null,
+      "fuel": "3/8\" black rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 16.4,
+        "max": 16.4
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 15.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41823",
+        "GMT 2014-": "184",
+        "Sample no.": "197m",
+        "Flow restrictor": "2",
+        "Fan display": "48, 62, 75",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "66",
+        "calibrated final O2 % by vol": "16.3",
+        "Initial CO2 % by vol": "0.72",
+        "Final CO2 % by vol": "0.81",
+        "Initial CO (ppm)": "44",
+        "Final CO (ppm)": "69"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row9"
+    },
+    {
+      "row": 10,
+      "kind": "test",
+      "test_id": "P9",
+      "identifier": null,
+      "date": null,
+      "fuel": "0.5\" black rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.6,
+        "max": 17.6
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41834",
+        "GMT 2014-": "195",
+        "Sample no.": "202m",
+        "Flow restrictor": "2",
+        "Fan display": "Fan pot 1.5 (5cm/s), 0.9, 0.4, 0.36, 0.32, 0.3, 0.28 ext",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "148",
+        "calibrated final O2 % by vol": "17.100000000000001",
+        "Initial CO2 % by vol": "1.67",
+        "Final CO2 % by vol": "2.1",
+        "Initial CO (ppm)": "525",
+        "Final CO (ppm)": "535"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row10"
+    },
+    {
+      "row": 11,
+      "kind": "test",
+      "test_id": "P10",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/4\" black rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.0,
+        "max": 17.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.3,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41823",
+        "GMT 2014-": "184",
+        "Sample no.": "187m",
+        "Flow restrictor": "2",
+        "Fan display": "48, 41",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "221",
+        "calibrated final O2 % by vol": "16.399999999999999",
+        "Initial CO2 % by vol": "0.28999999999999998",
+        "Final CO2 % by vol": "0.72",
+        "Initial CO (ppm)": "2",
+        "Final CO (ppm)": "44"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row11"
+    },
+    {
+      "row": 12,
+      "kind": "test",
+      "test_id": "P12",
+      "identifier": null,
+      "date": null,
+      "fuel": "3/8\" black rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.5,
+        "max": 17.5
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.5,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41849",
+        "GMT 2014-": "210",
+        "Sample no.": "199m",
+        "Flow restrictor": "2",
+        "Fan display": "60,52,48,44.5,42,41.5,41 (2.6,1.6,1.2,.75,.5,.4,.36,0.34)",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "273",
+        "calibrated final O2 % by vol": "16.8",
+        "Initial CO2 % by vol": "0.28999999999999998",
+        "Final CO2 % by vol": "0.95",
+        "Initial CO (ppm)": "2",
+        "Final CO (ppm)": "57"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row12"
+    },
+    {
+      "row": 13,
+      "kind": "test",
+      "test_id": "P13a",
+      "identifier": null,
+      "date": null,
+      "fuel": "0.5\" black rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 20.7,
+        "max": 20.7
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41834",
+        "GMT 2014-": "195",
+        "Sample no.": "203m",
+        "Flow restrictor": "2",
+        "Fan display": "Fan pot 1.1 (5cm/s), 0.4, 0.36, 0.32, 0.3, 0.28, 0.26, 0 ext",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "255",
+        "calibrated final O2 % by vol": "19.100000000000001",
+        "Initial CO2 % by vol": "0.36",
+        "Final CO2 % by vol": "1.63",
+        "Initial CO (ppm)": "38",
+        "Final CO (ppm)": "450"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row13"
+    },
+    {
+      "row": 14,
+      "kind": "test",
+      "test_id": "P13b",
+      "identifier": null,
+      "date": null,
+      "fuel": "0.5\" black rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 20.6,
+        "max": 20.6
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41834",
+        "GMT 2014-": "195",
+        "Sample no.": "203m",
+        "Flow restrictor": "2",
+        "Fan display": "Fan pot 1.3 (5cm/s), 0.4, 0.36, 0.32 ext",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "94",
+        "calibrated final O2 % by vol": "20.2",
+        "Initial CO2 % by vol": "0.41",
+        "Final CO2 % by vol": "0.62",
+        "Initial CO (ppm)": "5",
+        "Final CO (ppm)": "72"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row14"
+    },
+    {
+      "row": 15,
+      "kind": "test",
+      "test_id": "P14",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/4 blac rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 18.4,
+        "max": 18.4
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41813",
+        "GMT 2014-": "174",
+        "Sample no.": "189M",
+        "Flow restrictor": "2",
+        "Fan display": "46, 41",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "162",
+        "calibrated final O2 % by vol": "18",
+        "Initial CO2 % by vol": "0.34",
+        "Final CO2 % by vol": "0.62",
+        "Initial CO (ppm)": "3",
+        "Final CO (ppm)": "90"
+      },
+      "issues": [
+        "flow: ambiguous cell '5, low (.85, .4, .32)', values in parentheses ignored - review",
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row15"
+    },
+    {
+      "row": 16,
+      "kind": "test",
+      "test_id": "P15",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/4 black rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 18.0,
+        "max": 18.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41813",
+        "GMT 2014-": "174",
+        "Sample no.": "190M",
+        "Flow restrictor": "2",
+        "Fan display": "46, 41",
+        "Radiometer gain   (1000, 250, 50, 10)": "250, 50",
+        "total frames shot": "170",
+        "calibrated final O2 % by vol": "17.5",
+        "Initial CO2 % by vol": "0.62",
+        "Final CO2 % by vol": "1.1100000000000001",
+        "Initial CO (ppm)": "90",
+        "Final CO (ppm)": "108"
+      },
+      "issues": [
+        "flow: ambiguous cell '5, (0.36)', values in parentheses ignored - review",
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row16"
+    },
+    {
+      "row": 17,
+      "kind": "test",
+      "test_id": "P16",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/4\" black rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 18.2,
+        "max": 18.2
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 2.0,
+        "max": 8.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41842",
+        "GMT 2014-": "203",
+        "Sample no.": "191m",
+        "Flow restrictor": "2",
+        "Fan display": "49,62,44,41.5,41 (pots 1.3, 2.8, 0.7, 0.4, 0.36, 0.32)",
+        "Radiometer gain   (1000, 250, 50, 10)": "250,50",
+        "total frames shot": "129",
+        "calibrated final O2 % by vol": "17.399999999999999",
+        "Initial CO2 % by vol": "0.3",
+        "Final CO2 % by vol": "0.92",
+        "Initial CO (ppm)": "0",
+        "Final CO (ppm)": "56"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row17"
+    },
+    {
+      "row": 18,
+      "kind": "test",
+      "test_id": "P17",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/4\"  black rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 16.8,
+        "max": 16.8
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 2.0,
+        "max": 22.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41849",
+        "GMT 2014-": "210",
+        "Sample no.": "192m",
+        "Flow restrictor": "2",
+        "Fan display": "60,52,48,233,48,41 (2.6, 1.6, 1.2, 10, 1.2, 0.36, 0.34)",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "186",
+        "calibrated final O2 % by vol": "16.5",
+        "Initial CO2 % by vol": "0.95",
+        "Final CO2 % by vol": "1.34",
+        "Initial CO (ppm)": "57",
+        "Final CO (ppm)": "68"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row18"
+    },
+    {
+      "row": 19,
+      "kind": "test",
+      "test_id": "P18",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/4\" black rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 20.0,
+        "max": 20.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 2.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41850",
+        "GMT 2014-": "211",
+        "Sample no.": "193m",
+        "Flow restrictor": "2",
+        "Fan display": "55,47,etc (pot 1,2,1,2, etc)",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "280",
+        "calibrated final O2 % by vol": "19",
+        "Initial CO2 % by vol": "0.34",
+        "Final CO2 % by vol": "1.2",
+        "Initial CO (ppm)": "1",
+        "Final CO (ppm)": "26"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row19"
+    },
+    {
+      "row": 20,
+      "kind": "test",
+      "test_id": "P19",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/4\" black rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.5,
+        "max": 17.5
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 8.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41842",
+        "GMT 2014-": "203",
+        "Sample no.": "194m",
+        "Flow restrictor": "2",
+        "Fan display": "49,62,44,41.5,122, 41 (pots 1.3, 2.8, 0.7, 0.4, 0.36, 10., 0.32)",
+        "Radiometer gain   (1000, 250, 50, 10)": "250, 50",
+        "total frames shot": "279",
+        "calibrated final O2 % by vol": "16.7",
+        "Initial CO2 % by vol": "0.9",
+        "Final CO2 % by vol": "1.61",
+        "Initial CO (ppm)": "54",
+        "Final CO (ppm)": "94"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row20"
+    },
+    {
+      "row": 21,
+      "kind": "test",
+      "test_id": "P20",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/4\" black rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 19.0,
+        "max": 19.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 2.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41850",
+        "GMT 2014-": "211",
+        "Sample no.": "195m",
+        "Flow restrictor": "2",
+        "Fan display": "55,47,etc (pot 1,2,1,2, etc)",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "311",
+        "calibrated final O2 % by vol": "18.2",
+        "Initial CO2 % by vol": "0.34",
+        "Final CO2 % by vol": "1.05",
+        "Initial CO (ppm)": "2",
+        "Final CO (ppm)": "78"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row21"
+    },
+    {
+      "row": 22,
+      "kind": "test",
+      "test_id": "P21a",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/4 black rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 16.3,
+        "max": 16.3
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41813",
+        "GMT 2014-": "174",
+        "Sample no.": "196M",
+        "Flow restrictor": "2",
+        "Fan display": "46",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "57",
+        "calibrated final O2 % by vol": "16.3",
+        "Initial CO2 % by vol": "0.96",
+        "Final CO2 % by vol": "1",
+        "Initial CO (ppm)": "86",
+        "Final CO (ppm)": "94"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row22"
+    },
+    {
+      "row": 23,
+      "kind": "test",
+      "test_id": "P21b",
+      "identifier": null,
+      "date": null,
+      "fuel": "1/4\" black rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 16.3,
+        "max": 16.3
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41813",
+        "GMT 2014-": "174",
+        "Sample no.": "196M",
+        "Flow restrictor": "2",
+        "Fan display": "46",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "14",
+        "calibrated final O2 % by vol": "16.3",
+        "Initial CO2 % by vol": "1",
+        "Final CO2 % by vol": "1.03",
+        "Initial CO (ppm)": "94",
+        "Final CO (ppm)": "98"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row23"
+    },
+    {
+      "row": 24,
+      "kind": "test",
+      "test_id": "P22a",
+      "identifier": null,
+      "date": null,
+      "fuel": "3/8\" black rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 20.8,
+        "max": 20.8
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41828",
+        "GMT 2014-": "189",
+        "Sample no.": "200m",
+        "Flow restrictor": "2",
+        "Fan display": "5, 0.36, 0.32 ext after some time",
+        "Radiometer gain   (1000, 250, 50, 10)": "250>50",
+        "total frames shot": "83",
+        "calibrated final O2 % by vol": "0.6",
+        "Initial CO2 % by vol": "0.32",
+        "Final CO2 % by vol": "none",
+        "Initial CO (ppm)": "4",
+        "Final CO (ppm)": "none"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row24"
+    },
+    {
+      "row": 25,
+      "kind": "test",
+      "test_id": "P22b",
+      "identifier": null,
+      "date": null,
+      "fuel": "3/8\" black rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 20.0,
+        "max": 20.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41828",
+        "GMT 2014-": "189",
+        "Sample no.": "200m",
+        "Flow restrictor": "2",
+        "Fan display": "5, p.36, 0.34, 0.33, 0.32, 0.31 ext",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "155",
+        "calibrated final O2 % by vol": "39.1",
+        "Initial CO2 % by vol": "none",
+        "Final CO2 % by vol": "1.0900000000000001",
+        "Initial CO (ppm)": "none",
+        "Final CO (ppm)": "239"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row25"
+    },
+    {
+      "row": 26,
+      "kind": "test",
+      "test_id": "P23",
+      "identifier": null,
+      "date": null,
+      "fuel": "3/8\" black rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 18.2,
+        "max": 18.2
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 2.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41850",
+        "GMT 2014-": "211",
+        "Sample no.": "201m",
+        "Flow restrictor": "2",
+        "Fan display": "55,47,etc (pot 1,2,1,2, etc)",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "242",
+        "calibrated final O2 % by vol": "17",
+        "Initial CO2 % by vol": "1.05",
+        "Final CO2 % by vol": "2.08",
+        "Initial CO (ppm)": "78",
+        "Final CO (ppm)": "159"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row26"
+    },
+    {
+      "row": 27,
+      "kind": "test",
+      "test_id": "P24",
+      "identifier": null,
+      "date": null,
+      "fuel": "3/8\" black rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 19.0,
+        "max": 19.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 2.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41850",
+        "GMT 2014-": "211",
+        "Sample no.": "819L",
+        "Flow restrictor": "2",
+        "Fan display": "55,47,etc (pot 1,2,1,2, etc)",
+        "Radiometer gain   (1000, 250, 50, 10)": "250>50",
+        "total frames shot": "308",
+        "calibrated final O2 % by vol": "17.5",
+        "Initial CO2 % by vol": "1.2",
+        "Final CO2 % by vol": "2.2400000000000002",
+        "Initial CO (ppm)": "26",
+        "Final CO (ppm)": "260"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row27"
+    },
+    {
+      "row": 28,
+      "kind": "test",
+      "test_id": "P25",
+      "identifier": null,
+      "date": null,
+      "fuel": "3/8\" clear rod",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 20.9,
+        "max": 20.9
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41828",
+        "GMT 2014-": "189",
+        "Sample no.": "217m",
+        "Flow restrictor": "2",
+        "Fan display": "5, p.36, 0.34, 0.33, 0.32, 0.31 ext",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "246",
+        "calibrated final O2 % by vol": "20.2",
+        "Initial CO2 % by vol": "0.38",
+        "Final CO2 % by vol": "1",
+        "Initial CO (ppm)": "43",
+        "Final CO (ppm)": "205"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row28"
+    },
+    {
+      "row": 2,
+      "kind": "test",
+      "test_id": "T1",
+      "identifier": null,
+      "date": null,
+      "fuel": "SIBAL 2 cm",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 18.5,
+        "max": 18.5
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 10.0,
+        "max": 10.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41684",
+        "GMT 2014-": "45",
+        "Sample no.": "128",
+        "Flow restrictor": "2",
+        "Fan display": "80",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "85",
+        "calibrated final O2 % by vol": "18.5",
+        "Initial CO2 % by vol": "0.35",
+        "Final CO2 % by vol": "0.41",
+        "Initial CO (ppm)": "0",
+        "Final CO (ppm)": "40"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row2"
+    },
+    {
+      "row": 3,
+      "kind": "test",
+      "test_id": "T2",
+      "identifier": null,
+      "date": null,
+      "fuel": "SIBAL 2 cm",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 18.5,
+        "max": 18.5
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 4.0,
+        "max": 9.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41684",
+        "GMT 2014-": "45",
+        "Sample no.": "129",
+        "Flow restrictor": "2",
+        "Fan display": "80, 59, 55",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "100",
+        "calibrated final O2 % by vol": "18.5",
+        "Initial CO2 % by vol": "0.41",
+        "Final CO2 % by vol": "0.45",
+        "Initial CO (ppm)": "40",
+        "Final CO (ppm)": "78"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row3"
+    },
+    {
+      "row": 4,
+      "kind": "test",
+      "test_id": "T3",
+      "identifier": null,
+      "date": null,
+      "fuel": "4 cm spherical section",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.2,
+        "max": 17.2
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 10.0,
+        "max": 10.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41817",
+        "GMT 2014-": "178",
+        "Sample no.": "182m",
+        "Flow restrictor": "2",
+        "Fan display": "63",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "166",
+        "calibrated final O2 % by vol": "16.8",
+        "Initial CO2 % by vol": "0.42",
+        "Final CO2 % by vol": "0.7",
+        "Initial CO (ppm)": "45",
+        "Final CO (ppm)": "113"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row4"
+    },
+    {
+      "row": 5,
+      "kind": "test",
+      "test_id": "T4",
+      "identifier": null,
+      "date": null,
+      "fuel": "SIBAL 2 cm",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 18.7,
+        "max": 18.7
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 1.0,
+        "max": 9.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41684",
+        "GMT 2014-": "45",
+        "Sample no.": "130",
+        "Flow restrictor": "2",
+        "Fan display": "80, 46",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "97",
+        "calibrated final O2 % by vol": "18.7",
+        "Initial CO2 % by vol": "0.44",
+        "Final CO2 % by vol": "0.45",
+        "Initial CO (ppm)": "59",
+        "Final CO (ppm)": "72"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row5"
+    },
+    {
+      "row": 6,
+      "kind": "test",
+      "test_id": "T5",
+      "identifier": null,
+      "date": null,
+      "fuel": "2 cm SIBAL",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 18.8,
+        "max": 18.8
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 1.0,
+        "max": 10.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41739",
+        "GMT 2014-": "100",
+        "Sample no.": "131",
+        "Flow restrictor": "2",
+        "Fan display": "2.72, 0.50, 0.42",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "100",
+        "calibrated final O2 % by vol": "18.899999999999999",
+        "Initial CO2 % by vol": "0.2",
+        "Final CO2 % by vol": "0.25",
+        "Initial CO (ppm)": "2",
+        "Final CO (ppm)": "41"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row6"
+    },
+    {
+      "row": 7,
+      "kind": "test",
+      "test_id": "T6",
+      "identifier": null,
+      "date": null,
+      "fuel": "2 cm SIBAL",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 18.8,
+        "max": 18.8
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 1.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41739",
+        "GMT 2014-": "100",
+        "Sample no.": "132",
+        "Flow restrictor": "2",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "117",
+        "calibrated final O2 % by vol": "18.8",
+        "Initial CO2 % by vol": "0.24",
+        "Final CO2 % by vol": "0.28000000000000003",
+        "Initial CO (ppm)": "39",
+        "Final CO (ppm)": "77"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row7"
+    },
+    {
+      "row": 8,
+      "kind": "test",
+      "test_id": "T7",
+      "identifier": null,
+      "date": null,
+      "fuel": "4 cm spherical section",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.3,
+        "max": 17.3
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 1.0,
+        "max": 10.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41829",
+        "GMT 2014-": "190",
+        "Sample no.": "182m",
+        "Flow restrictor": "2",
+        "Fan display": "3.4, 67",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "299",
+        "calibrated final O2 % by vol": "17.100000000000001",
+        "Initial CO2 % by vol": "0.32",
+        "Final CO2 % by vol": "0.59",
+        "Initial CO (ppm)": "49",
+        "Final CO (ppm)": "140"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row8"
+    },
+    {
+      "row": 9,
+      "kind": "test",
+      "test_id": "T9",
+      "identifier": null,
+      "date": null,
+      "fuel": "2 cm SIBAL",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 16.4,
+        "max": 16.4
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 10.0,
+        "max": 10.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "43275",
+        "GMT 2014-": "175",
+        "Sample no.": "133M",
+        "Flow restrictor": "2",
+        "Fan display": "pot 2.5",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "48",
+        "calibrated final O2 % by vol": "16.399999999999999",
+        "Initial CO2 % by vol": "0.3",
+        "Final CO2 % by vol": "0.31",
+        "Initial CO (ppm)": "0",
+        "Final CO (ppm)": "9"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row9"
+    },
+    {
+      "row": 10,
+      "kind": "test",
+      "test_id": "T10",
+      "identifier": null,
+      "date": null,
+      "fuel": "2 cm SIBAL",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 16.4,
+        "max": 16.4
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41814",
+        "GMT 2014-": "175",
+        "Sample no.": "134M",
+        "Flow restrictor": "2",
+        "Fan display": "pot 1.1",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "43",
+        "calibrated final O2 % by vol": "16.5",
+        "Initial CO2 % by vol": "0.31",
+        "Final CO2 % by vol": "0.33",
+        "Initial CO (ppm)": "9",
+        "Final CO (ppm)": "14"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row10"
+    },
+    {
+      "row": 11,
+      "kind": "test",
+      "test_id": "T11",
+      "identifier": null,
+      "date": null,
+      "fuel": "2 cm SIBAL",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.1,
+        "max": 17.1
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41817",
+        "GMT 2014-": "178",
+        "Sample no.": "135m",
+        "Flow restrictor": "2",
+        "Fan display": "48",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "109",
+        "calibrated final O2 % by vol": "17",
+        "Initial CO2 % by vol": "0.35",
+        "Final CO2 % by vol": "0.39",
+        "Initial CO (ppm)": "1",
+        "Final CO (ppm)": "45"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row11"
+    },
+    {
+      "row": 12,
+      "kind": "test",
+      "test_id": "T12",
+      "identifier": null,
+      "date": null,
+      "fuel": "2 cm SIBAL",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 16.8,
+        "max": 16.8
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41817",
+        "GMT 2014-": "178",
+        "Sample no.": "136m",
+        "Flow restrictor": "2",
+        "Fan display": "pot 1.1",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "39",
+        "calibrated final O2 % by vol": "16.899999999999999",
+        "Initial CO2 % by vol": "0.7",
+        "Final CO2 % by vol": "0.7",
+        "Initial CO (ppm)": "113",
+        "Final CO (ppm)": "117"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row12"
+    },
+    {
+      "row": 13,
+      "kind": "test",
+      "test_id": "T13",
+      "identifier": null,
+      "date": null,
+      "fuel": "2 cm SIBAL",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.5,
+        "max": 17.5
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 1.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41739",
+        "GMT 2014-": "100",
+        "Sample no.": "137",
+        "Flow restrictor": "2",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "55",
+        "calibrated final O2 % by vol": "17.600000000000001",
+        "Initial CO2 % by vol": "0.19",
+        "Final CO2 % by vol": "0.2",
+        "Initial CO (ppm)": "2",
+        "Final CO (ppm)": "12"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row13"
+    },
+    {
+      "row": 14,
+      "kind": "test",
+      "test_id": "T14",
+      "identifier": null,
+      "date": null,
+      "fuel": "2 cm SIBAL",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 16.9,
+        "max": 16.9
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 3.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41817",
+        "GMT 2014-": "178",
+        "Sample no.": "140m",
+        "Flow restrictor": "2",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "119",
+        "calibrated final O2 % by vol": "16.899999999999999",
+        "Initial CO2 % by vol": "0.7",
+        "Final CO2 % by vol": "0.72",
+        "Initial CO (ppm)": "117",
+        "Final CO (ppm)": "152"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row14"
+    },
+    {
+      "row": 15,
+      "kind": "test",
+      "test_id": "T15",
+      "identifier": null,
+      "date": null,
+      "fuel": "SIBAL 2 cm",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 18.7,
+        "max": 18.7
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 9.0,
+        "max": 29.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41684",
+        "GMT 2014-": "45",
+        "Sample no.": "138",
+        "Flow restrictor": "0",
+        "Fan display": "80122",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "46",
+        "calibrated final O2 % by vol": "18.7",
+        "Initial CO2 % by vol": "0.45",
+        "Final CO2 % by vol": "0.51",
+        "Initial CO (ppm)": "72",
+        "Final CO (ppm)": "102"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row15"
+    },
+    {
+      "row": 16,
+      "kind": "test",
+      "test_id": "T16",
+      "identifier": null,
+      "date": null,
+      "fuel": "2 cm SIBAL",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.6,
+        "max": 17.6
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 3.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41739",
+        "GMT 2014-": "100",
+        "Sample no.": "139",
+        "Flow restrictor": "2",
+        "Radiometer gain   (1000, 250, 50, 10)": "50",
+        "total frames shot": "100",
+        "calibrated final O2 % by vol": "17.5",
+        "Initial CO2 % by vol": "0.21",
+        "Final CO2 % by vol": "0.21",
+        "Initial CO (ppm)": "17",
+        "Final CO (ppm)": "41"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row16"
+    },
+    {
+      "row": 17,
+      "kind": "test",
+      "test_id": "T17",
+      "identifier": null,
+      "date": null,
+      "fuel": "2 cm SIBAL",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 16.9,
+        "max": 16.9
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 6.0,
+        "max": 53.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41817",
+        "GMT 2014-": "178",
+        "Sample no.": "142m",
+        "Flow restrictor": "0",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "83",
+        "calibrated final O2 % by vol": "16.899999999999999",
+        "Initial CO2 % by vol": "0.72",
+        "Final CO2 % by vol": "0.75",
+        "Initial CO (ppm)": "152",
+        "Final CO (ppm)": "190"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row17"
+    },
+    {
+      "row": 18,
+      "kind": "test",
+      "test_id": "T18",
+      "identifier": null,
+      "date": null,
+      "fuel": "2 cm SIBAL",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.4,
+        "max": 17.4
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 2.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "43275",
+        "GMT 2014-": "175",
+        "Sample no.": "141M",
+        "Flow restrictor": "2",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "49",
+        "calibrated final O2 % by vol": "17.399999999999999",
+        "Initial CO2 % by vol": "0.36",
+        "Final CO2 % by vol": "0.38",
+        "Initial CO (ppm)": "2",
+        "Final CO (ppm)": "22"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row18"
+    },
+    {
+      "row": 19,
+      "kind": "test",
+      "test_id": "T19",
+      "identifier": null,
+      "date": null,
+      "fuel": "1 cm SIBAL",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.2,
+        "max": 17.2
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 11.0,
+        "max": 11.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41829",
+        "GMT 2014-": "190",
+        "Sample no.": "143m",
+        "Flow restrictor": "2",
+        "Fan display": "68.5, pot 3.6",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "73",
+        "calibrated final O2 % by vol": "17.2",
+        "Initial CO2 % by vol": "0.28999999999999998",
+        "Final CO2 % by vol": "0.31",
+        "Initial CO (ppm)": "1",
+        "Final CO (ppm)": "20"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row19"
+    },
+    {
+      "row": 20,
+      "kind": "test",
+      "test_id": "T20",
+      "identifier": null,
+      "date": null,
+      "fuel": "1 cm SIBAL",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.2,
+        "max": 17.2
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 3.0,
+        "max": 11.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41829",
+        "GMT 2014-": "190",
+        "Sample no.": "144m",
+        "Flow restrictor": "2",
+        "Fan display": "3.6, 0.9",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "117",
+        "calibrated final O2 % by vol": "17.2",
+        "Initial CO2 % by vol": "0.31",
+        "Final CO2 % by vol": "0.31",
+        "Initial CO (ppm)": "20",
+        "Final CO (ppm)": "34"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row20"
+    },
+    {
+      "row": 21,
+      "kind": "test",
+      "test_id": "T21",
+      "identifier": null,
+      "date": null,
+      "fuel": "1 cm SIBAL",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.2,
+        "max": 17.2
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 11.0,
+        "max": 11.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41829",
+        "GMT 2014-": "190",
+        "Sample no.": "145m",
+        "Flow restrictor": "0",
+        "Fan display": "1.6 pot, 52",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "151",
+        "calibrated final O2 % by vol": "17.2",
+        "Initial CO2 % by vol": "0.31",
+        "Final CO2 % by vol": "0.32",
+        "Initial CO (ppm)": "34",
+        "Final CO (ppm)": "45"
+      },
+      "issues": [
+        "flow: ambiguous cell '11, max(47)', values in parentheses ignored - review",
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row21"
+    },
+    {
+      "row": 22,
+      "kind": "test",
+      "test_id": "T22",
+      "identifier": null,
+      "date": null,
+      "fuel": "1 cm SIBAL",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.1,
+        "max": 17.1
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 10.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41829",
+        "GMT 2014-": "190",
+        "Sample no.": "146m",
+        "Flow restrictor": "2",
+        "Fan display": "3.4, 1.7",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "38",
+        "calibrated final O2 % by vol": "17",
+        "Initial CO2 % by vol": "0.59",
+        "Final CO2 % by vol": "0.62",
+        "Initial CO (ppm)": "140",
+        "Final CO (ppm)": "162"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row22"
+    },
+    {
+      "row": 23,
+      "kind": "test",
+      "test_id": "T23",
+      "identifier": null,
+      "date": null,
+      "fuel": "2 cm Sibal, moved igniter",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.2,
+        "max": 17.2
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 10.0,
+        "max": 10.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41829",
+        "GMT 2014-": "190",
+        "Sample no.": "133m",
+        "Flow restrictor": "2",
+        "Fan display": "3.3, 66",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "203",
+        "calibrated final O2 % by vol": "17.3",
+        "Initial CO2 % by vol": "0.32",
+        "Final CO2 % by vol": "0.32",
+        "Initial CO (ppm)": "45",
+        "Final CO (ppm)": "49"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row23"
+    },
+    {
+      "row": 24,
+      "kind": "test",
+      "test_id": "T24",
+      "identifier": null,
+      "date": null,
+      "fuel": "1 cm SIBAL, top side ign",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 18.2,
+        "max": 18.2
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 10.0,
+        "max": 10.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41829",
+        "GMT 2014-": "190",
+        "Sample no.": "133m",
+        "Flow restrictor": "2",
+        "Fan display": "3.3 66",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "130",
+        "calibrated final O2 % by vol": "18.2",
+        "Initial CO2 % by vol": "0.51",
+        "Final CO2 % by vol": "0.53",
+        "Initial CO (ppm)": "85",
+        "Final CO (ppm)": "107"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row24"
+    },
+    {
+      "row": 25,
+      "kind": "test",
+      "test_id": "T25",
+      "identifier": null,
+      "date": null,
+      "fuel": "SIBAL 2 cm",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 20.8,
+        "max": 20.8
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 2.5,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41855",
+        "GMT 2014-": "216",
+        "Sample no.": "138m",
+        "Flow restrictor": "1",
+        "Fan display": "53, 45",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "75",
+        "calibrated final O2 % by vol": "20.7",
+        "Initial CO2 % by vol": "0.36",
+        "Final CO2 % by vol": "0.39",
+        "Initial CO (ppm)": "-1",
+        "Final CO (ppm)": "17"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row25"
+    },
+    {
+      "row": 26,
+      "kind": "test",
+      "test_id": "T26",
+      "identifier": null,
+      "date": null,
+      "fuel": "SIBAL 2 cm",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 20.8,
+        "max": 20.8
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 2.5,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41855",
+        "GMT 2014-": "216",
+        "Sample no.": "137m",
+        "Flow restrictor": "1",
+        "Fan display": "53, 45",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "87",
+        "calibrated final O2 % by vol": "20.7",
+        "Initial CO2 % by vol": "0.36",
+        "Final CO2 % by vol": "0.43",
+        "Initial CO (ppm)": "-1",
+        "Final CO (ppm)": "24"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row26"
+    },
+    {
+      "row": 27,
+      "kind": "test",
+      "test_id": "T27",
+      "identifier": null,
+      "date": null,
+      "fuel": "1 cm SIBAL",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 20.7,
+        "max": 20.7
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 2.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41855",
+        "GMT 2014-": "216",
+        "Sample no.": "146m",
+        "Flow restrictor": "1",
+        "Fan display": "53, 45",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "58",
+        "calibrated final O2 % by vol": "20.6",
+        "Initial CO2 % by vol": "0.41",
+        "Final CO2 % by vol": "0.42",
+        "Initial CO (ppm)": "-1",
+        "Final CO (ppm)": "9"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row27"
+    },
+    {
+      "row": 28,
+      "kind": "test",
+      "test_id": "T28a",
+      "identifier": null,
+      "date": null,
+      "fuel": "1 cm SIBAL",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 20.7,
+        "max": 20.7
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41855",
+        "GMT 2014-": "216",
+        "Sample no.": "144m",
+        "Flow restrictor": "1",
+        "Fan display": "53",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "19",
+        "calibrated final O2 % by vol": "0.9",
+        "Initial CO2 % by vol": "0.41",
+        "Final CO2 % by vol": "none",
+        "Initial CO (ppm)": "-1",
+        "Final CO (ppm)": "none"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row28"
+    },
+    {
+      "row": 29,
+      "kind": "test",
+      "test_id": "T28b",
+      "identifier": null,
+      "date": null,
+      "fuel": "1 cm SIBAL",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 20.7,
+        "max": 20.7
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41855",
+        "GMT 2014-": "216",
+        "Sample no.": "144m",
+        "Flow restrictor": "1",
+        "Fan display": "53",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "27",
+        "calibrated final O2 % by vol": "40.4",
+        "Initial CO2 % by vol": "none",
+        "Final CO2 % by vol": "0.42",
+        "Initial CO (ppm)": "none",
+        "Final CO (ppm)": "2"
+      },
+      "issues": [
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row29"
+    },
+    {
+      "row": 30,
+      "kind": "test",
+      "test_id": "T29",
+      "identifier": null,
+      "date": null,
+      "fuel": "1 cm SIBAL",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 20.7,
+        "max": 20.7
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 2.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Actual Date  (for Video Display Date, add 1 for Leap Year)": "41855",
+        "GMT 2014-": "216",
+        "Sample no.": "145m",
+        "Flow restrictor": "1",
+        "Fan display": "53, 43",
+        "Radiometer gain   (1000, 250, 50, 10)": "250",
+        "total frames shot": "60",
+        "calibrated final O2 % by vol": "20.5",
+        "Initial CO2 % by vol": "0.41",
+        "Final CO2 % by vol": "0.44",
+        "Initial CO (ppm)": "-1",
+        "Final CO (ppm)": "10"
+      },
+      "issues": [
+        "flow: ambiguous cell '5, 2(?)', values in parentheses ignored - review",
+        "flow: unit assumed cm/s for column 'Air display'"
+      ],
+      "source": "PSI-25_BASS-II Test Matrix by PI Final.xlsx#row30"
+    }
+  ]
+}

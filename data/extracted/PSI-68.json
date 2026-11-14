@@ -48,11 +48,9 @@
     ],
     "sample_size": "variable",
     "diluents": [
-      "nitrogen"
+      "unknown"
     ],
-    "suppressants": [
-      "nitrogen"
-    ],
+    "suppressants": [],
     "variables_studied": [
       "Fuel type",
       "Ambient gas composition",
@@ -69,13 +67,14 @@
       "suppression"
     ],
     "key_findings": [
-      "The experiments aim to study the role of liquid-phase mixing on the burning characteristics of bi-component fuel droplets.",
-      "The primary goal is to provide benchmark experimental data on bi-component droplet combustion over a wide range of initial conditions."
+      "The primary goal of the flight experiments is to provide benchmark experimental data on bi-component droplet combustion over a wide range of initial conditions that could be used to validate numerical simulations and to develop new theoretical models.",
+      "The combustion of liquid fuels is the overwhelming energy source in the transportation sector. Insights gained from these studies can lead to more efficient and cleaner combustion technologies which are crucial for reducing pollution and greenhouse gas emissions."
     ],
     "earth_applications": "More sustainable energy production.",
     "conditions": [
       {
         "label": "Decane droplet combustion",
+        "context": "flight",
         "fuel": "decane",
         "oxygen_pct": {
           "min": 10.0,
@@ -93,7 +92,8 @@
         "source": "psi:PSI-68"
       },
       {
-        "label": "n-decane, 21% O2, 0.5 atm pressure",
+        "label": "n-decane droplets, 0.5 atm pressure, 21% O2 and 79% N2",
+        "context": "flight",
         "fuel": "n-decane",
         "oxygen_pct": {
           "min": 21,
@@ -106,12 +106,13 @@
         },
         "flow_cm_s": null,
         "evidence": [
-          "21% oxygen and 79% nitrogen mixture at 0.5 atm pressure"
+          "Figure 1a (R377) corresponds to a n-decane droplet with an initial diameter of 4.03 mm burning in 21% oxygen and 79% nitrogen mixture at 0.5 atm pressure."
         ],
         "source": "ntrs:20140006750"
       },
       {
-        "label": "n-decane, 25% O2, 0.5 atm pressure",
+        "label": "n-decane droplets, 0.5 atm pressure, 25% O2 and 75% N2",
+        "context": "flight",
         "fuel": "n-decane",
         "oxygen_pct": {
           "min": 25,
@@ -129,7 +130,8 @@
         "source": "ntrs:20140006750"
       },
       {
-        "label": "n-decane, 17% O2, 0.5 atm pressure",
+        "label": "n-decane droplets, 0.5 atm pressure, 17% O2 and 83% N2",
+        "context": "flight",
         "fuel": "n-decane",
         "oxygen_pct": null,
         "pressure_kpa": {
@@ -146,15 +148,11 @@
     ],
     "paper_findings": [
       {
-        "text": "Large n-alkane droplets exhibited quasi-steady low-temperature burning and extinction following radiative extinction of the visible flame while smaller droplets burned to completion or disruptively extinguished.",
+        "text": "Large n-alkane droplets exhibited quasi-steady low-temperature burning and extinction following radiative extinction of the visible flame",
         "source": "ntrs:20140006750"
       },
       {
-        "text": "The visible flame diameter initially increases with time and then it decreases until the droplet micro-explodes 26 seconds after ignition.",
-        "source": "ntrs:20140006750"
-      },
-      {
-        "text": "With the reduced oxygen concentration the overall radiative heat loss decreases due to reduced flame temperature.",
+        "text": "Smaller droplets burned to completion or disruptively extinguished",
         "source": "ntrs:20140006750"
       },
       {
@@ -162,7 +160,7 @@
         "source": "ntrs:20170000666"
       },
       {
-        "text": "A dominant cool-flame is established with fuel leakage of only 50% and relative heat of combustion of only 10%.",
+        "text": "A dominant cool-flame, i.e., Tc > Th, is established with the fuel leakage of only 50% and relative heat of combustion of only 10%.",
         "source": "ntrs:20170000666"
       },
       {
@@ -172,26 +170,27 @@
     ]
   },
   "warnings": [
-    "ntrs:20140006750: [n-decane, 25% O2, 0.5 atm pressure] evidence repaired from source text",
-    "ntrs:20140006750: [n-decane, 17% O2, 0.5 atm pressure] oxygen: 17-17 % not in evidence, dropped"
+    "ntrs:20140006750: [n-decane droplets, 0.5 atm pressure, 21% O2 and 79% N2] evidence repaired from source text",
+    "ntrs:20140006750: [n-decane droplets, 0.5 atm pressure, 25% O2 and 75% N2] evidence repaired from source text",
+    "ntrs:20140006750: [n-decane droplets, 0.5 atm pressure, 17% O2 and 83% N2] oxygen: 17-17 % not in evidence, dropped"
   ],
   "review_status": "model_only",
   "extraction": {
     "model": "mistral-nemo",
-    "prompt_version": "2",
+    "prompt_version": "3",
     "source_hash": "b839134a97237ee7",
     "papers": [
       "20140006750",
       "20170000666"
     ],
-    "extracted_at": "2026-11-14T11:20:41+00:00",
-    "seconds": 67.0,
+    "extracted_at": "2026-11-14T12:35:03+00:00",
+    "seconds": 69.7,
     "runs": [
       {
         "source": "psi:PSI-68",
-        "seconds": 28.4,
-        "prompt_tokens": 1754,
-        "output_tokens": 394,
+        "seconds": 30.6,
+        "prompt_tokens": 1822,
+        "output_tokens": 435,
         "raw": {
           "test_type": "combustion",
           "fuels": [
@@ -208,6 +207,7 @@
           "conditions": [
             {
               "label": "Decane droplet combustion",
+              "context": "flight",
               "fuel": "decane",
               "oxygen": {
                 "min": 0.1,
@@ -230,11 +230,9 @@
             }
           ],
           "diluents": [
-            "nitrogen"
+            "unknown"
           ],
-          "suppressants": [
-            "nitrogen"
-          ],
+          "suppressants": [],
           "variables_studied": [
             "Fuel type",
             "Ambient gas composition",
@@ -251,8 +249,8 @@
             "suppression"
           ],
           "key_findings": [
-            "The experiments aim to study the role of liquid-phase mixing on the burning characteristics of bi-component fuel droplets.",
-            "The primary goal is to provide benchmark experimental data on bi-component droplet combustion over a wide range of initial conditions."
+            "The primary goal of the flight experiments is to provide benchmark experimental data on bi-component droplet combustion over a wide range of initial conditions that could be used to validate numerical simulations and to develop new theoretical models.",
+            "The combustion of liquid fuels is the overwhelming energy source in the transportation sector. Insights gained from these studies can lead to more efficient and cleaner combustion technologies which are crucial for reducing pollution and greenhouse gas emissions."
           ],
           "earth_applications": "More sustainable energy production."
         }
@@ -260,8 +258,8 @@
       {
         "source": "ntrs:20140006750",
         "seconds": 28.9,
-        "prompt_tokens": 1754,
-        "output_tokens": 521,
+        "prompt_tokens": 1822,
+        "output_tokens": 522,
         "raw": {
           "fuels": [
             "n-heptane",
@@ -270,7 +268,8 @@
           ],
           "conditions": [
             {
-              "label": "n-decane, 21% O2, 0.5 atm pressure",
+              "label": "n-decane droplets, 0.5 atm pressure, 21% O2 and 79% N2",
+              "context": "flight",
               "fuel": "n-decane",
               "oxygen": {
                 "min": 21,
@@ -288,11 +287,12 @@
                 "unit": null
               },
               "evidence": [
-                "21% oxygen and 79% nitrogen mixture at 0.5 atm pressure"
+                "21%O2 and 79%N2 at 0.5 atm pressure"
               ]
             },
             {
-              "label": "n-decane, 25% O2, 0.5 atm pressure",
+              "label": "n-decane droplets, 0.5 atm pressure, 25% O2 and 75% N2",
+              "context": "flight",
               "fuel": "n-decane",
               "oxygen": {
                 "min": 25,
@@ -310,11 +310,12 @@
                 "unit": null
               },
               "evidence": [
-                "25% oxygen and the rest being nitrogen at 0.5 atm pressure"
+                "25%O2 and the rest being nitrogen at 0.5 atm"
               ]
             },
             {
-              "label": "n-decane, 17% O2, 0.5 atm pressure",
+              "label": "n-decane droplets, 0.5 atm pressure, 17% O2 and 83% N2",
+              "context": "flight",
               "fuel": "n-decane",
               "oxygen": {
                 "min": 17,
@@ -337,18 +338,17 @@
             }
           ],
           "key_findings": [
-            "Large n-alkane droplets exhibited quasi-steady low-temperature burning and extinction following radiative extinction of the visible flame while smaller droplets burned to completion or disruptively extinguished.",
-            "The visible flame diameter initially increases with time and then it decreases until the droplet micro-explodes 26 seconds after ignition.",
-            "With the reduced oxygen concentration the overall radiative heat loss decreases due to reduced flame temperature."
+            "Large n-alkane droplets exhibited quasi-steady low-temperature burning and extinction following radiative extinction of the visible flame",
+            "Smaller droplets burned to completion or disruptively extinguished"
           ]
         },
         "excerpt_chars": 4825
       },
       {
         "source": "ntrs:20170000666",
-        "seconds": 9.7,
-        "prompt_tokens": 973,
-        "output_tokens": 108,
+        "seconds": 10.2,
+        "prompt_tokens": 1041,
+        "output_tokens": 118,
         "raw": {
           "fuels": [
             "Fuel"
@@ -356,13 +356,12 @@
           "conditions": [],
           "key_findings": [
             "Cool-flame temperatures are greater than that of the hot-flame.",
-            "A dominant cool-flame is established with fuel leakage of only 50% and relative heat of combustion of only 10%.",
+            "A dominant cool-flame, i.e., Tc > Th, is established with the fuel leakage of only 50% and relative heat of combustion of only 10%.",
             "With the heat of combustion of the cool-flame around 20% of the hot-flame, a weak cool-flame is established when the fuel leakage is high."
           ]
         },
         "excerpt_chars": 2302
       }
-    ],
-    "rechecked_at": "2026-11-14T11:26:22+00:00"
+    ]
   }
 }

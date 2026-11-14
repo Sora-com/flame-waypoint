@@ -1,0 +1,1087 @@
+{
+  "accession": "PSI-20",
+  "origin": "psi_files",
+  "parsed_at": "2026-11-14T12:14:49+00:00",
+  "files": [
+    {
+      "file": "PSI-20_Experimental table_ACME BRE.csv",
+      "sheet": "csv",
+      "tests": 43,
+      "mapped_columns": [
+        "Date",
+        "Fuel Bottle",
+        "Oxygen Conc (percent)"
+      ],
+      "unmapped_columns": [
+        "Burner Size (mm)",
+        "Flames Ignited",
+        "Month",
+        "Notes",
+        "Year"
+      ]
+    }
+  ],
+  "summary": {
+    "tests": 43,
+    "design_envelopes": 0,
+    "with_oxygen": 43,
+    "with_pressure": 0,
+    "with_flow": 0,
+    "with_issues": 2,
+    "oxygen_pct_range": [
+      21.0,
+      40.0
+    ],
+    "pressure_kpa_range": null,
+    "flow_cm_s_range": null,
+    "fuels": [
+      "100% C2H4",
+      "100% CH4",
+      "100%C2H4",
+      "50% C2H4"
+    ]
+  },
+  "tests": [
+    {
+      "row": 2,
+      "kind": "test",
+      "test_id": "2.1",
+      "identifier": null,
+      "date": "8",
+      "fuel": "100% C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2019",
+        "Month": "Feb",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "10",
+        "Notes": "Oxygen Conc. (as diluted with nitrogen on a volume basis) was varied between tests where approximate concentrations for tests that ignited are listed. The chamber pressures were also varied but are not identified in this summary table."
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row2"
+    },
+    {
+      "row": 2,
+      "kind": "test",
+      "test_id": "2.2",
+      "identifier": null,
+      "date": "8",
+      "fuel": "100% C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 26.5,
+        "max": 26.5
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2019",
+        "Month": "Feb",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "10",
+        "Notes": "Oxygen Conc. (as diluted with nitrogen on a volume basis) was varied between tests where approximate concentrations for tests that ignited are listed. The chamber pressures were also varied but are not identified in this summary table."
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row2"
+    },
+    {
+      "row": 2,
+      "kind": "test",
+      "test_id": "2.3",
+      "identifier": null,
+      "date": "8",
+      "fuel": "100% C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 40.0,
+        "max": 40.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2019",
+        "Month": "Feb",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "10",
+        "Notes": "Oxygen Conc. (as diluted with nitrogen on a volume basis) was varied between tests where approximate concentrations for tests that ignited are listed. The chamber pressures were also varied but are not identified in this summary table."
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row2"
+    },
+    {
+      "row": 3,
+      "kind": "test",
+      "test_id": "3.1",
+      "identifier": null,
+      "date": "20",
+      "fuel": "100% C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 26.5,
+        "max": 26.5
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2019",
+        "Month": "Feb",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "8",
+        "Notes": "Flames Ignited is the number ignited on that day (neglecting the day change on ISS)."
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row3"
+    },
+    {
+      "row": 3,
+      "kind": "test",
+      "test_id": "3.2",
+      "identifier": null,
+      "date": "20",
+      "fuel": "100% C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 34.0,
+        "max": 34.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2019",
+        "Month": "Feb",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "8",
+        "Notes": "Flames Ignited is the number ignited on that day (neglecting the day change on ISS)."
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row3"
+    },
+    {
+      "row": 4,
+      "kind": "test",
+      "test_id": "4.1",
+      "identifier": null,
+      "date": "25",
+      "fuel": "50% C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2019",
+        "Month": "Feb",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "8"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row4"
+    },
+    {
+      "row": 4,
+      "kind": "test",
+      "test_id": "4.2",
+      "identifier": null,
+      "date": "25",
+      "fuel": "50% C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 26.5,
+        "max": 26.5
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2019",
+        "Month": "Feb",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "8"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row4"
+    },
+    {
+      "row": 4,
+      "kind": "test",
+      "test_id": "4.3",
+      "identifier": null,
+      "date": "25",
+      "fuel": "50% C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 34.0,
+        "max": 34.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2019",
+        "Month": "Feb",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "8"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row4"
+    },
+    {
+      "row": 4,
+      "kind": "test",
+      "test_id": "4.4",
+      "identifier": null,
+      "date": "25",
+      "fuel": "50% C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 40.0,
+        "max": 40.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2019",
+        "Month": "Feb",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "8"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row4"
+    },
+    {
+      "row": 5,
+      "kind": "test",
+      "test_id": "5.1",
+      "identifier": null,
+      "date": "4",
+      "fuel": "50% C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 26.5,
+        "max": 26.5
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2019",
+        "Month": "March",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "6"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row5"
+    },
+    {
+      "row": 5,
+      "kind": "test",
+      "test_id": "5.2",
+      "identifier": null,
+      "date": "4",
+      "fuel": "50% C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 40.0,
+        "max": 40.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2019",
+        "Month": "March",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "6"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row5"
+    },
+    {
+      "row": 6,
+      "kind": "test",
+      "test_id": "6",
+      "identifier": null,
+      "date": "7",
+      "fuel": "50% C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 34.0,
+        "max": 34.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2019",
+        "Month": "March",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "6"
+      },
+      "issues": [
+        "oxygen '3400%' read as 34 %"
+      ],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row6"
+    },
+    {
+      "row": 7,
+      "kind": "test",
+      "test_id": "7.1",
+      "identifier": null,
+      "date": "11",
+      "fuel": "50% C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 26.5,
+        "max": 26.5
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2019",
+        "Month": "March",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "7"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row7"
+    },
+    {
+      "row": 7,
+      "kind": "test",
+      "test_id": "7.2",
+      "identifier": null,
+      "date": "11",
+      "fuel": "50% C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 34.0,
+        "max": 34.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2019",
+        "Month": "March",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "7"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row7"
+    },
+    {
+      "row": 8,
+      "kind": "test",
+      "test_id": "8.1",
+      "identifier": null,
+      "date": "28",
+      "fuel": "100%C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 26.5,
+        "max": 26.5
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2019",
+        "Month": "March",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "8"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row8"
+    },
+    {
+      "row": 8,
+      "kind": "test",
+      "test_id": "8.2",
+      "identifier": null,
+      "date": "28",
+      "fuel": "100%C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 34.0,
+        "max": 34.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2019",
+        "Month": "March",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "8"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row8"
+    },
+    {
+      "row": 9,
+      "kind": "test",
+      "test_id": "9",
+      "identifier": null,
+      "date": "1",
+      "fuel": "100%C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2019",
+        "Month": "April",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "0"
+      },
+      "issues": [
+        "oxygen '2100%' read as 21 %"
+      ],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row9"
+    },
+    {
+      "row": 10,
+      "kind": "test",
+      "test_id": "10.1",
+      "identifier": null,
+      "date": "4",
+      "fuel": "100%C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2019",
+        "Month": "April",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "9"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row10"
+    },
+    {
+      "row": 10,
+      "kind": "test",
+      "test_id": "10.2",
+      "identifier": null,
+      "date": "4",
+      "fuel": "100%C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 26.5,
+        "max": 26.5
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2019",
+        "Month": "April",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "9"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row10"
+    },
+    {
+      "row": 10,
+      "kind": "test",
+      "test_id": "10.3",
+      "identifier": null,
+      "date": "4",
+      "fuel": "100%C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 34.0,
+        "max": 34.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2019",
+        "Month": "April",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "9"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row10"
+    },
+    {
+      "row": 11,
+      "kind": "test",
+      "test_id": "11.1",
+      "identifier": null,
+      "date": "3",
+      "fuel": "100% C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 25.0,
+        "max": 25.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2020",
+        "Month": "Sept",
+        "Burner Size (mm)": "50",
+        "Flames Ignited": "13"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row11"
+    },
+    {
+      "row": 11,
+      "kind": "test",
+      "test_id": "11.2",
+      "identifier": null,
+      "date": "3",
+      "fuel": "100% C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 34.0,
+        "max": 34.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2020",
+        "Month": "Sept",
+        "Burner Size (mm)": "50",
+        "Flames Ignited": "13"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row11"
+    },
+    {
+      "row": 11,
+      "kind": "test",
+      "test_id": "11.3",
+      "identifier": null,
+      "date": "3",
+      "fuel": "100% C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 40.0,
+        "max": 40.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2020",
+        "Month": "Sept",
+        "Burner Size (mm)": "50",
+        "Flames Ignited": "13"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row11"
+    },
+    {
+      "row": 12,
+      "kind": "test",
+      "test_id": "12.1",
+      "identifier": null,
+      "date": "17",
+      "fuel": "100% C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 26.5,
+        "max": 26.5
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2020",
+        "Month": "Oct",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "13"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row12"
+    },
+    {
+      "row": 12,
+      "kind": "test",
+      "test_id": "12.2",
+      "identifier": null,
+      "date": "17",
+      "fuel": "100% C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 34.0,
+        "max": 34.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2020",
+        "Month": "Oct",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "13"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row12"
+    },
+    {
+      "row": 13,
+      "kind": "test",
+      "test_id": "13.1",
+      "identifier": null,
+      "date": "5",
+      "fuel": "100% CH4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 25.0,
+        "max": 25.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2020",
+        "Month": "Dec",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "21"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row13"
+    },
+    {
+      "row": 13,
+      "kind": "test",
+      "test_id": "13.2",
+      "identifier": null,
+      "date": "5",
+      "fuel": "100% CH4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 34.0,
+        "max": 34.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2020",
+        "Month": "Dec",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "21"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row13"
+    },
+    {
+      "row": 13,
+      "kind": "test",
+      "test_id": "13.3",
+      "identifier": null,
+      "date": "5",
+      "fuel": "100% CH4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 40.0,
+        "max": 40.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2020",
+        "Month": "Dec",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "21"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row13"
+    },
+    {
+      "row": 14,
+      "kind": "test",
+      "test_id": "14.1",
+      "identifier": null,
+      "date": "4",
+      "fuel": "100% CH4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 25.0,
+        "max": 25.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2020",
+        "Month": "Dec",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "18"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row14"
+    },
+    {
+      "row": 14,
+      "kind": "test",
+      "test_id": "14.2",
+      "identifier": null,
+      "date": "4",
+      "fuel": "100% CH4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 40.0,
+        "max": 40.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2020",
+        "Month": "Dec",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "18"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row14"
+    },
+    {
+      "row": 15,
+      "kind": "test",
+      "test_id": "15.1",
+      "identifier": null,
+      "date": "11",
+      "fuel": "50% C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 25.0,
+        "max": 25.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2020",
+        "Month": "Dec",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "12"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row15"
+    },
+    {
+      "row": 15,
+      "kind": "test",
+      "test_id": "15.2",
+      "identifier": null,
+      "date": "11",
+      "fuel": "50% C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 40.0,
+        "max": 40.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2020",
+        "Month": "Dec",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "12"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row15"
+    },
+    {
+      "row": 16,
+      "kind": "test",
+      "test_id": "16.1",
+      "identifier": null,
+      "date": "17",
+      "fuel": "100% C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 34.0,
+        "max": 34.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2020",
+        "Month": "Dec",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "10"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row16"
+    },
+    {
+      "row": 16,
+      "kind": "test",
+      "test_id": "16.2",
+      "identifier": null,
+      "date": "17",
+      "fuel": "100% C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 40.0,
+        "max": 40.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2020",
+        "Month": "Dec",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "10"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row16"
+    },
+    {
+      "row": 17,
+      "kind": "test",
+      "test_id": "17.1",
+      "identifier": null,
+      "date": "23",
+      "fuel": "100% C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 25.0,
+        "max": 25.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2020",
+        "Month": "Dec",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "17"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row17"
+    },
+    {
+      "row": 17,
+      "kind": "test",
+      "test_id": "17.2",
+      "identifier": null,
+      "date": "23",
+      "fuel": "100% C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 34.0,
+        "max": 34.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2020",
+        "Month": "Dec",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "17"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row17"
+    },
+    {
+      "row": 17,
+      "kind": "test",
+      "test_id": "17.3",
+      "identifier": null,
+      "date": "23",
+      "fuel": "100% C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 40.0,
+        "max": 40.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2020",
+        "Month": "Dec",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "17"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row17"
+    },
+    {
+      "row": 18,
+      "kind": "test",
+      "test_id": "18.1",
+      "identifier": null,
+      "date": "20",
+      "fuel": "100% C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2021",
+        "Month": "Jan",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "15"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row18"
+    },
+    {
+      "row": 18,
+      "kind": "test",
+      "test_id": "18.2",
+      "identifier": null,
+      "date": "20",
+      "fuel": "100% C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 26.5,
+        "max": 26.5
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2021",
+        "Month": "Jan",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "15"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row18"
+    },
+    {
+      "row": 18,
+      "kind": "test",
+      "test_id": "18.3",
+      "identifier": null,
+      "date": "20",
+      "fuel": "100% C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 34.0,
+        "max": 34.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2021",
+        "Month": "Jan",
+        "Burner Size (mm)": "25",
+        "Flames Ignited": "15"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row18"
+    },
+    {
+      "row": 19,
+      "kind": "test",
+      "test_id": "19.1",
+      "identifier": null,
+      "date": "28",
+      "fuel": "100% C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 25.0,
+        "max": 25.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2021",
+        "Month": "Jan",
+        "Burner Size (mm)": "50",
+        "Flames Ignited": "13"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row19"
+    },
+    {
+      "row": 19,
+      "kind": "test",
+      "test_id": "19.2",
+      "identifier": null,
+      "date": "28",
+      "fuel": "100% C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 34.0,
+        "max": 34.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2021",
+        "Month": "Jan",
+        "Burner Size (mm)": "50",
+        "Flames Ignited": "13"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row19"
+    },
+    {
+      "row": 19,
+      "kind": "test",
+      "test_id": "19.3",
+      "identifier": null,
+      "date": "28",
+      "fuel": "100% C2H4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 40.0,
+        "max": 40.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Year": "2021",
+        "Month": "Jan",
+        "Burner Size (mm)": "50",
+        "Flames Ignited": "13"
+      },
+      "issues": [],
+      "source": "PSI-20_Experimental table_ACME BRE.csv#row19"
+    }
+  ]
+}

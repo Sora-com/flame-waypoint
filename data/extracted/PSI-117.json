@@ -42,12 +42,13 @@
       "OpenFOAM CFD model"
     ],
     "safety_pillars": [
+      "prevention",
       "detection",
       "suppression"
     ],
     "key_findings": [
       "External thermo-convective perturbations regulated cool-flame dynamics and ultimate fate.",
-      "Stability windows for ignition, sustained oscillation, transitions, and extinction were mapped.",
+      "Stability windows were mapped for ignition, sustained oscillation, transitions, and extinction.",
       "CFD model predicted observables for comparison with FLEX data."
     ],
     "earth_applications": "Advances low-temperature combustion understanding relevant to engine knock, efficiency, and emissions; delivers validated CFD tools transferrable to practical combustors.",
@@ -58,17 +59,17 @@
   "review_status": "model_only",
   "extraction": {
     "model": "mistral-nemo",
-    "prompt_version": "2",
+    "prompt_version": "3",
     "source_hash": "1bbbf00c334cdac4",
     "papers": [],
-    "extracted_at": "2026-11-14T11:10:46+00:00",
-    "seconds": 22.6,
+    "extracted_at": "2026-11-14T12:24:34+00:00",
+    "seconds": 23.4,
     "runs": [
       {
         "source": "psi:PSI-117",
-        "seconds": 22.6,
-        "prompt_tokens": 1218,
-        "output_tokens": 350,
+        "seconds": 23.4,
+        "prompt_tokens": 1286,
+        "output_tokens": 358,
         "raw": {
           "test_type": "combustion",
           "fuels": [
@@ -83,7 +84,8 @@
           "sample_size": "1–4 mm, ~0.5 mm",
           "conditions": [
             {
-              "label": "Microgravity, n-alkane droplet combustion",
+              "label": "Microgravity, FLEX data",
+              "context": "flight",
               "fuel": "n-alkane",
               "oxygen": {
                 "min": null,
@@ -115,18 +117,18 @@
             "OpenFOAM CFD model"
           ],
           "safety_pillars": [
+            "prevention",
             "detection",
             "suppression"
           ],
           "key_findings": [
             "External thermo-convective perturbations regulated cool-flame dynamics and ultimate fate.",
-            "Stability windows for ignition, sustained oscillation, transitions, and extinction were mapped.",
+            "Stability windows were mapped for ignition, sustained oscillation, transitions, and extinction.",
             "CFD model predicted observables for comparison with FLEX data."
           ],
           "earth_applications": "Advances low-temperature combustion understanding relevant to engine knock, efficiency, and emissions; delivers validated CFD tools transferrable to practical combustors."
         }
       }
-    ],
-    "rechecked_at": "2026-11-14T11:26:22+00:00"
+    ]
   }
 }

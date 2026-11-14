@@ -65,7 +65,7 @@
     ],
     "sample_size": "≈ 3 mm",
     "diluents": [
-      "oxygen"
+      "nitrogen"
     ],
     "suppressants": [
       "CO2",
@@ -93,7 +93,8 @@
     "earth_applications": "The insights gained from these experiments have the potential to advance fire safety in confined and reduced-gravity environments on Earth.",
     "conditions": [
       {
-        "label": "LOI tests at 0.5 − 1.5 atm",
+        "label": "LOI tests at varying pressures and oxygen concentrations",
+        "context": "flight",
         "fuel": "liquid fuels",
         "oxygen_pct": null,
         "pressure_kpa": {
@@ -108,7 +109,8 @@
         "source": "psi:PSI-69"
       },
       {
-        "label": "Methanol droplets, varying oxygen and inert diluents at 0.7 atm",
+        "label": "Methanol droplet combustion in oxygen-nitrogen-carbon dioxide at 0.7 atm",
+        "context": "flight",
         "fuel": "methanol",
         "oxygen_pct": {
           "min": 12,
@@ -126,7 +128,8 @@
         "source": "ntrs:20130014061"
       },
       {
-        "label": "Methanol droplets, varying oxygen and inert diluents at 1 atm",
+        "label": "Methanol droplet combustion in oxygen-nitrogen-helium at 1 atm",
+        "context": "flight",
         "fuel": "methanol",
         "oxygen_pct": {
           "min": 12,
@@ -139,13 +142,13 @@
         },
         "flow_cm_s": null,
         "evidence": [
-          "The ambient oxygen concentration varied from a high value of 30% by volume to as low as 12%, approaching the limiting oxygen index for the fuel.",
-          "Over one hundred methanol droplet tests in varying diluent concentrations and at primarily two different ambient pressures (0.7 and 1 atm) have been performed to date."
+          "Spray and Droplet Results Over one hundred methanol droplet tests in varying diluent concentrations and at primarily two different ambient pressures (0.7 and 1 atm) have been performed to date. In these tests the oxygen concentration varied from 30% to 12% by volume while the carbon dioxide and helium diluent concentrations varied in the range of 0% to 70% by volume and the rest of the inert was nitrogen."
         ],
         "source": "ntrs:20130014061"
       },
       {
-        "label": "n-decane, 21% O2, 0.5 atm pressure",
+        "label": "n-decane droplets, 0.5 atm pressure, 21% O2 and 79% N2",
+        "context": "flight",
         "fuel": "n-decane",
         "oxygen_pct": {
           "min": 21,
@@ -158,12 +161,13 @@
         },
         "flow_cm_s": null,
         "evidence": [
-          "21% oxygen and 79% nitrogen mixture at 0.5 atm pressure"
+          "Figure 1a (R377) corresponds to a n-decane droplet with an initial diameter of 4.03 mm burning in 21% oxygen and 79% nitrogen mixture at 0.5 atm pressure."
         ],
         "source": "ntrs:20140006750"
       },
       {
-        "label": "n-decane, 25% O2, 0.5 atm pressure",
+        "label": "n-decane droplets, 0.5 atm pressure, 25% O2 and 75% N2",
+        "context": "flight",
         "fuel": "n-decane",
         "oxygen_pct": {
           "min": 25,
@@ -181,7 +185,8 @@
         "source": "ntrs:20140006750"
       },
       {
-        "label": "n-decane, 17% O2, 0.5 atm pressure",
+        "label": "n-decane droplets, 0.5 atm pressure, 17% O2 and 83% N2",
+        "context": "flight",
         "fuel": "n-decane",
         "oxygen_pct": null,
         "pressure_kpa": {
@@ -206,32 +211,26 @@
         "source": "ntrs:20130014061"
       },
       {
-        "text": "The adiabatic flame temperature of this diluted mixture is significantly less than that of pure methanol, actually below the temperature range, 1200 - 1700 K, that results in chemical-kinetic gas-phase flame extinguishment.",
-        "source": "ntrs:20130014061"
-      },
-      {
-        "text": "Large n-alkane droplets exhibited quasi-steady low-temperature burning and extinction following radiative extinction of the visible flame while smaller droplets burned to completion or disruptively extinguished.",
+        "text": "Large n-alkane droplets exhibited quasi-steady low-temperature burning and extinction following radiative extinction of the visible flame",
         "source": "ntrs:20140006750"
       },
       {
-        "text": "The visible flame diameter initially increases with time and then it decreases until the droplet micro-explodes 26 seconds after ignition.",
-        "source": "ntrs:20140006750"
-      },
-      {
-        "text": "With the reduced oxygen concentration the overall radiative heat loss decreases due to reduced flame temperature.",
+        "text": "Smaller droplets burned to completion or disruptively extinguished",
         "source": "ntrs:20140006750"
       }
     ]
   },
   "warnings": [
-    "ntrs:20130014061: [Methanol droplets, varying oxygen and inert diluents at 0.7 atm] evidence repaired from source text",
-    "ntrs:20140006750: [n-decane, 25% O2, 0.5 atm pressure] evidence repaired from source text",
-    "ntrs:20140006750: [n-decane, 17% O2, 0.5 atm pressure] oxygen: 17-17 % not in evidence, dropped"
+    "ntrs:20130014061: [Methanol droplet combustion in oxygen-nitrogen-carbon dioxide at 0.7 atm] evidence repaired from source text",
+    "ntrs:20130014061: [Methanol droplet combustion in oxygen-nitrogen-helium at 1 atm] evidence repaired from source text",
+    "ntrs:20140006750: [n-decane droplets, 0.5 atm pressure, 21% O2 and 79% N2] evidence repaired from source text",
+    "ntrs:20140006750: [n-decane droplets, 0.5 atm pressure, 25% O2 and 75% N2] evidence repaired from source text",
+    "ntrs:20140006750: [n-decane droplets, 0.5 atm pressure, 17% O2 and 83% N2] oxygen: 17-17 % not in evidence, dropped"
   ],
   "review_status": "model_only",
   "extraction": {
     "model": "mistral-nemo",
-    "prompt_version": "2",
+    "prompt_version": "3",
     "source_hash": "474b85227f506ed2",
     "papers": [
       "20120015928",
@@ -240,14 +239,14 @@
       "20130014061",
       "20140006750"
     ],
-    "extracted_at": "2026-11-14T11:22:14+00:00",
-    "seconds": 92.8,
+    "extracted_at": "2026-11-14T12:36:33+00:00",
+    "seconds": 90.3,
     "runs": [
       {
         "source": "psi:PSI-69",
         "seconds": 28.7,
-        "prompt_tokens": 1720,
-        "output_tokens": 393,
+        "prompt_tokens": 1788,
+        "output_tokens": 396,
         "raw": {
           "test_type": "combustion",
           "fuels": [
@@ -262,7 +261,8 @@
           "sample_size": "≈ 3 mm",
           "conditions": [
             {
-              "label": "LOI tests at 0.5 − 1.5 atm",
+              "label": "LOI tests at varying pressures and oxygen concentrations",
+              "context": "flight",
               "fuel": "liquid fuels",
               "oxygen": {
                 "min": null,
@@ -285,7 +285,7 @@
             }
           ],
           "diluents": [
-            "oxygen"
+            "nitrogen"
           ],
           "suppressants": [
             "CO2",
@@ -315,21 +315,22 @@
       },
       {
         "source": "ntrs:20130014061",
-        "seconds": 35.1,
-        "prompt_tokens": 1413,
-        "output_tokens": 511,
+        "seconds": 32.6,
+        "prompt_tokens": 1481,
+        "output_tokens": 480,
         "raw": {
           "fuels": [
             "methanol"
           ],
           "conditions": [
             {
-              "label": "Methanol droplets, varying oxygen and inert diluents at 0.7 atm",
+              "label": "Methanol droplet combustion in oxygen-nitrogen-carbon dioxide at 0.7 atm",
+              "context": "flight",
               "fuel": "methanol",
               "oxygen": {
                 "min": 12,
                 "max": 30,
-                "unit": "% by volume"
+                "unit": "%"
               },
               "pressure": {
                 "min": 0.7,
@@ -347,12 +348,13 @@
               ]
             },
             {
-              "label": "Methanol droplets, varying oxygen and inert diluents at 1 atm",
+              "label": "Methanol droplet combustion in oxygen-nitrogen-helium at 1 atm",
+              "context": "flight",
               "fuel": "methanol",
               "oxygen": {
                 "min": 12,
                 "max": 30,
-                "unit": "% by volume"
+                "unit": "%"
               },
               "pressure": {
                 "min": 1,
@@ -366,14 +368,13 @@
               },
               "evidence": [
                 "The ambient oxygen concentration varied from a high value of 30% by volume to as low as 12%, approaching the limiting oxygen index for the fuel.",
-                "Over one hundred methanol droplet tests in varying diluent concentrations and at primarily two different ambient pressures (0.7 and 1 atm) have been performed to date."
+                "In these experiments, both freely ﬂoated and tethered droplets were ignited using symmetrically opposed hot-wire igniters and the burning histories were recorded onboard using digital cameras, downlinked later to the ground for analysis."
               ]
             }
           ],
           "key_findings": [
             "The limiting oxygen index for methanol in these diluent gases is around 12% to 13% oxygen by volume.",
-            "When the initial droplet diameter is greater than roughly 4 mm, the droplet flame extinguishes through excessive radiative heat loss.",
-            "The adiabatic flame temperature of this diluted mixture is significantly less than that of pure methanol, actually below the temperature range, 1200 - 1700 K, that results in chemical-kinetic gas-phase flame extinguishment."
+            "When the initial droplet diameter is greater than roughly 4 mm, the droplet flame extinguishes through excessive radiative heat loss."
           ]
         },
         "excerpt_chars": 4746
@@ -393,8 +394,8 @@
       {
         "source": "ntrs:20140006750",
         "seconds": 29.0,
-        "prompt_tokens": 1754,
-        "output_tokens": 521,
+        "prompt_tokens": 1822,
+        "output_tokens": 522,
         "raw": {
           "fuels": [
             "n-heptane",
@@ -403,7 +404,8 @@
           ],
           "conditions": [
             {
-              "label": "n-decane, 21% O2, 0.5 atm pressure",
+              "label": "n-decane droplets, 0.5 atm pressure, 21% O2 and 79% N2",
+              "context": "flight",
               "fuel": "n-decane",
               "oxygen": {
                 "min": 21,
@@ -421,11 +423,12 @@
                 "unit": null
               },
               "evidence": [
-                "21% oxygen and 79% nitrogen mixture at 0.5 atm pressure"
+                "21%O2 and 79%N2 at 0.5 atm pressure"
               ]
             },
             {
-              "label": "n-decane, 25% O2, 0.5 atm pressure",
+              "label": "n-decane droplets, 0.5 atm pressure, 25% O2 and 75% N2",
+              "context": "flight",
               "fuel": "n-decane",
               "oxygen": {
                 "min": 25,
@@ -443,11 +446,12 @@
                 "unit": null
               },
               "evidence": [
-                "25% oxygen and the rest being nitrogen at 0.5 atm pressure"
+                "25%O2 and the rest being nitrogen at 0.5 atm"
               ]
             },
             {
-              "label": "n-decane, 17% O2, 0.5 atm pressure",
+              "label": "n-decane droplets, 0.5 atm pressure, 17% O2 and 83% N2",
+              "context": "flight",
               "fuel": "n-decane",
               "oxygen": {
                 "min": 17,
@@ -470,14 +474,12 @@
             }
           ],
           "key_findings": [
-            "Large n-alkane droplets exhibited quasi-steady low-temperature burning and extinction following radiative extinction of the visible flame while smaller droplets burned to completion or disruptively extinguished.",
-            "The visible flame diameter initially increases with time and then it decreases until the droplet micro-explodes 26 seconds after ignition.",
-            "With the reduced oxygen concentration the overall radiative heat loss decreases due to reduced flame temperature."
+            "Large n-alkane droplets exhibited quasi-steady low-temperature burning and extinction following radiative extinction of the visible flame",
+            "Smaller droplets burned to completion or disruptively extinguished"
           ]
         },
         "excerpt_chars": 4825
       }
-    ],
-    "rechecked_at": "2026-11-14T11:26:22+00:00"
+    ]
   }
 }

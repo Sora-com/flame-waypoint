@@ -22,23 +22,27 @@
     "test_type": "combustion",
     "fuels": [
       "CH4/N2",
-      "C2H4/N2"
+      "C2H4/N2",
+      "PMMA",
+      "Nylon"
     ],
     "fuel_phases": [
-      "gas"
+      "gas",
+      "solid"
     ],
     "sample_geometry": [
-      "porous circular burners"
+      "porous circular burners",
+      "rods"
     ],
     "sample_size": null,
     "diluents": [
-      "N2"
+      "N2",
+      "CO2"
     ],
     "suppressants": [],
     "variables_studied": [
-      "fuel flow rate",
-      "burner surface temperature",
-      "heat flux"
+      "ambient pressure",
+      "ambient oxygen concentration"
     ],
     "sensors": [
       "thermocouple",
@@ -49,176 +53,77 @@
       "suppression"
     ],
     "key_findings": [
-      "Quasi-steady burning corresponding to various condensed-phase materials was observed in microgravity despite the absence of air flow",
-      "The ongoing combustion without air flow was notably seen in elevated-oxygen atmospheres",
-      "BRE’s results suggest that NASA may want to increase use of its alternative flammability Test 2, with the cone calorimeter"
+      "Quasi-steady burning observed in microgravity for various condensed-phase materials",
+      "Elevated-oxygen atmospheres showed sustained combustion without air flow",
+      "Results suggest increased use of Cone Calorimeter Test 2"
     ],
     "earth_applications": "BRE yielded important data relevant to spacecraft fire safety",
-    "conditions": [
-      {
-        "label": "NASA considered atmosphere for human space missions",
-        "fuel": null,
-        "oxygen_pct": {
-          "min": 21,
-          "max": 21
-        },
-        "pressure_kpa": {
-          "min": 101.353,
-          "max": 101.353,
-          "original": "14.7-14.7 psia"
-        },
-        "flow_cm_s": null,
-        "evidence": [
-          "NASA - considered atmosphere for human space missions will be examined: 14.7 psia, 21 % oxygen"
-        ],
-        "source": "psi:PSI-20"
-      },
-      {
-        "label": "O2/N2 ambients with various pressures and ambient O2 concentrations",
-        "fuel": null,
-        "oxygen_pct": {
-          "min": 26.5,
-          "max": 26.5
-        },
-        "pressure_kpa": {
-          "min": 70.327,
-          "max": 70.327,
-          "original": "10.2-10.2 psia"
-        },
-        "flow_cm_s": null,
-        "evidence": [
-          "10.2 psia, 26.5 %;"
-        ],
-        "source": "psi:PSI-20"
-      },
-      {
-        "label": "O2/N2 ambients with various pressures and ambient O2 concentrations",
-        "fuel": null,
-        "oxygen_pct": {
-          "min": 34,
-          "max": 34
-        },
-        "pressure_kpa": {
-          "min": 56.537,
-          "max": 56.537,
-          "original": "8.2-8.2 psia"
-        },
-        "flow_cm_s": null,
-        "evidence": [
-          "and 8.2 psia, 34 % oxygen."
-        ],
-        "source": "psi:PSI-20"
-      }
-    ],
+    "conditions": [],
     "paper_findings": []
   },
-  "warnings": [
-    "psi:PSI-20: [O2/N2 ambients with various pressures and ambient O2 concentrations] evidence repaired from source text",
-    "psi:PSI-20: [O2/N2 ambients with various pressures and ambient O2 concentrations] evidence repaired from source text"
-  ],
+  "warnings": [],
   "review_status": "model_only",
   "extraction": {
     "model": "mistral-nemo",
-    "prompt_version": "2",
+    "prompt_version": "3",
     "source_hash": "9a038895ddb681ae",
     "papers": [],
-    "extracted_at": "2026-11-14T11:12:17+00:00",
-    "seconds": 40.1,
+    "extracted_at": "2026-11-14T12:25:47+00:00",
+    "seconds": 25.0,
     "runs": [
       {
         "source": "psi:PSI-20",
-        "seconds": 40.1,
-        "prompt_tokens": 1741,
-        "output_tokens": 618,
+        "seconds": 25.0,
+        "prompt_tokens": 1809,
+        "output_tokens": 336,
         "raw": {
           "test_type": "combustion",
           "fuels": [
             "CH4/N2",
-            "C2H4/N2"
+            "C2H4/N2",
+            "PMMA",
+            "Nylon"
           ],
           "fuel_phases": [
-            "gas"
+            "gas",
+            "solid"
           ],
           "sample_geometry": [
-            "porous circular burners"
+            "porous circular burners",
+            "rods"
           ],
           "sample_size": null,
           "conditions": [
             {
-              "label": "NASA considered atmosphere for human space missions",
+              "label": "CH4/N2 and C2H4/N2 mixtures on porous circular burners",
+              "context": "flight",
               "fuel": null,
               "oxygen": {
-                "min": 21,
-                "max": 21,
-                "unit": "%"
+                "min": null,
+                "max": null,
+                "unit": null
               },
               "pressure": {
-                "min": 14.7,
-                "max": 14.7,
-                "unit": "psia"
+                "min": null,
+                "max": null,
+                "unit": null
               },
               "flow_speed": {
                 "min": null,
                 "max": null,
                 "unit": null
               },
-              "evidence": [
-                "NASA - considered atmosphere for human space missions will be examined: 14.7 psia, 21 % oxygen"
-              ]
-            },
-            {
-              "label": "O2/N2 ambients with various pressures and ambient O2 concentrations",
-              "fuel": null,
-              "oxygen": {
-                "min": 26.5,
-                "max": 26.5,
-                "unit": "%"
-              },
-              "pressure": {
-                "min": 10.2,
-                "max": 10.2,
-                "unit": "psia"
-              },
-              "flow_speed": {
-                "min": null,
-                "max": null,
-                "unit": null
-              },
-              "evidence": [
-                "O2/N2 ambients with various pressures and ambient O2 concentrations"
-              ]
-            },
-            {
-              "label": "O2/N2 ambients with various pressures and ambient O2 concentrations",
-              "fuel": null,
-              "oxygen": {
-                "min": 34,
-                "max": 34,
-                "unit": "%"
-              },
-              "pressure": {
-                "min": 8.2,
-                "max": 8.2,
-                "unit": "psia"
-              },
-              "flow_speed": {
-                "min": null,
-                "max": null,
-                "unit": null
-              },
-              "evidence": [
-                "O2/N2 ambients with various pressures and ambient O2 concentrations"
-              ]
+              "evidence": []
             }
           ],
           "diluents": [
-            "N2"
+            "N2",
+            "CO2"
           ],
           "suppressants": [],
           "variables_studied": [
-            "fuel flow rate",
-            "burner surface temperature",
-            "heat flux"
+            "ambient pressure",
+            "ambient oxygen concentration"
           ],
           "sensors": [
             "thermocouple",
@@ -229,14 +134,13 @@
             "suppression"
           ],
           "key_findings": [
-            "Quasi-steady burning corresponding to various condensed-phase materials was observed in microgravity despite the absence of air flow",
-            "The ongoing combustion without air flow was notably seen in elevated-oxygen atmospheres",
-            "BRE’s results suggest that NASA may want to increase use of its alternative flammability Test 2, with the cone calorimeter"
+            "Quasi-steady burning observed in microgravity for various condensed-phase materials",
+            "Elevated-oxygen atmospheres showed sustained combustion without air flow",
+            "Results suggest increased use of Cone Calorimeter Test 2"
           ],
           "earth_applications": "BRE yielded important data relevant to spacecraft fire safety"
         }
       }
-    ],
-    "rechecked_at": "2026-11-14T11:26:22+00:00"
+    ]
   }
 }

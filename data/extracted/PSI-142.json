@@ -22,14 +22,13 @@
     "test_type": "combustion",
     "fuels": [
       "n-heptane",
-      "dimethyl ether",
-      "DME"
+      "dimethyl ether"
     ],
     "fuel_phases": [
       "liquid"
     ],
     "sample_geometry": [
-      "one-dimensional"
+      "droplet"
     ],
     "sample_size": null,
     "diluents": [],
@@ -49,59 +48,41 @@
       "At elevated pressures, the flammable region of warm flames and cool flames expands due to the increase in low-temperature and intermediate-temperature reactivity with pressure."
     ],
     "earth_applications": "Understanding near-limit flame dynamics and providing guidance for experimental observation of different flame regimes.",
-    "conditions": [
-      {
-        "label": "FLEX flight conditions",
-        "fuel": "n-heptane",
-        "oxygen_pct": null,
-        "pressure_kpa": {
-          "min": null,
-          "max": 2026.5,
-          "original": "None-20 atm"
-        },
-        "flow_cm_s": null,
-        "evidence": [
-          "Since many real engines operate in the 20-40 atm pressure range, therefore, cool flames and warm flames are relevant and important flame regimes for high-pressure near-limit combustion applications."
-        ],
-        "source": "psi:PSI-142"
-      }
-    ],
+    "conditions": [],
     "paper_findings": []
   },
-  "warnings": [
-    "psi:PSI-142: [FLEX flight conditions] evidence repaired from source text"
-  ],
+  "warnings": [],
   "review_status": "model_only",
   "extraction": {
     "model": "mistral-nemo",
-    "prompt_version": "2",
+    "prompt_version": "3",
     "source_hash": "59bc55ff00e1505f",
     "papers": [],
-    "extracted_at": "2026-11-14T11:11:09+00:00",
-    "seconds": 22.6,
+    "extracted_at": "2026-11-14T12:24:56+00:00",
+    "seconds": 22.2,
     "runs": [
       {
         "source": "psi:PSI-142",
-        "seconds": 22.6,
-        "prompt_tokens": 1393,
-        "output_tokens": 330,
+        "seconds": 22.2,
+        "prompt_tokens": 1461,
+        "output_tokens": 328,
         "raw": {
           "test_type": "combustion",
           "fuels": [
             "n-heptane",
-            "dimethyl ether",
-            "DME"
+            "dimethyl ether"
           ],
           "fuel_phases": [
             "liquid"
           ],
           "sample_geometry": [
-            "one-dimensional"
+            "droplet"
           ],
           "sample_size": null,
           "conditions": [
             {
               "label": "FLEX flight conditions",
+              "context": "ground",
               "fuel": "n-heptane",
               "oxygen": {
                 "min": null,
@@ -110,8 +91,8 @@
               },
               "pressure": {
                 "min": null,
-                "max": 20,
-                "unit": "atm"
+                "max": null,
+                "unit": null
               },
               "flow_speed": {
                 "min": null,
@@ -140,7 +121,6 @@
           "earth_applications": "Understanding near-limit flame dynamics and providing guidance for experimental observation of different flame regimes."
         }
       }
-    ],
-    "rechecked_at": "2026-11-14T11:26:22+00:00"
+    ]
   }
 }

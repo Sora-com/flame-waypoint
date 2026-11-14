@@ -1,0 +1,2867 @@
+{
+  "accession": "PSI-101",
+  "origin": "psi_files",
+  "parsed_at": "2026-11-14T12:14:49+00:00",
+  "files": [
+    {
+      "file": "PSI-101_Experimental table_SAME-R.csv",
+      "sheet": "csv",
+      "tests": 109,
+      "mapped_columns": [
+        "Date",
+        "Inlet velocity (cm/s)",
+        "SAME Test #",
+        "Sample Type"
+      ],
+      "unmapped_columns": [
+        "Description",
+        "Duration (sec)",
+        "Net aging time (sec)",
+        "Primary aging time (sec)",
+        "Primary mixing time (sec)",
+        "Rt/R0"
+      ]
+    }
+  ],
+  "summary": {
+    "tests": 109,
+    "design_envelopes": 0,
+    "with_oxygen": 0,
+    "with_pressure": 0,
+    "with_flow": 109,
+    "with_issues": 0,
+    "oxygen_pct_range": null,
+    "pressure_kpa_range": null,
+    "flow_cm_s_range": [
+      0.0,
+      8.1
+    ],
+    "fuels": [
+      "Kapton",
+      "Lampwick",
+      "Pyrell",
+      "Silicone",
+      "Teflon"
+    ]
+  },
+  "tests": [
+    {
+      "row": 2,
+      "kind": "test",
+      "test_id": "51",
+      "identifier": null,
+      "date": "21-Jul",
+      "fuel": "Kapton",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "B.L. new formula",
+        "Rt/R0": "1.38",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "38"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row2"
+    },
+    {
+      "row": 3,
+      "kind": "test",
+      "test_id": "51a",
+      "identifier": null,
+      "date": "22-Jul",
+      "fuel": "Kapton",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "B.L. new formula",
+        "Rt/R0": "1.38",
+        "Duration (sec)": "60",
+        "Net aging time (sec)": "261"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row3"
+    },
+    {
+      "row": 4,
+      "kind": "test",
+      "test_id": "61",
+      "identifier": null,
+      "date": "2-Aug",
+      "fuel": "Kapton",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "Baseline Aging",
+        "Rt/R0": "1.38",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "38"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row4"
+    },
+    {
+      "row": 5,
+      "kind": "test",
+      "test_id": "61a",
+      "identifier": null,
+      "date": "2-Aug",
+      "fuel": "Kapton",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.38",
+        "Net aging time (sec)": "807"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row5"
+    },
+    {
+      "row": 6,
+      "kind": "test",
+      "test_id": "62",
+      "identifier": null,
+      "date": "2-Aug",
+      "fuel": "Kapton",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "High Temp aging",
+        "Rt/R0": "1.48",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "39"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row6"
+    },
+    {
+      "row": 7,
+      "kind": "test",
+      "test_id": "62a",
+      "identifier": null,
+      "date": "2-Aug",
+      "fuel": "Kapton",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.48",
+        "Net aging time (sec)": "808"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row7"
+    },
+    {
+      "row": 8,
+      "kind": "test",
+      "test_id": "70",
+      "identifier": null,
+      "date": "24-Aug",
+      "fuel": "Kapton",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "High temp aged STS det",
+        "Rt/R0": "1.48",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "720",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "747"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row8"
+    },
+    {
+      "row": 9,
+      "kind": "test",
+      "test_id": "73",
+      "identifier": null,
+      "date": "26-Aug",
+      "fuel": "Kapton",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "Baseline Aging",
+        "Rt/R0": "1.38",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "33"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row9"
+    },
+    {
+      "row": 10,
+      "kind": "test",
+      "test_id": "73a",
+      "identifier": null,
+      "date": "26-Aug",
+      "fuel": "Kapton",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.38",
+        "Net aging time (sec)": "560"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row10"
+    },
+    {
+      "row": 11,
+      "kind": "test",
+      "test_id": "75",
+      "identifier": null,
+      "date": "26-Aug",
+      "fuel": "Kapton",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "Mid Temp aging (no Ptrak)",
+        "Rt/R0": "1.43",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "32"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row11"
+    },
+    {
+      "row": 12,
+      "kind": "test",
+      "test_id": "75a",
+      "identifier": null,
+      "date": "26-Aug",
+      "fuel": "Kapton",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.43",
+        "Net aging time (sec)": "563"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row12"
+    },
+    {
+      "row": 13,
+      "kind": "test",
+      "test_id": "77",
+      "identifier": null,
+      "date": "26-Aug",
+      "fuel": "Kapton",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "High Temp aging",
+        "Rt/R0": "1.48",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "31"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row13"
+    },
+    {
+      "row": 14,
+      "kind": "test",
+      "test_id": "77a",
+      "identifier": null,
+      "date": "26-Aug",
+      "fuel": "Kapton",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.48",
+        "Net aging time (sec)": "559"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row14"
+    },
+    {
+      "row": 15,
+      "kind": "test",
+      "test_id": "85",
+      "identifier": null,
+      "date": "30-Aug",
+      "fuel": "Kapton",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "Mid Temp aging run. Repeat 75",
+        "Rt/R0": "1.43",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "33"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row15"
+    },
+    {
+      "row": 16,
+      "kind": "test",
+      "test_id": "85a",
+      "identifier": null,
+      "date": "30-Aug",
+      "fuel": "Kapton",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.43",
+        "Net aging time (sec)": "563"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row16"
+    },
+    {
+      "row": 17,
+      "kind": "test",
+      "test_id": "90",
+      "identifier": null,
+      "date": "30-Aug",
+      "fuel": "Kapton",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "Mid Temp aging reburn 85",
+        "Rt/R0": "1.43",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "38"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row17"
+    },
+    {
+      "row": 18,
+      "kind": "test",
+      "test_id": "90a",
+      "identifier": null,
+      "date": "30-Aug",
+      "fuel": "Kapton",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.43",
+        "Net aging time (sec)": "569"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row18"
+    },
+    {
+      "row": 19,
+      "kind": "test",
+      "test_id": "92",
+      "identifier": null,
+      "date": "7-Sep",
+      "fuel": "Kapton",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "Baseline STS det",
+        "Rt/R0": "1.38",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "35"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row19"
+    },
+    {
+      "row": 20,
+      "kind": "test",
+      "test_id": "93",
+      "identifier": null,
+      "date": "7-Sep",
+      "fuel": "Kapton",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "Mid Temp aging run 75 repeat",
+        "Rt/R0": "1.43",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "36"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row20"
+    },
+    {
+      "row": 21,
+      "kind": "test",
+      "test_id": "93a",
+      "identifier": null,
+      "date": "7-Sep",
+      "fuel": "Kapton",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.43",
+        "Net aging time (sec)": "568"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row21"
+    },
+    {
+      "row": 22,
+      "kind": "test",
+      "test_id": "94",
+      "identifier": null,
+      "date": "7-Sep",
+      "fuel": "Kapton",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "Mid Temp aging run mid high",
+        "Rt/R0": "1.45",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "42"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row22"
+    },
+    {
+      "row": 23,
+      "kind": "test",
+      "test_id": "94a",
+      "identifier": null,
+      "date": "7-Sep",
+      "fuel": "Kapton",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.45",
+        "Net aging time (sec)": "567"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row23"
+    },
+    {
+      "row": 24,
+      "kind": "test",
+      "test_id": "101",
+      "identifier": null,
+      "date": "8-Sep",
+      "fuel": "Kapton",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 0.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "No flow run w/ aging",
+        "Rt/R0": "1.48",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "29"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row24"
+    },
+    {
+      "row": 25,
+      "kind": "test",
+      "test_id": "101a",
+      "identifier": null,
+      "date": "8-Sep",
+      "fuel": "Kapton",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 0.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.48",
+        "Net aging time (sec)": "561"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row25"
+    },
+    {
+      "row": 26,
+      "kind": "test",
+      "test_id": "102",
+      "identifier": null,
+      "date": "8-Sep",
+      "fuel": "Kapton",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 0.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "No flow run w/ aging",
+        "Rt/R0": "1.48",
+        "Duration (sec)": "120",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "28"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row26"
+    },
+    {
+      "row": 27,
+      "kind": "test",
+      "test_id": "102a",
+      "identifier": null,
+      "date": "8-Sep",
+      "fuel": "Kapton",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 0.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.48",
+        "Net aging time (sec)": "563"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row27"
+    },
+    {
+      "row": 28,
+      "kind": "test",
+      "test_id": "108",
+      "identifier": null,
+      "date": "9-Sep",
+      "fuel": "Kapton",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 1.0,
+        "max": 1.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "Low flow run w/aging",
+        "Rt/R0": "1.48",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "30"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row28"
+    },
+    {
+      "row": 29,
+      "kind": "test",
+      "test_id": "108a",
+      "identifier": null,
+      "date": "9-Sep",
+      "fuel": "Kapton",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 1.0,
+        "max": 1.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.48",
+        "Net aging time (sec)": "560"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row29"
+    },
+    {
+      "row": 30,
+      "kind": "test",
+      "test_id": "114",
+      "identifier": null,
+      "date": "9-Sep",
+      "fuel": "Kapton",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 2.0,
+        "max": 2.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "low flow run w STS no Ptrak",
+        "Rt/R0": "1.43",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "28"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row30"
+    },
+    {
+      "row": 31,
+      "kind": "test",
+      "test_id": "48",
+      "identifier": null,
+      "date": "16-Jul",
+      "fuel": "Silicone",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.0,
+        "max": 8.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "Low Temp",
+        "Rt/R0": "1.304",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "62"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row31"
+    },
+    {
+      "row": 32,
+      "kind": "test",
+      "test_id": "53",
+      "identifier": null,
+      "date": "22-Jul",
+      "fuel": "Silicone",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "HighTemp",
+        "Rt/R0": "1.35",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "1",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "52"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row32"
+    },
+    {
+      "row": 33,
+      "kind": "test",
+      "test_id": "59",
+      "identifier": null,
+      "date": "30-Jul",
+      "fuel": "Silicone",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "baseline aged",
+        "Rt/R0": "1.327",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "24"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row33"
+    },
+    {
+      "row": 34,
+      "kind": "test",
+      "test_id": "59a",
+      "identifier": null,
+      "date": "30-Jul",
+      "fuel": "Silicone",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.327",
+        "Net aging time (sec)": "856"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row34"
+    },
+    {
+      "row": 35,
+      "kind": "test",
+      "test_id": "60",
+      "identifier": null,
+      "date": "30-Jul",
+      "fuel": "Silicone",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "Htemp ageing",
+        "Rt/R0": "1.35",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "49"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row35"
+    },
+    {
+      "row": 36,
+      "kind": "test",
+      "test_id": "60a",
+      "identifier": null,
+      "date": "30-Jul",
+      "fuel": "Silicone",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.35",
+        "Net aging time (sec)": "856"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row36"
+    },
+    {
+      "row": 37,
+      "kind": "test",
+      "test_id": "65",
+      "identifier": null,
+      "date": "23-Aug",
+      "fuel": "Silicone",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "Baseline long aging",
+        "Rt/R0": "1.327",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "50"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row37"
+    },
+    {
+      "row": 38,
+      "kind": "test",
+      "test_id": "65a",
+      "identifier": null,
+      "date": "23-Aug",
+      "fuel": "Silicone",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.327",
+        "Net aging time (sec)": "1923"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row38"
+    },
+    {
+      "row": 39,
+      "kind": "test",
+      "test_id": "66",
+      "identifier": null,
+      "date": "23-Aug",
+      "fuel": "Silicone",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "High T aging",
+        "Rt/R0": "1.36",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "42"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row39"
+    },
+    {
+      "row": 40,
+      "kind": "test",
+      "test_id": "66a",
+      "identifier": null,
+      "date": "23-Aug",
+      "fuel": "Silicone",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.36",
+        "Net aging time (sec)": "837"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row40"
+    },
+    {
+      "row": 41,
+      "kind": "test",
+      "test_id": "67",
+      "identifier": null,
+      "date": "24-Aug",
+      "fuel": "Silicone",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "High temp aged",
+        "Rt/R0": "1.35",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "720",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "751"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row41"
+    },
+    {
+      "row": 42,
+      "kind": "test",
+      "test_id": "72",
+      "identifier": null,
+      "date": "25-Aug",
+      "fuel": "Silicone",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "Baseline STS det",
+        "Rt/R0": "1.327",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "42"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row42"
+    },
+    {
+      "row": 43,
+      "kind": "test",
+      "test_id": "86",
+      "identifier": null,
+      "date": "30-Aug",
+      "fuel": "Silicone",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "Mid temp aging",
+        "Rt/R0": "1.345",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "50"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row43"
+    },
+    {
+      "row": 44,
+      "kind": "test",
+      "test_id": "86a",
+      "identifier": null,
+      "date": "30-Aug",
+      "fuel": "Silicone",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.345",
+        "Net aging time (sec)": "628"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row44"
+    },
+    {
+      "row": 45,
+      "kind": "test",
+      "test_id": "91",
+      "identifier": null,
+      "date": "7-Sep",
+      "fuel": "Silicone",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "Baseline STS det",
+        "Rt/R0": "1.327",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "46"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row45"
+    },
+    {
+      "row": 46,
+      "kind": "test",
+      "test_id": "99",
+      "identifier": null,
+      "date": "8-Sep",
+      "fuel": "Silicone",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 0.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "No flow run w/aging",
+        "Rt/R0": "1.35",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "48"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row46"
+    },
+    {
+      "row": 47,
+      "kind": "test",
+      "test_id": "99a",
+      "identifier": null,
+      "date": "8-Sep",
+      "fuel": "Silicone",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 0.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.35",
+        "Net aging time (sec)": "627"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row47"
+    },
+    {
+      "row": 48,
+      "kind": "test",
+      "test_id": "103",
+      "identifier": null,
+      "date": "9-Sep",
+      "fuel": "Silicone",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 1.0,
+        "max": 1.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "low flow run w/ aging",
+        "Rt/R0": "1.35",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "48"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row48"
+    },
+    {
+      "row": 49,
+      "kind": "test",
+      "test_id": "103a",
+      "identifier": null,
+      "date": "9-Sep",
+      "fuel": "Silicone",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 1.0,
+        "max": 1.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.35",
+        "Net aging time (sec)": "619"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row49"
+    },
+    {
+      "row": 50,
+      "kind": "test",
+      "test_id": "104",
+      "identifier": null,
+      "date": "9-Sep",
+      "fuel": "Silicone",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 0.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "No flow run w/ aging",
+        "Rt/R0": "1.35",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "51"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row50"
+    },
+    {
+      "row": 51,
+      "kind": "test",
+      "test_id": "104a",
+      "identifier": null,
+      "date": "9-Sep",
+      "fuel": "Silicone",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 0.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.35",
+        "Net aging time (sec)": "636"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row51"
+    },
+    {
+      "row": 52,
+      "kind": "test",
+      "test_id": "109",
+      "identifier": null,
+      "date": "9-Sep",
+      "fuel": "Silicone",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 2.0,
+        "max": 2.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "low flow run w STS",
+        "Rt/R0": "1.35",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "28"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row52"
+    },
+    {
+      "row": 53,
+      "kind": "test",
+      "test_id": "49",
+      "identifier": null,
+      "date": "19-Jul",
+      "fuel": "Lampwick",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.0,
+        "max": 8.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "B.L. High RT/R0",
+        "Rt/R0": "1.251",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "51"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row53"
+    },
+    {
+      "row": 54,
+      "kind": "test",
+      "test_id": "54",
+      "identifier": null,
+      "date": "29-Jul",
+      "fuel": "Lampwick",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "Baseline",
+        "Rt/R0": "1.245",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "57"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row54"
+    },
+    {
+      "row": 55,
+      "kind": "test",
+      "test_id": "55",
+      "identifier": null,
+      "date": "29-Jul",
+      "fuel": "Lampwick",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "High RT/R0 test aging",
+        "Rt/R0": "1.245",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "47"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row55"
+    },
+    {
+      "row": 56,
+      "kind": "test",
+      "test_id": "55a",
+      "identifier": null,
+      "date": "29-Jul",
+      "fuel": "Lampwick",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.245",
+        "Net aging time (sec)": "218"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row56"
+    },
+    {
+      "row": 57,
+      "kind": "test",
+      "test_id": "57",
+      "identifier": null,
+      "date": "29-Jul",
+      "fuel": "Lampwick",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "High RT/R0 reburn sample",
+        "Rt/R0": "1.253",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "n/a"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row57"
+    },
+    {
+      "row": 58,
+      "kind": "test",
+      "test_id": "68",
+      "identifier": null,
+      "date": "24-Aug",
+      "fuel": "Lampwick",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "High temp aged STS det",
+        "Rt/R0": "1.28",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "720",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "747"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row58"
+    },
+    {
+      "row": 59,
+      "kind": "test",
+      "test_id": "78",
+      "identifier": null,
+      "date": "26-Aug",
+      "fuel": "Lampwick",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "Baseline aging",
+        "Rt/R0": "1.245",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "37"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row59"
+    },
+    {
+      "row": 60,
+      "kind": "test",
+      "test_id": "78a",
+      "identifier": null,
+      "date": "26-Aug",
+      "fuel": "Lampwick",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.245",
+        "Net aging time (sec)": "581"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row60"
+    },
+    {
+      "row": 61,
+      "kind": "test",
+      "test_id": "80",
+      "identifier": null,
+      "date": "26-Aug",
+      "fuel": "Lampwick",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "High temp aging",
+        "Rt/R0": "1.28",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "40"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row61"
+    },
+    {
+      "row": 62,
+      "kind": "test",
+      "test_id": "80a",
+      "identifier": null,
+      "date": "26-Aug",
+      "fuel": "Lampwick",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.28",
+        "Net aging time (sec)": "580"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row62"
+    },
+    {
+      "row": 63,
+      "kind": "test",
+      "test_id": "82",
+      "identifier": null,
+      "date": "26-Aug",
+      "fuel": "Lampwick",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "Mid temp aging",
+        "Rt/R0": "1.265",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "39"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row63"
+    },
+    {
+      "row": 64,
+      "kind": "test",
+      "test_id": "82a",
+      "identifier": null,
+      "date": "27-Aug",
+      "fuel": "Lampwick",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.265",
+        "Net aging time (sec)": "579"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row64"
+    },
+    {
+      "row": 65,
+      "kind": "test",
+      "test_id": "88",
+      "identifier": null,
+      "date": "30-Aug",
+      "fuel": "Lampwick",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "Baseline STS det",
+        "Rt/R0": "1.245",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "n/a"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row65"
+    },
+    {
+      "row": 66,
+      "kind": "test",
+      "test_id": "96",
+      "identifier": null,
+      "date": "7-Sep",
+      "fuel": "Lampwick",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 0.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "No flow run w/aging",
+        "Rt/R0": "1.245",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "34"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row66"
+    },
+    {
+      "row": 67,
+      "kind": "test",
+      "test_id": "96a",
+      "identifier": null,
+      "date": "7-Sep",
+      "fuel": "Lampwick",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 0.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.245",
+        "Net aging time (sec)": "582"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row67"
+    },
+    {
+      "row": 68,
+      "kind": "test",
+      "test_id": "98",
+      "identifier": null,
+      "date": "8-Sep",
+      "fuel": "Lampwick",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 0.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "No flow run w/aging",
+        "Rt/R0": "1.28",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "37"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row68"
+    },
+    {
+      "row": 69,
+      "kind": "test",
+      "test_id": "98a",
+      "identifier": null,
+      "date": "8-Sep",
+      "fuel": "Lampwick",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 0.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.28",
+        "Net aging time (sec)": "585"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row69"
+    },
+    {
+      "row": 70,
+      "kind": "test",
+      "test_id": "106",
+      "identifier": null,
+      "date": "9-Sep",
+      "fuel": "Lampwick",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 0.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "No flow run w/aging",
+        "Rt/R0": "1.28",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "30"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row70"
+    },
+    {
+      "row": 71,
+      "kind": "test",
+      "test_id": "106a",
+      "identifier": null,
+      "date": "9-Sep",
+      "fuel": "Lampwick",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 0.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.28",
+        "Net aging time (sec)": "558"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row71"
+    },
+    {
+      "row": 72,
+      "kind": "test",
+      "test_id": "110",
+      "identifier": null,
+      "date": "9-Sep",
+      "fuel": "Lampwick",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 2.0,
+        "max": 2.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "low flow run w/STS",
+        "Rt/R0": "1.28",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "21"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row72"
+    },
+    {
+      "row": 73,
+      "kind": "test",
+      "test_id": "50",
+      "identifier": null,
+      "date": "20-Jul",
+      "fuel": "Teflon",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "B.L. High RT/R0",
+        "Rt/R0": "1.452",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "33"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row73"
+    },
+    {
+      "row": 74,
+      "kind": "test",
+      "test_id": "56",
+      "identifier": null,
+      "date": "29-Jul",
+      "fuel": "Teflon",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "Baseline",
+        "Rt/R0": "1.445",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "41"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row74"
+    },
+    {
+      "row": 75,
+      "kind": "test",
+      "test_id": "57",
+      "identifier": null,
+      "date": "29-Jul",
+      "fuel": "Teflon",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "High RT/R0 reburn sample",
+        "Rt/R0": "1.253",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "n/a"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row75"
+    },
+    {
+      "row": 76,
+      "kind": "test",
+      "test_id": "58",
+      "identifier": null,
+      "date": "30-Jul",
+      "fuel": "Teflon",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "Baseline aging",
+        "Rt/R0": "1.445",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "34"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row76"
+    },
+    {
+      "row": 77,
+      "kind": "test",
+      "test_id": "58a",
+      "identifier": null,
+      "date": "30-Jul",
+      "fuel": "Teflon",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.445",
+        "Net aging time (sec)": "805"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row77"
+    },
+    {
+      "row": 78,
+      "kind": "test",
+      "test_id": "69",
+      "identifier": null,
+      "date": "24-Aug",
+      "fuel": "Teflon",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "High temp aged STS det",
+        "Rt/R0": "1.45",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "720",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "745"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row78"
+    },
+    {
+      "row": 79,
+      "kind": "test",
+      "test_id": "79",
+      "identifier": null,
+      "date": "26-Aug",
+      "fuel": "Teflon",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "Baseline aging",
+        "Rt/R0": "1.445",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "33"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row79"
+    },
+    {
+      "row": 80,
+      "kind": "test",
+      "test_id": "79a",
+      "identifier": null,
+      "date": "26-Aug",
+      "fuel": "Teflon",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.445",
+        "Net aging time (sec)": "560"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row80"
+    },
+    {
+      "row": 81,
+      "kind": "test",
+      "test_id": "81",
+      "identifier": null,
+      "date": "26-Aug",
+      "fuel": "Teflon",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "High temp aging",
+        "Rt/R0": "1.45",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "30"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row81"
+    },
+    {
+      "row": 82,
+      "kind": "test",
+      "test_id": "81a",
+      "identifier": null,
+      "date": "27-Aug",
+      "fuel": "Teflon",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.45",
+        "Net aging time (sec)": "559"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row82"
+    },
+    {
+      "row": 83,
+      "kind": "test",
+      "test_id": "83",
+      "identifier": null,
+      "date": "26-Aug",
+      "fuel": "Teflon",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "Mid temp aging",
+        "Rt/R0": "1.448",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "30"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row83"
+    },
+    {
+      "row": 84,
+      "kind": "test",
+      "test_id": "83a",
+      "identifier": null,
+      "date": "27-Aug",
+      "fuel": "Teflon",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.448",
+        "Net aging time (sec)": "557"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row84"
+    },
+    {
+      "row": 85,
+      "kind": "test",
+      "test_id": "89",
+      "identifier": null,
+      "date": "30-Aug",
+      "fuel": "Teflon",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "Baseline STS det",
+        "Rt/R0": "1.445",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "31"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row85"
+    },
+    {
+      "row": 86,
+      "kind": "test",
+      "test_id": "100",
+      "identifier": null,
+      "date": "8-Sep",
+      "fuel": "Teflon",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 0.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "No flow run w/ aging",
+        "Rt/R0": "1.45",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "29"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row86"
+    },
+    {
+      "row": 87,
+      "kind": "test",
+      "test_id": "100a",
+      "identifier": null,
+      "date": "8-Sep",
+      "fuel": "Teflon",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 0.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.45",
+        "Net aging time (sec)": "560"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row87"
+    },
+    {
+      "row": 88,
+      "kind": "test",
+      "test_id": "105",
+      "identifier": null,
+      "date": "9-Sep",
+      "fuel": "Teflon",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 0.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "No flow run w/ aging",
+        "Rt/R0": "1.45",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "24"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row88"
+    },
+    {
+      "row": 89,
+      "kind": "test",
+      "test_id": "105a",
+      "identifier": null,
+      "date": "9-Sep",
+      "fuel": "Teflon",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 0.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.45",
+        "Net aging time (sec)": "559"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row89"
+    },
+    {
+      "row": 90,
+      "kind": "test",
+      "test_id": "111",
+      "identifier": null,
+      "date": "9-Sep",
+      "fuel": "Teflon",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 2.0,
+        "max": 2.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "low flow run w/ STS",
+        "Rt/R0": "1.45",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "43"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row90"
+    },
+    {
+      "row": 91,
+      "kind": "test",
+      "test_id": "52",
+      "identifier": null,
+      "date": "22-Jul",
+      "fuel": "Pyrell",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "Baseline",
+        "Rt/R0": "1.22",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "n/a"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row91"
+    },
+    {
+      "row": 92,
+      "kind": "test",
+      "test_id": "63",
+      "identifier": null,
+      "date": "23-Aug",
+      "fuel": "Pyrell",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "Baseline Aging",
+        "Rt/R0": "1.22",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "56"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row92"
+    },
+    {
+      "row": 93,
+      "kind": "test",
+      "test_id": "63a",
+      "identifier": null,
+      "date": "23-Aug",
+      "fuel": "Pyrell",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.22",
+        "Net aging time (sec)": "840"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row93"
+    },
+    {
+      "row": 94,
+      "kind": "test",
+      "test_id": "64",
+      "identifier": null,
+      "date": "23-Aug",
+      "fuel": "Pyrell",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "High Temp aging",
+        "Rt/R0": "1.23",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "47"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row94"
+    },
+    {
+      "row": 95,
+      "kind": "test",
+      "test_id": "64a",
+      "identifier": null,
+      "date": "23-Aug",
+      "fuel": "Pyrell",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.23",
+        "Net aging time (sec)": "842"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row95"
+    },
+    {
+      "row": 96,
+      "kind": "test",
+      "test_id": "71",
+      "identifier": null,
+      "date": "24-Aug",
+      "fuel": "Pyrell",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "High temp aged STS det",
+        "Rt/R0": "1.23",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "720",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "750"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row96"
+    },
+    {
+      "row": 97,
+      "kind": "test",
+      "test_id": "74",
+      "identifier": null,
+      "date": "26-Aug",
+      "fuel": "Pyrell",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "Baseline Aging",
+        "Rt/R0": "1.22",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "48"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row97"
+    },
+    {
+      "row": 98,
+      "kind": "test",
+      "test_id": "74a",
+      "identifier": null,
+      "date": "26-Aug",
+      "fuel": "Pyrell",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.22",
+        "Net aging time (sec)": "623"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row98"
+    },
+    {
+      "row": 99,
+      "kind": "test",
+      "test_id": "76",
+      "identifier": null,
+      "date": "26-Aug",
+      "fuel": "Pyrell",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "High Temp aging",
+        "Rt/R0": "1.23",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "51"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row99"
+    },
+    {
+      "row": 100,
+      "kind": "test",
+      "test_id": "76a",
+      "identifier": null,
+      "date": "26-Aug",
+      "fuel": "Pyrell",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.23",
+        "Net aging time (sec)": "625"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row100"
+    },
+    {
+      "row": 101,
+      "kind": "test",
+      "test_id": "84",
+      "identifier": null,
+      "date": "30-Aug",
+      "fuel": "Pyrell",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "Mid Temp aging retry",
+        "Rt/R0": "1.225",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "53"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row101"
+    },
+    {
+      "row": 102,
+      "kind": "test",
+      "test_id": "84a",
+      "identifier": null,
+      "date": "30-Aug",
+      "fuel": "Pyrell",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.225",
+        "Net aging time (sec)": "632"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row102"
+    },
+    {
+      "row": 103,
+      "kind": "test",
+      "test_id": "87",
+      "identifier": null,
+      "date": "30-Aug",
+      "fuel": "Pyrell",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 8.1,
+        "max": 8.1,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "Baseline STS det",
+        "Rt/R0": "1.22",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "45"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row103"
+    },
+    {
+      "row": 104,
+      "kind": "test",
+      "test_id": "95",
+      "identifier": null,
+      "date": "7-Sep",
+      "fuel": "Pyrell",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 0.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "No flow run w/ aging",
+        "Rt/R0": "1.22",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "38"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row104"
+    },
+    {
+      "row": 105,
+      "kind": "test",
+      "test_id": "95a",
+      "identifier": null,
+      "date": "7-Sep",
+      "fuel": "Pyrell",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 0.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.22",
+        "Net aging time (sec)": "n/a"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row105"
+    },
+    {
+      "row": 106,
+      "kind": "test",
+      "test_id": "97",
+      "identifier": null,
+      "date": "8-Sep",
+      "fuel": "Pyrell",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 0.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "No flow run w/aging",
+        "Rt/R0": "1.23",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "48"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row106"
+    },
+    {
+      "row": 107,
+      "kind": "test",
+      "test_id": "97a",
+      "identifier": null,
+      "date": "8-Sep",
+      "fuel": "Pyrell",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 0.0,
+        "max": 0.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.23",
+        "Net aging time (sec)": "624"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row107"
+    },
+    {
+      "row": 108,
+      "kind": "test",
+      "test_id": "107",
+      "identifier": null,
+      "date": "9-Sep",
+      "fuel": "Pyrell",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 1.0,
+        "max": 1.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "Low flow run w/aging",
+        "Rt/R0": "1.23",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "32"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row108"
+    },
+    {
+      "row": 109,
+      "kind": "test",
+      "test_id": "107a",
+      "identifier": null,
+      "date": "9-Sep",
+      "fuel": "Pyrell",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 1.0,
+        "max": 1.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "aged",
+        "Rt/R0": "1.23",
+        "Net aging time (sec)": "559"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row109"
+    },
+    {
+      "row": 110,
+      "kind": "test",
+      "test_id": "113",
+      "identifier": null,
+      "date": "9-Sep",
+      "fuel": "Pyrell",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 2.0,
+        "max": 2.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Description": "low flow run w STS",
+        "Rt/R0": "1.23",
+        "Duration (sec)": "60",
+        "Primary aging time (sec)": "11",
+        "Primary mixing time (sec)": "8",
+        "Net aging time (sec)": "31"
+      },
+      "issues": [],
+      "source": "PSI-101_Experimental table_SAME-R.csv#row110"
+    }
+  ]
+}

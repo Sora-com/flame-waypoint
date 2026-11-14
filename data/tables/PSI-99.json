@@ -1,0 +1,488 @@
+{
+  "accession": "PSI-99",
+  "origin": "psi_files",
+  "parsed_at": "2026-11-14T12:14:49+00:00",
+  "files": [
+    {
+      "file": "PSI-99_Experimental table_SAFFIRE-2.csv",
+      "sheet": "csv",
+      "tests": 15,
+      "mapped_columns": [
+        "Air Flow (cm/s)",
+        "Material",
+        "Percent O2 (Note 1)",
+        "Sample Number"
+      ],
+      "unmapped_columns": [
+        "1-g Burn Length",
+        "1-g Spread Rate",
+        "?-g Burn Length",
+        "?-g Spread Length",
+        "Burn Time (s)",
+        "Camera 1",
+        "Camera 2",
+        "Flow Direction",
+        "Ignition Power (W)",
+        "Ignition Time (s)",
+        "Samle Thickness ",
+        "Sample Length ",
+        "Sample Width (cm)"
+      ]
+    }
+  ],
+  "summary": {
+    "tests": 15,
+    "design_envelopes": 0,
+    "with_oxygen": 9,
+    "with_pressure": 0,
+    "with_flow": 9,
+    "with_issues": 0,
+    "oxygen_pct_range": [
+      21.5,
+      22.1
+    ],
+    "pressure_kpa_range": null,
+    "flow_cm_s_range": [
+      20.0,
+      20.0
+    ],
+    "fuels": [
+      "Cotton-Fiberglass (SIBAL)",
+      "PMMA",
+      "PMMA & Nomex",
+      "Pre-test flow visulation data for sample 2-1",
+      "Pre-test flow visulation data for sample 2-2",
+      "Silicone"
+    ]
+  },
+  "tests": [
+    {
+      "row": 2,
+      "kind": "test",
+      "test_id": "2-1",
+      "identifier": null,
+      "date": null,
+      "fuel": "Silicone",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.5,
+        "max": 21.5
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 20.0,
+        "max": 20.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Samle Thickness": "0.27 mm",
+        "Sample Length": "29 cm",
+        "Sample Width (cm)": "5 cm",
+        "Ignition Power (W)": "80 W",
+        "Ignition Time (s)": "9.2 s",
+        "Burn Time (s)": "Insignificant",
+        "Flow Direction": "Concurrent",
+        "?-g Burn Length": "~ 0",
+        "?-g Spread Length": "n/a",
+        "1-g Burn Length": "Complete",
+        "1-g Spread Rate": "Acceleratory",
+        "Camera 1": "S1C1",
+        "Camera 2": "S1C2"
+      },
+      "issues": [],
+      "source": "PSI-99_Experimental table_SAFFIRE-2.csv#row2"
+    },
+    {
+      "row": 3,
+      "kind": "test",
+      "test_id": "2-2",
+      "identifier": null,
+      "date": null,
+      "fuel": "Silicone",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 22.1,
+        "max": 22.1
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 20.0,
+        "max": 20.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Samle Thickness": "0.61 mm",
+        "Sample Length": "29 cm",
+        "Sample Width (cm)": "5 cm",
+        "Ignition Power (W)": "80 W",
+        "Ignition Time (s)": "9.2 s",
+        "Burn Time (s)": "Insignificant",
+        "Flow Direction": "Concurrent",
+        "?-g Burn Length": "~ 0",
+        "?-g Spread Length": "n/a",
+        "1-g Burn Length": "7.6 cm",
+        "1-g Spread Rate": "1.2 mm/s",
+        "Camera 1": "n/a",
+        "Camera 2": "S2C2"
+      },
+      "issues": [],
+      "source": "PSI-99_Experimental table_SAFFIRE-2.csv#row3"
+    },
+    {
+      "row": 4,
+      "kind": "test",
+      "test_id": "2-3",
+      "identifier": null,
+      "date": null,
+      "fuel": "Silicone",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 22.1,
+        "max": 22.1
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 20.0,
+        "max": 20.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Samle Thickness": "1.03 mm",
+        "Sample Length": "29 cm",
+        "Sample Width (cm)": "5 cm",
+        "Ignition Power (W)": "80 W",
+        "Ignition Time (s)": "9.2 s",
+        "Burn Time (s)": "Insignificant",
+        "Flow Direction": "Concurrent",
+        "?-g Burn Length": "~ 0",
+        "?-g Spread Length": "n/a",
+        "1-g Burn Length": "~ 0",
+        "1-g Spread Rate": "n/a",
+        "Camera 2": "S3C2"
+      },
+      "issues": [],
+      "source": "PSI-99_Experimental table_SAFFIRE-2.csv#row4"
+    },
+    {
+      "row": 5,
+      "kind": "test",
+      "test_id": "2-4",
+      "identifier": null,
+      "date": null,
+      "fuel": "Silicone",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 22.1,
+        "max": 22.1
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 20.0,
+        "max": 20.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Samle Thickness": "037 mm",
+        "Sample Length": "29 cm",
+        "Sample Width (cm)": "5 cm",
+        "Ignition Power (W)": "80 W",
+        "Ignition Time (s)": "9.2 s",
+        "Burn Time (s)": "Insignificant",
+        "Flow Direction": "Opposed",
+        "?-g Burn Length": "~ 0",
+        "?-g Spread Length": "n/a",
+        "1-g Burn Length": "Complete",
+        "1-g Spread Rate": "0.6 mm/s",
+        "Camera 1": "S4C1",
+        "Camera 2": "S4C1"
+      },
+      "issues": [],
+      "source": "PSI-99_Experimental table_SAFFIRE-2.csv#row5"
+    },
+    {
+      "row": 6,
+      "kind": "test",
+      "test_id": "2-5",
+      "identifier": null,
+      "date": null,
+      "fuel": "Cotton-Fiberglass (SIBAL)",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 22.1,
+        "max": 22.1
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 20.0,
+        "max": 20.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Samle Thickness": "037 mm",
+        "Sample Length": "29 cm",
+        "Sample Width (cm)": "5 cm",
+        "Ignition Power (W)": "80 W",
+        "Ignition Time (s)": "9.2 s",
+        "Burn Time (s)": "145 s",
+        "Flow Direction": "Concurrent",
+        "?-g Burn Length": "29 cm",
+        "?-g Spread Length": "2.1 mm/s",
+        "1-g Burn Length": "Complete",
+        "1-g Spread Rate": "Acceleratory",
+        "Camera 1": "S5C1",
+        "Camera 2": "S5C2"
+      },
+      "issues": [],
+      "source": "PSI-99_Experimental table_SAFFIRE-2.csv#row6"
+    },
+    {
+      "row": 7,
+      "kind": "test",
+      "test_id": "2-6",
+      "identifier": null,
+      "date": null,
+      "fuel": null,
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 22.1,
+        "max": 22.1
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 20.0,
+        "max": 20.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Samle Thickness": "037 mm",
+        "Sample Length": "29 cm",
+        "Sample Width (cm)": "5 cm",
+        "Ignition Power (W)": "80 W",
+        "Ignition Time (s)": "9.2 s",
+        "Burn Time (s)": "115 s",
+        "Flow Direction": "Concurrent",
+        "?-g Burn Length": "29 cm",
+        "?-g Spread Length": "2.6 mm/s",
+        "1-g Burn Length": "Complete",
+        "1-g Spread Rate": "Acceleratory",
+        "Camera 1": "S6C1",
+        "Camera 2": "S56C2"
+      },
+      "issues": [],
+      "source": "PSI-99_Experimental table_SAFFIRE-2.csv#row7"
+    },
+    {
+      "row": 8,
+      "kind": "test",
+      "test_id": "2-7",
+      "identifier": null,
+      "date": null,
+      "fuel": "PMMA & Nomex",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 22.1,
+        "max": 22.1
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 20.0,
+        "max": 20.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Samle Thickness": "0.85 and 0.37 mm",
+        "Sample Length": "5 and 24 cm",
+        "Sample Width (cm)": "5 cm",
+        "Ignition Power (W)": "80 W",
+        "Ignition Time (s)": "9.2 s",
+        "Burn Time (s)": "140 s",
+        "Flow Direction": "Concurrent",
+        "?-g Burn Length": "5 cm & 0 (note 2)",
+        "?-g Spread Length": "n/a (Nomex)",
+        "1-g Burn Length": "~ 0 (Nomex)",
+        "1-g Spread Rate": "n/a (Nomex)",
+        "Camera 1": "S7C1",
+        "Camera 2": "n/a"
+      },
+      "issues": [],
+      "source": "PSI-99_Experimental table_SAFFIRE-2.csv#row8"
+    },
+    {
+      "row": 9,
+      "kind": "test",
+      "test_id": "2-8",
+      "identifier": null,
+      "date": null,
+      "fuel": "PMMA",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 22.0,
+        "max": 22.1
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 20.0,
+        "max": 20.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Samle Thickness": "See Fig. 5",
+        "Sample Length": "29 cm",
+        "Sample Width (cm)": "5 cm",
+        "Ignition Power (W)": "97 W",
+        "Ignition Time (s)": "30 s",
+        "Burn Time (s)": "600 s",
+        "Flow Direction": "Concurrent",
+        "?-g Burn Length": "~ 10 cm (note 3)",
+        "?-g Spread Length": "Note 4",
+        "1-g Burn Length": "Complete",
+        "1-g Spread Rate": "Acceleratory",
+        "Camera 1": "S8C1",
+        "Camera 2": "n/a"
+      },
+      "issues": [],
+      "source": "PSI-99_Experimental table_SAFFIRE-2.csv#row9"
+    },
+    {
+      "row": 10,
+      "kind": "test",
+      "test_id": "2-9",
+      "identifier": null,
+      "date": null,
+      "fuel": null,
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.9,
+        "max": 22.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 20.0,
+        "max": 20.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Samle Thickness": "1 cm",
+        "Sample Length": "29 cm",
+        "Sample Width (cm)": "5 cm",
+        "Ignition Power (W)": "97 W",
+        "Ignition Time (s)": "30 s",
+        "Burn Time (s)": "900 s",
+        "Flow Direction": "Concurrent",
+        "?-g Burn Length": "~ 10 cm (note 4)",
+        "?-g Spread Length": "Note 4",
+        "1-g Burn Length": "Complete",
+        "1-g Spread Rate": "Acceleratory",
+        "Camera 1": "S9C1",
+        "Camera 2": "n/a"
+      },
+      "issues": [],
+      "source": "PSI-99_Experimental table_SAFFIRE-2.csv#row10"
+    },
+    {
+      "row": 11,
+      "kind": "test",
+      "test_id": "F1C1/F1C2",
+      "identifier": null,
+      "date": null,
+      "fuel": "Pre-test flow visulation data for sample 2-1",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {},
+      "issues": [],
+      "source": "PSI-99_Experimental table_SAFFIRE-2.csv#row11"
+    },
+    {
+      "row": 12,
+      "kind": "test",
+      "test_id": "F2C1/F2C2",
+      "identifier": null,
+      "date": null,
+      "fuel": "Pre-test flow visulation data for sample 2-2",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {},
+      "issues": [],
+      "source": "PSI-99_Experimental table_SAFFIRE-2.csv#row12"
+    },
+    {
+      "row": 13,
+      "kind": "test",
+      "test_id": "Note 1 Derived from measured CO2 production and referenced to initial O2 concentration reported by ISS.",
+      "identifier": null,
+      "date": null,
+      "fuel": null,
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {},
+      "issues": [],
+      "source": "PSI-99_Experimental table_SAFFIRE-2.csv#row13"
+    },
+    {
+      "row": 14,
+      "kind": "test",
+      "test_id": "Note 2 The PMMA portion was completely consumed but the Nomex was not ignited.",
+      "identifier": null,
+      "date": null,
+      "fuel": null,
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {},
+      "issues": [],
+      "source": "PSI-99_Experimental table_SAFFIRE-2.csv#row14"
+    },
+    {
+      "row": 15,
+      "kind": "test",
+      "test_id": "Note 3 This is the length of fuel with significant visible damage.",
+      "identifier": null,
+      "date": null,
+      "fuel": null,
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {},
+      "issues": [],
+      "source": "PSI-99_Experimental table_SAFFIRE-2.csv#row15"
+    },
+    {
+      "row": 16,
+      "kind": "test",
+      "test_id": "Note 4 The flames remain anchored at the base of the sample which has a very slow regression rate (0.01 to 0.04 mm/s)",
+      "identifier": null,
+      "date": null,
+      "fuel": null,
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {},
+      "issues": [],
+      "source": "PSI-99_Experimental table_SAFFIRE-2.csv#row16"
+    }
+  ]
+}

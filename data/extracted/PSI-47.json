@@ -27,13 +27,13 @@
       "solid"
     ],
     "sample_geometry": [
-      "particle samples"
+      "particulate"
     ],
-    "sample_size": "15-liter Mylar bags",
+    "sample_size": null,
     "diluents": [],
     "suppressants": [],
     "variables_studied": [
-      "Aerosol particle concentration"
+      "microgravity"
     ],
     "sensors": [
       "TSI P-Trak",
@@ -54,17 +54,17 @@
   "review_status": "model_only",
   "extraction": {
     "model": "mistral-nemo",
-    "prompt_version": "2",
+    "prompt_version": "3",
     "source_hash": "c483ab10a220f6bf",
     "papers": [],
-    "extracted_at": "2026-11-14T11:19:00+00:00",
-    "seconds": 23.7,
+    "extracted_at": "2026-11-14T12:33:18+00:00",
+    "seconds": 23.1,
     "runs": [
       {
         "source": "psi:PSI-47",
-        "seconds": 23.7,
-        "prompt_tokens": 1326,
-        "output_tokens": 326,
+        "seconds": 23.1,
+        "prompt_tokens": 1394,
+        "output_tokens": 330,
         "raw": {
           "test_type": "aerosol_dust",
           "fuels": [
@@ -74,12 +74,13 @@
             "solid"
           ],
           "sample_geometry": [
-            "particle samples"
+            "particulate"
           ],
-          "sample_size": "15-liter Mylar bags",
+          "sample_size": null,
           "conditions": [
             {
-              "label": "Microgravity aerosol measurement",
+              "label": "Arizona Red Dust (ARD) aerosolized with GN2",
+              "context": "flight",
               "fuel": "Arizona Red Dust (ARD)",
               "oxygen": {
                 "min": null,
@@ -102,7 +103,7 @@
           "diluents": [],
           "suppressants": [],
           "variables_studied": [
-            "Aerosol particle concentration"
+            "microgravity"
           ],
           "sensors": [
             "TSI P-Trak",
@@ -118,7 +119,6 @@
           "earth_applications": "The successful adaptation of the TSI P-Trak for microgravity can inform the design of instruments for use in other challenging Earth environments."
         }
       }
-    ],
-    "rechecked_at": "2026-11-14T11:26:22+00:00"
+    ]
   }
 }

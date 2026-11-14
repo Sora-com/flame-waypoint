@@ -1,0 +1,27 @@
+{
+  "accession": "PSI-21",
+  "origin": "psi_files",
+  "parsed_at": "2026-11-14T12:14:49+00:00",
+  "files": [
+    {
+      "file": "PSI-21_Experimental table_CLD Flame.csv",
+      "sheet": "csv",
+      "tests": 0,
+      "mapped_columns": [],
+      "unmapped_columns": []
+    }
+  ],
+  "summary": {
+    "tests": 0,
+    "design_envelopes": 0,
+    "with_oxygen": 0,
+    "with_pressure": 0,
+    "with_flow": 0,
+    "with_issues": 0,
+    "oxygen_pct_range": null,
+    "pressure_kpa_range": null,
+    "flow_cm_s_range": null,
+    "fuels": []
+  },
+  "tests": []
+}

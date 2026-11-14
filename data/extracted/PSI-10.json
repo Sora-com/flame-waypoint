@@ -35,7 +35,8 @@
     "fuels": [
       "ethylene",
       "methane",
-      "propane"
+      "propane",
+      "diluted ethylene"
     ],
     "fuel_phases": [
       "gas"
@@ -43,9 +44,9 @@
     "sample_geometry": [
       "spherical diffusion flames"
     ],
-    "sample_size": "quasi-steady",
+    "sample_size": null,
     "diluents": [
-      "N2",
+      "nitrogen",
       "CO2"
     ],
     "suppressants": [],
@@ -66,29 +67,32 @@
       "suppression"
     ],
     "key_findings": [
-      "Soot formation requires a region where local C/O ratio and T exceed their critical values, and where strain rate is sufficiently low.",
-      "Microgravity spherical diffusion flames extinguish when the peak temperature first decreases below 1130 K.",
-      "Steady-state spherical diffusion flames are possible."
+      "Obtain soot-inception limits of quasi-steady normal and inverse spherical diffusion flames as functions of flow rate, Zst, amount of N2, and pressure for C2H4 and CH4 flames.",
+      "Obtain detailed measurements in quasi-steady normal and inverse spherical diffusion flames for C2H4 and CH4.",
+      "Obtain extinction limits as functions of Zst, amount of N2, and pressure for normal and inverse spherical C2H4 and CH4 flames."
     ],
     "earth_applications": "This project has the potential for improving efficiency and reducing pollutant emissions in terrestrial combustors.",
     "conditions": [
       {
-        "label": "Oxygen flowing into 4% ethylene",
+        "label": "Quiescent ambient gas, normal gravity",
+        "context": "ground",
         "fuel": "ethylene",
-        "oxygen_pct": {
-          "min": 4,
-          "max": 4
+        "oxygen_pct": null,
+        "pressure_kpa": {
+          "min": 98,
+          "max": 98,
+          "original": "98-98 kPa"
         },
-        "pressure_kpa": null,
         "flow_cm_s": null,
         "evidence": [
-          "oxygen issuing into 4% ethylene at 104 mg/s"
+          "The The in the NASA mm sphere sphere 2.2-second of a windowed CCD camera, diameter was Glenn porous supported was positioned pressure drop vessel a microprocessor sphere and fed at the center tower consisting using supported controller of the cylindrical by a fuel- and of sintered by a 1.6 mm a general- stainless lead-acid 10 micron steel chamber, tube whose diameter,length and volume were 25 cm, 53 cm and 27 liters, respectively.All testswere conductedin quiescentambientgasat 98kPa."
         ],
-        "source": "ntrs:20070017909"
+        "source": "ntrs:20000057049"
       },
       {
-        "label": "Quiescent ambient gas at 98 kPa",
-        "fuel": "ethylene",
+        "label": "Quiescent ambient gas, diluted ethylene, normal gravity",
+        "context": "ground",
+        "fuel": "diluted ethylene",
         "oxygen_pct": null,
         "pressure_kpa": {
           "min": 98,
@@ -104,7 +108,7 @@
     ],
     "paper_findings": [
       {
-        "text": "Extinction temperature is nearly invariant with flow rate, around 1100 K for oxygen into 4% ethylene flames.",
+        "text": "The extinction temperature is nearly invariant with flow rate.",
         "source": "ntrs:20070017909"
       },
       {
@@ -112,7 +116,7 @@
         "source": "ntrs:20070017909"
       },
       {
-        "text": "Base extinction often led to complete extinction, where all flame luminosity disappeared during a drop test.",
+        "text": "The extinction temperature was 1100 K at the lowest flow rates and it dropped less than 50 K to 1055 K at 104 mg/s.",
         "source": "ntrs:20070017909"
       },
       {
@@ -130,32 +134,32 @@
     ]
   },
   "warnings": [
-    "psi:PSI-10: [C2H4 normal flame, varying flow rate, Zst, N2, pressure] evidence not found in source: 'Obtain soot-inception limits... for C2H4 flames'",
-    "psi:PSI-10: [CH4 normal flame, varying flow rate, Zst, N2, pressure] evidence not found in source: 'Obtain soot-inception limits... for CH4 flames'",
-    "ntrs:20070017909: [Ethylene burning in normal flame, 17% oxygen] evidence not found in source: 'propane is flowing into an atmosphere of extinguishing flame of propane flowing '",
-    "ntrs:20070017909: [Ethylene burning in normal flame, 17% oxygen] oxygen: 17-17 % not in evidence, dropped",
-    "ntrs:20070017909: [Ethylene burning in normal flame, 17% oxygen] pressure: 0.98-0.98 bar not in evidence, dropped",
-    "ntrs:20070017909: [Ethylene burning in normal flame, 17% oxygen] flow_speed: 1.35-1.35 mg/s not in evidence, dropped",
-    "ntrs:20070017909: [Oxygen flowing into 4% ethylene] flow_speed: 104-104 mg/s not in evidence, dropped",
-    "ntrs:20000057049: [Quiescent ambient gas at 98 kPa] evidence repaired from source text"
+    "ntrs:20070017909: [Ethylene burning in oxygen at 17% concentration] evidence not found in source: 'After about 1.5 s, a hole is observed in the outer flame zone between 10 and 12 '",
+    "ntrs:20070017909: [Ethylene burning in oxygen at 17% concentration] oxygen: 17-17 % not in evidence, dropped",
+    "ntrs:20070017909: [Ethylene burning in oxygen at 17% concentration] pressure: 0.98-0.98 bar not in evidence, dropped",
+    "ntrs:20070017909: [Ethylene burning in oxygen at 17% concentration] flow_speed: 1.35-1.35 mg/s not in evidence, dropped",
+    "ntrs:20070017909: [Oxygen flowing into 4% ethylene at 104 mg/s] oxygen: 4-4 % not in evidence, dropped",
+    "ntrs:20070017909: [Oxygen flowing into 4% ethylene at 104 mg/s] flow_speed: 104-104 mg/s not in evidence, dropped",
+    "ntrs:20000057049: [Quiescent ambient gas, normal gravity] evidence repaired from source text",
+    "ntrs:20000057049: [Quiescent ambient gas, diluted ethylene, normal gravity] evidence repaired from source text"
   ],
   "review_status": "model_only",
   "extraction": {
     "model": "mistral-nemo",
-    "prompt_version": "2",
+    "prompt_version": "3",
     "source_hash": "eb154cd7922ba612",
     "papers": [
       "20000057049",
       "20070017909"
     ],
-    "extracted_at": "2026-11-14T11:03:47+00:00",
-    "seconds": 76.3,
+    "extracted_at": "2026-11-14T12:17:45+00:00",
+    "seconds": 97.0,
     "runs": [
       {
         "source": "psi:PSI-10",
-        "seconds": 30.5,
-        "prompt_tokens": 1091,
-        "output_tokens": 487,
+        "seconds": 37.0,
+        "prompt_tokens": 1159,
+        "output_tokens": 489,
         "raw": {
           "test_type": "combustion",
           "fuels": [
@@ -168,10 +172,11 @@
           "sample_geometry": [
             "spherical diffusion flames"
           ],
-          "sample_size": "quasi-steady",
+          "sample_size": null,
           "conditions": [
             {
-              "label": "C2H4 normal flame, varying flow rate, Zst, N2, pressure",
+              "label": "Quasi-steady normal spherical diffusion flames",
+              "context": "flight",
               "fuel": "ethylene",
               "oxygen": {
                 "min": null,
@@ -188,13 +193,12 @@
                 "max": null,
                 "unit": null
               },
-              "evidence": [
-                "Obtain soot-inception limits... for C2H4 flames"
-              ]
+              "evidence": []
             },
             {
-              "label": "CH4 normal flame, varying flow rate, Zst, N2, pressure",
-              "fuel": "methane",
+              "label": "Quasi-steady inverse spherical diffusion flames",
+              "context": "flight",
+              "fuel": "ethylene",
               "oxygen": {
                 "min": null,
                 "max": null,
@@ -210,13 +214,11 @@
                 "max": null,
                 "unit": null
               },
-              "evidence": [
-                "Obtain soot-inception limits... for CH4 flames"
-              ]
+              "evidence": []
             }
           ],
           "diluents": [
-            "N2",
+            "nitrogen",
             "CO2"
           ],
           "suppressants": [],
@@ -237,18 +239,18 @@
             "suppression"
           ],
           "key_findings": [
-            "Soot formation requires a region where local C/O ratio and T exceed their critical values, and where strain rate is sufficiently low.",
-            "Microgravity spherical diffusion flames extinguish when the peak temperature first decreases below 1130 K.",
-            "Steady-state spherical diffusion flames are possible."
+            "Obtain soot-inception limits of quasi-steady normal and inverse spherical diffusion flames as functions of flow rate, Zst, amount of N2, and pressure for C2H4 and CH4 flames.",
+            "Obtain detailed measurements in quasi-steady normal and inverse spherical diffusion flames for C2H4 and CH4.",
+            "Obtain extinction limits as functions of Zst, amount of N2, and pressure for normal and inverse spherical C2H4 and CH4 flames."
           ],
           "earth_applications": "This project has the potential for improving efficiency and reducing pollutant emissions in terrestrial combustors."
         }
       },
       {
         "source": "ntrs:20070017909",
-        "seconds": 28.8,
-        "prompt_tokens": 1630,
-        "output_tokens": 356,
+        "seconds": 35.2,
+        "prompt_tokens": 1698,
+        "output_tokens": 475,
         "raw": {
           "fuels": [
             "ethylene",
@@ -256,7 +258,8 @@
           ],
           "conditions": [
             {
-              "label": "Ethylene burning in normal flame, 17% oxygen",
+              "label": "Ethylene burning in oxygen at 17% concentration",
+              "context": "ground",
               "fuel": "ethylene",
               "oxygen": {
                 "min": 17,
@@ -274,11 +277,12 @@
                 "unit": "mg/s"
               },
               "evidence": [
-                "propane is flowing into an atmosphere of extinguishing flame of propane flowing into 17% oxygen at 1.35 mg/s"
+                "After about 1.5 s, a hole is observed in the outer flame zone between 10 and 12 s, with oxygen issuing at 1.35 mg/s."
               ]
             },
             {
-              "label": "Oxygen flowing into 4% ethylene",
+              "label": "Oxygen flowing into 4% ethylene at 104 mg/s",
+              "context": "ground",
               "fuel": "ethylene",
               "oxygen": {
                 "min": 4,
@@ -296,30 +300,32 @@
                 "unit": "mg/s"
               },
               "evidence": [
-                "oxygen issuing into 4% ethylene at 104 mg/s"
+                "Figure 3 shows temperature profiles for two different initial conditions at different levels of compression, with the outer boundary at 5 cm (Case 1) and 3.5 cm (Case 2) from the center of the burner, for oxygen issuing into 4% ethylene at 104 mg/s."
               ]
             }
           ],
           "key_findings": [
-            "Extinction temperature is nearly invariant with flow rate, around 1100 K for oxygen into 4% ethylene flames.",
+            "The extinction temperature is nearly invariant with flow rate.",
             "Extinction begins when the flame radius starts to decrease.",
-            "Base extinction often led to complete extinction, where all flame luminosity disappeared during a drop test."
+            "The extinction temperature was 1100 K at the lowest flow rates and it dropped less than 50 K to 1055 K at 104 mg/s."
           ]
         },
         "excerpt_chars": 5815
       },
       {
         "source": "ntrs:20000057049",
-        "seconds": 17.0,
-        "prompt_tokens": 1397,
-        "output_tokens": 198,
+        "seconds": 24.8,
+        "prompt_tokens": 1465,
+        "output_tokens": 339,
         "raw": {
           "fuels": [
-            "ethylene"
+            "ethylene",
+            "diluted ethylene"
           ],
           "conditions": [
             {
-              "label": "Quiescent ambient gas at 98 kPa",
+              "label": "Quiescent ambient gas, normal gravity",
+              "context": "ground",
               "fuel": "ethylene",
               "oxygen": {
                 "min": null,
@@ -339,6 +345,29 @@
               "evidence": [
                 "All tests were conducted in quiescent ambient gas at 98 kPa."
               ]
+            },
+            {
+              "label": "Quiescent ambient gas, diluted ethylene, normal gravity",
+              "context": "ground",
+              "fuel": "diluted ethylene",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": 98,
+                "max": 98,
+                "unit": "kPa"
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": [
+                "The present tests employed the following gases: ... diluted ethylene (8.14% ethylene by volume in nitrogen)."
+              ]
             }
           ],
           "key_findings": [
@@ -349,7 +378,6 @@
         },
         "excerpt_chars": 4673
       }
-    ],
-    "rechecked_at": "2026-11-14T11:26:22+00:00"
+    ]
   }
 }

@@ -1,0 +1,200 @@
+{
+  "accession": "PSI-102",
+  "origin": "psi_files",
+  "parsed_at": "2026-11-14T12:14:49+00:00",
+  "files": [
+    {
+      "file": "PSI-102_Experimental table_SAME.csv",
+      "sheet": "csv",
+      "tests": 8,
+      "mapped_columns": [
+        "Air Flow (cm/s)",
+        "Sample #",
+        "Sample Material  "
+      ],
+      "unmapped_columns": [
+        "Aging Duration (minutes)",
+        "Weight loss rate (mg/min)"
+      ]
+    }
+  ],
+  "summary": {
+    "tests": 8,
+    "design_envelopes": 0,
+    "with_oxygen": 0,
+    "with_pressure": 0,
+    "with_flow": 4,
+    "with_issues": 0,
+    "oxygen_pct_range": null,
+    "pressure_kpa_range": null,
+    "flow_cm_s_range": [
+      5.0,
+      10.0
+    ],
+    "fuels": [
+      "Dibutyl Phthalate: same conditions as 1-4",
+      "Kapton: same conditions as 1-4",
+      "Lampwick: same conditions as 1-4",
+      "Silicone Rubber: same conditions as 1-4",
+      "Teflon"
+    ]
+  },
+  "tests": [
+    {
+      "row": 2,
+      "kind": "test",
+      "test_id": "1",
+      "identifier": null,
+      "date": null,
+      "fuel": "Teflon",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Weight loss rate (mg/min)": "2",
+        "Aging Duration (minutes)": "1"
+      },
+      "issues": [],
+      "source": "PSI-102_Experimental table_SAME.csv#row2"
+    },
+    {
+      "row": 3,
+      "kind": "test",
+      "test_id": "2",
+      "identifier": null,
+      "date": null,
+      "fuel": "Teflon",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Weight loss rate (mg/min)": "1",
+        "Aging Duration (minutes)": "1"
+      },
+      "issues": [],
+      "source": "PSI-102_Experimental table_SAME.csv#row3"
+    },
+    {
+      "row": 4,
+      "kind": "test",
+      "test_id": "3",
+      "identifier": null,
+      "date": null,
+      "fuel": "Teflon",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 5.0,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Weight loss rate (mg/min)": "2",
+        "Aging Duration (minutes)": "20"
+      },
+      "issues": [],
+      "source": "PSI-102_Experimental table_SAME.csv#row4"
+    },
+    {
+      "row": 5,
+      "kind": "test",
+      "test_id": "4",
+      "identifier": null,
+      "date": null,
+      "fuel": "Teflon",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 10.0,
+        "max": 10.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Weight loss rate (mg/min)": "2",
+        "Aging Duration (minutes)": "1"
+      },
+      "issues": [],
+      "source": "PSI-102_Experimental table_SAME.csv#row5"
+    },
+    {
+      "row": 6,
+      "kind": "test",
+      "test_id": "5",
+      "identifier": null,
+      "date": null,
+      "fuel": "Kapton: same conditions as 1-4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {},
+      "issues": [],
+      "source": "PSI-102_Experimental table_SAME.csv#row6"
+    },
+    {
+      "row": 7,
+      "kind": "test",
+      "test_id": "6",
+      "identifier": null,
+      "date": null,
+      "fuel": "Silicone Rubber: same conditions as 1-4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {},
+      "issues": [],
+      "source": "PSI-102_Experimental table_SAME.csv#row7"
+    },
+    {
+      "row": 8,
+      "kind": "test",
+      "test_id": "7",
+      "identifier": null,
+      "date": null,
+      "fuel": "Lampwick: same conditions as 1-4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {},
+      "issues": [],
+      "source": "PSI-102_Experimental table_SAME.csv#row8"
+    },
+    {
+      "row": 9,
+      "kind": "test",
+      "test_id": "8",
+      "identifier": null,
+      "date": null,
+      "fuel": "Dibutyl Phthalate: same conditions as 1-4",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {},
+      "issues": [],
+      "source": "PSI-102_Experimental table_SAME.csv#row9"
+    }
+  ]
+}

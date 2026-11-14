@@ -1,0 +1,303 @@
+{
+  "accession": "PSI-68",
+  "origin": "psi_files",
+  "parsed_at": "2026-11-14T12:14:49+00:00",
+  "files": [
+    {
+      "file": "PSI-68_Experimental table_Flex2.csv",
+      "sheet": "csv",
+      "tests": 8,
+      "mapped_columns": [
+        "Ambient Pressure (atm)",
+        "Flow Velocity (cm/s)",
+        "Oxygen Mole Fraction",
+        "Sample (Fuel Type)"
+      ],
+      "unmapped_columns": [
+        " Ambient Temperature (C)",
+        "Ambient Gas Mixture ",
+        "Initial Droplet Diameter (mm)"
+      ]
+    }
+  ],
+  "summary": {
+    "tests": 0,
+    "design_envelopes": 8,
+    "with_oxygen": 8,
+    "with_pressure": 8,
+    "with_flow": 8,
+    "with_issues": 0,
+    "oxygen_pct_range": [
+      17.0,
+      30.0
+    ],
+    "pressure_kpa_range": [
+      50.663,
+      303.975
+    ],
+    "flow_cm_s_range": [
+      0.1,
+      5.0
+    ],
+    "fuels": [
+      "Decane (pure)",
+      "Ethanol (pure)",
+      "Heptane (50%) IsoOctane (50%) (mixture)",
+      "Heptane (pure)",
+      "IsoOctane (pure)",
+      "n-Octane (pure)",
+      "Propanol (80%) Glycerol (20%) (mixture)",
+      "Propanol (95%) Glycerol (5%) (mixture)"
+    ]
+  },
+  "tests": [
+    {
+      "row": 2,
+      "kind": "design_envelope",
+      "test_id": "2",
+      "identifier": null,
+      "date": null,
+      "fuel": "IsoOctane (pure)",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.0,
+        "max": 30.0
+      },
+      "pressure_kpa": {
+        "min": 50.663,
+        "max": 303.975,
+        "converted": true
+      },
+      "flow_cm_s": {
+        "min": 0.1,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Initial Droplet Diameter (mm)": "1.5 - 5",
+        "Ambient Gas Mixture": "O2/N2 or O2/He",
+        "Ambient Temperature (C)": "25"
+      },
+      "issues": [],
+      "source": "PSI-68_Experimental table_Flex2.csv#row2"
+    },
+    {
+      "row": 3,
+      "kind": "design_envelope",
+      "test_id": "3",
+      "identifier": null,
+      "date": null,
+      "fuel": "n-Octane (pure)",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.0,
+        "max": 30.0
+      },
+      "pressure_kpa": {
+        "min": 50.663,
+        "max": 303.975,
+        "converted": true
+      },
+      "flow_cm_s": {
+        "min": 0.1,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Initial Droplet Diameter (mm)": "1.5 - 5",
+        "Ambient Gas Mixture": "O2/N2 or O2/He",
+        "Ambient Temperature (C)": "25"
+      },
+      "issues": [],
+      "source": "PSI-68_Experimental table_Flex2.csv#row3"
+    },
+    {
+      "row": 4,
+      "kind": "design_envelope",
+      "test_id": "4",
+      "identifier": null,
+      "date": null,
+      "fuel": "Heptane (pure)",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.0,
+        "max": 30.0
+      },
+      "pressure_kpa": {
+        "min": 50.663,
+        "max": 303.975,
+        "converted": true
+      },
+      "flow_cm_s": {
+        "min": 0.1,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Initial Droplet Diameter (mm)": "1.5 - 5",
+        "Ambient Gas Mixture": "O2/N2 or O2/He",
+        "Ambient Temperature (C)": "25"
+      },
+      "issues": [],
+      "source": "PSI-68_Experimental table_Flex2.csv#row4"
+    },
+    {
+      "row": 5,
+      "kind": "design_envelope",
+      "test_id": "5",
+      "identifier": null,
+      "date": null,
+      "fuel": "Decane (pure)",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.0,
+        "max": 30.0
+      },
+      "pressure_kpa": {
+        "min": 50.663,
+        "max": 303.975,
+        "converted": true
+      },
+      "flow_cm_s": {
+        "min": 0.1,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Initial Droplet Diameter (mm)": "1.5 - 5",
+        "Ambient Gas Mixture": "O2/N2 or O2/He",
+        "Ambient Temperature (C)": "25"
+      },
+      "issues": [],
+      "source": "PSI-68_Experimental table_Flex2.csv#row5"
+    },
+    {
+      "row": 6,
+      "kind": "design_envelope",
+      "test_id": "6",
+      "identifier": null,
+      "date": null,
+      "fuel": "Ethanol (pure)",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.0,
+        "max": 30.0
+      },
+      "pressure_kpa": {
+        "min": 50.663,
+        "max": 303.975,
+        "converted": true
+      },
+      "flow_cm_s": {
+        "min": 0.1,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Initial Droplet Diameter (mm)": "1.5 - 5",
+        "Ambient Gas Mixture": "O2/N2 or O2/He",
+        "Ambient Temperature (C)": "25"
+      },
+      "issues": [],
+      "source": "PSI-68_Experimental table_Flex2.csv#row6"
+    },
+    {
+      "row": 7,
+      "kind": "design_envelope",
+      "test_id": "7",
+      "identifier": null,
+      "date": null,
+      "fuel": "Propanol (95%) Glycerol (5%) (mixture)",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.0,
+        "max": 30.0
+      },
+      "pressure_kpa": {
+        "min": 50.663,
+        "max": 303.975,
+        "converted": true
+      },
+      "flow_cm_s": {
+        "min": 0.1,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Initial Droplet Diameter (mm)": "1.5 - 5",
+        "Ambient Gas Mixture": "O2/N2 or O2/He",
+        "Ambient Temperature (C)": "25"
+      },
+      "issues": [],
+      "source": "PSI-68_Experimental table_Flex2.csv#row7"
+    },
+    {
+      "row": 8,
+      "kind": "design_envelope",
+      "test_id": "8",
+      "identifier": null,
+      "date": null,
+      "fuel": "Heptane (50%) IsoOctane (50%) (mixture)",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.0,
+        "max": 30.0
+      },
+      "pressure_kpa": {
+        "min": 50.663,
+        "max": 303.975,
+        "converted": true
+      },
+      "flow_cm_s": {
+        "min": 0.1,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Initial Droplet Diameter (mm)": "1.5 - 5",
+        "Ambient Gas Mixture": "O2/N2 or O2/He",
+        "Ambient Temperature (C)": "25"
+      },
+      "issues": [],
+      "source": "PSI-68_Experimental table_Flex2.csv#row8"
+    },
+    {
+      "row": 9,
+      "kind": "design_envelope",
+      "test_id": "9",
+      "identifier": null,
+      "date": null,
+      "fuel": "Propanol (80%) Glycerol (20%) (mixture)",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 17.0,
+        "max": 30.0
+      },
+      "pressure_kpa": {
+        "min": 50.663,
+        "max": 303.975,
+        "converted": true
+      },
+      "flow_cm_s": {
+        "min": 0.1,
+        "max": 5.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Initial Droplet Diameter (mm)": "1.5 - 5",
+        "Ambient Gas Mixture": "O2/N2 or O2/He",
+        "Ambient Temperature (C)": "25"
+      },
+      "issues": [],
+      "source": "PSI-68_Experimental table_Flex2.csv#row9"
+    }
+  ]
+}

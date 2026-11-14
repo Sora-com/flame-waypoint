@@ -1,0 +1,512 @@
+{
+  "accession": "PSI-23",
+  "origin": "psi_files",
+  "parsed_at": "2026-11-14T12:14:49+00:00",
+  "files": [
+    {
+      "file": "PSI-23_Experimental table_ACME s-Flame.csv",
+      "sheet": "csv",
+      "tests": 18,
+      "mapped_columns": [
+        "Atmosphere*",
+        "Date",
+        "Fuel Bottle"
+      ],
+      "unmapped_columns": [
+        "Flames Ignited*",
+        "Month",
+        "Notes",
+        "Test Day*",
+        "Test Type",
+        "Year"
+      ]
+    }
+  ],
+  "summary": {
+    "tests": 18,
+    "design_envelopes": 0,
+    "with_oxygen": 18,
+    "with_pressure": 0,
+    "with_flow": 0,
+    "with_issues": 0,
+    "oxygen_pct_range": [
+      21.0,
+      30.0
+    ],
+    "pressure_kpa_range": null,
+    "flow_cm_s_range": null,
+    "fuels": [
+      "100% H2",
+      "20% C2H4 with He",
+      "20% H2, 25% CH4, with He",
+      "25% C2H4 with He",
+      "25% H2, 20% CH4, with He",
+      "30% C2H4 with He",
+      "30% H2, 15% CH4, with He",
+      "35% H2 with He",
+      "44.4% H2 with CH4",
+      "45% CH4 with He",
+      "45% CH4 with N2",
+      "45% CH4 with N3",
+      "45% H2 with He",
+      "50% C2H4 with N2",
+      "50% C2H4 with N3",
+      "66.7% H2 with CH4"
+    ]
+  },
+  "tests": [
+    {
+      "row": 2,
+      "kind": "test",
+      "test_id": "2",
+      "identifier": null,
+      "date": "11",
+      "fuel": "50% C2H4 with N2",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "First round of tests with nitrogen-diluted fuel and oxygen",
+        "Test Day*": "19254",
+        "Year": "2019",
+        "Month": "Sept.",
+        "Flames Ignited*": "13",
+        "Notes": "*Test Day is formatted YYDDD where YY identfies year and DDD identifies day of year (GMT)."
+      },
+      "issues": [],
+      "source": "PSI-23_Experimental table_ACME s-Flame.csv#row2"
+    },
+    {
+      "row": 3,
+      "kind": "test",
+      "test_id": "3",
+      "identifier": null,
+      "date": "13",
+      "fuel": "50% C2H4 with N3",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "First round of tests with nitrogen-diluted fuel and oxygen",
+        "Test Day*": "19256",
+        "Year": "2019",
+        "Month": "Sept.",
+        "Flames Ignited*": "16",
+        "Notes": "*Atmosphere is ~1 atm but pressure increases and O2% drops with vitiation."
+      },
+      "issues": [],
+      "source": "PSI-23_Experimental table_ACME s-Flame.csv#row3"
+    },
+    {
+      "row": 4,
+      "kind": "test",
+      "test_id": "4",
+      "identifier": null,
+      "date": "31",
+      "fuel": "45% CH4 with N2",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "First round of tests with nitrogen-diluted fuel and oxygen",
+        "Test Day*": "19304",
+        "Year": "2019",
+        "Month": "Oct.",
+        "Flames Ignited*": "9",
+        "Notes": "*Flames Ignited is the number ignited on that day (neglecting the day change on ISS)."
+      },
+      "issues": [],
+      "source": "PSI-23_Experimental table_ACME s-Flame.csv#row4"
+    },
+    {
+      "row": 5,
+      "kind": "test",
+      "test_id": "5",
+      "identifier": null,
+      "date": "4",
+      "fuel": "45% CH4 with N3",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 30.0,
+        "max": 30.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "First round of tests with nitrogen-diluted fuel and oxygen",
+        "Test Day*": "19308",
+        "Year": "2019",
+        "Month": "Nov.",
+        "Flames Ignited*": "21"
+      },
+      "issues": [],
+      "source": "PSI-23_Experimental table_ACME s-Flame.csv#row5"
+    },
+    {
+      "row": 6,
+      "kind": "test",
+      "test_id": "6",
+      "identifier": null,
+      "date": "18",
+      "fuel": "100% H2",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "First round of tests with nitrogen-diluted fuel and oxygen",
+        "Test Day*": "19352",
+        "Year": "2019",
+        "Month": "Dec.",
+        "Flames Ignited*": "10"
+      },
+      "issues": [],
+      "source": "PSI-23_Experimental table_ACME s-Flame.csv#row6"
+    },
+    {
+      "row": 7,
+      "kind": "test",
+      "test_id": "7",
+      "identifier": null,
+      "date": "6",
+      "fuel": "44.4% H2 with CH4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "First round of tests with nitrogen-diluted fuel and oxygen",
+        "Test Day*": "20006",
+        "Year": "2020",
+        "Month": "Jan.",
+        "Flames Ignited*": "17"
+      },
+      "issues": [],
+      "source": "PSI-23_Experimental table_ACME s-Flame.csv#row7"
+    },
+    {
+      "row": 8,
+      "kind": "test",
+      "test_id": "8",
+      "identifier": null,
+      "date": "13",
+      "fuel": "66.7% H2 with CH4",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "First round of tests with nitrogen-diluted fuel and oxygen",
+        "Test Day*": "20013",
+        "Year": "2020",
+        "Month": "Jan.",
+        "Flames Ignited*": "22"
+      },
+      "issues": [],
+      "source": "PSI-23_Experimental table_ACME s-Flame.csv#row8"
+    },
+    {
+      "row": 9,
+      "kind": "test",
+      "test_id": "9",
+      "identifier": null,
+      "date": "24",
+      "fuel": "100% H2",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "First round of tests with nitrogen-diluted fuel and oxygen",
+        "Test Day*": "20024",
+        "Year": "2020",
+        "Month": "Jan.",
+        "Flames Ignited*": "16"
+      },
+      "issues": [],
+      "source": "PSI-23_Experimental table_ACME s-Flame.csv#row9"
+    },
+    {
+      "row": 10,
+      "kind": "test",
+      "test_id": "10",
+      "identifier": null,
+      "date": "29",
+      "fuel": "50% C2H4 with N2",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "First round of tests with nitrogen-diluted fuel and oxygen",
+        "Test Day*": "20029",
+        "Year": "2020",
+        "Month": "Jan.",
+        "Flames Ignited*": "21"
+      },
+      "issues": [],
+      "source": "PSI-23_Experimental table_ACME s-Flame.csv#row10"
+    },
+    {
+      "row": 11,
+      "kind": "test",
+      "test_id": "11",
+      "identifier": null,
+      "date": "11",
+      "fuel": "25% H2, 20% CH4, with He",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "First round of tests with nitrogen-diluted fuel and oxygen",
+        "Test Day*": "20132",
+        "Year": "2020",
+        "Month": "May",
+        "Flames Ignited*": "7"
+      },
+      "issues": [],
+      "source": "PSI-23_Experimental table_ACME s-Flame.csv#row11"
+    },
+    {
+      "row": 12,
+      "kind": "test",
+      "test_id": "12",
+      "identifier": null,
+      "date": "15",
+      "fuel": "20% H2, 25% CH4, with He",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Second round of tests with helium-diluted fuel and oxygen",
+        "Test Day*": "20136",
+        "Year": "2020",
+        "Month": "May",
+        "Flames Ignited*": "11"
+      },
+      "issues": [],
+      "source": "PSI-23_Experimental table_ACME s-Flame.csv#row12"
+    },
+    {
+      "row": 13,
+      "kind": "test",
+      "test_id": "13",
+      "identifier": null,
+      "date": "21",
+      "fuel": "30% H2, 15% CH4, with He",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 30.0,
+        "max": 30.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Second round of tests with helium-diluted fuel and oxygen",
+        "Test Day*": "20142",
+        "Year": "2020",
+        "Month": "May",
+        "Flames Ignited*": "17"
+      },
+      "issues": [],
+      "source": "PSI-23_Experimental table_ACME s-Flame.csv#row13"
+    },
+    {
+      "row": 14,
+      "kind": "test",
+      "test_id": "14",
+      "identifier": null,
+      "date": "3",
+      "fuel": "45% H2 with He",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 30.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Second round of tests with helium-diluted fuel and oxygen",
+        "Test Day*": "20155",
+        "Year": "2020",
+        "Month": "June",
+        "Flames Ignited*": "9"
+      },
+      "issues": [],
+      "source": "PSI-23_Experimental table_ACME s-Flame.csv#row14"
+    },
+    {
+      "row": 15,
+      "kind": "test",
+      "test_id": "15",
+      "identifier": null,
+      "date": "8",
+      "fuel": "45% CH4 with He",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 30.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Second round of tests with helium-diluted fuel and oxygen",
+        "Test Day*": "20160",
+        "Year": "2020",
+        "Month": "June",
+        "Flames Ignited*": "12"
+      },
+      "issues": [],
+      "source": "PSI-23_Experimental table_ACME s-Flame.csv#row15"
+    },
+    {
+      "row": 16,
+      "kind": "test",
+      "test_id": "16",
+      "identifier": null,
+      "date": "12",
+      "fuel": "20% C2H4 with He",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 30.0,
+        "max": 30.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Second round of tests with helium-diluted fuel and oxygen",
+        "Test Day*": "20164",
+        "Year": "2020",
+        "Month": "June",
+        "Flames Ignited*": "11"
+      },
+      "issues": [],
+      "source": "PSI-23_Experimental table_ACME s-Flame.csv#row16"
+    },
+    {
+      "row": 17,
+      "kind": "test",
+      "test_id": "17",
+      "identifier": null,
+      "date": "18",
+      "fuel": "25% C2H4 with He",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 30.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Second round of tests with helium-diluted fuel and oxygen",
+        "Test Day*": "20170",
+        "Year": "2020",
+        "Month": "June",
+        "Flames Ignited*": "20"
+      },
+      "issues": [],
+      "source": "PSI-23_Experimental table_ACME s-Flame.csv#row17"
+    },
+    {
+      "row": 18,
+      "kind": "test",
+      "test_id": "18",
+      "identifier": null,
+      "date": "24",
+      "fuel": "30% C2H4 with He",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 30.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Second round of tests with helium-diluted fuel and oxygen",
+        "Test Day*": "20176",
+        "Year": "2020",
+        "Month": "June",
+        "Flames Ignited*": "23"
+      },
+      "issues": [],
+      "source": "PSI-23_Experimental table_ACME s-Flame.csv#row18"
+    },
+    {
+      "row": 19,
+      "kind": "test",
+      "test_id": "19",
+      "identifier": null,
+      "date": "8",
+      "fuel": "35% H2 with He",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 30.0
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {
+        "Test Type": "Second round of tests with helium-diluted fuel and oxygen",
+        "Test Day*": "20190",
+        "Year": "2020",
+        "Month": "July",
+        "Flames Ignited*": "21"
+      },
+      "issues": [],
+      "source": "PSI-23_Experimental table_ACME s-Flame.csv#row19"
+    }
+  ]
+}

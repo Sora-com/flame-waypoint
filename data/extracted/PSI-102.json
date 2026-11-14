@@ -39,11 +39,11 @@
   "fields": {
     "test_type": "smoke_pyrolysis",
     "fuels": [
-      "smoke",
+      "spacecraft materials",
       "PMMA"
     ],
     "fuel_phases": [
-      "liquid"
+      "solid"
     ],
     "sample_geometry": [
       "rod"
@@ -70,11 +70,11 @@
       "The change in size distribution and number density affects the response of smoke detectors.",
       "The SAME experiment provides quantitative data on the sensitivity of detectors to reduced gravity smokes."
     ],
-    "earth_applications": "The smoke detectors developed from SAME can be useful in extreme environments on Earth, such as submarines or underwater laboratories.",
+    "earth_applications": "The smoke detectors developed can be useful in other extreme environments on Earth, such as submarines or underwater laboratories.",
     "conditions": [],
     "paper_findings": [
       {
-        "text": "Smoke particulate produced in low-gravity was found to be typically 50% larger in count mean diameter than similar conditions in normal gravity.",
+        "text": "Smoke particulate produced in low-gravity was typically 50% larger in count mean diameter than similar conditions in normal gravity.",
         "source": "ntrs:20080012612"
       },
       {
@@ -87,34 +87,56 @@
   "review_status": "model_only",
   "extraction": {
     "model": "mistral-nemo",
-    "prompt_version": "2",
+    "prompt_version": "3",
     "source_hash": "3e2d9a1dc736ce91",
     "papers": [
       "20010074094",
       "20070013892",
       "20080012612"
     ],
-    "extracted_at": "2026-11-14T11:07:57+00:00",
-    "seconds": 34.1,
+    "extracted_at": "2026-11-14T12:22:09+00:00",
+    "seconds": 41.0,
     "runs": [
       {
         "source": "psi:PSI-102",
-        "seconds": 17.5,
-        "prompt_tokens": 1306,
-        "output_tokens": 244,
+        "seconds": 23.5,
+        "prompt_tokens": 1374,
+        "output_tokens": 360,
         "raw": {
           "test_type": "smoke_pyrolysis",
           "fuels": [
-            "smoke"
+            "spacecraft materials"
           ],
           "fuel_phases": [
-            "liquid"
+            "solid"
           ],
           "sample_geometry": [
             "rod"
           ],
           "sample_size": null,
-          "conditions": [],
+          "conditions": [
+            {
+              "label": "Microgravity combustion of spacecraft materials",
+              "context": "flight",
+              "fuel": "spacecraft materials",
+              "oxygen": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "pressure": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "flow_speed": {
+                "min": null,
+                "max": null,
+                "unit": null
+              },
+              "evidence": []
+            }
+          ],
           "diluents": [],
           "suppressants": [],
           "variables_studied": [
@@ -136,21 +158,22 @@
             "The change in size distribution and number density affects the response of smoke detectors.",
             "The SAME experiment provides quantitative data on the sensitivity of detectors to reduced gravity smokes."
           ],
-          "earth_applications": "The smoke detectors developed from SAME can be useful in extreme environments on Earth, such as submarines or underwater laboratories."
+          "earth_applications": "The smoke detectors developed can be useful in other extreme environments on Earth, such as submarines or underwater laboratories."
         }
       },
       {
         "source": "ntrs:20080012612",
-        "seconds": 14.4,
-        "prompt_tokens": 536,
-        "output_tokens": 214,
+        "seconds": 15.2,
+        "prompt_tokens": 604,
+        "output_tokens": 218,
         "raw": {
           "fuels": [
             "PMMA"
           ],
           "conditions": [
             {
-              "label": "Low-gravity smoke particulate production",
+              "label": "Low-gravity smoke particulate tests",
+              "context": "flight",
               "fuel": "PMMA",
               "oxygen": {
                 "min": null,
@@ -173,7 +196,7 @@
             }
           ],
           "key_findings": [
-            "Smoke particulate produced in low-gravity was found to be typically 50% larger in count mean diameter than similar conditions in normal gravity.",
+            "Smoke particulate produced in low-gravity was typically 50% larger in count mean diameter than similar conditions in normal gravity.",
             "The resultant sizes were all below 300 nm suggesting that discriminating smoke from spacecraft dust possibly could be achieved by detecting in the sub-micrometer range."
           ]
         },
@@ -185,8 +208,8 @@
       },
       {
         "source": "ntrs:20070013892",
-        "seconds": 2.2,
-        "prompt_tokens": 475,
+        "seconds": 2.3,
+        "prompt_tokens": 543,
         "output_tokens": 21,
         "raw": {
           "fuels": [],
@@ -195,7 +218,6 @@
         },
         "excerpt_chars": 658
       }
-    ],
-    "rechecked_at": "2026-11-14T11:26:22+00:00"
+    ]
   }
 }

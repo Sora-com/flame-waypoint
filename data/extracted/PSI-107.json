@@ -52,79 +52,18 @@
       "video cameras"
     ],
     "safety_pillars": [
-      "detection",
-      "suppression"
+      "detection"
     ],
     "key_findings": [
-      "The smoke point of non-buoyant jet diffusion flames was identified under various co-flow conditions in microgravity.",
-      "The effects of burner diameter and co-flow velocity on the luminous flame lengths and smoke points were determined.",
-      "The sooting propensity of different fuels was quantified."
+      "526 flames were studied to identify the laminar smoke-point properties of non-buoyant jet diffusion flames under various co-flow conditions in microgravity.",
+      "The impact of air and fuel flow rate variations on smoke point phenomena in space was investigated."
     ],
     "earth_applications": "Will improve our understanding of soot formation mechanisms and help design safer spacecraft environments.",
     "conditions": [
       {
-        "label": "Methane flames in microgravity",
-        "fuel": "methane",
-        "oxygen_pct": null,
-        "pressure_kpa": null,
-        "flow_cm_s": {
-          "min": 5.4,
-          "max": 65,
-          "original": "5.4-65 cm/s"
-        },
-        "evidence": [
-          "co-flow velocities ranging from 5.4 cm/s to 65 cm/s"
-        ],
-        "source": "psi:PSI-107"
-      },
-      {
-        "label": "Ethylene flames in microgravity",
-        "fuel": "ethylene",
-        "oxygen_pct": null,
-        "pressure_kpa": null,
-        "flow_cm_s": {
-          "min": 5.4,
-          "max": 65,
-          "original": "5.4-65 cm/s"
-        },
-        "evidence": [
-          "co-flow velocities ranging from 5.4 cm/s to 65 cm/s"
-        ],
-        "source": "psi:PSI-107"
-      },
-      {
-        "label": "Propane flames in microgravity",
-        "fuel": "propane",
-        "oxygen_pct": null,
-        "pressure_kpa": null,
-        "flow_cm_s": {
-          "min": 5.4,
-          "max": 65,
-          "original": "5.4-65 cm/s"
-        },
-        "evidence": [
-          "co-flow velocities ranging from 5.4 cm/s to 65 cm/s"
-        ],
-        "source": "psi:PSI-107"
-      },
-      {
-        "label": "Propylene flames in microgravity",
-        "fuel": "propylene",
-        "oxygen_pct": null,
-        "pressure_kpa": null,
-        "flow_cm_s": {
-          "min": 5.4,
-          "max": 65,
-          "original": "5.4-65 cm/s"
-        },
-        "evidence": [
-          "co-flow velocities ranging from 5.4 cm/s to 65 cm/s"
-        ],
-        "source": "psi:PSI-107"
-      },
-      {
-        "label": "Propylene mixtures flames in microgravity",
-        "fuel": "propylene mixtures",
+        "label": "Microgravity combustion tests",
+        "context": "flight",
+        "fuel": null,
         "oxygen_pct": null,
         "pressure_kpa": null,
         "flow_cm_s": {
@@ -144,19 +83,19 @@
   "review_status": "model_only",
   "extraction": {
     "model": "mistral-nemo",
-    "prompt_version": "2",
+    "prompt_version": "3",
     "source_hash": "776b30351c1cdebb",
     "papers": [
       "20070013892"
     ],
-    "extracted_at": "2026-11-14T11:09:56+00:00",
-    "seconds": 53.9,
+    "extracted_at": "2026-11-14T12:23:43+00:00",
+    "seconds": 23.6,
     "runs": [
       {
         "source": "psi:PSI-107",
-        "seconds": 52.6,
-        "prompt_tokens": 1106,
-        "output_tokens": 896,
+        "seconds": 22.3,
+        "prompt_tokens": 1174,
+        "output_tokens": 357,
         "raw": {
           "test_type": "combustion",
           "fuels": [
@@ -175,96 +114,9 @@
           "sample_size": null,
           "conditions": [
             {
-              "label": "Methane flames in microgravity",
-              "fuel": "methane",
-              "oxygen": {
-                "min": null,
-                "max": null,
-                "unit": null
-              },
-              "pressure": {
-                "min": null,
-                "max": null,
-                "unit": null
-              },
-              "flow_speed": {
-                "min": 5.4,
-                "max": 65,
-                "unit": "cm/s"
-              },
-              "evidence": [
-                "co-flow velocities ranging from 5.4 cm/s to 65 cm/s"
-              ]
-            },
-            {
-              "label": "Ethylene flames in microgravity",
-              "fuel": "ethylene",
-              "oxygen": {
-                "min": null,
-                "max": null,
-                "unit": null
-              },
-              "pressure": {
-                "min": null,
-                "max": null,
-                "unit": null
-              },
-              "flow_speed": {
-                "min": 5.4,
-                "max": 65,
-                "unit": "cm/s"
-              },
-              "evidence": [
-                "co-flow velocities ranging from 5.4 cm/s to 65 cm/s"
-              ]
-            },
-            {
-              "label": "Propane flames in microgravity",
-              "fuel": "propane",
-              "oxygen": {
-                "min": null,
-                "max": null,
-                "unit": null
-              },
-              "pressure": {
-                "min": null,
-                "max": null,
-                "unit": null
-              },
-              "flow_speed": {
-                "min": 5.4,
-                "max": 65,
-                "unit": "cm/s"
-              },
-              "evidence": [
-                "co-flow velocities ranging from 5.4 cm/s to 65 cm/s"
-              ]
-            },
-            {
-              "label": "Propylene flames in microgravity",
-              "fuel": "propylene",
-              "oxygen": {
-                "min": null,
-                "max": null,
-                "unit": null
-              },
-              "pressure": {
-                "min": null,
-                "max": null,
-                "unit": null
-              },
-              "flow_speed": {
-                "min": 5.4,
-                "max": 65,
-                "unit": "cm/s"
-              },
-              "evidence": [
-                "co-flow velocities ranging from 5.4 cm/s to 65 cm/s"
-              ]
-            },
-            {
-              "label": "Propylene mixtures flames in microgravity",
-              "fuel": "propylene mixtures",
+              "label": "Microgravity combustion tests",
+              "context": "flight",
+              "fuel": null,
               "oxygen": {
                 "min": null,
                 "max": null,
@@ -297,13 +149,11 @@
             "video cameras"
           ],
           "safety_pillars": [
-            "detection",
-            "suppression"
+            "detection"
           ],
           "key_findings": [
-            "The smoke point of non-buoyant jet diffusion flames was identified under various co-flow conditions in microgravity.",
-            "The effects of burner diameter and co-flow velocity on the luminous flame lengths and smoke points were determined.",
-            "The sooting propensity of different fuels was quantified."
+            "526 flames were studied to identify the laminar smoke-point properties of non-buoyant jet diffusion flames under various co-flow conditions in microgravity.",
+            "The impact of air and fuel flow rate variations on smoke point phenomena in space was investigated."
           ],
           "earth_applications": "Will improve our understanding of soot formation mechanisms and help design safer spacecraft environments."
         }
@@ -311,7 +161,7 @@
       {
         "source": "ntrs:20070013892",
         "seconds": 1.3,
-        "prompt_tokens": 475,
+        "prompt_tokens": 543,
         "output_tokens": 21,
         "raw": {
           "fuels": [],
@@ -320,7 +170,6 @@
         },
         "excerpt_chars": 658
       }
-    ],
-    "rechecked_at": "2026-11-14T11:26:22+00:00"
+    ]
   }
 }

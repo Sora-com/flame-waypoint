@@ -1,0 +1,285 @@
+{
+  "accession": "PSI-117",
+  "origin": "psi_files",
+  "parsed_at": "2026-11-14T12:14:49+00:00",
+  "files": [
+    {
+      "file": "PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx",
+      "sheet": "Sheet1",
+      "tests": 9,
+      "mapped_columns": [
+        "Data File",
+        "Fuel",
+        "P (atm)",
+        "XHe",
+        "XN2",
+        "XO2",
+        "do (mm)"
+      ],
+      "unmapped_columns": [
+        "Reference",
+        "XO3"
+      ]
+    }
+  ],
+  "summary": {
+    "tests": 9,
+    "design_envelopes": 0,
+    "with_oxygen": 9,
+    "with_pressure": 9,
+    "with_flow": 0,
+    "with_issues": 2,
+    "oxygen_pct_range": [
+      10.0,
+      21.0
+    ],
+    "pressure_kpa_range": [
+      50.663,
+      506.625
+    ],
+    "flow_cm_s_range": null,
+    "fuels": [
+      "n-dodecane",
+      "n-heptane",
+      "n-heptane, n-decane, n-dodecane"
+    ]
+  },
+  "tests": [
+    {
+      "row": 2,
+      "kind": "test",
+      "test_id": "PROCI_2019_Stable_Cool",
+      "identifier": "PROCI_2019_Stable_Cool",
+      "date": null,
+      "fuel": "n-heptane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.74
+      },
+      "extra": {
+        "XO3": "Balance",
+        "Reference": "https://doi.org/10.1016/j.proci.2018.05.151"
+      },
+      "issues": [
+        "composition sums to 0.950, not 1"
+      ],
+      "source": "PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx#row2"
+    },
+    {
+      "row": 3,
+      "kind": "test",
+      "test_id": "PROCI_2019_Oscillatory_Cool_Flame",
+      "identifier": "PROCI_2019_Oscillatory_Cool_Flame",
+      "date": null,
+      "fuel": "n-heptane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 10.0,
+        "max": 10.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.85
+      },
+      "extra": {
+        "XO3": "Balance",
+        "Reference": "https://doi.org/10.1016/j.proci.2018.05.151"
+      },
+      "issues": [
+        "composition sums to 0.950, not 1"
+      ],
+      "source": "PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx#row3"
+    },
+    {
+      "row": 6,
+      "kind": "test",
+      "test_id": "6",
+      "identifier": null,
+      "date": null,
+      "fuel": "n-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 278.644,
+        "max": 278.644,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.5,
+        "HE": 0.29
+      },
+      "extra": {},
+      "issues": [],
+      "source": "PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx#row6"
+    },
+    {
+      "row": 9,
+      "kind": "test",
+      "test_id": "9",
+      "identifier": null,
+      "date": null,
+      "fuel": "n-heptane, n-decane, n-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {},
+      "issues": [],
+      "source": "PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx#row9"
+    },
+    {
+      "row": 10,
+      "kind": "test",
+      "test_id": "10",
+      "identifier": null,
+      "date": null,
+      "fuel": "n-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 50.663,
+        "max": 303.975,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {},
+      "issues": [],
+      "source": "PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx#row10"
+    },
+    {
+      "row": 12,
+      "kind": "test",
+      "test_id": "12",
+      "identifier": null,
+      "date": null,
+      "fuel": "n-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 101.325,
+        "max": 101.325,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {},
+      "issues": [],
+      "source": "PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx#row12"
+    },
+    {
+      "row": 13,
+      "kind": "test",
+      "test_id": "13",
+      "identifier": null,
+      "date": null,
+      "fuel": "n-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 50.663,
+        "max": 151.988,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {},
+      "issues": [],
+      "source": "PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx#row13"
+    },
+    {
+      "row": 14,
+      "kind": "test",
+      "test_id": "14",
+      "identifier": null,
+      "date": null,
+      "fuel": "n-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 50.663,
+        "max": 506.625,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {},
+      "issues": [],
+      "source": "PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx#row14"
+    },
+    {
+      "row": 15,
+      "kind": "test",
+      "test_id": "15",
+      "identifier": null,
+      "date": null,
+      "fuel": "n-dodecane",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.0,
+        "max": 21.0
+      },
+      "pressure_kpa": {
+        "min": 50.663,
+        "max": 506.625,
+        "converted": true
+      },
+      "flow_cm_s": null,
+      "diluents": {
+        "N2": 0.79
+      },
+      "extra": {},
+      "issues": [],
+      "source": "PSI-117_Analyzed Data_ReadMe_List_of_Data.xlsx#row15"
+    }
+  ]
+}

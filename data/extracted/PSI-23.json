@@ -65,11 +65,11 @@
       "Extinction limits will be determined.",
       "Pulsating instabilities will be investigated."
     ],
-    "earth_applications": "Understanding diffusion flame dynamics and chemistry can improve combustion engine performance.",
+    "earth_applications": "Understanding the underlying dynamics and chemistry of diffusion flames can improve performance in terms of power, efficiency, pollutant emissions, and reliability.",
     "conditions": [],
     "paper_findings": [
       {
-        "text": "The adiabatic flame temperature is reduced to 1885 K for an unburned mixture temperature of 300 K",
+        "text": "The adiabatic flame temperature is reduced to 1885 K for the unburned mixture temperature of 300 K",
         "source": "ntrs:19960008450"
       },
       {
@@ -83,24 +83,24 @@
     ]
   },
   "warnings": [
-    "ntrs:19960008450: [Normal gravity conditions] pressure: 60-62 cm water not in evidence, dropped"
+    "ntrs:19960008450: [PMMA rod, low-oxygen blowoff tests] pressure: 60-62 cm water not in evidence, dropped"
   ],
   "review_status": "model_only",
   "extraction": {
     "model": "mistral-nemo",
-    "prompt_version": "2",
+    "prompt_version": "3",
     "source_hash": "ddd5eb554dfc9f31",
     "papers": [
       "19960008450"
     ],
-    "extracted_at": "2026-11-14T11:14:16+00:00",
-    "seconds": 44.3,
+    "extracted_at": "2026-11-14T12:28:04+00:00",
+    "seconds": 48.4,
     "runs": [
       {
         "source": "psi:PSI-23",
-        "seconds": 28.4,
-        "prompt_tokens": 1452,
-        "output_tokens": 435,
+        "seconds": 31.8,
+        "prompt_tokens": 1520,
+        "output_tokens": 499,
         "raw": {
           "test_type": "combustion",
           "fuels": [
@@ -109,8 +109,6 @@
             "C2H4"
           ],
           "fuel_phases": [
-            "gas",
-            "gas",
             "gas"
           ],
           "sample_geometry": [
@@ -120,7 +118,8 @@
           "conditions": [
             {
               "label": "H2/CH4/diluent mixtures, soot-free",
-              "fuel": "H2/CH4",
+              "context": "flight",
+              "fuel": "H2/CH4/diluent",
               "oxygen": {
                 "min": null,
                 "max": null,
@@ -140,7 +139,8 @@
             },
             {
               "label": "C2H4/diluent mixtures, sooty",
-              "fuel": "C2H4",
+              "context": "flight",
+              "fuel": "C2H4/diluent",
               "oxygen": {
                 "min": null,
                 "max": null,
@@ -185,21 +185,22 @@
             "Extinction limits will be determined.",
             "Pulsating instabilities will be investigated."
           ],
-          "earth_applications": "Understanding diffusion flame dynamics and chemistry can improve combustion engine performance."
+          "earth_applications": "Understanding the underlying dynamics and chemistry of diffusion flames can improve performance in terms of power, efficiency, pollutant emissions, and reliability."
         }
       },
       {
         "source": "ntrs:19960008450",
-        "seconds": 15.9,
-        "prompt_tokens": 797,
-        "output_tokens": 243,
+        "seconds": 16.6,
+        "prompt_tokens": 865,
+        "output_tokens": 257,
         "raw": {
           "fuels": [
             "PMMA"
           ],
           "conditions": [
             {
-              "label": "Normal gravity conditions",
+              "label": "PMMA rod, low-oxygen blowoff tests",
+              "context": "ground",
               "fuel": "PMMA",
               "oxygen": {
                 "min": null,
@@ -222,14 +223,13 @@
             }
           ],
           "key_findings": [
-            "The adiabatic flame temperature is reduced to 1885 K for an unburned mixture temperature of 300 K",
+            "The adiabatic flame temperature is reduced to 1885 K for the unburned mixture temperature of 300 K",
             "The calculated laminar flame speed is 20.8 cm/s, which corresponds to a mass burning flux of 0.016 gm/cm2-s",
             "The flame exhibits some large-scale, weak wrinkling with a variable standoff distance of +/- 15% in the axial direction"
           ]
         },
         "excerpt_chars": 2149
       }
-    ],
-    "rechecked_at": "2026-11-14T11:26:22+00:00"
+    ]
   }
 }

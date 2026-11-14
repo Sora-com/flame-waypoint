@@ -39,9 +39,9 @@
       "aggregate growth"
     ],
     "sensors": [
-      "thermocouple",
-      "color video camera",
-      "CSA-CP"
+      "DSLR camera",
+      "color-ratio pyrometry",
+      "thermocouple"
     ],
     "safety_pillars": [
       "detection",
@@ -52,7 +52,7 @@
       "Integration of experimental temperature fields into simulations reduced discrepancies between measured and predicted soot distributions.",
       "Sensitivity analyses of soot evolution parameters showed significant effects of radiation, scattering, boundary conditions, and heat transfer to the burner structure."
     ],
-    "earth_applications": "The results support safer fire detection, suppression, and cleaner combustion technologies critical for long-duration missions on Earth.",
+    "earth_applications": "This study enhances understanding of soot formation, flame structure, and radiative transport under microgravity and normal gravity, improving predictive models for combustion in both spacecraft and terrestrial systems.",
     "conditions": [],
     "paper_findings": []
   },
@@ -60,17 +60,17 @@
   "review_status": "model_only",
   "extraction": {
     "model": "mistral-nemo",
-    "prompt_version": "2",
+    "prompt_version": "3",
     "source_hash": "4e616020b8c35d44",
     "papers": [],
-    "extracted_at": "2026-11-14T11:19:16+00:00",
-    "seconds": 16.7,
+    "extracted_at": "2026-11-14T12:33:35+00:00",
+    "seconds": 17.1,
     "runs": [
       {
         "source": "psi:PSI-60",
-        "seconds": 16.7,
-        "prompt_tokens": 1096,
-        "output_tokens": 251,
+        "seconds": 17.1,
+        "prompt_tokens": 1164,
+        "output_tokens": 262,
         "raw": {
           "test_type": "combustion",
           "fuels": [
@@ -93,9 +93,9 @@
             "aggregate growth"
           ],
           "sensors": [
-            "thermocouple",
-            "color video camera",
-            "CSA-CP"
+            "DSLR camera",
+            "color-ratio pyrometry",
+            "thermocouple"
           ],
           "safety_pillars": [
             "detection",
@@ -106,10 +106,9 @@
             "Integration of experimental temperature fields into simulations reduced discrepancies between measured and predicted soot distributions.",
             "Sensitivity analyses of soot evolution parameters showed significant effects of radiation, scattering, boundary conditions, and heat transfer to the burner structure."
           ],
-          "earth_applications": "The results support safer fire detection, suppression, and cleaner combustion technologies critical for long-duration missions on Earth."
+          "earth_applications": "This study enhances understanding of soot formation, flame structure, and radiative transport under microgravity and normal gravity, improving predictive models for combustion in both spacecraft and terrestrial systems."
         }
       }
-    ],
-    "rechecked_at": "2026-11-14T11:26:22+00:00"
+    ]
   }
 }

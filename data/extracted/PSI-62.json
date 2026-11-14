@@ -46,6 +46,7 @@
       "CSA-CP"
     ],
     "safety_pillars": [
+      "prevention",
       "detection",
       "suppression"
     ],
@@ -53,7 +54,7 @@
       "The UFGM approach accurately reproduced concurrent flame spread in microgravity, including the 'Goldilocks' flammability zone.",
       "The predictive capabilities of the UFGM approach were assessed across both microgravity and normal-gravity conditions."
     ],
-    "earth_applications": "This research provides predictive tools for screening new materials’ flammability limits, which can lead to the design of safer spacecrafts.",
+    "earth_applications": "This research provides predictive tools for screening new materials’ flammability limits, which can lead to safer spacecraft design and improved fire safety protocols on Earth.",
     "conditions": [],
     "paper_findings": []
   },
@@ -61,17 +62,17 @@
   "review_status": "model_only",
   "extraction": {
     "model": "mistral-nemo",
-    "prompt_version": "2",
+    "prompt_version": "3",
     "source_hash": "f9c970be466a7100",
     "papers": [],
-    "extracted_at": "2026-11-14T11:19:34+00:00",
+    "extracted_at": "2026-11-14T12:33:53+00:00",
     "seconds": 17.8,
     "runs": [
       {
         "source": "psi:PSI-62",
         "seconds": 17.8,
-        "prompt_tokens": 1330,
-        "output_tokens": 242,
+        "prompt_tokens": 1398,
+        "output_tokens": 250,
         "raw": {
           "test_type": "combustion",
           "fuels": [
@@ -101,6 +102,7 @@
             "CSA-CP"
           ],
           "safety_pillars": [
+            "prevention",
             "detection",
             "suppression"
           ],
@@ -108,10 +110,9 @@
             "The UFGM approach accurately reproduced concurrent flame spread in microgravity, including the 'Goldilocks' flammability zone.",
             "The predictive capabilities of the UFGM approach were assessed across both microgravity and normal-gravity conditions."
           ],
-          "earth_applications": "This research provides predictive tools for screening new materials’ flammability limits, which can lead to the design of safer spacecrafts."
+          "earth_applications": "This research provides predictive tools for screening new materials’ flammability limits, which can lead to safer spacecraft design and improved fire safety protocols on Earth."
         }
       }
-    ],
-    "rechecked_at": "2026-11-14T11:26:22+00:00"
+    ]
   }
 }

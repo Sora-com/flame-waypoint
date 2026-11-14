@@ -1,0 +1,151 @@
+{
+  "accession": "PSI-98",
+  "origin": "psi_files",
+  "parsed_at": "2026-11-14T12:14:49+00:00",
+  "files": [
+    {
+      "file": "PSI-98_Experimental table_SAFFIRE-1.csv",
+      "sheet": "csv",
+      "tests": 4,
+      "mapped_columns": [
+        "Air Flow (cm/s)",
+        "Material",
+        "Percent O2",
+        "Sample Number "
+      ],
+      "unmapped_columns": [
+        "Burn Time (s)",
+        "Camera 1",
+        "Camera 2",
+        "Flow Direction ",
+        "Ignition Power (W)",
+        "Ignition Time (s)",
+        "Sample Length (cm)",
+        "Sample Thickness (cm)",
+        "Sample Width (cm)"
+      ]
+    }
+  ],
+  "summary": {
+    "tests": 4,
+    "design_envelopes": 0,
+    "with_oxygen": 2,
+    "with_pressure": 0,
+    "with_flow": 2,
+    "with_issues": 0,
+    "oxygen_pct_range": [
+      21.5,
+      21.7
+    ],
+    "pressure_kpa_range": null,
+    "flow_cm_s_range": [
+      20.0,
+      20.0
+    ],
+    "fuels": [
+      "Pre-test flow visulation data for sample 1",
+      "Pre-test flow visulation data for sample 2",
+      "SIBAL Fabric"
+    ]
+  },
+  "tests": [
+    {
+      "row": 2,
+      "kind": "test",
+      "test_id": "S1",
+      "identifier": null,
+      "date": null,
+      "fuel": "SIBAL Fabric",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.5,
+        "max": 21.7
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 20.0,
+        "max": 20.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Sample Thickness (cm)": "0.37",
+        "Sample Length (cm)": "40.6",
+        "Sample Width (cm)": "94",
+        "Ignition Power (W)": "182",
+        "Ignition Time (s)": "8",
+        "Burn Time (s)": "420",
+        "Flow Direction": "Concurrent",
+        "Camera 1": "S1C1",
+        "Camera 2": "S1C2"
+      },
+      "issues": [],
+      "source": "PSI-98_Experimental table_SAFFIRE-1.csv#row2"
+    },
+    {
+      "row": 3,
+      "kind": "test",
+      "test_id": "S2",
+      "identifier": null,
+      "date": null,
+      "fuel": "SIBAL Fabric",
+      "outcome": null,
+      "oxygen_pct": {
+        "min": 21.5,
+        "max": 21.5
+      },
+      "pressure_kpa": null,
+      "flow_cm_s": {
+        "min": 20.0,
+        "max": 20.0,
+        "converted": true
+      },
+      "diluents": {},
+      "extra": {
+        "Sample Thickness (cm)": "0.37",
+        "Sample Length (cm)": "40.6",
+        "Sample Width (cm)": "94",
+        "Ignition Power (W)": "182",
+        "Ignition Time (s)": "8",
+        "Burn Time (s)": "70",
+        "Flow Direction": "Opposed",
+        "Camera 1": "S2C1",
+        "Camera 2": "S2C2"
+      },
+      "issues": [],
+      "source": "PSI-98_Experimental table_SAFFIRE-1.csv#row3"
+    },
+    {
+      "row": 4,
+      "kind": "test",
+      "test_id": "F1C1/F1C2",
+      "identifier": null,
+      "date": null,
+      "fuel": "Pre-test flow visulation data for sample 1",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {},
+      "issues": [],
+      "source": "PSI-98_Experimental table_SAFFIRE-1.csv#row4"
+    },
+    {
+      "row": 5,
+      "kind": "test",
+      "test_id": "F2C1/F2C2",
+      "identifier": null,
+      "date": null,
+      "fuel": "Pre-test flow visulation data for sample 2",
+      "outcome": null,
+      "oxygen_pct": null,
+      "pressure_kpa": null,
+      "flow_cm_s": null,
+      "diluents": {},
+      "extra": {},
+      "issues": [],
+      "source": "PSI-98_Experimental table_SAFFIRE-1.csv#row5"
+    }
+  ]
+}
