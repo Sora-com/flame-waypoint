@@ -1,0 +1,176 @@
+{
+  "source": "https://psi.nasa.gov/geode-py/ws/repo/search",
+  "research_area": "Combustion Science",
+  "updated_at": "2026-11-14T10:28:23+00:00",
+  "count": 24,
+  "investigations": [
+    {
+      "accession": "PSI-10",
+      "acronym": "ACME/Flame Design",
+      "title": "Advanced Combustion via Microgravity Experiments / Flame Design",
+      "project_type": "Microgravity Investigation",
+      "content_hash": "eb154cd7922ba612"
+    },
+    {
+      "accession": "PSI-20",
+      "acronym": "ACME BRE",
+      "title": "Advanced Combustion via Microgravity Experiments - Burning Rate Emulator",
+      "project_type": "Microgravity Investigation",
+      "content_hash": "9a038895ddb681ae"
+    },
+    {
+      "accession": "PSI-21",
+      "acronym": "ACME CLD Flame",
+      "title": "Advanced Combustion via Microgravity Experiments / Coflow Laminar Diffusion Flame",
+      "project_type": "Microgravity Investigation",
+      "content_hash": "6407348315cb2b90"
+    },
+    {
+      "accession": "PSI-22",
+      "acronym": "ACME E-FIELD Flames",
+      "title": "Advanced Combustion via Microgravity Experiments Electric-Field Effects on Laminar Diffusion Flames",
+      "project_type": "Microgravity Investigation",
+      "content_hash": "e92487e73cd7ee21"
+    },
+    {
+      "accession": "PSI-23",
+      "acronym": "ACME s-Flame",
+      "title": "Advanced Combustion via Microgravity Experiments-Structure and Response of Spherical Diffusion Flames",
+      "project_type": "Microgravity Investigation",
+      "content_hash": "ddd5eb554dfc9f31"
+    },
+    {
+      "accession": "PSI-25",
+      "acronym": "BASS-II",
+      "title": "Burning and Suppression of Solids - II",
+      "project_type": "Microgravity Investigation",
+      "content_hash": "7d29f1fc30714dcd"
+    },
+    {
+      "accession": "PSI-26",
+      "acronym": "BASS",
+      "title": "Burning and Suppression of Solids",
+      "project_type": "Microgravity Investigation",
+      "content_hash": "7affcb2353cf50ee"
+    },
+    {
+      "accession": "PSI-39",
+      "acronym": "CFI",
+      "title": "Cool Flames Investigation",
+      "project_type": "Microgravity Investigation",
+      "content_hash": "4d4d1a43f605ef63"
+    },
+    {
+      "accession": "PSI-47",
+      "acronym": "DAFT / DAFT-2",
+      "title": "Dust and Aerosol Measurement Feasibility Test / Dust and Aerosol Measurement Feasibility Test-2",
+      "project_type": "Microgravity Investigation",
+      "content_hash": "c483ab10a220f6bf"
+    },
+    {
+      "accession": "PSI-60",
+      "acronym": null,
+      "title": "Computational and Experimental Analysis of SPICE Data Sets",
+      "project_type": "Ground Investigation",
+      "content_hash": "4e616020b8c35d44"
+    },
+    {
+      "accession": "PSI-62",
+      "acronym": null,
+      "title": "Concurrent Flame Spread Modeling using Flamelet Generated Manifolds in Microgravity with Comparison to BASS Experiments using Two-Color Tomography",
+      "project_type": "Ground Investigation",
+      "content_hash": "f9c970be466a7100"
+    },
+    {
+      "accession": "PSI-68",
+      "acronym": "FLEX-2",
+      "title": "Flame Extinguishment Experiment - 2",
+      "project_type": "Microgravity Investigation",
+      "content_hash": "b839134a97237ee7"
+    },
+    {
+      "accession": "PSI-69",
+      "acronym": "FLEX",
+      "title": "Flame Extinguishment Experiment",
+      "project_type": "Microgravity Investigation",
+      "content_hash": "474b85227f506ed2"
+    },
+    {
+      "accession": "PSI-98",
+      "acronym": "SAFFIRE-I",
+      "title": "Spacecraft Fire Safety Experiment-I",
+      "project_type": "Microgravity Investigation",
+      "content_hash": "0903f755e821783b"
+    },
+    {
+      "accession": "PSI-99",
+      "acronym": "SAFFIRE-II",
+      "title": "Spacecraft Fire Experiment-II",
+      "project_type": "Microgravity Investigation",
+      "content_hash": "15a6c20728c06a65"
+    },
+    {
+      "accession": "PSI-100",
+      "acronym": "SAFFIRE-III",
+      "title": "Spacecraft Fire Experiment-III",
+      "project_type": "Microgravity Investigation",
+      "content_hash": "ca22b1075117105a"
+    },
+    {
+      "accession": "PSI-101",
+      "acronym": "SAME-R",
+      "title": "Smoke Aerosol Measurement Experiment-Reflight",
+      "project_type": "Microgravity Investigation",
+      "content_hash": "7176f3a53c372afb"
+    },
+    {
+      "accession": "PSI-102",
+      "acronym": "SAME",
+      "title": "Smoke and Aerosol Measurement Experiment",
+      "project_type": "Microgravity Investigation",
+      "content_hash": "3e2d9a1dc736ce91"
+    },
+    {
+      "accession": "PSI-106",
+      "acronym": "SLICE",
+      "title": "Structure and Liftoff In Combustion Experiment",
+      "project_type": "Microgravity Investigation",
+      "content_hash": "3753423ac4833473"
+    },
+    {
+      "accession": "PSI-107",
+      "acronym": "SPICE",
+      "title": "Smoke Point In Co-flow Experiment",
+      "project_type": "Microgravity Investigation",
+      "content_hash": "776b30351c1cdebb"
+    },
+    {
+      "accession": "PSI-115",
+      "acronym": null,
+      "title": "Utilization of the Smoke Aerosol Measurement Experiment Data for Advanced Modeling and Simulation of Smoke Generation in Micro-Gravity",
+      "project_type": "Ground Investigation",
+      "content_hash": "7733c68caf6e1658"
+    },
+    {
+      "accession": "PSI-117",
+      "acronym": null,
+      "title": "Effect of External Thermo-Convective Perturbation on Cool Flame Dynamics: A Multidimensional Multi-Physics CFD Analysis",
+      "project_type": "Ground Investigation",
+      "content_hash": "1bbbf00c334cdac4"
+    },
+    {
+      "accession": "PSI-142",
+      "acronym": null,
+      "title": "Quantitative Studies of Cool Flame Transitions at Radiation / Stretch Extinction Using Counterflow Flames",
+      "project_type": "Ground Investigation",
+      "content_hash": "59bc55ff00e1505f"
+    },
+    {
+      "accession": "PSI-159",
+      "acronym": "ACME CFI-G",
+      "title": "Advanced Combustion via Microgravity Experiments / Cool Flames Investigation with Gases",
+      "project_type": "Microgravity Investigation",
+      "content_hash": "4b95191ef16db70f"
+    }
+  ]
+}
