@@ -91,6 +91,13 @@ class ConditionTest(unittest.TestCase):
     def test_unicode_minus_range(self):
         self.assertEqual(checks.numbers_with_unit("pressure", "test pressure (0.5 − 1.5 atm)"), {0.5, 1.5})
 
+    def test_context_is_kept_and_validated(self):
+        c = cond("ground lab", ["34% oxygen at 10.2 psia"], oxygen=rng(34, 34, "%"))
+        c["context"] = "ground"
+        self.assertEqual(checks.clean_condition(c, SOURCE)[0]["context"], "ground")
+        c["context"] = "moon"
+        self.assertEqual(checks.clean_condition(c, SOURCE)[0]["context"], "unknown")
+
     def test_condition_without_verified_values_is_dropped(self):
         c = cond("fake", ["invented sentence"], oxygen=rng(30, 30, "%"))
         out, w = checks.clean_condition(c, SOURCE)

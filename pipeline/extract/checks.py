@@ -125,6 +125,7 @@ def to_si(name: str, rng: dict | None, table: dict) -> tuple[dict | None, list[s
 
 
 FIELDS = ("oxygen", "pressure", "flow_speed")
+CONTEXTS = {"flight", "ground", "drop_tower", "aircraft", "simulation", "unknown"}
 CLAUSE_SPLIT = re.compile(r"(?<=[;:])\s+|(?<=\.)\s+(?=[A-Z(])|\n+")
 
 
@@ -160,7 +161,8 @@ def clean_condition(cond: dict, source: str) -> tuple[dict | None, list[str]]:
             # The source text supports the values; only the model's quote was wrong.
             warnings = ["evidence repaired from source text"]
             evidence = [repaired]
-    out = {"label": label, "fuel": (cond.get("fuel") or "").strip() or None}
+    context = cond.get("context") if cond.get("context") in CONTEXTS else "unknown"
+    out = {"label": label, "context": context, "fuel": (cond.get("fuel") or "").strip() or None}
 
     oxy, w = check_range("oxygen", cond.get("oxygen"), evidence)
     warnings += w

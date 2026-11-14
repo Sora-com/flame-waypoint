@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flame Waypoint</title>
+  <meta name="description" content="Search, compare and rank NASA PSI microgravity combustion investigations by relevance to spacecraft and Moon base fire safety.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <span class="mark" aria-hidden="true"></span>
+      <div>
+        <h1>Flame Waypoint</h1>
+        <p class="sub">NASA PSI microgravity combustion data, ranked for the atmosphere you live in</p>
+      </div>
+    </div>
+    <label class="scenario">
+      <span>Target atmosphere</span>
+      <select id="scenario"></select>
+    </label>
+  </header>
+
+  <main>
+    <section class="kpis" id="kpis" aria-label="Summary"></section>
+
+    <section class="grid">
+      <article class="card map-card">
+        <header class="card-h">
+          <h2>Condition map</h2>
+          <p class="hint">Every tested atmosphere we could verify. Hover a point for its source.</p>
+        </header>
+        <div id="map" class="map" role="img" aria-label="Oxygen concentration versus pressure for all verified test conditions"></div>
+        <ul class="legend" id="legend"></ul>
+      </article>
+
+      <article class="card">
+        <header class="card-h">
+          <h2>Closest investigations</h2>
+          <p class="hint" id="rank-hint"></p>
+        </header>
+        <ol class="ranking" id="ranking"></ol>
+      </article>
+    </section>
+
+    <section class="card">
+      <header class="card-h row">
+        <h2>Investigations</h2>
+        <div class="filters">
+          <input id="search" type="search" placeholder="Search name, fuel, keyword..." aria-label="Search investigations">
+          <select id="pillar" aria-label="Fire-safety pillar">
+            <option value="">All pillars</option>
+            <option value="prevention">Prevention</option>
+            <option value="detection">Detection</option>
+            <option value="suppression">Suppression</option>
+          </select>
+          <select id="phase" aria-label="Fuel phase">
+            <option value="">All fuels</option>
+            <option value="solid">Solid</option>
+            <option value="liquid">Liquid</option>
+            <option value="gas">Gas</option>
+          </select>
+        </div>
+      </header>
+      <div class="table-wrap">
+        <table class="table" id="table">
+          <thead><tr>
+            <th>Investigation</th><th>Type</th><th>Fuels</th><th>Pillars</th>
+            <th class="num">O<sub>2</sub> %</th><th class="num">Pressure kPa</th><th class="num">Points</th><th>Status</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <p id="provenance"></p>
+      <p>Data: <a href="https://psi.nasa.gov/physci/repo/search?q=combustion">NASA Physical Sciences Informatics</a> and
+        <a href="https://ntrs.nasa.gov/">NASA Technical Reports Server</a>. Fields marked <em>model only</em> were extracted by a
+        local open-weights LLM (Mistral) and checked by code against the source text, but not yet reviewed by a person.</p>
+    </footer>
+  </main>
+
+  <aside class="drawer" id="drawer" aria-label="Investigation details" hidden>
+    <button class="close" id="close" aria-label="Close details">&times;</button>
+    <div id="detail"></div>
+  </aside>
+  <div class="tooltip" id="tooltip" role="status" hidden></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -11,7 +11,7 @@ Test conditions are a list: one investigation (or paper) usually tests several
 oxygen / pressure / flow combinations, and each one is a point on the map.
 """
 
-PROMPT_VERSION = "2"
+PROMPT_VERSION = "3"
 
 RANGE = {
     "type": "object",
@@ -28,13 +28,15 @@ CONDITION = {
     "type": "object",
     "properties": {
         "label": {"type": "string"},
+        "context": {"type": "string",
+                    "enum": ["flight", "ground", "drop_tower", "aircraft", "simulation", "unknown"]},
         "fuel": {"type": ["string", "null"]},
         "oxygen": RANGE,
         "pressure": RANGE,
         "flow_speed": RANGE,
         "evidence": STRINGS,
     },
-    "required": ["label", "fuel", "oxygen", "pressure", "flow_speed", "evidence"],
+    "required": ["label", "context", "fuel", "oxygen", "pressure", "flow_speed", "evidence"],
 }
 CONDITIONS = {"type": "array", "items": CONDITION}
 
@@ -68,6 +70,7 @@ PAPER_SCHEMA = {
 
 CONDITION_RULES = """- conditions: one entry per distinct test atmosphere / flow combination stated in the document.
   - label: short description, e.g. "PMMA rod, low-oxygen blowoff tests" or "Moon base atmosphere".
+  - context: where these tests were run: "flight" (ISS, spacecraft, Cygnus, sounding rocket), "ground" (normal-gravity laboratory), "drop_tower", "aircraft" (parabolic flights), "simulation" (numerical/CFD model), or "unknown" if not stated.
   - fuel: the fuel burned in that condition, if stated.
   - oxygen: oxygen concentration. Copy numbers and unit exactly as written ("%" or "mole fraction"). Only oxygen values, never flow speeds or other numbers.
   - pressure and flow_speed: range (min, max) and unit EXACTLY as written. Single value -> min = max. "up to X" -> min null, max X.
