@@ -15,8 +15,8 @@
 
   /* ───────── Persistent state (local convenience only) ───────── */
   const store = {
-    get() { try { return JSON.parse(localStorage.getItem("ff-dash-v2") || "{}"); } catch { return {}; } },
-    set(v) { try { localStorage.setItem("ff-dash-v2", JSON.stringify(v)); } catch {} }
+    get() { try { return JSON.parse(localStorage.getItem("ff-dash-v3") || "{}"); } catch { return {}; } },
+    set(v) { try { localStorage.setItem("ff-dash-v3", JSON.stringify(v)); } catch {} }
   };
   const saved = store.get();
   const S = {
@@ -25,7 +25,7 @@
     pil: new Set(saved.pil || ["prevention", "detection", "suppression"]),
     phases: new Set(saved.phases || Object.keys(PHASE)),
     w: saved.w || { c: 4, p: 3, r: 2, g: 1 },
-    cmp: new Set(saved.cmp || ["bre", "flex", "bass2"]),
+    cmp: new Set((saved.cmp || ["psi-20", "psi-69", "psi-25"]).filter(id => byId[id])),
     collapsed: !!saved.collapsed
   };
   const persist = () => store.set({ scn: S.scn, o2: S.o2, psi: S.psi, g: S.g, pil: [...S.pil], phases: [...S.phases], w: S.w, cmp: [...S.cmp], collapsed: S.collapsed });
@@ -47,14 +47,13 @@
 
   /* ───────── Completeness ───────── */
   const FIELDS = [
-    ["O₂", e => e.o2 ? (e.inferred ? "i" : "f") : ""],
-    ["Pressure", e => e.psi ? (e.inferred ? "i" : "f") : ""],
+    ["O₂", e => e.o2 ? "f" : ""],
+    ["Pressure", e => e.psi ? "f" : ""],
     ["Flow", e => e.flow ? "f" : ""],
-    ["Fuel", e => e.fuel && e.fuel.length > 6 ? "f" : ""],
-    ["Diluent", e => e.diluents.length ? "f" : ""],
-    ["Sensors", e => e.sensors.length ? "f" : ""],
+    ["Fuel", e => e.fuel ? "f" : ""],
     ["Period", e => e.period ? "f" : ""],
-    ["Numeric results", e => e.results.length ? "f" : ""],
+    ["Test table", e => e.tests ? "f" : ""],
+    ["Paper findings", e => e.findings.length ? "f" : ""],
     ["Linked source", e => e.sources.some(f => f[1]) ? "f" : ""]
   ];
   EX.forEach(e => {
@@ -62,23 +61,27 @@
     e._compl = e._st.reduce((a, s) => a + (s === "f" ? 1 : s === "i" ? 0.5 : 0), 0) / FIELDS.length;
   });
   const complBar = e => `<span class="compl"><i style="width:${Math.round(e._compl * 100)}%"></i></span>${Math.round(e._compl * 100)}`;
-  const relDots = n => `<span class="rel" title="Relevance ${n}/3">${[1, 2, 3].map(i => `<i class="${i <= n ? "on" : ""}"></i>`).join("")}</span>`;
+  const relDots = n => `<span class="rel" title="Evidence ${n}/3">${[1, 2, 3].map(i => `<i class="${i <= n ? "on" : ""}"></i>`).join("")}</span>`;
 
   /* ───────── Scenario scoring ───────── */
   const distTo = (v, r) => v < r.min ? r.min - v : v > r.max ? v - r.max : 0;
+  // Distance to the closest tested point with both O₂ and pressure; O₂ range only otherwise.
   function condDist(e) {
-    if (!e.o2) return null;
-    let dO = distTo(S.o2, e.o2);
-    if (e.o2.extra != null) dO = Math.min(dO, Math.abs(S.o2 - e.o2.extra));
-    const dP = e.psi ? distTo(S.psi, e.psi) : null;
-    return { dO, dP, d: dP == null ? null : Math.hypot(dO / 15, dP / 6) };
+    let best = null;
+    for (const p of e.pts) {
+      const dO = Math.abs(S.o2 - p.o2), dP = Math.abs(S.psi - p.psi), d = Math.hypot(dO / 15, dP / 6);
+      if (!best || d < best.d) best = { dO, dP, d };
+    }
+    if (best) return best;
+    return e.o2 ? { dO: distTo(S.o2, e.o2), dP: null, d: null } : null;
   }
+  const inZone = e => e.pts.some(p => p.o2 >= D.lunarZone.o2min && p.psi <= D.lunarZone.psimax);
   function score(e) {
     const cd = condDist(e);
     let c, cWhy;
     if (!cd) { c = 0; cWhy = "no O₂/p"; }
     else if (cd.dP == null) { c = 0.6 * Math.exp(-cd.dO / 15); cWhy = `ΔO₂ ${nfa(cd.dO)} pt · p n/a`; }
-    else { c = Math.exp(-cd.d) * (e.inferred ? 0.8 : 1); cWhy = `ΔO₂ ${nfa(cd.dO)} pt · Δp ${nf(cd.dP, 1)} psi${e.inferred ? " (inferred)" : ""}`; }
+    else { c = Math.exp(-cd.d); cWhy = `ΔO₂ ${nfa(cd.dO)} pt · Δp ${nf(cd.dP, 1)} psi`; }
     const match = e.pillars.filter(x => S.pil.has(x));
     const p = match.length / e.pillars.length;
     const r = e.relevance / 3;
@@ -93,62 +96,66 @@
   const stackbar = s => `<div class="stackbar">${["c", "p", "r", "g"].map(k => `<i class="${k}" style="width:${(s.parts[k] * 100).toFixed(1)}%"></i>`).join("")}</div>`;
 
   /* ───────── O₂ / pressure chart ───────── */
+  const PALETTE = ["#6cb6ff", "#f2c37a", "#5fd4a8", "#ff8f7e", "#b39dff", "#8fe3dc", "#e58fd1", "#c9d36a"];
   function gapChart(host, opt = {}) {
-    const W = 720, H = opt.mini ? 400 : 470;
-    const m = { l: 44, r: 12, t: 12, b: opt.mini ? 96 : 110 };
-    const pw = W - m.l - m.r, ph = H - m.t - m.b;
-    const X = o => m.l + (o / 90) * pw, Y = p => m.t + ph - (p / 48) * ph;
     const Z = D.lunarZone;
+    const cloud = EX.filter(e => e.pts.length).sort((a, b) => b.pts.length - a.pts.length);
+    const strip = EX.filter(e => e.o2 && !e.pts.length);
+    const pRaw = Math.max(S.psi, ...cloud.flatMap(e => e.pts.map(p => p.psi)));
+    const pStep = pRaw > 56 ? 16 : 8, pMax = Math.max(48, Math.ceil(pRaw / pStep) * pStep);
+    const oMax = Math.max(50, Math.ceil(Math.max(S.o2, ...EX.filter(e => e.o2).map(e => e.o2.max)) / 10) * 10);
+    const rowH = 16, W = 720, ph = opt.mini ? 290 : 350;
+    const m = { l: 44, r: 12, t: 12, b: 60 + strip.length * rowH };
+    const pw = W - m.l - m.r, H = m.t + ph + m.b;
+    const X = o => m.l + (o / oMax) * pw, Y = p => m.t + ph - (p / pMax) * ph;
     let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Tested conditions: oxygen versus pressure">`;
     s += `<g class="grid">`;
-    for (let o = 0; o <= 90; o += 10) s += `<line x1="${X(o)}" x2="${X(o)}" y1="${m.t}" y2="${m.t + ph}"/>`;
-    for (let p = 0; p <= 48; p += 8) s += `<line x1="${m.l}" x2="${m.l + pw}" y1="${Y(p)}" y2="${Y(p)}"/>`;
+    for (let o = 0; o <= oMax; o += 10) s += `<line x1="${X(o)}" x2="${X(o)}" y1="${m.t}" y2="${m.t + ph}"/>`;
+    for (let p = 0; p <= pMax; p += pStep) s += `<line x1="${m.l}" x2="${m.l + pw}" y1="${Y(p)}" y2="${Y(p)}"/>`;
     s += `</g>`;
-    for (let o = 0; o <= 90; o += 10) s += `<text class="ax" x="${X(o)}" y="${m.t + ph + 14}" text-anchor="middle">${o}</text>`;
-    for (let p = 0; p <= 48; p += 8) s += `<text class="ax" x="${m.l - 8}" y="${Y(p) + 3}" text-anchor="end">${p}</text>`;
+    for (let o = 0; o <= oMax; o += 10) s += `<text class="ax" x="${X(o)}" y="${m.t + ph + 14}" text-anchor="middle">${o}</text>`;
+    for (let p = 0; p <= pMax; p += pStep) s += `<text class="ax" x="${m.l - 8}" y="${Y(p) + 3}" text-anchor="end">${p}</text>`;
     s += `<text class="ttl" x="${m.l + pw}" y="${m.t + ph + 30}" text-anchor="end">O₂ (% vol)</text>`;
     s += `<text class="ttl" transform="translate(12 ${m.t}) rotate(-90)" text-anchor="end">p (psi)</text>`;
     s += `<line class="ref" x1="${m.l}" x2="${m.l + pw}" y1="${Y(14.7)}" y2="${Y(14.7)}"/><text class="ax halo" x="${m.l + pw - 4}" y="${Y(14.7) - 5}" text-anchor="end">1 atm</text>`;
-    s += `<rect class="zone" x="${X(Z.o2min)}" y="${Y(Z.psimax)}" width="${X(90) - X(Z.o2min)}" height="${Y(0) - Y(Z.psimax)}"/>`;
-    s += `<text class="zlab halo" x="${X(90) - 6}" y="${Y(0) - 8}" text-anchor="end">Moon / rover · ≥ ${Z.o2min} % · ≤ ${nf(Z.psimax, 1)} psi</text>`;
+    s += `<rect class="zone" x="${X(Z.o2min)}" y="${Y(Z.psimax)}" width="${X(oMax) - X(Z.o2min)}" height="${Y(0) - Y(Z.psimax)}"/>`;
+    s += `<text class="zlab halo" x="${X(oMax) - 6}" y="${Y(0) - 8}" text-anchor="end">Moon / rover · ≥ ${Z.o2min} % · ≤ ${nf(Z.psimax, 1)} psi</text>`;
 
-    const marks = [];
-    const cabin = EX.filter(e => e.inferred && e.o2 && e.psi);
-    EX.filter(e => e.o2 && e.psi && !e.inferred).forEach(e => {
-      const pt = e.o2.min === e.o2.max && e.psi.min === e.psi.max;
-      marks.push(pt
-        ? `<g class="mk" data-id="${e.id}"><title>${e.name}</title><circle cx="${X(e.o2.min)}" cy="${Y(e.psi.min)}" r="6"/><text class="lbl halo" x="${X(e.o2.min) + 10}" y="${Y(e.psi.min) + 3}">${e.name}</text></g>`
-        : `<g class="mk" data-id="${e.id}"><title>${e.name}: ${fmtO2(e)} % O₂, ${fmtRange(e.psi)} psi</title><rect x="${X(e.o2.min)}" y="${Y(e.psi.max)}" width="${X(e.o2.max) - X(e.o2.min)}" height="${Y(e.psi.min) - Y(e.psi.max)}" rx="2"/><text class="lbl halo" x="${X(e.o2.min) + 6}" y="${Y(e.psi.max) + 14}">${e.name}</text></g>`);
+    // Tested points: filled = PSI test table, ring = extracted from a paper.
+    const color = {};
+    cloud.forEach((e, i) => color[e.id] = PALETTE[i % PALETTE.length]);
+    cloud.forEach(e => {
+      const pts = e.pts.filter(p => opt.showLlm !== false || p.origin !== "llm");
+      if (!pts.length) return;
+      const c = color[e.id];
+      s += `<g class="mk" data-id="${e.id}"><title>${esc(e.name)}: ${e.pts.length} points · O₂ ${fmtRange(e.o2)} % · p ${fmtRange(e.psi)} psi</title>` +
+        pts.map(p => `<circle class="pt${p.origin === "llm" ? " llm" : ""}" cx="${X(p.o2).toFixed(1)}" cy="${Y(p.psi).toFixed(1)}" r="${p.origin === "llm" ? 4.5 : 3.2}" style="${p.origin === "llm" ? `stroke:${c}` : `fill:${c}`}"/>`).join("") + `</g>`;
     });
-    if (opt.showInf !== false && cabin.length) {
-      marks.push(`<g class="mk inf" data-id="__cabin"><title>ISS cabin air (inferred): ${cabin.map(e => e.name).join(", ")}</title><circle cx="${X(21)}" cy="${Y(14.7)}" r="8"/><text class="lbl halo" x="${X(21) + 12}" y="${Y(14.7) + 14}">≈ ISS cabin · ${cabin.length}</text></g>`);
+    // Bottom strip: O₂ known, pressure not reported together with it
+    const sy0 = m.t + ph + 44;
+    if (strip.length) {
+      s += `<rect class="strip" x="${m.l}" y="${sy0 - 4}" width="${pw}" height="${strip.length * rowH + 12}" rx="4"/>`;
+      s += `<text class="ax" x="${m.l}" y="${sy0 - 10}">O₂ without pressure</text>`;
     }
-    // Bottom strip: O₂ known, pressure not stated
-    const strip = EX.filter(e => e.o2 && !e.psi);
-    const sy0 = m.t + ph + 44, rowH = 16;
-    s += `<rect class="strip" x="${m.l}" y="${sy0 - 4}" width="${pw}" height="${strip.length * rowH + 12}" rx="4"/>`;
-    s += `<text class="ax" x="${m.l}" y="${sy0 - 10}">p not stated</text>`;
     strip.forEach((e, i) => {
       const y = sy0 + 6 + i * rowH;
-      let g = `<g class="mk" data-id="${e.id}"><title>${e.name}: ${fmtO2(e)} % O₂, pressure not stated</title>`;
+      let g = `<g class="mk" data-id="${e.id}"><title>${esc(e.name)}: ${fmtO2(e)} % O₂, pressure not reported with it</title>`;
       g += `<line x1="${X(e.o2.min)}" x2="${X(e.o2.max)}" y1="${y}" y2="${y}"/>`;
       (e.o2.vals || []).forEach(v => g += `<circle cx="${X(v)}" cy="${y}" r="3.5"/>`);
-      if (e.o2.extra) g += `<circle cx="${X(e.o2.extra)}" cy="${y}" r="3.5"/><text class="lbl" x="${X(e.o2.extra) - 8}" y="${y + 3}" text-anchor="end">${e.o2.extra} %</text>`;
-      g += `<text class="lbl" x="${X(e.o2.max) + 8}" y="${y + 3}">${e.name}</text></g>`;
-      marks.push(g);
+      g += `<text class="lbl" x="${X(e.o2.max) + 8}" y="${y + 3}">${esc(e.name)}</text></g>`;
+      s += g;
     });
-    s += marks.join("");
     if (opt.showScn !== false) {
       s += `<g class="scn"><line x1="${X(S.o2)}" x2="${X(S.o2)}" y1="${m.t}" y2="${m.t + ph}"/><line x1="${m.l}" x2="${m.l + pw}" y1="${Y(S.psi)}" y2="${Y(S.psi)}"/><circle cx="${X(S.o2)}" cy="${Y(S.psi)}" r="4.5"/></g>`;
       s += `<text class="lbl halo" x="${X(S.o2) + 8}" y="${Y(S.psi) - 8}">scenario</text>`;
     }
-    host.innerHTML = s + `</svg>`;
+    const legend = cloud.map(e => `<button data-open="${e.id}"><i style="background:${color[e.id]}"></i>${esc(e.name)} <span class="muted">${e.pts.length}</span></button>`).join("") +
+      `<span class="muted"><i class="ring"></i>from paper</span>`;
+    host.innerHTML = s + `</svg><div class="chart-legend">${legend}</div>`;
   }
   document.addEventListener("click", e => {
     const mk = e.target.closest(".chart .mk");
-    if (!mk) return;
-    if (mk.dataset.id === "__cabin") { resetTable(); T.q = "ISS"; $("#tsearch").value = "ISS"; go("investigations"); renderTable(); }
-    else openDrawer(mk.dataset.id);
+    if (mk) openDrawer(mk.dataset.id);
   });
 
   /* ───────── Sidebar and scenario ───────── */
@@ -227,18 +234,18 @@
   /* ───────── Overview ───────── */
   function renderOverview() {
     const flight = EX.filter(e => e.platform !== "Ground").length;
-    const both = EX.filter(e => e.o2 && e.psi && !e.inferred).length;
-    const inf = EX.filter(e => e.inferred).length;
-    const inZone = EX.filter(e => e.o2 && e.psi && !e.inferred && e.o2.max >= D.lunarZone.o2min && e.psi.min <= D.lunarZone.psimax).length;
-    const high = EX.filter(e => e.relevance === 3).length;
+    const both = EX.filter(e => e.pts.length).length;
+    const nPts = EX.reduce((a, e) => a + e.pts.length, 0);
+    const zone = EX.filter(inZone).length;
+    const tests = EX.reduce((a, e) => a + e.tests, 0);
     const compl = EX.reduce((a, e) => a + e._compl, 0) / EX.length;
-    const pend = EX.filter(e => e.pending).length;
+    const unreviewed = EX.filter(e => e.review === "model_only").length;
     $("#kpis").innerHTML = [
       ["Investigations", EX.length, "", `${flight} in flight · ${EX.length - flight} on ground`],
-      ["O₂ and p published", both, ` / ${EX.length}`, `+ ${inf} inferred (ISS cabin)`],
-      ["In lunar zone", inZone, "", "≥ 30 % O₂ and ≤ 10.2 psi", true],
-      ["High relevance", high, "", "prevention · detection · suppression"],
-      ["Mean completeness", Math.round(compl * 100), " %", `${pend} entries pending`]
+      ["O₂ and p measured", both, ` / ${EX.length}`, `${nf(nPts)} distinct test points`],
+      ["In lunar zone", zone, "", "≥ 30 % O₂ and ≤ 10.2 psi", true],
+      ["Test records", nf(tests), "", `from ${EX.filter(e => e.tests).length} PSI test tables`],
+      ["Mean completeness", Math.round(compl * 100), " %", `${unreviewed} LLM extractions not yet reviewed`]
     ].map(([k, v, u, d, al]) => `<div class="kpi${al ? " alert" : ""}"><p class="kk">${k}</p><p class="v">${v}<small>${u}</small></p><p class="d">${d}</p></div>`).join("");
 
     const barsOf = (host, groups, kind) => {
@@ -251,9 +258,9 @@
     const plats = [...new Set(EX.map(e => e.platform))];
     barsOf("#byPlat", plats.map(p => [p, p, EX.filter(e => e.platform === p).length]).sort((a, b) => b[2] - a[2]), "plat");
 
-    const rows = EX.filter(e => e.relevance >= 2).flatMap(e => e.results.map(r => [e, ...r]));
-    $("#keyResults").innerHTML = `<thead><tr><th>Investigation</th><th>Quantity</th><th>Value</th></tr></thead><tbody>` +
-      rows.map(([e, k, v]) => `<tr><td><a class="row-link" href="#" data-open="${e.id}">${e.name}</a></td><td>${gl(k)}</td><td class="mono">${v}</td></tr>`).join("") + `</tbody>`;
+    const rows = EX.flatMap(e => e.findings.slice(0, 2).map(f => [e, ...f]));
+    $("#keyResults").innerHTML = `<thead><tr><th>Investigation</th><th>Finding</th><th>Source</th></tr></thead><tbody>` +
+      rows.map(([e, t, l, u]) => `<tr><td><a class="row-link" href="#" data-open="${e.id}">${esc(e.name)}</a></td><td>${gl(esc(t))}</td><td class="mono small">${srcLink(l, u)}</td></tr>`).join("") + `</tbody>`;
   }
   document.addEventListener("click", e => {
     const b = e.target.closest(".bar-row");
@@ -285,7 +292,8 @@
     T.dir = T.sort === k ? -T.dir : (["name", "platform", "phase"].includes(k) ? 1 : -1);
     T.sort = k; renderTable();
   }));
-  const hay = e => [e.name, e.longName, e.platform, e.group, e.fuel, e.finding, PHASE[e.phase], ...e.sensors, ...e.diluents, ...e.pillars.map(p => PILLAR[p])].join(" ").toLowerCase();
+  const hay = e => [e.accession, e.name, e.longName, e.platform, e.group, e.fuel, e.finding, PHASE[e.phase], ...e.pillars.map(p => PILLAR[p])].join(" ").toLowerCase();
+  const srcLink = (l, u) => u ? `<a href="${u}" target="_blank" rel="noopener">${esc(l)} ↗</a>` : esc(l);
   const sortKey = (e, k) => ({
     name: e.name, platform: e.platform, phase: e.phase, period: e.period || "",
     o2: e.o2 ? e.o2.max : -1, psi: e.psi ? e.psi.max : -1, flow: e.flow ? e.flow.max : -1,
@@ -306,12 +314,12 @@
     $("#invTable tbody").innerHTML = rows.map(e => `
       <tr data-open="${e.id}" class="${S.cmp.has(e.id) ? "sel" : ""}">
         <td class="c-chk"><input type="checkbox" data-cmp="${e.id}" ${S.cmp.has(e.id) ? "checked" : ""} aria-label="Compare ${e.name}"></td>
-        <td class="name"><b>${e.name}${e.pending ? ` <span class="pill pend">pending</span>` : ""}</b><small>${e.longName}</small></td>
+        <td class="name"><b>${esc(e.name)}${e.pending ? ` <span class="pill pend">pending</span>` : ""}</b><small>${e.accession} · ${esc(e.longName)}</small></td>
         <td>${gl(e.platform)}</td>
         <td>${PHASE[e.phase]}</td>
         <td>${e.pillars.map(pill).join("")}</td>
-        <td class="num">${cell(fmtO2(e), e.inferred)}</td>
-        <td class="num">${cell(fmtRange(e.psi), e.inferred)}</td>
+        <td class="num">${cell(fmtO2(e))}</td>
+        <td class="num">${cell(fmtRange(e.psi))}</td>
         <td class="num">${cell(fmtRange(e.flow))}</td>
         <td class="mono">${cell(e.period)}</td>
         <td class="num">${complBar(e)}</td>
@@ -320,9 +328,9 @@
   }
   $("#invTable").addEventListener("change", e => { const id = e.target.dataset.cmp; if (id) toggleCmp(id); });
   $("#exportCsv").addEventListener("click", () => {
-    const head = ["id", "name", "platform", "phase", "pillars", "o2_min", "o2_max", "psi_min", "psi_max", "inferred_conditions", "flow_min_cm_s", "flow_max_cm_s", "period", "relevance", "completeness", "sources"];
+    const head = ["accession", "name", "platform", "phase", "pillars", "o2_min", "o2_max", "psi_min", "psi_max", "flow_min_cm_s", "flow_max_cm_s", "test_records", "points_o2_p", "period", "evidence", "completeness", "sources"];
     const q = v => v == null ? "" : /[",;\n]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : v;
-    const lines = filtered().map(e => [e.id, e.name, e.platform, e.phase, e.pillars.join("|"), e.o2?.min, e.o2?.max, e.psi?.min, e.psi?.max, !!e.inferred, e.flow?.min, e.flow?.max, e.period, e.relevance, e._compl.toFixed(2), e.sources.map(f => f[1] || f[0]).join(" | ")].map(q).join(","));
+    const lines = filtered().map(e => [e.accession, e.name, e.platform, e.phase, e.pillars.join("|"), e.o2?.min, e.o2?.max, e.psi?.min, e.psi?.max, e.flow?.min, e.flow?.max, e.tests, e.pts.length, e.period, e.relevance, e._compl.toFixed(2), e.sources.map(f => f[1] || f[0]).join(" | ")].map(q).join(","));
     const blob = new Blob([head.join(",") + "\n" + lines.join("\n")], { type: "text/csv;charset=utf-8" });
     const a = Object.assign(document.createElement("a"), { href: URL.createObjectURL(blob), download: "flame-in-freefall-investigations.csv" });
     a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
@@ -341,15 +349,20 @@
 
   /* ───────── Coverage ───────── */
   function renderCoverage() {
-    gapChart($("#bigGap"), { showInf: $("#showInf").checked, showScn: $("#showScn").checked });
+    gapChart($("#bigGap"), { showLlm: $("#showLlm").checked, showScn: $("#showScn").checked });
     const rows = EX.filter(e => e.o2).map(e => ({ e, c: condDist(e) }))
       .sort((a, b) => (a.c.d ?? 99 + a.c.dO) - (b.c.d ?? 99 + b.c.dO));
     $("#nearest").innerHTML = `<thead><tr><th>Investigation</th><th class="num">ΔO₂</th><th class="num">Δp</th><th class="num">d</th></tr></thead><tbody>` +
-      rows.map(({ e, c }) => `<tr><td><a class="row-link" href="#" data-open="${e.id}">${e.name}</a>${e.inferred ? ` <span class="muted small">≈</span>` : ""}</td><td class="num">${nfa(c.dO)}</td><td class="num">${c.dP == null ? `<span class="na">n/a</span>` : nf(c.dP, 1)}</td><td class="num">${c.d == null ? `<span class="na">—</span>` : nf(c.d, 2)}</td></tr>`).join("") + `</tbody>`;
-    const flex = byId.flex;
-    $("#gapCallout").innerHTML = `<b>0 investigations</b> with published pressure fall in the lunar zone. The closest is FLEX (min p ${nf(flex.psi.min, 1)} psi vs. ${nf(D.lunarZone.psimax, 1)}). BRE covers 34–40 % O₂ with no published pressure: a candidate to confirm in PSI. ${EX.filter(e => !e.o2).length} investigations with neither O₂ nor p.`;
+      rows.map(({ e, c }) => `<tr><td><a class="row-link" href="#" data-open="${e.id}">${esc(e.name)}</a></td><td class="num">${nfa(c.dO)}</td><td class="num">${c.dP == null ? `<span class="na">n/a</span>` : nf(c.dP, 1)}</td><td class="num">${c.d == null ? `<span class="na">—</span>` : nf(c.d, 2)}</td></tr>`).join("") + `</tbody>`;
+    const Z = D.lunarZone, zone = EX.filter(inZone);
+    const rich = EX.flatMap(e => e.pts.filter(p => p.o2 >= Z.o2min).map(p => ({ e, p }))).sort((a, b) => a.p.psi - b.p.psi)[0];
+    const noP = EX.filter(e => e.o2 && e.o2.max >= Z.o2min && !e.pts.some(p => p.o2 >= Z.o2min));
+    $("#gapCallout").innerHTML = `<b>${zone.length} investigation${zone.length === 1 ? "" : "s"}</b> with a test in the lunar zone${zone.length ? ` (${zone.map(e => esc(e.name)).join(", ")})` : ""}. ` +
+      (rich ? `Lowest pressure tested at ≥ ${Z.o2min} % O₂: ${nf(rich.p.psi, 1)} psi (${esc(rich.e.name)}, ${nfa(rich.p.o2)} % O₂) vs. ≤ ${nf(Z.psimax, 1)} psi required. ` : `No test at ≥ ${Z.o2min} % O₂ reports pressure. `) +
+      (noP.length ? `${noP.map(e => esc(e.name)).join(", ")} reach${noP.length === 1 ? "es" : ""} ≥ ${Z.o2min} % O₂ without pressure in the parsed data: candidates to confirm in PSI. ` : "") +
+      `${EX.filter(e => !e.o2).length} investigations with no O₂ data.`;
   }
-  $("#showInf").addEventListener("change", renderCoverage);
+  $("#showLlm").addEventListener("change", renderCoverage);
   $("#showScn").addEventListener("change", renderCoverage);
 
   /* ───────── Compare ───────── */
@@ -363,18 +376,19 @@
   function updateCmpBadge() { const b = $("#cmpCount"); b.textContent = S.cmp.size; b.hidden = !S.cmp.size; }
   function renderCompare() {
     const list = [...S.cmp].map(id => byId[id]).filter(Boolean);
-    $("#cmpAdd").innerHTML = `<option value="">+ Add investigation…</option>` + EX.filter(e => !S.cmp.has(e.id)).map(e => `<option value="${e.id}">${e.name}</option>`).join("");
+    $("#cmpAdd").innerHTML = `<option value="">+ Add investigation…</option>` + EX.filter(e => !S.cmp.has(e.id)).map(e => `<option value="${e.id}">${esc(e.name)} · ${e.accession}</option>`).join("");
     if (!list.length) { $("#cmpWrap").innerHTML = `<div class="empty">Tick investigations in the table or add them from the selector.</div>`; return; }
     const rows = [
       ["Scenario score", e => `<span class="mono">${Math.round(score(e).total * 100)}</span>`],
-      ["Platform", e => e.platform], ["Group", e => e.group], ["Period", e => e.period],
+      ["Accession", e => e.accession], ["Platform", e => e.platform], ["Group", e => e.group], ["Period", e => e.period],
       ["Phase", e => PHASE[e.phase]], ["Pillars", e => e.pillars.map(pill).join("")],
-      ["Fuel", e => e.fuel],
-      ["O₂ (%)", e => fmtO2(e) && (e.inferred ? "≈ " : "") + fmtO2(e)],
-      ["Pressure (psi)", e => fmtRange(e.psi) && (e.inferred ? "≈ " : "") + fmtRange(e.psi)],
-      ["Flow (cm/s)", e => fmtRange(e.flow)], ["Diluents", e => e.diluents.join(", ") || null], ["Sensors", e => e.sensors.join(", ") || null],
-      ["Results", e => e.results.length ? e.results.map(([k, v]) => `${k}: <span class="mono">${v}</span>`).join("<br>") : null],
-      ["Finding", e => e.finding], ["Completeness", e => complBar(e)], ["Relevance", e => relDots(e.relevance)]
+      ["Fuel", e => e.fuel && esc(e.fuel)],
+      ["O₂ (%)", e => fmtO2(e)],
+      ["Pressure (psi)", e => fmtRange(e.psi)],
+      ["Flow (cm/s)", e => fmtRange(e.flow)],
+      ["Test records", e => e.tests || null], ["Points with O₂ and p", e => e.pts.length || null],
+      ["Paper findings", e => e.findings.length ? e.findings.map(([t]) => esc(t)).join("<br><br>") : null],
+      ["Completeness", e => complBar(e)], ["Evidence", e => relDots(e.relevance)]
     ];
     const diff = $("#cmpDiff").checked;
     const body = rows.map(([k, fn]) => {
@@ -477,28 +491,30 @@
     current = id;
     const s = score(e);
     $("#dGroup").innerHTML = gl(`${e.group} · ${e.platform}${e.period ? " · " + e.period : ""}`);
-    $("#dTitle").textContent = e.name;
+    $("#dTitle").textContent = `${e.name} · ${e.accession}`;
     $("#dSub").textContent = e.longName;
     $("#dBody").innerHTML = `
       <div class="drawer-actions">
         <button class="btn" data-cmp-toggle="${e.id}">${S.cmp.has(e.id) ? "Remove from compare" : "Add to compare"}</button>
         ${e.o2 ? `<a class="btn ghost" href="#/coverage">View in coverage</a>` : ""}
+        ${e.sourceUrl ? `<a class="btn ghost" href="${e.sourceUrl}" target="_blank" rel="noopener">PSI ${e.accession} ↗</a>` : ""}
       </div>
-      <div><h4>Finding</h4><p>${gl(e.finding)}</p></div>
+      ${e.finding ? `<div><h4>Finding</h4><p>${gl(esc(e.finding))}</p></div>` : ""}
       <div><h4>Conditions</h4><dl class="kv">
         <dt>Phase</dt><dd>${PHASE[e.phase]}</dd>
-        <dt>Fuel</dt><dd>${gl(e.fuel)}</dd>
-        <dt>O₂ (%)</dt><dd class="mono">${cell(fmtO2(e), e.inferred)}</dd>
-        <dt>Pressure (psi)</dt><dd class="mono">${cell(fmtRange(e.psi), e.inferred)}</dd>
+        <dt>Fuel</dt><dd>${e.fuel ? gl(esc(e.fuel)) : cell(null)}</dd>
+        <dt>O₂ (%)</dt><dd class="mono">${cell(fmtO2(e))}</dd>
+        <dt>Pressure (psi)</dt><dd class="mono">${cell(fmtRange(e.psi))}</dd>
         <dt>Flow (cm/s)</dt><dd class="mono">${cell(fmtRange(e.flow))}</dd>
-        <dt>Diluents</dt><dd>${e.diluents.join(", ") || cell(null)}</dd>
-        <dt>Sensors</dt><dd>${gl(e.sensors.join(", ")) || cell(null)}</dd>
+        <dt>Test records</dt><dd class="mono">${e.tests || cell(null)}</dd>
+        <dt>Points O₂ + p</dt><dd class="mono">${e.pts.length || cell(null)}</dd>
         <dt>Pillars</dt><dd>${e.pillars.map(pill).join("")}</dd>
-      </dl>${e.note ? `<p class="foot-note" style="margin-top:8px">${e.note}</p>` : ""}${e.inferred ? `<p class="foot-note" style="margin-top:8px">≈ O₂ and pressure inferred (ISS cabin air).</p>` : ""}</div>
-      ${e.results.length ? `<div><h4>Results</h4><dl class="kv">${e.results.map(([k, v]) => `<dt>${k}</dt><dd class="mono">${v}</dd>`).join("")}</dl></div>` : ""}
+      </dl><p class="foot-note" style="margin-top:8px">Ranges cover every extracted point (PSI test tables and papers). ${e.review === "model_only" ? `LLM extraction${e.model ? ` (${esc(e.model)})` : ""}, not yet human-reviewed.` : ""}</p></div>
+      ${e.findings.length ? `<div><h4>Findings from papers</h4><ul>${e.findings.map(([t, l, u]) => `<li>${gl(esc(t))} <span class="muted small">· ${srcLink(l, u)}</span></li>`).join("")}</ul></div>` : ""}
+      ${e.objectives ? `<details><summary>PSI objectives</summary><p class="pre">${esc(e.objectives)}</p></details>` : ""}
       <div><h4>Active scenario · ${Math.round(s.total * 100)} / 100</h4>${stackbar(s)}<p class="foot-note" style="margin-top:6px">${s.why}</p></div>
       <div><h4>Completeness · ${Math.round(e._compl * 100)} %</h4><p class="foot-note">Missing: ${FIELDS.filter((f, i) => !e._st[i]).map(f => f[0]).join(", ") || "nothing"}</p></div>
-      <div><h4>Sources</h4><ul>${e.sources.map(([l, u]) => `<li>${u ? `<a href="${u}" target="_blank" rel="noopener">${l} ↗</a>` : l}</li>`).join("")}</ul></div>`;
+      <div><h4>Sources</h4><ul>${e.sources.map(([l, u]) => `<li>${srcLink(l, u)}</li>`).join("")}</ul></div>`;
     if (!keep) { $("#drawer").hidden = false; $("#dClose").focus(); }
   }
   function closeDrawer() { $("#drawer").hidden = true; current = null; }
@@ -581,6 +597,8 @@
   function toast(msg) { const t = $("#toast"); t.textContent = msg; t.hidden = false; clearTimeout(tt); tt = setTimeout(() => t.hidden = true, 1800); }
 
   /* ───────── Init ───────── */
+  $("#psiCount").textContent = `PSI · ${EX.length} inv.`;
+  if (D.site) $("#psiCount").title = `site.json built ${D.site.generatedAt}`;
   renderOverview();
   renderTable();
   renderModels();

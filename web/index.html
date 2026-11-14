@@ -59,7 +59,7 @@
     </div>
 
     <div class="side-foot">
-      <span class="mono">PSI · 19 inv.</span>
+      <span class="mono" id="psiCount">PSI</span>
       <span class="mono">NASA Space Apps 2026</span>
     </div>
   </aside>
@@ -99,7 +99,7 @@
           <div class="panel"><div class="panel-h"><h3>By platform</h3></div><div id="byPlat" class="bars"></div></div>
         </div>
         <div class="panel">
-          <div class="panel-h"><h3>Key quantitative results</h3><span class="muted small">extracted and hand-reviewed</span></div>
+          <div class="panel-h"><h3>Findings from papers</h3><span class="muted small">LLM-extracted from NTRS · not yet reviewed</span></div>
           <table class="tbl compact" id="keyResults"></table>
         </div>
       </section>
@@ -132,12 +132,12 @@
               <th data-sort="flow" class="num">Flow (cm/s)</th>
               <th data-sort="period">Period</th>
               <th data-sort="compl" class="num">Data</th>
-              <th data-sort="relevance" class="num">Rel.</th>
+              <th data-sort="relevance" class="num" title="Evidence 1–3">Evid.</th>
             </tr></thead>
             <tbody></tbody>
           </table>
         </div>
-        <p class="foot-note">≈ inferred conditions (ISS cabin air), not read from the source. — not stated in the reviewed sources. Tick rows to compare them.</p>
+        <p class="foot-note">Ranges cover every extracted point: PSI test tables and papers. — not found in either. Tick rows to compare them.</p>
       </section>
 
       <!-- SCENARIO -->
@@ -167,7 +167,7 @@
               <p class="side-h">Weights</p>
               <div class="field w"><label for="wC">Conditions <output id="vwC"></output></label><input type="range" id="wC" min="0" max="10" step="1" value="4"></div>
               <div class="field w"><label for="wP">Pillar <output id="vwP"></output></label><input type="range" id="wP" min="0" max="10" step="1" value="3"></div>
-              <div class="field w"><label for="wR">Relevance <output id="vwR"></output></label><input type="range" id="wR" min="0" max="10" step="1" value="2"></div>
+              <div class="field w"><label for="wR">Evidence <output id="vwR"></output></label><input type="range" id="wR" min="0" max="10" step="1" value="2"></div>
               <div class="field w"><label for="wG">Gravity <output id="vwG"></output></label><input type="range" id="wG" min="0" max="10" step="1" value="1"></div>
             </div>
             <p class="foot-note" id="scnNote"></p>
@@ -176,7 +176,7 @@
             <div class="panel-h">
               <h3>Ranking</h3>
               <div class="legend">
-                <span><i class="k c"></i>Conditions</span><span><i class="k p"></i>Pillar</span><span><i class="k r"></i>Relevance</span><span><i class="k g"></i>Gravity</span>
+                <span><i class="k c"></i>Conditions</span><span><i class="k p"></i>Pillar</span><span><i class="k r"></i>Evidence</span><span><i class="k g"></i>Gravity</span>
               </div>
             </div>
             <ol class="ranking" id="ranking"></ol>
@@ -191,7 +191,7 @@
             <div class="panel-h">
               <h3>O₂ versus pressure</h3>
               <div class="legend">
-                <label class="chk"><input type="checkbox" id="showInf" checked> Inferred</label>
+                <label class="chk"><input type="checkbox" id="showLlm" checked> From papers</label>
                 <label class="chk"><input type="checkbox" id="showScn" checked> Scenario</label>
               </div>
             </div>
@@ -298,7 +298,7 @@
 
 <div class="toast" id="toast" hidden></div>
 
-<script src="js/data.js"></script>
-<script src="js/app.js"></script>
+<script src="js/data.js?v=2"></script>
+<script src="js/site.js?v=2"></script>
 </body>
 </html>

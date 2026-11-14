@@ -285,7 +285,16 @@ input[type="range"]:disabled { opacity: .35; }
 .chart .mk { cursor: pointer; }
 .chart .mk rect, .chart .mk circle { fill: #6cb6ff2e; stroke: var(--acc); stroke-width: 1.2; }
 .chart .mk line { stroke: var(--acc); stroke-width: 2; }
-.chart .mk.inf circle { stroke-dasharray: 2 2; fill: #6cb6ff14; }
+.chart .mk circle.pt { stroke: none; opacity: .75; }
+.chart .mk circle.pt.llm { fill: none; stroke-width: 1.6; opacity: 1; }
+.chart .mk:hover circle.pt { opacity: 1; }
+.chart .mk:hover circle.pt:not(.llm) { stroke: var(--ink); stroke-width: .8; }
+.chart-legend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 10px; font-size: 12px; }
+.chart-legend button { background: none; border: 0; padding: 0; color: var(--ink-2); font: inherit; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; }
+.chart-legend button:hover { color: var(--acc); }
+.chart-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.chart-legend i { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+.chart-legend i.ring { border: 1.5px solid var(--muted); }
 .chart .mk:hover rect, .chart .mk:hover circle { fill: #6cb6ff66; }
 .chart .scn line { stroke: var(--ink); stroke-width: 1; stroke-dasharray: 3 3; opacity: .5; }
 .chart .scn circle { fill: var(--ink); stroke: var(--panel); stroke-width: 2; }
@@ -344,6 +353,9 @@ input[type="range"]:disabled { opacity: .35; }
 .kv dt { color: var(--muted); }
 .kv dd { margin: 0; }
 .drawer-b ul { margin: 0; padding-left: 16px; color: var(--ink-2); }
+.drawer-b ul li + li { margin-top: 6px; }
+.drawer-b details summary { cursor: pointer; font-size: 11px; font-weight: 500; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
+.drawer-b details p.pre { white-space: pre-line; margin-top: 6px; }
 .drawer-actions { display: flex; gap: 8px; flex-wrap: wrap; }
 
 .toast { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); z-index: 50; background: var(--ink); color: var(--bg); padding: 8px 14px; border-radius: 7px; font-size: 13px; }
