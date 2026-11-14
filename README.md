@@ -9,7 +9,7 @@ using a local open-weights LLM.
 **Live dashboard:** <https://sora-com.github.io/flame-waypoint/>
 **Slides:** (https://docs.google.com/presentation/d/1xlX4BvFT6F8LGaG8SBowGrN8TJy0ozzQ/edit?usp=sharing&ouid=104276560482619359388&rtpof=true&sd=true) 
 
-![Dashboard screenshot](TODO-path-to-screenshot.png) 
+![Dashboard screenshot](docs/screenshot.png)
 
 ## What we are solving
 
