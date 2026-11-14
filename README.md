@@ -7,9 +7,9 @@ search, compare and rank investigations by relevance to spacecraft and Moon base
 using a local open-weights LLM.
 
 **Live dashboard:** <https://sora-com.github.io/flame-waypoint/>
-**Video:** TODO · **Slides:** TODO
+**Slides:** (https://docs.google.com/presentation/d/1xlX4BvFT6F8LGaG8SBowGrN8TJy0ozzQ/edit?usp=sharing&ouid=104276560482619359388&rtpof=true&sd=true) 
 
-![Dashboard screenshot](TODO-path-to-screenshot.png)
+![Dashboard screenshot](TODO-path-to-screenshot.png) 
 
 ## What we are solving
 
