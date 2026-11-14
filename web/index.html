@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Flame in Freefall · Dashboard</title>
-  <meta name="description" content="Dashboard de investigaciones de combustión en microgravedad (NASA PSI) para seguridad contra incendios en hábitats espaciales.">
+  <meta name="description" content="Dashboard of microgravity combustion investigations (NASA PSI) for fire safety in space habitats.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -13,43 +13,43 @@
 <body>
 <div class="app" id="app">
 
-  <!-- ───────── Barra lateral ───────── -->
+  <!-- ───────── Sidebar ───────── -->
   <aside class="side" id="side">
     <div class="side-top">
-      <a class="logo" href="#/resumen" aria-label="Inicio">
+      <a class="logo" href="#/overview" aria-label="Home">
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="9" class="o"/></svg>
         <span>Flame in Freefall</span>
       </a>
-      <button class="icon-btn collapse" id="collapse" aria-label="Contraer barra lateral" title="Contraer ( [ )">
+      <button class="icon-btn collapse" id="collapse" aria-label="Collapse sidebar" title="Collapse ( [ )">
         <svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg>
       </button>
     </div>
 
-    <nav class="side-nav" aria-label="Vistas">
-      <p class="side-h">Análisis</p>
-      <a href="#/resumen" data-view="resumen"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg><span>Resumen</span><kbd>1</kbd></a>
-      <a href="#/investigaciones" data-view="investigaciones"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span>Investigaciones</span><kbd>2</kbd></a>
-      <a href="#/escenario" data-view="escenario"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span>Ranking por escenario</span><kbd>3</kbd></a>
-      <a href="#/cobertura" data-view="cobertura"><svg viewBox="0 0 24 24"><path d="M3 21V3M3 21h18"/><rect x="11" y="11" width="9" height="6" stroke-dasharray="2 2"/><circle cx="7" cy="8" r="1.5"/></svg><span>Cobertura O₂ · presión</span><kbd>4</kbd></a>
-      <a href="#/comparar" data-view="comparar"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="7" height="16"/><rect x="14" y="4" width="7" height="16"/></svg><span>Comparar</span><b class="badge" id="cmpCount" hidden>0</b><kbd>5</kbd></a>
+    <nav class="side-nav" aria-label="Views">
+      <p class="side-h">Analysis</p>
+      <a href="#/overview" data-view="overview"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg><span>Overview</span><kbd>1</kbd></a>
+      <a href="#/investigations" data-view="investigations"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span>Investigations</span><kbd>2</kbd></a>
+      <a href="#/scenario" data-view="scenario"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span>Scenario ranking</span><kbd>3</kbd></a>
+      <a href="#/coverage" data-view="coverage"><svg viewBox="0 0 24 24"><path d="M3 21V3M3 21h18"/><rect x="11" y="11" width="9" height="6" stroke-dasharray="2 2"/><circle cx="7" cy="8" r="1.5"/></svg><span>O₂ · pressure coverage</span><kbd>4</kbd></a>
+      <a href="#/compare" data-view="compare"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="7" height="16"/><rect x="14" y="4" width="7" height="16"/></svg><span>Compare</span><b class="badge" id="cmpCount" hidden>0</b><kbd>5</kbd></a>
 
-      <p class="side-h">Viabilidad</p>
-      <a href="#/energia" data-view="energia"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="16" height="10" rx="1"/><path d="M21 10v4M7 10v4M11 10v4"/></svg><span>Energía y masa a bordo</span><kbd>6</kbd></a>
-      <a href="#/modelos" data-view="modelos"><svg viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14"/><path d="M9 1v4M15 1v4M9 19v4M15 19v4M1 9h4M1 15h4M19 9h4M19 15h4"/></svg><span>Benchmark de modelos</span><kbd>7</kbd></a>
+      <p class="side-h">Feasibility</p>
+      <a href="#/energy" data-view="energy"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="16" height="10" rx="1"/><path d="M21 10v4M7 10v4M11 10v4"/></svg><span>Onboard energy and mass</span><kbd>6</kbd></a>
+      <a href="#/models" data-view="models"><svg viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14"/><path d="M9 1v4M15 1v4M9 19v4M15 19v4M1 9h4M1 15h4M19 9h4M19 15h4"/></svg><span>Model benchmark</span><kbd>7</kbd></a>
 
-      <p class="side-h">Datos</p>
-      <a href="#/calidad" data-view="calidad"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="5" height="5"/><rect x="10" y="3" width="5" height="5"/><rect x="17" y="3" width="4" height="5" class="o"/><rect x="3" y="10" width="5" height="5"/><rect x="10" y="10" width="5" height="5" class="o"/><rect x="17" y="10" width="4" height="5"/></svg><span>Completitud y fuentes</span><kbd>8</kbd></a>
-      <a href="#/glosario" data-view="glosario"><svg viewBox="0 0 24 24"><path d="M4 4h6a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H4z"/><path d="M20 4h-6a3 3 0 0 0-3 3"/><path d="M20 4v14h-7"/></svg><span>Glosario</span><kbd>9</kbd></a>
+      <p class="side-h">Data</p>
+      <a href="#/quality" data-view="quality"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="5" height="5"/><rect x="10" y="3" width="5" height="5"/><rect x="17" y="3" width="4" height="5" class="o"/><rect x="3" y="10" width="5" height="5"/><rect x="10" y="10" width="5" height="5" class="o"/><rect x="17" y="10" width="4" height="5"/></svg><span>Completeness and sources</span><kbd>8</kbd></a>
+      <a href="#/glossary" data-view="glossary"><svg viewBox="0 0 24 24"><path d="M4 4h6a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H4z"/><path d="M20 4h-6a3 3 0 0 0-3 3"/><path d="M20 4v14h-7"/></svg><span>Glossary</span><kbd>9</kbd></a>
     </nav>
 
     <div class="side-scn">
-      <p class="side-h">Escenario activo</p>
-      <select id="scnSelect" aria-label="Escenario activo">
+      <p class="side-h">Active scenario</p>
+      <select id="scnSelect" aria-label="Active scenario">
         <option value="iss">ISS</option>
-        <option value="luna">Base lunar</option>
-        <option value="rover">Rover presurizado</option>
-        <option value="marte">Marte</option>
-        <option value="custom">Personalizado</option>
+        <option value="moon">Moon base</option>
+        <option value="rover">Pressurized rover</option>
+        <option value="mars">Mars</option>
+        <option value="custom">Custom</option>
       </select>
       <dl class="scn-vals">
         <div><dt>O₂</dt><dd id="sO2"></dd></div>
@@ -65,14 +65,14 @@
   </aside>
   <div class="scrim" id="scrim" hidden></div>
 
-  <!-- ───────── Área principal ───────── -->
+  <!-- ───────── Main area ───────── -->
   <div class="main">
     <header class="bar">
-      <button class="icon-btn menu" id="menu" aria-label="Abrir navegación"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-      <div class="crumbs"><span class="muted">Flame in Freefall</span><span class="sep">/</span><span id="crumb">Resumen</span></div>
+      <button class="icon-btn menu" id="menu" aria-label="Open navigation"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <div class="crumbs"><span class="muted">Flame in Freefall</span><span class="sep">/</span><span id="crumb">Overview</span></div>
       <label class="gsearch">
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4-4"/></svg>
-        <input id="gsearch" type="search" placeholder="Buscar investigación, combustible, sensor…" autocomplete="off" aria-label="Buscar">
+        <input id="gsearch" type="search" placeholder="Search investigation, fuel, sensor…" autocomplete="off" aria-label="Search">
         <kbd>/</kbd>
         <ul class="gresults" id="gresults" role="listbox" hidden></ul>
       </label>
@@ -80,41 +80,41 @@
 
     <main class="views">
 
-      <!-- RESUMEN -->
-      <section class="view" data-view="resumen">
+      <!-- OVERVIEW -->
+      <section class="view" data-view="overview">
         <div class="kpis" id="kpis"></div>
         <div class="grid-2">
           <div class="panel">
-            <div class="panel-h"><h3>Cobertura de condiciones</h3><a href="#/cobertura" class="link">Abrir →</a></div>
+            <div class="panel-h"><h3>Condition coverage</h3><a href="#/coverage" class="link">Open →</a></div>
             <div id="miniGap" class="chart"></div>
           </div>
           <div class="panel">
-            <div class="panel-h"><h3>Top 5 · <span id="topScn"></span></h3><a href="#/escenario" class="link">Ranking completo →</a></div>
+            <div class="panel-h"><h3>Top 5 · <span id="topScn"></span></h3><a href="#/scenario" class="link">Full ranking →</a></div>
             <ol class="toplist" id="top5"></ol>
           </div>
         </div>
         <div class="grid-3">
-          <div class="panel"><div class="panel-h"><h3>Por pilar de seguridad</h3></div><div id="byPilar" class="bars"></div></div>
-          <div class="panel"><div class="panel-h"><h3>Por fase del combustible</h3></div><div id="byFase" class="bars"></div></div>
-          <div class="panel"><div class="panel-h"><h3>Por plataforma</h3></div><div id="byPlat" class="bars"></div></div>
+          <div class="panel"><div class="panel-h"><h3>By safety pillar</h3></div><div id="byPillar" class="bars"></div></div>
+          <div class="panel"><div class="panel-h"><h3>By fuel phase</h3></div><div id="byPhase" class="bars"></div></div>
+          <div class="panel"><div class="panel-h"><h3>By platform</h3></div><div id="byPlat" class="bars"></div></div>
         </div>
         <div class="panel">
-          <div class="panel-h"><h3>Resultados cuantitativos clave</h3><span class="muted small">extraídos y revisados a mano</span></div>
+          <div class="panel-h"><h3>Key quantitative results</h3><span class="muted small">extracted and hand-reviewed</span></div>
           <table class="tbl compact" id="keyResults"></table>
         </div>
       </section>
 
-      <!-- INVESTIGACIONES -->
-      <section class="view" data-view="investigaciones">
+      <!-- INVESTIGATIONS -->
+      <section class="view" data-view="investigations">
         <div class="toolbar">
-          <div class="seg" id="fFase" aria-label="Fase">
-            <button data-v="" class="on">Todas</button><button data-v="solido">Sólido</button><button data-v="liquido">Líquido</button><button data-v="gas">Gas</button><button data-v="humo">Humo</button><button data-v="polvo">Polvo</button>
+          <div class="seg" id="fPhase" aria-label="Phase">
+            <button data-v="" class="on">All</button><button data-v="solid">Solid</button><button data-v="liquid">Liquid</button><button data-v="gas">Gas</button><button data-v="smoke">Smoke</button><button data-v="dust">Dust</button>
           </div>
-          <div class="seg" id="fPilar" aria-label="Pilar">
-            <button data-v="" class="on">Todos</button><button data-v="prevencion">Prevención</button><button data-v="deteccion">Detección</button><button data-v="supresion">Supresión</button><button data-v="fundamental">Fundamental</button>
+          <div class="seg" id="fPillar" aria-label="Pillar">
+            <button data-v="" class="on">All</button><button data-v="prevention">Prevention</button><button data-v="detection">Detection</button><button data-v="suppression">Suppression</button><button data-v="fundamental">Fundamental</button>
           </div>
-          <label class="chk"><input type="checkbox" id="fCond"> Solo con O₂/p</label>
-          <input class="tsearch" id="tsearch" type="search" placeholder="Filtrar tabla…" aria-label="Filtrar tabla">
+          <label class="chk"><input type="checkbox" id="fCond"> Only with O₂/p</label>
+          <input class="tsearch" id="tsearch" type="search" placeholder="Filter table…" aria-label="Filter table">
           <span class="spacer"></span>
           <span class="muted small" id="rowCount"></span>
           <button class="btn" id="exportCsv"><svg viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M4 20h16"/></svg>CSV</button>
@@ -122,53 +122,53 @@
         <div class="table-wrap">
           <table class="tbl" id="invTable">
             <thead><tr>
-              <th class="c-chk"><span class="sr">Comparar</span></th>
-              <th data-sort="nombre">Investigación</th>
-              <th data-sort="plataforma">Plataforma</th>
-              <th data-sort="fase">Fase</th>
-              <th>Pilares</th>
+              <th class="c-chk"><span class="sr">Compare</span></th>
+              <th data-sort="name">Investigation</th>
+              <th data-sort="platform">Platform</th>
+              <th data-sort="phase">Phase</th>
+              <th>Pillars</th>
               <th data-sort="o2" class="num">O₂ %</th>
               <th data-sort="psi" class="num">p (psi)</th>
-              <th data-sort="flujo" class="num">Flujo (cm/s)</th>
-              <th data-sort="periodo">Periodo</th>
-              <th data-sort="compl" class="num">Datos</th>
-              <th data-sort="relevancia" class="num">Rel.</th>
+              <th data-sort="flow" class="num">Flow (cm/s)</th>
+              <th data-sort="period">Period</th>
+              <th data-sort="compl" class="num">Data</th>
+              <th data-sort="relevance" class="num">Rel.</th>
             </tr></thead>
             <tbody></tbody>
           </table>
         </div>
-        <p class="foot-note">≈ condiciones inferidas (aire de cabina ISS), no leídas de la fuente. — no indicado en las fuentes revisadas. Marca filas para compararlas.</p>
+        <p class="foot-note">≈ inferred conditions (ISS cabin air), not read from the source. — not stated in the reviewed sources. Tick rows to compare them.</p>
       </section>
 
-      <!-- ESCENARIO -->
-      <section class="view" data-view="escenario">
+      <!-- SCENARIO -->
+      <section class="view" data-view="scenario">
         <div class="grid-side">
           <div class="panel controls">
-            <div class="panel-h"><h3>Parámetros</h3></div>
+            <div class="panel-h"><h3>Parameters</h3></div>
             <div class="seg full" id="scnSeg">
-              <button data-v="iss">ISS</button><button data-v="luna">Luna</button><button data-v="rover">Rover</button><button data-v="marte">Marte</button>
+              <button data-v="iss">ISS</button><button data-v="moon">Moon</button><button data-v="rover">Rover</button><button data-v="mars">Mars</button>
             </div>
             <div class="field"><label for="pO2">O₂ <output id="vO2"></output></label><input type="range" id="pO2" min="15" max="90" step="0.5"></div>
-            <div class="field"><label for="pP">Presión <output id="vP"></output></label><input type="range" id="pP" min="3" max="45" step="0.1"></div>
-            <div class="field"><label for="pG">Gravedad <output id="vG"></output></label><input type="range" id="pG" min="0" max="1" step="0.01"></div>
+            <div class="field"><label for="pP">Pressure <output id="vP"></output></label><input type="range" id="pP" min="3" max="45" step="0.1"></div>
+            <div class="field"><label for="pG">Gravity <output id="vG"></output></label><input type="range" id="pG" min="0" max="1" step="0.01"></div>
             <div class="field">
-              <label>Prioridad</label>
-              <div class="tags" id="pPil">
-                <button data-v="prevencion" class="on">Prevención</button><button data-v="deteccion" class="on">Detección</button><button data-v="supresion" class="on">Supresión</button><button data-v="fundamental">Fundamental</button>
+              <label>Priority</label>
+              <div class="tags" id="pPillar">
+                <button data-v="prevention" class="on">Prevention</button><button data-v="detection" class="on">Detection</button><button data-v="suppression" class="on">Suppression</button><button data-v="fundamental">Fundamental</button>
               </div>
             </div>
             <div class="field">
-              <label>Combustible de interés</label>
-              <div class="tags" id="pFase">
-                <button data-v="solido" class="on">Sólido</button><button data-v="liquido" class="on">Líquido</button><button data-v="gas" class="on">Gas</button><button data-v="humo" class="on">Humo</button><button data-v="polvo" class="on">Polvo</button>
+              <label>Fuel of interest</label>
+              <div class="tags" id="pPhase">
+                <button data-v="solid" class="on">Solid</button><button data-v="liquid" class="on">Liquid</button><button data-v="gas" class="on">Gas</button><button data-v="smoke" class="on">Smoke</button><button data-v="dust" class="on">Dust</button>
               </div>
             </div>
             <div class="weights">
-              <p class="side-h">Pesos</p>
-              <div class="field w"><label for="wC">Condiciones <output id="vwC"></output></label><input type="range" id="wC" min="0" max="10" step="1" value="4"></div>
-              <div class="field w"><label for="wP">Pilar <output id="vwP"></output></label><input type="range" id="wP" min="0" max="10" step="1" value="3"></div>
-              <div class="field w"><label for="wR">Relevancia <output id="vwR"></output></label><input type="range" id="wR" min="0" max="10" step="1" value="2"></div>
-              <div class="field w"><label for="wG">Gravedad <output id="vwG"></output></label><input type="range" id="wG" min="0" max="10" step="1" value="1"></div>
+              <p class="side-h">Weights</p>
+              <div class="field w"><label for="wC">Conditions <output id="vwC"></output></label><input type="range" id="wC" min="0" max="10" step="1" value="4"></div>
+              <div class="field w"><label for="wP">Pillar <output id="vwP"></output></label><input type="range" id="wP" min="0" max="10" step="1" value="3"></div>
+              <div class="field w"><label for="wR">Relevance <output id="vwR"></output></label><input type="range" id="wR" min="0" max="10" step="1" value="2"></div>
+              <div class="field w"><label for="wG">Gravity <output id="vwG"></output></label><input type="range" id="wG" min="0" max="10" step="1" value="1"></div>
             </div>
             <p class="foot-note" id="scnNote"></p>
           </div>
@@ -176,7 +176,7 @@
             <div class="panel-h">
               <h3>Ranking</h3>
               <div class="legend">
-                <span><i class="k c"></i>Condiciones</span><span><i class="k p"></i>Pilar</span><span><i class="k r"></i>Relevancia</span><span><i class="k g"></i>Gravedad</span>
+                <span><i class="k c"></i>Conditions</span><span><i class="k p"></i>Pillar</span><span><i class="k r"></i>Relevance</span><span><i class="k g"></i>Gravity</span>
               </div>
             </div>
             <ol class="ranking" id="ranking"></ol>
@@ -184,100 +184,100 @@
         </div>
       </section>
 
-      <!-- COBERTURA -->
-      <section class="view" data-view="cobertura">
+      <!-- COVERAGE -->
+      <section class="view" data-view="coverage">
         <div class="grid-side rev">
           <div class="panel">
             <div class="panel-h">
-              <h3>O₂ frente a presión</h3>
+              <h3>O₂ versus pressure</h3>
               <div class="legend">
-                <label class="chk"><input type="checkbox" id="showInf" checked> Inferidas</label>
-                <label class="chk"><input type="checkbox" id="showScn" checked> Escenario</label>
+                <label class="chk"><input type="checkbox" id="showInf" checked> Inferred</label>
+                <label class="chk"><input type="checkbox" id="showScn" checked> Scenario</label>
               </div>
             </div>
             <div id="bigGap" class="chart"></div>
           </div>
           <div class="panel">
-            <div class="panel-h"><h3>Más cercanas al escenario</h3></div>
+            <div class="panel-h"><h3>Closest to the scenario</h3></div>
             <table class="tbl compact" id="nearest"></table>
             <div class="callout" id="gapCallout"></div>
           </div>
         </div>
       </section>
 
-      <!-- COMPARAR -->
-      <section class="view" data-view="comparar">
+      <!-- COMPARE -->
+      <section class="view" data-view="compare">
         <div class="toolbar">
-          <select id="cmpAdd" aria-label="Añadir investigación"><option value="">+ Añadir investigación…</option></select>
-          <label class="chk"><input type="checkbox" id="cmpDiff"> Solo diferencias</label>
+          <select id="cmpAdd" aria-label="Add investigation"><option value="">+ Add investigation…</option></select>
+          <label class="chk"><input type="checkbox" id="cmpDiff"> Differences only</label>
           <span class="spacer"></span>
-          <button class="btn ghost" id="cmpClear">Vaciar</button>
+          <button class="btn ghost" id="cmpClear">Clear</button>
         </div>
         <div class="table-wrap" id="cmpWrap"></div>
       </section>
 
-      <!-- ENERGÍA -->
-      <section class="view" data-view="energia">
+      <!-- ENERGY -->
+      <section class="view" data-view="energy">
         <div class="grid-side">
           <div class="panel controls">
-            <div class="panel-h"><h3>Supuestos</h3></div>
-            <div class="field"><label>Modelo <span class="tag m">medido</span></label><div class="seg full" id="eModel"></div></div>
-            <div class="field"><label for="eActive">P activa <span class="tag e">est.</span> <output id="oActive"></output></label><input type="range" id="eActive" min="5" max="120" step="1" value="30"></div>
-            <div class="field"><label for="eIdle">P reposo <span class="tag e">est.</span> <output id="oIdle"></output></label><input type="range" id="eIdle" min="1" max="40" step="1" value="10"></div>
-            <div class="field"><label for="eQueries">Consultas / día <output id="oQueries"></output></label><input type="range" id="eQueries" min="0" max="2000" step="10" value="100"></div>
-            <div class="field"><label for="eNight">Autonomía sin sol <output id="oNight"></output></label><input type="range" id="eNight" min="1" max="15" step="0.5" value="14"></div>
-            <div class="field"><label for="eDens">Densidad celda <output id="oDens"></output></label><input type="range" id="eDens" min="100" max="300" step="10" value="200"></div>
-            <div class="field"><label for="eMargin">Margen (DoD, envejecimiento) <output id="oMargin"></output></label><input type="range" id="eMargin" min="0" max="100" step="5" value="0"></div>
-            <label class="chk"><input type="checkbox" id="eSleep"> Suspensión con despertar por alarma (≈ 1 W)</label>
+            <div class="panel-h"><h3>Assumptions</h3></div>
+            <div class="field"><label>Model <span class="tag m">measured</span></label><div class="seg full" id="eModel"></div></div>
+            <div class="field"><label for="eActive">Active P <span class="tag e">est.</span> <output id="oActive"></output></label><input type="range" id="eActive" min="5" max="120" step="1" value="30"></div>
+            <div class="field"><label for="eIdle">Idle P <span class="tag e">est.</span> <output id="oIdle"></output></label><input type="range" id="eIdle" min="1" max="40" step="1" value="10"></div>
+            <div class="field"><label for="eQueries">Queries / day <output id="oQueries"></output></label><input type="range" id="eQueries" min="0" max="2000" step="10" value="100"></div>
+            <div class="field"><label for="eNight">Autonomy without sun <output id="oNight"></output></label><input type="range" id="eNight" min="1" max="15" step="0.5" value="14"></div>
+            <div class="field"><label for="eDens">Cell density <output id="oDens"></output></label><input type="range" id="eDens" min="100" max="300" step="10" value="200"></div>
+            <div class="field"><label for="eMargin">Margin (DoD, aging) <output id="oMargin"></output></label><input type="range" id="eMargin" min="0" max="100" step="5" value="0"></div>
+            <label class="chk"><input type="checkbox" id="eSleep"> Sleep with alarm wake-up (≈ 1 W)</label>
           </div>
           <div class="stack">
             <div class="kpis" id="eKpis"></div>
             <div class="panel">
-              <div class="panel-h"><h3>Masa de batería frente a consultas/día</h3><div class="legend"><span><i class="k line1"></i>Siempre encendido</span><span><i class="k line2"></i>Suspensión</span><span><i class="k dot"></i>Actual</span></div></div>
+              <div class="panel-h"><h3>Battery mass versus queries/day</h3><div class="legend"><span><i class="k line1"></i>Always on</span><span><i class="k line2"></i>Sleep</span><span><i class="k dot"></i>Current</span></div></div>
               <div id="eChart" class="chart"></div>
             </div>
             <div class="panel">
-              <div class="panel-h"><h3>Desglose diario</h3></div>
+              <div class="panel-h"><h3>Daily breakdown</h3></div>
               <div class="split"><span id="barQ"></span><span id="barI"></span></div>
               <p class="foot-note" id="eNote"></p>
             </div>
           </div>
         </div>
         <div class="panel refs">
-          <div><b>≈ 100 kW</b><span>Generación solar ISS (orden de magnitud)</span></div>
-          <div><b>40 kW</b><span>Fission Surface Power, objetivo de clase</span></div>
-          <div><b>Snapdragon 801</b><span>SoC comercial a bordo de Ingenuity</span></div>
-          <div><b>Spaceborne Computer</b><span>HPE, servidor COTS en la ISS</span></div>
+          <div><b>≈ 100 kW</b><span>ISS solar generation (order of magnitude)</span></div>
+          <div><b>40 kW</b><span>Fission Surface Power, class target</span></div>
+          <div><b>Snapdragon 801</b><span>Commercial SoC aboard Ingenuity</span></div>
+          <div><b>Spaceborne Computer</b><span>HPE, COTS server on the ISS</span></div>
         </div>
       </section>
 
-      <!-- MODELOS -->
-      <section class="view" data-view="modelos">
+      <!-- MODELS -->
+      <section class="view" data-view="models">
         <div class="panel">
-          <div class="panel-h"><h3>Extracción estructurada con LLM local</h3><span class="muted small">12 casos × 13 campos · Apple Silicon · 13 nov 2026</span></div>
+          <div class="panel-h"><h3>Structured extraction with a local LLM</h3><span class="muted small">12 cases × 13 fields · Apple Silicon · Nov 13 2026</span></div>
           <table class="tbl" id="modelTable"></table>
-          <p class="foot-note">Duración: mediana por documento. Aciertos: campos coincidentes con el JSON de referencia revisado a mano. Potencia pendiente de medir con <code>powermetrics</code>.</p>
+          <p class="foot-note">Duration: median per document. Correct: fields matching the hand-reviewed reference JSON. Power still to be measured with <code>powermetrics</code>.</p>
         </div>
       </section>
 
-      <!-- CALIDAD -->
-      <section class="view" data-view="calidad">
+      <!-- QUALITY -->
+      <section class="view" data-view="quality">
         <div class="panel">
-          <div class="panel-h"><h3>Completitud por campo</h3><div class="legend"><span><i class="k full"></i>Dato</span><span><i class="k inf"></i>Inferido</span><span><i class="k none"></i>Falta</span></div></div>
+          <div class="panel-h"><h3>Completeness by field</h3><div class="legend"><span><i class="k full"></i>Data</span><span><i class="k inf"></i>Inferred</span><span><i class="k none"></i>Missing</span></div></div>
           <div class="table-wrap"><table class="matrix" id="matrix"></table></div>
         </div>
         <div class="panel">
-          <div class="panel-h"><h3>Fuentes</h3></div>
+          <div class="panel-h"><h3>Sources</h3></div>
           <table class="tbl compact" id="srcTable"></table>
         </div>
       </section>
-      <!-- GLOSARIO -->
-      <section class="view" data-view="glosario">
+      <!-- GLOSSARY -->
+      <section class="view" data-view="glossary">
         <div class="toolbar">
-          <div class="seg" id="glCat" aria-label="Categoría">
-            <button data-v="" class="on">Todo</button><button data-v="instalacion">Instalaciones</button><button data-v="combustion">Combustión</button><button data-v="material">Materiales</button><button data-v="instrumento">Instrumentos</button><button data-v="dashboard">Dashboard</button>
+          <div class="seg" id="glCat" aria-label="Category">
+            <button data-v="" class="on">All</button><button data-v="facility">Facilities</button><button data-v="combustion">Combustion</button><button data-v="material">Materials</button><button data-v="instrument">Instruments</button><button data-v="dashboard">Dashboard</button>
           </div>
-          <input class="tsearch" id="glSearch" type="search" placeholder="Filtrar términos…" aria-label="Filtrar glosario">
+          <input class="tsearch" id="glSearch" type="search" placeholder="Filter terms…" aria-label="Filter glossary">
           <span class="spacer"></span>
           <span class="muted small" id="glCount"></span>
         </div>
@@ -286,11 +286,11 @@
     </main>
   </div>
 
-  <!-- Panel de detalle -->
-  <aside class="drawer" id="drawer" aria-label="Detalle de investigación" hidden>
+  <!-- Detail drawer -->
+  <aside class="drawer" id="drawer" aria-label="Investigation detail" hidden>
     <div class="drawer-h">
       <div><p class="mono muted small" id="dGroup"></p><h2 id="dTitle"></h2><p class="muted" id="dSub"></p></div>
-      <button class="icon-btn" id="dClose" aria-label="Cerrar"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      <button class="icon-btn" id="dClose" aria-label="Close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
     </div>
     <div class="drawer-b" id="dBody"></div>
   </aside>

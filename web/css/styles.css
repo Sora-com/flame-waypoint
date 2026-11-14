@@ -19,9 +19,9 @@
   --c-rel: #8fe3dc;
   --c-g: #3c5f94;
   --warn: #f2c37a;
-  --pil-prevencion: #5fd4a8;
-  --pil-deteccion: #f2c37a;
-  --pil-supresion: #ff8f7e;
+  --pil-prevention: #5fd4a8;
+  --pil-detection: #f2c37a;
+  --pil-suppression: #ff8f7e;
   --pil-fundamental: #b39dff;
   --sans: "IBM Plex Sans", system-ui, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, monospace;
@@ -50,7 +50,7 @@ kbd { font-size: 10px; color: var(--muted); border: 1px solid var(--line-2); bor
 .app { display: grid; grid-template-columns: var(--side) 1fr; min-height: 100vh; }
 .app.collapsed { --side: 60px; }
 
-/* ───── Barra lateral ───── */
+/* ───── Sidebar ───── */
 .side {
   position: sticky; top: 0; height: 100vh; overflow-y: auto; overflow-x: hidden;
   background: var(--bg-1); border-right: 1px solid var(--line);
@@ -101,7 +101,7 @@ kbd { font-size: 10px; color: var(--muted); border: 1px solid var(--line-2); bor
 .app.collapsed .side-nav a { grid-template-columns: 1fr; justify-items: center; padding: 9px 0; }
 .app.collapsed .side-nav a.active::before { left: -8px; }
 
-/* ───── Cabecera ───── */
+/* ───── Header ───── */
 .main { min-width: 0; display: flex; flex-direction: column; }
 .bar {
   position: sticky; top: 0; z-index: 10; display: flex; align-items: center; gap: 16px;
@@ -128,7 +128,7 @@ kbd { font-size: 10px; color: var(--muted); border: 1px solid var(--line-2); bor
 .gresults li span:last-child { color: var(--muted); font-size: 12px; font-family: var(--mono); white-space: nowrap; }
 .gresults li.hi { background: var(--line); }
 
-/* ───── Vistas ───── */
+/* ───── Views ───── */
 .views { padding: 20px 24px 40px; }
 .view { display: none; flex-direction: column; gap: 16px; animation: in .2s ease-out; }
 .view.on { display: flex; }
@@ -156,7 +156,7 @@ kbd { font-size: 10px; color: var(--muted); border: 1px solid var(--line-2); bor
 .kpi.alert .v { color: var(--ice); }
 .kpi:first-child { border-radius: 10px 0 0 10px; } .kpi:last-child { border-radius: 0 10px 10px 0; }
 
-/* Barras horizontales */
+/* Horizontal bars */
 .bars { display: flex; flex-direction: column; gap: 8px; }
 .bar-row { display: grid; grid-template-columns: 96px 1fr 28px; gap: 10px; align-items: center; font-size: 13px; cursor: pointer; background: none; border: 0; padding: 0; text-align: left; }
 .bar-row:hover .t { color: var(--ink); }
@@ -176,7 +176,7 @@ kbd { font-size: 10px; color: var(--muted); border: 1px solid var(--line-2); bor
 .toplist small { display: block; color: var(--muted); font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .toplist .s { font-family: var(--mono); font-size: 12px; text-align: right; }
 
-/* Tablas */
+/* Tables */
 .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); }
 .tbl { width: 100%; border-collapse: collapse; font-size: 13px; }
 .tbl th { text-align: left; font-weight: 500; font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; padding: 9px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; background: var(--panel); }
@@ -199,9 +199,9 @@ kbd { font-size: 10px; color: var(--muted); border: 1px solid var(--line-2); bor
 .tbl a.row-link { color: var(--ink); }
 .tbl a.row-link:hover { color: var(--acc); }
 .pill { display: inline-block; font-size: 11px; padding: 0 6px; border-radius: 3px; background: var(--line); color: var(--ink-2); margin: 0 3px 3px 0; white-space: nowrap; }
-.pill.pil-prevencion { background: color-mix(in srgb, var(--pil-prevencion) 15%, transparent); color: var(--pil-prevencion); }
-.pill.pil-deteccion { background: color-mix(in srgb, var(--pil-deteccion) 15%, transparent); color: var(--pil-deteccion); }
-.pill.pil-supresion { background: color-mix(in srgb, var(--pil-supresion) 15%, transparent); color: var(--pil-supresion); }
+.pill.pil-prevention { background: color-mix(in srgb, var(--pil-prevention) 15%, transparent); color: var(--pil-prevention); }
+.pill.pil-detection { background: color-mix(in srgb, var(--pil-detection) 15%, transparent); color: var(--pil-detection); }
+.pill.pil-suppression { background: color-mix(in srgb, var(--pil-suppression) 15%, transparent); color: var(--pil-suppression); }
 .pill.pil-fundamental { background: color-mix(in srgb, var(--pil-fundamental) 15%, transparent); color: var(--pil-fundamental); }
 .pill.pend { background: #f2c37a1f; color: var(--warn); }
 .rel { display: inline-flex; gap: 3px; }
@@ -230,7 +230,7 @@ input[type="checkbox"] { accent-color: var(--acc); width: 14px; height: 14px; ma
 .btn.ghost { background: var(--panel); }
 .foot-note { font-size: 12px; color: var(--muted); margin: 0; }
 
-/* Controles */
+/* Controls */
 .controls { display: flex; flex-direction: column; gap: 14px; position: sticky; top: 72px; }
 .controls .panel-h { margin-bottom: 0; }
 .field label { display: flex; align-items: baseline; font-size: 12px; color: var(--ink-2); margin-bottom: 4px; gap: 6px; }
@@ -272,7 +272,7 @@ input[type="range"]:disabled { opacity: .35; }
 .ranking .s { font-family: var(--mono); text-align: right; }
 .ranking li.out { opacity: .4; }
 
-/* Gráficas SVG */
+/* SVG charts */
 .chart svg { width: 100%; height: auto; display: block; overflow: visible; }
 .chart .grid line { stroke: var(--line); stroke-width: 1; }
 .chart .ax { fill: var(--muted); font-family: var(--mono); font-size: 10px; stroke: none; }
@@ -298,7 +298,7 @@ input[type="range"]:disabled { opacity: .35; }
 .callout { border-left: 2px solid var(--ice); padding: 4px 0 4px 12px; margin-top: 14px; font-size: 13px; color: var(--ink-2); }
 .callout b { color: var(--ink); font-weight: 500; }
 
-/* Comparar */
+/* Compare */
 .cmp th, .cmp td { min-width: 180px; }
 .cmp th:first-child, .cmp td:first-child { min-width: 130px; color: var(--muted); font-size: 12px; position: sticky; left: 0; background: var(--panel); }
 .cmp thead th { text-transform: none; letter-spacing: 0; font-size: 13px; color: var(--ink); }
@@ -306,7 +306,7 @@ input[type="range"]:disabled { opacity: .35; }
 .cmp thead th .x:hover { color: var(--ink); }
 .empty { padding: 40px; text-align: center; color: var(--muted); }
 
-/* Energía */
+/* Energy */
 .split { display: flex; height: 10px; border-radius: 3px; overflow: hidden; background: var(--line); margin-bottom: 10px; }
 .split span { display: block; height: 100%; transition: width .3s; }
 #barQ { background: var(--acc-2); } #barI { background: var(--c-pil); }
@@ -315,7 +315,7 @@ input[type="range"]:disabled { opacity: .35; }
 .refs b { font-family: var(--mono); font-weight: 500; font-size: 15px; }
 .refs span { font-size: 12px; color: var(--muted); }
 
-/* Matriz de completitud */
+/* Completeness matrix */
 .matrix { border-collapse: separate; border-spacing: 3px; font-size: 12px; margin: 4px; }
 .matrix th { font-weight: 400; color: var(--muted); font-size: 11px; white-space: nowrap; padding: 0 8px 0 0; text-align: left; }
 .matrix thead th { writing-mode: vertical-rl; transform: rotate(180deg); height: 96px; vertical-align: bottom; padding: 6px 0 0; }
@@ -326,7 +326,7 @@ input[type="range"]:disabled { opacity: .35; }
 .matrix td.i, .k.inf { background: repeating-linear-gradient(135deg, var(--acc) 0 2px, var(--line) 2px 5px); }
 .matrix td.pc { background: none; color: var(--muted); font-family: var(--mono); width: auto; padding-left: 8px; }
 
-/* Panel de detalle */
+/* Detail drawer */
 .drawer {
   position: fixed; top: 0; right: 0; bottom: 0; width: min(460px, 100vw); z-index: 30;
   background: var(--bg-1); border-left: 1px solid var(--line-2); box-shadow: -20px 0 40px #0007;
@@ -384,16 +384,16 @@ input[type="range"]:disabled { opacity: .35; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
 
-/* ───── Color por pilar en filtros ───── */
-#fPilar button[data-v="prevencion"].on, #pPil button[data-v="prevencion"].on { background: color-mix(in srgb, var(--pil-prevencion) 20%, transparent); color: var(--pil-prevencion); border-color: var(--pil-prevencion); }
-#fPilar button[data-v="deteccion"].on, #pPil button[data-v="deteccion"].on { background: color-mix(in srgb, var(--pil-deteccion) 20%, transparent); color: var(--pil-deteccion); border-color: var(--pil-deteccion); }
-#fPilar button[data-v="supresion"].on, #pPil button[data-v="supresion"].on { background: color-mix(in srgb, var(--pil-supresion) 20%, transparent); color: var(--pil-supresion); border-color: var(--pil-supresion); }
-#fPilar button[data-v="fundamental"].on, #pPil button[data-v="fundamental"].on { background: color-mix(in srgb, var(--pil-fundamental) 20%, transparent); color: var(--pil-fundamental); border-color: var(--pil-fundamental); }
+/* ───── Pillar colors in filters ───── */
+#fPilar button[data-v="prevention"].on, #pPillar button[data-v="prevention"].on { background: color-mix(in srgb, var(--pil-prevention) 20%, transparent); color: var(--pil-prevention); border-color: var(--pil-prevention); }
+#fPilar button[data-v="detection"].on, #pPillar button[data-v="detection"].on { background: color-mix(in srgb, var(--pil-detection) 20%, transparent); color: var(--pil-detection); border-color: var(--pil-detection); }
+#fPilar button[data-v="suppression"].on, #pPillar button[data-v="suppression"].on { background: color-mix(in srgb, var(--pil-suppression) 20%, transparent); color: var(--pil-suppression); border-color: var(--pil-suppression); }
+#fPilar button[data-v="fundamental"].on, #pPillar button[data-v="fundamental"].on { background: color-mix(in srgb, var(--pil-fundamental) 20%, transparent); color: var(--pil-fundamental); border-color: var(--pil-fundamental); }
 
-/* ───── Abreviaturas ───── */
+/* ───── Abbreviations ───── */
 abbr[title] { text-decoration: underline dotted var(--muted); text-underline-offset: 3px; cursor: help; }
 
-/* ───── Glosario ───── */
+/* ───── Glossary ───── */
 .gloss { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 12px; margin: 0; }
 .gl-item { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
 .gl-item dt { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 4px; }
@@ -401,13 +401,13 @@ abbr[title] { text-decoration: underline dotted var(--muted); text-underline-off
 .gl-item dd { margin: 0; color: var(--ink-2); font-size: 13px; }
 .gl-used { display: flex; flex-wrap: wrap; gap: 4px 10px; margin-top: 8px; font-size: 12px; }
 .cat { font-family: var(--mono); font-size: 10px; text-transform: uppercase; letter-spacing: .06em; padding: 1px 6px; border-radius: 3px; white-space: nowrap; }
-.cat-instalacion { background: #6cb6ff1f; color: var(--acc); }
-.cat-combustion { background: #ff8f7e1f; color: var(--pil-supresion); }
-.cat-material { background: #f2c37a1f; color: var(--pil-deteccion); }
-.cat-instrumento { background: #5fd4a81f; color: var(--pil-prevencion); }
+.cat-facility { background: #6cb6ff1f; color: var(--acc); }
+.cat-combustion { background: #ff8f7e1f; color: var(--pil-suppression); }
+.cat-material { background: #f2c37a1f; color: var(--pil-detection); }
+.cat-instrument { background: #5fd4a81f; color: var(--pil-prevention); }
 .cat-dashboard { background: #b39dff1f; color: var(--pil-fundamental); }
 
-/* ───── Fondo azul claro, bloques oscuros ───── */
+/* ───── Light blue page, dark blocks ───── */
 body, .views { background: var(--page); }
 .bar { background: var(--bg-1); }
 .panel, .kpis, .table-wrap, .gl-item { box-shadow: 0 1px 2px #0c244026; }
