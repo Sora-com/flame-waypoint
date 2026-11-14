@@ -33,10 +33,18 @@ def _numbers_in(text: str) -> set[float]:
     return {float(n) for n in re.findall(NUM, text.replace(",", ""))}
 
 
+OTHER_GASES = (r"ethylene|ethane|methane|propane|propylene|butane|hydrogen|h2|ch4|c2h4|fuel|"
+               r"nitrogen|n2|helium|he|co2|carbon dioxide|argon|ar|xenon|sf6|dme")
+
+
 def numbers_with_unit(kind: str, text: str) -> set[float]:
     """Numbers in `text` that carry a unit of the given kind."""
     found = set()
     for m in re.finditer(rf"({RUN})\s*(?:{UNITS[kind]})(?![a-z])", text, re.IGNORECASE):
+        # "4% ethylene" is a fuel concentration, not oxygen.
+        if kind == "oxygen" and re.match(rf"\s*(?:by volume\s+)?(?:{OTHER_GASES})\b",
+                                         text[m.end():], re.IGNORECASE):
+            continue
         found |= {float(n) for n in re.findall(NUM, m.group(1))}
     if kind == "oxygen":
         # "oxygen mole fraction of 0.21", "O2 concentration 0.15 to 0.4": unitless fractions.

@@ -84,6 +84,10 @@ class ConditionTest(unittest.TestCase):
         self.assertEqual(out["evidence"], ["and 8.2 psia, 34 % oxygen."])
         self.assertIn("evidence repaired", w[0])
 
+    def test_other_gas_percentage_is_not_oxygen(self):
+        self.assertEqual(checks.numbers_with_unit("oxygen", "oxygen issuing into 4% ethylene"), set())
+        self.assertEqual(checks.numbers_with_unit("oxygen", "21% oxygen and 79% nitrogen"), {21})
+
     def test_unicode_minus_range(self):
         self.assertEqual(checks.numbers_with_unit("pressure", "test pressure (0.5 − 1.5 atm)"), {0.5, 1.5})
 
